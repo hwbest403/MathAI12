@@ -1,0 +1,1213 @@
+[
+    {
+        "Question": "1,2,3,4,5,6,7,1,2,3,4,5,6,7,과 같이 주기를 가지고 반복되는 수열이 있을 때 왼쪽에서 57번째 숫자는 무엇입니까?",
+        "QuestionConv": "seq0 과 같이 주기를 가지고 반복되는 수열이 있을 때 왼쪽에서 ord0 번째 숫자는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "ord0": 57
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 1,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "왼쪽부터 흰색 공 1개, 노란색 공 2개, 빨간색 공 3개가 반복되어 놓여져 있을 때, 58번째 공의 색깔을 쓰시오.",
+        "QuestionConv": "왼쪽부터 col0 공 num0 개, col1 공 num1 개, col2 공 num2 개가 반복되어 놓여져 있을 때, ord0 번째 공의 색깔을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "흰색",
+                "노란색",
+                "빨간색"
+            ],
+            "rep": [
+                1,
+                2,
+                3
+            ],
+            "ord0": 58
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "100개의 사탕을 정국, 민영, 은지 3명에게 순서대로 2개씩 나누어 준다고 할 때, 91번째 사탕을 받는 사람은 누구인지 구하시오.",
+        "QuestionConv": "num0 개의 사탕을 nae0, nae1, nae2 num1 명에게 순서대로 rep0 개씩 나누어 준다고 할 때, ord0 번째 사탕을 받는 사람은 누구인지 구하시오.",
+        "Numbers": {
+            "nae": [
+                "태형",
+                "남준",
+                "윤기"
+            ],
+            "rep": [
+                2,
+                2,
+                2
+            ],
+            "ord0": 91
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "태형",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "4,9,7,3,9,9,4,9,7,3,9,9,4,9,7,3,9,9,4,9,7,3,9,9 과 같이 어떤 규칙을 가지고 있는 수열을 차례로 세었을 때 57번째 오는 숫자는 무엇이 될 지 구하시오.",
+        "QuestionConv": "seq0 과 같이 어떤 규칙을 가지고 있는 수열을 차례로 세었을 때 ord0 번째 오는 숫자는 무엇이 될 지 구하시오.",
+        "Numbers": {
+            "seq0": [
+                4,
+                9,
+                7,
+                3,
+                9,
+                9,
+                4,
+                9,
+                7,
+                3,
+                9,
+                9,
+                4,
+                9,
+                7,
+                3,
+                9,
+                9,
+                4,
+                9,
+                7,
+                3,
+                9,
+                9
+            ],
+            "ord0": 57
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 7,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "9,9,6,2,9,1,7,2,9,9,6,2,9,1,7,2,9,9,6,2,9,1,7,2,9,9,6,2,9,1,7,2 과 같이 규칙적으로 나열되는 숫자들을 보고 왼쪽에서 29번째 오는 수는 무엇인지 구하세요.",
+        "QuestionConv": "seq0 과 같이 규칙적으로 나열되는 숫자들을 보고 왼쪽에서 ord0 번째 오는 수는 무엇인지 구하세요.",
+        "Numbers": {
+            "seq0": [
+                9,
+                9,
+                6,
+                2,
+                9,
+                1,
+                7,
+                2,
+                9,
+                9,
+                6,
+                2,
+                9,
+                1,
+                7,
+                2,
+                9,
+                9,
+                6,
+                2,
+                9,
+                1,
+                7,
+                2,
+                9,
+                9,
+                6,
+                2,
+                9,
+                1,
+                7,
+                2
+            ],
+            "ord0": 29
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 9,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "2,1,3,5,7,8,2,1,3,5,7,8,2,1,3,5,7,8,2,1,3,5,7,8 과 같이 어떤 규칙을 가지고 수가 나열되고 있을 때 왼쪽에서 47번째 숫자는 무엇일까요?",
+        "QuestionConv": "seq0 과 같이 어떤 규칙을 가지고 수가 나열되고 있을 때 왼쪽에서 ord0 번째 숫자는 무엇일까요?",
+        "Numbers": {
+            "seq0": [
+                2,
+                1,
+                3,
+                5,
+                7,
+                8,
+                2,
+                1,
+                3,
+                5,
+                7,
+                8,
+                2,
+                1,
+                3,
+                5,
+                7,
+                8,
+                2,
+                1,
+                3,
+                5,
+                7,
+                8
+            ],
+            "ord0": 47
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 7,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "9,6,6,8,2,9,5 가 반복되는 수열에서 왼쪽에서 46째 숫자는 무엇입니까?",
+        "QuestionConv": "seq0 가 반복되는 수열에서 왼쪽에서 ord0 째 숫자는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                9,
+                6,
+                6,
+                8,
+                2,
+                9,
+                5
+            ],
+            "ord0": 46
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 8,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "8,8,7,5,8,7,6,6,8,8,7,5,8,7,6,6,8,8,7,5,8,7,6,6,8,8,7,5,8,7,6,6 과 같이 특정한 규칙을 가지고 있는 수열에서 규칙을 파악하여 왼쪽부터 순서대로 36번째 숫자는 무엇인지 구하시오.",
+        "QuestionConv": "seq0 과 같이 특정한 규칙을 가지고 있는 수열에서 규칙을 파악하여 왼쪽부터 순서대로 ord0 번째 숫자는 무엇인지 구하시오.",
+        "Numbers": {
+            "seq0": [
+                8,
+                8,
+                7,
+                5,
+                8,
+                7,
+                6,
+                6,
+                8,
+                8,
+                7,
+                5,
+                8,
+                7,
+                6,
+                6,
+                8,
+                8,
+                7,
+                5,
+                8,
+                7,
+                6,
+                6,
+                8,
+                8,
+                7,
+                5,
+                8,
+                7,
+                6,
+                6
+            ],
+            "ord0": 36
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 5,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": " 7,5,1,2,7 이 반복되는 수열을 차례대로 세었을 때 48번째 오는 수는?",
+        "QuestionConv": "seq0 이 반복되는 수열을 차례대로 세었을 때 ord0 번째 오는 수는?",
+        "Numbers": {
+            "seq0": [
+                7,
+                5,
+                1,
+                2,
+                7
+            ],
+            "ord0": 48
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 1,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1,1,1,7,6,9,1,1,1,7,6,9,1,1,1,7,6,9,1,1,1,7,6,9 이와 같이 일정하게 반복 될 때 앞에서 74번째에 오는 숫자는?",
+        "QuestionConv": "seq0 이와 같이 일정하게 반복 될 때 앞에서 ord0 번째에 오는 숫자는?",
+        "Numbers": {
+            "seq0": [
+                1,
+                1,
+                1,
+                7,
+                6,
+                9,
+                1,
+                1,
+                1,
+                7,
+                6,
+                9,
+                1,
+                1,
+                1,
+                7,
+                6,
+                9,
+                1,
+                1,
+                1,
+                7,
+                6,
+                9
+            ],
+            "ord0": 74
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 1,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "3,6,2,3,5,4,4,3,6,2,3,5,4,4 과 같이 반복되는 수열에서 앞에서 60번째 오는 수를 구하세요.",
+        "QuestionConv": "seq0 과 같이 반복되는 수열에서 앞에서 ord0 번째 오는 수를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                3,
+                6,
+                2,
+                3,
+                5,
+                4,
+                4,
+                3,
+                6,
+                2,
+                3,
+                5,
+                4,
+                4
+            ],
+            "ord0": 60
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 3,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "2,4,4,5,1 이 반복되는 수열이 있습니다. 왼쪽에서 59번째 숫자는 무엇입니까?",
+        "QuestionConv": "seq0 이 반복되는 수열이 있습니다. 왼쪽에서 ord0 번째 숫자는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                4,
+                4,
+                5,
+                1
+            ],
+            "ord0": 59
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 5,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "5,7,1,4,6,8,5,7,1,4,6,8 과 같이 규칙을 가지고 있는 수열이 있습니다. 왼쪽에서부터 세었을 때 74번째 숫자를 구하시오.",
+        "QuestionConv": "seq0 과 같이 규칙을 가지고 있는 수열이 있습니다. 왼쪽에서부터 세었을 때 ord0 번째 숫자를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                5,
+                7,
+                1,
+                4,
+                6,
+                8,
+                5,
+                7,
+                1,
+                4,
+                6,
+                8
+            ],
+            "ord0": 74
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 7,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "5,8,9,1,4,9 이 계속 반복 될 때 좌측에서 80번째 숫자는 무엇이 될지 구하시오.",
+        "QuestionConv": "seq0 이 계속 반복 될 때 좌측에서 ord0 번째 숫자는 무엇이 될지 구하시오.",
+        "Numbers": {
+            "seq0": [
+                5,
+                8,
+                9,
+                1,
+                4,
+                9
+            ],
+            "ord0": 80
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 8,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "3,9,4,5,6 이 반복되는 패턴일 때 67 번째 숫자가 무엇입니까?",
+        "QuestionConv": "seq0 이 반복되는 패턴일 때 ord0 번째 숫자가 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                3,
+                9,
+                4,
+                5,
+                6
+            ],
+            "ord0": 67
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 9,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1,4,2,4,6,1,4,2,4,6 과 같이 규칙을 가지고 나열된 수열에서 앞에서 33번째 수를 구하세요.",
+        "QuestionConv": "seq0 과 같이 규칙을 가지고 나열된 수열에서 앞에서 ord0 번째 수를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                1,
+                4,
+                2,
+                4,
+                6,
+                1,
+                4,
+                2,
+                4,
+                6
+            ],
+            "ord0": 33
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 2,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1,5,5,5,7,1,5,5,5,7,1,5,5,5,7,1,5,5,5,7 과 같이 어떤 규칙을 가지고 있는 수열을 차례대로 세었을 때 51째 숫자를 구하시오.",
+        "QuestionConv": "seq0 과 같이 어떤 규칙을 가지고 있는 수열을 차례대로 세었을 때 ord0 째 숫자를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                1,
+                5,
+                5,
+                5,
+                7,
+                1,
+                5,
+                5,
+                5,
+                7,
+                1,
+                5,
+                5,
+                5,
+                7,
+                1,
+                5,
+                5,
+                5,
+                7
+            ],
+            "ord0": 51
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 1,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": " 7,5,7,4,4,1,6 와 같은 패턴을 가지고 반복되는 수열이 있을 때, 좌측에서 52번째 오는 수를 구하세요.",
+        "QuestionConv": "seq0 와 같은 패턴을 가지고 반복되는 수열이 있을 때, 좌측에서 ord0 번째 오는 수를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                7,
+                5,
+                7,
+                4,
+                4,
+                1,
+                6
+            ],
+            "ord0": 52
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 7,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "7,5,6,2,7,5,6,2,7,5,6,2,7,5,6,2 의 수들이 일정하게 반복 될 때 왼쪽에서 50번째 오는 숫자는 무엇입니까?",
+        "QuestionConv": "seq0 의 수들이 일정하게 반복 될 때 왼쪽에서 ord0 번째 오는 숫자는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                7,
+                5,
+                6,
+                2,
+                7,
+                5,
+                6,
+                2,
+                7,
+                5,
+                6,
+                2,
+                7,
+                5,
+                6,
+                2
+            ],
+            "ord0": 50
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 5,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": " 7,7,8,2,8,3,7,7,8,2,8,3,7,7,8,2,8,3,7,7,8,2,8,3 과 같이 어떠한 규칙이 있는 수열이 있을 때 좌측에서 77번째는 어떤 수가 올까요?",
+        "QuestionConv": "seq0 과 같이 어떠한 규칙이 있는 수열이 있을 때 좌측에서 ord0 번째는 어떤 수가 올까요?",
+        "Numbers": {
+            "seq0": [
+                7,
+                7,
+                8,
+                2,
+                8,
+                3,
+                7,
+                7,
+                8,
+                2,
+                8,
+                3,
+                7,
+                7,
+                8,
+                2,
+                8,
+                3,
+                7,
+                7,
+                8,
+                2,
+                8,
+                3
+            ],
+            "ord0": 77
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 8,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1,6,8,3,7,1,6,8,3,7 이 계속 반복되는 수열이 있습니다. 32번째 오는 숫자를 구하세요.",
+        "QuestionConv": "seq0 이 계속 반복되는 수열이 있습니다. ord0 번째 오는 숫자를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                1,
+                6,
+                8,
+                3,
+                7,
+                1,
+                6,
+                8,
+                3,
+                7
+            ],
+            "ord0": 32
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 6,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "6,2,8,7,4,8,4,6,2,8,7,4,8,4,6,2,8,7,4,8,4,6,2,8,7,4,8,4 과 같이 몇 개의 수들이 반복되는 수열을 차례대로 세었을 때 64째 숫자가 무엇입니까?",
+        "QuestionConv": "seq0 과 같이 몇 개의 수들이 반복되는 수열을 차례대로 세었을 때 ord0 째 숫자가 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                6,
+                2,
+                8,
+                7,
+                4,
+                8,
+                4,
+                6,
+                2,
+                8,
+                7,
+                4,
+                8,
+                4,
+                6,
+                2,
+                8,
+                7,
+                4,
+                8,
+                4,
+                6,
+                2,
+                8,
+                7,
+                4,
+                8,
+                4
+            ],
+            "ord0": 64
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 6,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "6,4,7,1,6,4,7,1,6,4,7,1,6,4,7,1 에서 발견되는 규칙을 고려하여 왼쪽에서 34번째 오는 숫자는 무엇인지 구하시오.",
+        "QuestionConv": "seq0 에서 발견되는 규칙을 고려하여 왼쪽에서 ord0 번째 오는 숫자는 무엇인지 구하시오.",
+        "Numbers": {
+            "seq": [
+                6,
+                4,
+                7,
+                1,
+                6,
+                4,
+                7,
+                1,
+                6,
+                4,
+                7,
+                1,
+                6,
+                4,
+                7,
+                1
+            ],
+            "ord0": 34
+        },
+        "Equation": "func_findord(func_findbasicseq(seq , none), ord0)",
+        "Answer": 4,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "3,8,1,3,3,8,1,3,3,8,1,3,3,8,1,3 과 같이 나열된 수열의 반복되는 규칙을 파악하여 앞에서 56번째 숫자가 무엇이 될 지 구하시오.",
+        "QuestionConv": "seq0 과 같이 나열된 수열의 반복되는 규칙을 파악하여 앞에서 ord0 번째 숫자가 무엇이 될 지 구하시오.",
+        "Numbers": {
+            "seq0": [
+                3,
+                8,
+                1,
+                3,
+                3,
+                8,
+                1,
+                3,
+                3,
+                8,
+                1,
+                3,
+                3,
+                8,
+                1,
+                3
+            ],
+            "ord0": 56
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 3,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "2,7,8,1,8,9,9,2,7,8,1,8,9,9 에서 나열되는 수들의 규칙을 보고 왼쪽부터 세었을 때 40번째 숫자는 무엇입니까?",
+        "QuestionConv": "seq0 에서 나열되는 수들의 규칙을 보고 왼쪽부터 세었을 때 ord0 번째 숫자는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                7,
+                8,
+                1,
+                8,
+                9,
+                9,
+                2,
+                7,
+                8,
+                1,
+                8,
+                9,
+                9
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 8,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "8,7,1,4,1,8,7,1,4,1,8,7,1,4,1,8,7,1,4,1 과 같이 몇 개의 수들이 반복되는 수열이 있습니다. 앞에서 78번째 숫자를 구하세요.",
+        "QuestionConv": "seq0 과 같이 몇 개의 수들이 반복되는 수열이 있습니다. 앞에서 ord0 번째 숫자를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                8,
+                7,
+                1,
+                4,
+                1,
+                8,
+                7,
+                1,
+                4,
+                1,
+                8,
+                7,
+                1,
+                4,
+                1,
+                8,
+                7,
+                1,
+                4,
+                1
+            ],
+            "ord0": 78
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 1,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "5,9,4,7,3,5,9,4,7,3,5,9,4,7,3,5,9,4,7,3 나열된 수열의 규칙성을 파악하여 좌측에서 39번째 숫자가 무엇인지 답하시오.",
+        "QuestionConv": "seq0 나열된 수열의 규칙성을 파악하여 좌측에서 ord0 번째 숫자가 무엇인지 답하시오.",
+        "Numbers": {
+            "seq0": [
+                5,
+                9,
+                4,
+                7,
+                3,
+                5,
+                9,
+                4,
+                7,
+                3,
+                5,
+                9,
+                4,
+                7,
+                3,
+                5,
+                9,
+                4,
+                7,
+                3
+            ],
+            "ord0": 39
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 7,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "왼쪽부터 빨간 모자를 쓴 사람 3명, 노란 모자를 쓴 사람 3명이 반복되어 일렬로 서있습니다. 이때 46번째 사람이 쓴 모자의 색깔을 구하시오.",
+        "QuestionConv": "왼쪽부터 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명이 반복되어 일렬로 서있습니다. 이때 ord0 번째 사람이 쓴 모자의 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                3,
+                3
+            ],
+            "ord0": 46
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "순서대로 빨간색 깃발 4개, 노란색 깃발 1개, 흰색 깃발 4개가 무한히 나열되어 꽂혀 있습니다. 이때 28번째 색깔을 알아내시오. ",
+        "QuestionConv": "순서대로 col0 깃발 num0 개, col1 깃발 num1 개, col2 깃발 num2 개가 무한히 나열되어 꽂혀 있습니다. 이때 ord0 번째 색깔을 알아내시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                4,
+                1,
+                4
+            ],
+            "ord0": 28
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "책상위에 빨간색 카드 3장, 노란색 카드 1장, 흰색 카드 1장, 검정색 카드 4장이 일렬로 반복되며 놓여져 있을 때, 68번째 색을 구하시오.",
+        "QuestionConv": "책상위에 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장, col3 카드 num3 장이 일렬로 반복되며 놓여져 있을 때, ord0 번째 색을 구하시오..",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                3,
+                1,
+                1,
+                4
+            ],
+            "ord0": 68
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "흰색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "왼쪽부터 동그란 깃발 3개, 네모난 깃발 5개, 세모난 깃발 2개가 계속 반복되며 놓여져 있습니다. 이때 62번째로 오는 깃발의 모양을 답하시오.",
+        "QuestionConv": "왼쪽부터 sha0 깃발 num0 개, sha1 깃발 num1 개, sha2 깃발 num2 개가 계속 반복되며 놓여져 있습니다. 이때 ord0 번째로 오는 깃발의 모양을 답하시오.",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모",
+                "세모"
+            ],
+            "rep": [
+                3,
+                5,
+                2
+            ],
+            "ord0": 62
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "동그라미",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "바닥 위에 빨간색 카드 3장, 노란색 카드 5장, 흰색 카드 2장, 검정색 카드 5장이 일렬로 반복되며 놓여 있습니다. 이때 30번째 색을 쓰시오.",
+        "QuestionConv": "바닥 위에 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장, col3 카드 num3 장이 일렬로 반복되며 놓여 있습니다. 이때 ord0 번째 색을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                3,
+                5,
+                2,
+                5
+            ],
+            "ord0": 30
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "검은색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "순서대로 빨간 깃발 5개, 노란 깃발 2개, 흰 깃발 3개가 계속 나열되고 있을 때, 26번째 색깔을 쓰시오.",
+        "QuestionConv": "순서대로 col0 깃발 num0 개, col1 깃발 num1 개, col2 깃발 num2 개가 계속 나열되고 있을 때, ord0 번째 색깔을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                5,
+                2,
+                3
+            ],
+            "ord0": 26
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "운동장에 빨간색 모자를 쓴 사람 4명, 노란색 모자를 쓴 사람 4명, 흰색 모자를 쓴 사람 1명, 검정색 모자를 쓴 사람 5명의 순서대로 서 있습니다. 69번째 색을 쓰시오.",
+        "QuestionConv": "운동장에 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명, col2 모자를 쓴 사람 num2 명, col3 모자를 쓴 사람 num3 명의 순서대로 서 있습니다. ord0 번째 색을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                4,
+                4,
+                1,
+                5
+            ],
+            "ord0": 69
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "검은색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "운동장에 빨간 모자를 쓴 사람 3명, 노란 모자를 쓴 사람 4명, 흰 모자를 쓴 사람 2명, 검정 모자를 쓴 사람 3명의 순서대로 정렬되어 있을 때 61번째 색을 구하시오.",
+        "QuestionConv": "운동장에 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명, col2 모자를 쓴 사람 num2 명, col3 모자를 쓴 사람 num3 명의 순서대로 정렬되어 있을 때 ord0 번째 색을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                3,
+                4,
+                2,
+                3
+            ],
+            "ord0": 61
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "차례대로 빨간 지붕을 가진 집 2채, 노란 지붕을 가진 집 4채가 일렬로 지어져 있을 때 67번째에 있는 집의 지붕의 색깔은 무엇일까요?",
+        "QuestionConv": "차례대로 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채가 일렬로 지어져 있을 때 ord0 번째에 있는 집의 지붕의 색깔은 무엇일까요?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                2,
+                4
+            ],
+            "ord0": 67
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "빨간 카드 1장, 노란 카드 3장이 일렬로 반복되면서 놓여져 있는데 이때 40번째 카드의 색을 쓰시오.",
+        "QuestionConv": "col0 카드 num0 장, col1 카드 num1 장이 일렬로 반복되면서 놓여져 있는데 이때 ord0 번째 카드의 색을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                1,
+                3
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "마을에 빨간색 지붕을 가진 집 2채, 노란색 지붕을 가진 집 5채, 흰색 지붕을 가진 집 3채의 순서대로 지어져 있습니다. 76번째 지붕의 색깔은 무엇일까요?",
+        "QuestionConv": "마을에 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채, col2 지붕을 가진 집 num2 채의 순서대로 지어져 있습니다. ord0 번째 지붕의 색깔은 무엇일까요?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                2,
+                5,
+                3
+            ],
+            "ord0": 76
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "체육관에 빨간 모자를 쓴 사람 2명, 노란 모자를 쓴 사람 1명, 흰 모자를 쓴 사람 1명, 검정 모자를 쓴 사람 3명이 반복되면서 서 있을 때, 38번째 색을 답하시오.",
+        "QuestionConv": "체육관에 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명, col2 모자를 쓴 사람 num2 명, col3 모자를 쓴 사람 num3 명이 반복되면서 서 있을 때, ord0 번째 색을 답하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                2,
+                1,
+                1,
+                3
+            ],
+            "ord0": 38
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "정류장에 빨간 모자를 쓴 사람 4명, 노란 모자를 쓴 사람 1명, 흰 모자를 쓴 사람 5명, 검정 모자를 쓴 사람 4명이 반복되어 줄을 서고 있는데 이때 75번째 사람이 쓴 모자의 색깔을 구하시오.",
+        "QuestionConv": "정류장에 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명, col2 모자를 쓴 사람 num2 명, col3 모자를 쓴 사람 num3 명이 반복되어 줄을 서고 있는데 이때 ord0 번째 사람이 쓴 모자의 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                4,
+                1,
+                5,
+                4
+            ],
+            "ord0": 78
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "흰색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "차례대로 빨간색 카드 1장, 노란색 카드 1장, 흰색 카드 4장이 무한히 반복되어 나열되고 있을 때 56번째 색은?",
+        "QuestionConv": "차례대로 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장이 무한히 반복되어 나열되고 있을 때 ord0 번째 색은?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                1,
+                1,
+                4
+            ],
+            "ord0": 56
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "100개의 사탕을 태형, 남준 2명에게 순서대로 2 개씩 준다고 할 때, 40번째 사탕을 받는 사람은 누구입니까?",
+        "QuestionConv": "num0 개의 사탕을 nae0, nae1 num1 명에게 순서대로 rep0 개씩 준다고 할 때, ord0 번째 사탕을 받는 사람은 누구입니까?",
+        "Numbers": {
+            "nae": [
+                "태형",
+                "남준"
+            ],
+            "rep": [
+                2,
+                2
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "남준",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "90개의 사탕을 석진, 남준 2명에게 순서대로 2 개씩 준다고 할 때, 40번째 사탕을 받는 사람은 누구입니까?",
+        "QuestionConv": "num0 개의 사탕을 nae0, nae1 num1 명에게 순서대로 rep0 개씩 준다고 할 때, ord0 번째 사탕을 받는 사람은 누구입니까?",
+        "Numbers": {
+            "nae": [
+                "석진",
+                "남준"
+            ],
+            "rep": [
+                2,
+                2
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "남준",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "100개의 사탕을 태형, 남준 2명에게 순서대로 2개씩 돌아가면서 준다고 합니다. 40번째 사탕을 받는 사람은 누구입니까?",
+        "QuestionConv": "num0 개의 사탕을 nae0, nae1 num1 명에게 순서대로 rep0 개씩 돌아가면서 준다고 합니다. ord0 번째 사탕을 받는 사람은 누구입니까?",
+        "Numbers": {
+            "nae": [
+                "태형",
+                "남준"
+            ],
+            "rep": [
+                2,
+                2
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "남준",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "100개의 사탕을 지민, 남준 2명에게 순서대로 2개씩 번갈아 가면서 준다고 합니다. 40번째 사탕을 받는 사람은 누구입니까?",
+        "QuestionConv": "num0 개의 사탕을 nae0, nae1 num1 명에게 순서대로 rep0 개씩 번갈아 가면서 준다고 합니다. ord0 번째 사탕을 받는 사람은 누구입니까?",
+        "Numbers": {
+            "nae": [
+                "지민",
+                "남준"
+            ],
+            "rep": [
+                2,
+                2
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "남준",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "100개의 사탕을 태형, 호석 2명이 순서대로 2개씩 나누어 가진다고 합니다. 40번째 사탕을 가지는 사람은 누구일까요?",
+        "QuestionConv": "num0 개의 사탕을 nae0, nae1 num1 명이 순서대로 rep0 개씩 나누어 가진다고 합니다. ord0 번째 사탕을 가지는 사람은 누구일까요?",
+        "Numbers": {
+            "nae": [
+                "태형",
+                "호석"
+            ],
+            "rep": [
+                2,
+                2
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "호석",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "태형, 호석 2명이 100개의 사탕을 순서대로 2개씩 나누어 가진다고 할 때 40번째 사탕을 가지는 사람은 누구일까요?",
+        "QuestionConv": "nae0, nae1 num0 명이 num1 개의 사탕을 순서대로 rep0 개씩 나누어 가진다고 할 때 ord0 번째 사탕을 가지는 사람은 누구일까요?",
+        "Numbers": {
+            "nae": [
+                "태형",
+                "호석"
+            ],
+            "rep": [
+                2,
+                2
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "호석",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "태형, 호석 2명에게 100개의 사탕을 순서대로 2개씩 나누어 준다고 합니다. 40번째 사탕을 가지는 사람은 누구입니까?",
+        "QuestionConv": "nae0, nae1 num0 명에게 num1 개의 사탕을 순서대로 rep0 개씩 나누어 준다고 합니다. ord0 번째 사탕을 가지는 사람은 누구입니까?",
+        "Numbers": {
+            "nae": [
+                "태형",
+                "호석"
+            ],
+            "rep": [
+                2,
+                2
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "호석",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "태형, 호석 2명에게 100개의 사탕을 순서대로 번갈아 가면서 2개씩 준다고 합니다. 40번째 사탕을 가지는 사람은 누구입니까?",
+        "QuestionConv": "nae0, nae1 num0 명에게 num1 개의 사탕을 순서대로 번갈아 가면서 rep0 개씩 준다고 합니다. ord0 번째 사탕을 가지는 사람은 누구입니까?",
+        "Numbers": {
+            "nae": [
+                "태형",
+                "호석"
+            ],
+            "rep": [
+                2,
+                2
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "호석",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "태형, 호석 2명은 100개의 사탕을 순서대로 돌아가면서 2개씩 받게 됩니다. 40번째 사탕을 받는 사람은 누구입니까?",
+        "QuestionConv": "nae0, nae1 num0 명은 num1 개의 사탕을 순서대로 돌아가면서 rep0 개씩 받게 됩니다. ord0 번째 사탕을 받는 사람은 누구입니까?",
+        "Numbers": {
+            "nae": [
+                "태형",
+                "호석"
+            ],
+            "rep": [
+                2,
+                2
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "호석",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "태형, 호석 2명은 순서대로 100개의 사탕을 2개씩 받게 됩니다. 40번째 사탕을 받는 사람은 누구입니까?",
+        "QuestionConv": "nae0, nae1 num0 명은 순서대로 num1 개의 사탕을 rep0 개씩 받게 됩니다. ord0 번째 사탕을 받는 사람은 누구입니까?",
+        "Numbers": {
+            "nae": [
+                "태형",
+                "호석"
+            ],
+            "rep": [
+                2,
+                2
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "호석",
+        "Type": "Textrule 2"
+    }
+]

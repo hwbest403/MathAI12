@@ -1,0 +1,2199 @@
+[
+    {
+        "Question": "1,2,3,4,5,6,7,1,2,3,4,5,6,7,과 같이 반복되는 수열이 있습니다. 왼쪽에서 57번째 숫자는 무엇입니까?",
+        "QuestionConv": "seq0 과 같이 반복되는 수열이 있습니다. 왼쪽에서 ord0 번째 숫자는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "ord0": 57
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 1,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "왼쪽부터 흰색 공 1개, 노란색 공 2개, 빨간색 공 3개가 반복되어 놓여 있습니다. 58번째 공의 색깔을 쓰시오.",
+        "QuestionConv": "왼쪽부터 col0 공 num0 개, col1 공 num1 개, col2 공 num2 개가 반복되어 놓여 있습니다. ord0 번째 공의 색깔을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "흰색",
+                "노란색",
+                "빨간색"
+            ],
+            "rep": [
+                1,
+                2,
+                3
+            ],
+            "ord0": 58
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "100개의 사탕을 태형, 남준, 윤기 3명에게 순서대로 2개씩 나누어 줍니다. 91번째 사탕을 받는 사람은 누구입니까?",
+        "QuestionConv": "num0 개의 사탕을 nae0, nae1, nae2 num1 명에게 순서대로 rep0 개씩 나누어 줍니다. ord0 번째 사탕을 받는 사람은 누구입니까?",
+        "Numbers": {
+            "nae": [
+                "태형",
+                "남준",
+                "윤기"
+            ],
+            "rep": [
+                2,
+                2,
+                2
+            ],
+            "ord0": 91
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "태형",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "4,9,7,3,9,9,4,9,7,3,9,9,4,9,7,3,9,9,4,9,7,3,9,9 과 같이 규칙이 있는 수열이 있을 때 차례로 세었을 때 57번째 오는 숫자는 무엇입니까?",
+        "QuestionConv": "seq0 과 같이 규칙이 있는 수열이 있을 때 차례로 세었을 때 ord0 번째 오는 숫자는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                4,
+                9,
+                7,
+                3,
+                9,
+                9,
+                4,
+                9,
+                7,
+                3,
+                9,
+                9,
+                4,
+                9,
+                7,
+                3,
+                9,
+                9,
+                4,
+                9,
+                7,
+                3,
+                9,
+                9
+            ],
+            "ord0": 57
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 7,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "9,9,6,2,9,1,7,2,9,9,6,2,9,1,7,2,9,9,6,2,9,1,7,2,9,9,6,2,9,1,7,2 나열된 숫자들을 보고 왼쪽에서 29번째 오는 수를 구하세요.",
+        "QuestionConv": "seq0 나열된 숫자들을 보고 왼쪽에서 ord0 번째 오는 수를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                9,
+                9,
+                6,
+                2,
+                9,
+                1,
+                7,
+                2,
+                9,
+                9,
+                6,
+                2,
+                9,
+                1,
+                7,
+                2,
+                9,
+                9,
+                6,
+                2,
+                9,
+                1,
+                7,
+                2,
+                9,
+                9,
+                6,
+                2,
+                9,
+                1,
+                7,
+                2
+            ],
+            "ord0": 29
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 9,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "2,1,3,5,7,8,2,1,3,5,7,8,2,1,3,5,7,8,2,1,3,5,7,8 과 같이 규칙이 있는 수열이 있습니다. 좌측에서 47째 숫자를 구하시오.",
+        "QuestionConv": "seq0 과 같이 규칙이 있는 수열이 있습니다. 좌측에서 ord0 째 숫자를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                2,
+                1,
+                3,
+                5,
+                7,
+                8,
+                2,
+                1,
+                3,
+                5,
+                7,
+                8,
+                2,
+                1,
+                3,
+                5,
+                7,
+                8,
+                2,
+                1,
+                3,
+                5,
+                7,
+                8
+            ],
+            "ord0": 47
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 7,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "9,6,6,8,2,9,5 나열된 숫자들을 보고 왼쪽에서 46째 숫자가 무엇입니까?",
+        "QuestionConv": "seq0 나열된 숫자들을 보고 왼쪽에서 ord0 째 숫자가 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                9,
+                6,
+                6,
+                8,
+                2,
+                9,
+                5
+            ],
+            "ord0": 46
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 8,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "8,8,7,5,8,7,6,6,8,8,7,5,8,7,6,6,8,8,7,5,8,7,6,6,8,8,7,5,8,7,6,6 나열된 수열의 규칙을 파악하여 차례로 세었을 때 36번째 숫자는 무엇입니까?",
+        "QuestionConv": "seq0 나열된 수열의 규칙을 파악하여 차례로 세었을 때 ord0 번째 숫자는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                8,
+                8,
+                7,
+                5,
+                8,
+                7,
+                6,
+                6,
+                8,
+                8,
+                7,
+                5,
+                8,
+                7,
+                6,
+                6,
+                8,
+                8,
+                7,
+                5,
+                8,
+                7,
+                6,
+                6,
+                8,
+                8,
+                7,
+                5,
+                8,
+                7,
+                6,
+                6
+            ],
+            "ord0": 36
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 5,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": " 7,5,1,2,7 과 같은 수열이 있습니다. 차례로 세었을 때 48번째 오는 수를 구하세요.",
+        "QuestionConv": "seq0 과 같은 수열이 있습니다. 차례로 세었을 때 ord0 번째 오는 수를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                7,
+                5,
+                1,
+                2,
+                7
+            ],
+            "ord0": 48
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 1,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1,1,1,7,6,9,1,1,1,7,6,9,1,1,1,7,6,9,1,1,1,7,6,9 이와 같이 반복 될 때 앞에서 74째 숫자가 무엇입니까?",
+        "QuestionConv": "seq0 이와 같이 반복 될 때 앞에서 ord0 째 숫자가 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                1,
+                1,
+                7,
+                6,
+                9,
+                1,
+                1,
+                1,
+                7,
+                6,
+                9,
+                1,
+                1,
+                1,
+                7,
+                6,
+                9,
+                1,
+                1,
+                1,
+                7,
+                6,
+                9
+            ],
+            "ord0": 74
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 1,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "3,6,2,3,5,4,4,3,6,2,3,5,4,4 과 같이 반복되는 수열이 있습니다. 왼쪽에서 60번째 오는 수를 구하세요.",
+        "QuestionConv": "seq0 과 같이 반복되는 수열이 있습니다. 왼쪽에서 ord0 번째 오는 수를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                3,
+                6,
+                2,
+                3,
+                5,
+                4,
+                4,
+                3,
+                6,
+                2,
+                3,
+                5,
+                4,
+                4
+            ],
+            "ord0": 60
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 3,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "2,4,4,5,1 나열된 수열의 규칙을 파악하여 왼쪽에서 59번째 숫자는 무엇입니까?",
+        "QuestionConv": "seq0 나열된 수열의 규칙을 파악하여 왼쪽에서 ord0 번째 숫자는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                4,
+                4,
+                5,
+                1
+            ],
+            "ord0": 59
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 5,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "5,7,1,4,6,8,5,7,1,4,6,8 과 같이 규칙이 있는 수열이 있을 때 차례로 세었을 때 74째 숫자를 구하시오.",
+        "QuestionConv": "seq0 과 같이 규칙이 있는 수열이 있을 때 차례로 세었을 때 ord0 째 숫자를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                5,
+                7,
+                1,
+                4,
+                6,
+                8,
+                5,
+                7,
+                1,
+                4,
+                6,
+                8
+            ],
+            "ord0": 74
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 7,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "5,8,9,1,4,9 이와 같이 반복 될 때 좌측에서 80번째 숫자는 무엇입니까?",
+        "QuestionConv": "seq0 이와 같이 반복 될 때 좌측에서 ord0 번째 숫자는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                5,
+                8,
+                9,
+                1,
+                4,
+                9
+            ],
+            "ord0": 80
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 8,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "3,9,4,5,6 이러한 패턴일 때 67째 숫자가 무엇입니까?",
+        "QuestionConv": "seq0 이러한 패턴일 때 ord0 째 숫자가 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                3,
+                9,
+                4,
+                5,
+                6
+            ],
+            "ord0": 67
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 9,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1,4,2,4,6,1,4,2,4,6 나열된 수열의 규칙을 파악하여 앞에서 33번째 오는 수를 구하세요.",
+        "QuestionConv": "seq0 나열된 수열의 규칙을 파악하여 앞에서 ord0 번째 오는 수를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                1,
+                4,
+                2,
+                4,
+                6,
+                1,
+                4,
+                2,
+                4,
+                6
+            ],
+            "ord0": 33
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 2,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1,5,5,5,7,1,5,5,5,7,1,5,5,5,7,1,5,5,5,7 과 같이 규칙이 있는 수열이 있을 때 차례로 세었을 때 51째 숫자를 구하시오.",
+        "QuestionConv": "seq0 과 같이 규칙이 있는 수열이 있을 때 차례로 세었을 때 ord0 째 숫자를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                1,
+                5,
+                5,
+                5,
+                7,
+                1,
+                5,
+                5,
+                5,
+                7,
+                1,
+                5,
+                5,
+                5,
+                7,
+                1,
+                5,
+                5,
+                5,
+                7
+            ],
+            "ord0": 51
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 1,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": " 7,5,7,4,4,1,6 이러한 패턴의 수열이 있습니다. 좌측에서 52번째 오는 수를 구하세요.",
+        "QuestionConv": "seq0 이러한 패턴의 수열이 있습니다. 좌측에서 ord0 번째 오는 수를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                7,
+                5,
+                7,
+                4,
+                4,
+                1,
+                6
+            ],
+            "ord0": 52
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 7,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "7,5,6,2,7,5,6,2,7,5,6,2,7,5,6,2 이와 같이 반복 될 때 왼쪽에서 50번째 오는 숫자는 무엇입니까?",
+        "QuestionConv": "seq0 이와 같이 반복 될 때 왼쪽에서 ord0 번째 오는 숫자는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                7,
+                5,
+                6,
+                2,
+                7,
+                5,
+                6,
+                2,
+                7,
+                5,
+                6,
+                2,
+                7,
+                5,
+                6,
+                2
+            ],
+            "ord0": 50
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 5,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": " 7,7,8,2,8,3,7,7,8,2,8,3,7,7,8,2,8,3,7,7,8,2,8,3 과 같이 규칙이 있는 수열이 있을 때 좌측에서 77번째 오는 수를 구하세요.",
+        "QuestionConv": "seq0 과 같이 규칙이 있는 수열이 있을 때 좌측에서 ord0 번째 오는 수를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                7,
+                7,
+                8,
+                2,
+                8,
+                3,
+                7,
+                7,
+                8,
+                2,
+                8,
+                3,
+                7,
+                7,
+                8,
+                2,
+                8,
+                3,
+                7,
+                7,
+                8,
+                2,
+                8,
+                3
+            ],
+            "ord0": 77
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 8,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1,6,8,3,7,1,6,8,3,7 이 반복되는 수가 있습니다. 32번째 숫자를 구하세요.",
+        "QuestionConv": "seq0 이 반복되는 수가 있습니다. ord0 번째 숫자를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                1,
+                6,
+                8,
+                3,
+                7,
+                1,
+                6,
+                8,
+                3,
+                7
+            ],
+            "ord0": 32
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 6,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "6,2,8,7,4,8,4,6,2,8,7,4,8,4,6,2,8,7,4,8,4,6,2,8,7,4,8,4 과 같이 규칙이 있는 수열이 있습니다. 차례로 세었을 때 64째 숫자가 무엇입니까?",
+        "QuestionConv": "seq0 과 같이 규칙이 있는 수열이 있습니다. 차례로 세었을 때 ord0 째 숫자가 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                6,
+                2,
+                8,
+                7,
+                4,
+                8,
+                4,
+                6,
+                2,
+                8,
+                7,
+                4,
+                8,
+                4,
+                6,
+                2,
+                8,
+                7,
+                4,
+                8,
+                4,
+                6,
+                2,
+                8,
+                7,
+                4,
+                8,
+                4
+            ],
+            "ord0": 64
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 6,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "6,4,7,1,6,4,7,1,6,4,7,1,6,4,7,1 보기의 규칙을 보고 왼쪽에서 34번째 오는 숫자는 무엇입니까?",
+        "QuestionConv": "seq0 보기의 규칙을 보고 왼쪽에서 ord0 번째 오는 숫자는 무엇입니까?",
+        "Numbers": {
+            "seq": [
+                6,
+                4,
+                7,
+                1,
+                6,
+                4,
+                7,
+                1,
+                6,
+                4,
+                7,
+                1,
+                6,
+                4,
+                7,
+                1
+            ],
+            "ord0": 34
+        },
+        "Equation": "func_findord(func_findbasicseq(seq , none), ord0)",
+        "Answer": 4,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "3,8,1,3,3,8,1,3,3,8,1,3,3,8,1,3 나열된 수열의 규칙을 파악하여 앞에서 56째 숫자가 무엇입니까?",
+        "QuestionConv": "seq0 나열된 수열의 규칙을 파악하여 앞에서 ord0 째 숫자가 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                3,
+                8,
+                1,
+                3,
+                3,
+                8,
+                1,
+                3,
+                3,
+                8,
+                1,
+                3,
+                3,
+                8,
+                1,
+                3
+            ],
+            "ord0": 56
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 3,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "2,7,8,1,8,9,9,2,7,8,1,8,9,9 보기의 규칙을 보고 차례로 세었을 때 40째 숫자가 무엇입니까?",
+        "QuestionConv": "seq0 보기의 규칙을 보고 차례로 세었을 때 ord0 째 숫자가 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                7,
+                8,
+                1,
+                8,
+                9,
+                9,
+                2,
+                7,
+                8,
+                1,
+                8,
+                9,
+                9
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 8,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "8,7,1,4,1,8,7,1,4,1,8,7,1,4,1,8,7,1,4,1 과 같은 수열이 있습니다. 좌측에서 78번째 숫자를 구하세요.",
+        "QuestionConv": "seq0 과 같은 수열이 있습니다. 좌측에서 ord0 번째 숫자를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                8,
+                7,
+                1,
+                4,
+                1,
+                8,
+                7,
+                1,
+                4,
+                1,
+                8,
+                7,
+                1,
+                4,
+                1,
+                8,
+                7,
+                1,
+                4,
+                1
+            ],
+            "ord0": 78
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 1,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "5,9,4,7,3,5,9,4,7,3,5,9,4,7,3,5,9,4,7,3 나열된 수열의 규칙을 파악하여 좌측에서 39째 숫자가 무엇입니까?",
+        "QuestionConv": "seq0 나열된 수열의 규칙을 파악하여 좌측에서 ord0 째 숫자가 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                5,
+                9,
+                4,
+                7,
+                3,
+                5,
+                9,
+                4,
+                7,
+                3,
+                5,
+                9,
+                4,
+                7,
+                3,
+                5,
+                9,
+                4,
+                7,
+                3
+            ],
+            "ord0": 39
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 7,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "6,2,8,6,6,2,8,6,6,2,8,6,6,2,8,6 과 같이 규칙이 있는 수열이 있을 때 차례로 세었을 때 74번째 숫자를 구하세요.",
+        "QuestionConv": "seq0 과 같이 규칙이 있는 수열이 있을 때 차례로 세었을 때 ord0 번째 숫자를 구하세요.",
+        "Numbers": {
+            "seq0": [
+                6,
+                2,
+                8,
+                6,
+                6,
+                2,
+                8,
+                6,
+                6,
+                2,
+                8,
+                6,
+                6,
+                2,
+                8,
+                6
+            ],
+            "ord0": 74
+        },
+        "Equation": "func_findord(func_findbasicseq(seq0, none), ord0)",
+        "Answer": 2,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "왼쪽부터 빨간 모자를 쓴 사람 3명, 노란 모자를 쓴 사람 3명이 규칙을 가지고 있습니다. 이때 46째 색깔을 구하시오.",
+        "QuestionConv": "왼쪽부터 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명이 규칙을 가지고 있습니다. 이때 ord0 째 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                3,
+                3
+            ],
+            "ord0": 46
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "순서대로 빨간색 깃발 4개, 노란색 깃발 1개, 흰색 깃발 4개가 이와 같이 꽂혀 있습니다. 28째 색깔을 알아내시오. ",
+        "QuestionConv": "순서대로 col0 깃발 num0 개, col1 깃발 num1 개, col2 깃발 num2 개가 이와 같이 꽂혀 있습니다. ord0 째 색깔을 알아내시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                4,
+                1,
+                4
+            ],
+            "ord0": 28
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "순서대로 동그란 카드 3장, 네모난 카드 5장이 규칙을 가지고 놓여 있습니다. 이때 68번째 모양을 구하시오.",
+        "QuestionConv": "순서대로 sha0 카드 num0 장, sha1 카드 num1 장이 규칙을 가지고 놓여 있습니다. 이때 ord0 번째 모양을 구하시오.",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모"
+            ],
+            "rep": [
+                3,
+                5
+            ],
+            "ord0": 68
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "네모",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "책상위에 빨간색 카드 3장, 노란색 카드 1장, 흰색 카드 1장, 검정색 카드 4장이 반복해서 있습니다. 68째 색을 구하시오.",
+        "QuestionConv": "책상위에 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장, col3 카드 num3 장이 반복해서 있습니다. ord0 째 색을 구하시오..",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                3,
+                1,
+                1,
+                4
+            ],
+            "ord0": 68
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "흰색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "왼쪽부터 동그란 깃발 3개, 네모난 깃발 5개, 세모난 깃발 2개가 이 패턴으로 있습니다. 이때 62째 모양을 쓰시오.",
+        "QuestionConv": "왼쪽부터 sha0 깃발 num0 개, sha1 깃발 num1 개, sha2 깃발 num2 개가 이 패턴으로 있습니다. 이때 ord0 째 모양을 쓰시오.",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모",
+                "세모"
+            ],
+            "rep": [
+                3,
+                5,
+                2
+            ],
+            "ord0": 62
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "동그라미",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "책상위에 빨간색 카드 3장, 노란색 카드 5장, 흰색 카드 2장, 검정색 카드 5장이 이렇게 놓여 있습니다. 이때 30째 색을 쓰시오.",
+        "QuestionConv": "책상위에 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장, col3 카드 num3 장이 이렇게 놓여 있습니다. 이때 ord0 째 색을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                3,
+                5,
+                2,
+                5
+            ],
+            "ord0": 30
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "검은색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "순서대로 빨간 깃발 5개, 노란 깃발 2개, 흰 깃발 3개가 규칙을 가지고 있습니다. 이때 26번째 색깔을 쓰시오.",
+        "QuestionConv": "순서대로 col0 깃발 num0 개, col1 깃발 num1 개, col2 깃발 num2 개가 규칙을 가지고 있습니다. 이때 ord0 번째 색깔을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                5,
+                2,
+                3
+            ],
+            "ord0": 26
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "운동장에 빨간색 모자를 쓴 사람 4명, 노란색 모자를 쓴 사람 4명, 흰색 모자를 쓴 사람 1명, 검정색 모자를 쓴 사람 5명이 이와같이 서 있습니다. 69번째 색을 쓰시오.",
+        "QuestionConv": "운동장에 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명, col2 모자를 쓴 사람 num2 명, col3 모자를 쓴 사람 num3 명이 이와같이 서 있습니다. ord0 번째 색을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                4,
+                4,
+                1,
+                5
+            ],
+            "ord0": 69
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "검은색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "운동장에 빨간 모자를 쓴 사람 3명, 노란 모자를 쓴 사람 4명, 흰 모자를 쓴 사람 2명, 검정 모자를 쓴 사람 3명이 이 패턴으로 있습니다. 이때 61번째 색을 구하시오.",
+        "QuestionConv": "운동장에 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명, col2 모자를 쓴 사람 num2 명, col3 모자를 쓴 사람 num3 명이 이 패턴으로 있습니다. 이때 ord0 번째 색을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                3,
+                4,
+                2,
+                3
+            ],
+            "ord0": 61
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "차례로 빨간 지붕을 가진 집 2채, 노란 지붕을 가진 집 4채가 규칙을 가지고 지어져 있습니다. 이때 67째 색을 알아내시오.",
+        "QuestionConv": "차례로 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채가 규칙을 가지고 지어져 있습니다. 이때 ord0 째 색을 알아내시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                2,
+                4
+            ],
+            "ord0": 67
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "왼쪽부터 빨간색 지붕을 가진 집 1채, 노란색 지붕을 가진 집 1채, 흰색 지붕을 가진 집 2채, 검정색 지붕을 가진 집 5채가 규칙으로 지어져 있습니다. 이때 44째 색깔을 구하시오.",
+        "QuestionConv": "왼쪽부터 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채, col2 지붕을 가진 집 num2 채, col3 지붕을 가진 집 num3 채가 규칙으로 지어져 있습니다. 이때 ord0 째 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                1,
+                1,
+                2,
+                5
+            ],
+            "ord0": 44
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "검은색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "책상위에 빨간 카드 1장, 노란 카드 3장이 규칙을 가지고 있습니다. 이때 40번째 색을 쓰시오.",
+        "QuestionConv": "책상위에 col0 카드 num0 장, col1 카드 num1 장이 규칙을 가지고 있습니다. 이때 ord0 번째 색을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                1,
+                3
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "마을에 빨간색 지붕을 가진 집 2채, 노란색 지붕을 가진 집 5채, 흰색 지붕을 가진 집 3채가 반복되어 지어져 있습니다. 76째 색깔은?",
+        "QuestionConv": "마을에 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채, col2 지붕을 가진 집 num2 채가 반복되어 지어져 있습니다. ord0 째 색깔은?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                2,
+                5,
+                3
+            ],
+            "ord0": 76
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "앞에서부터 동그란 지붕을 가진 집 3채, 네모난 지붕을 가진 집 4채, 세모난 지붕을 가진 집 2채, 타원형 지붕을 가진 집 1채가 반복되어 있습니다. 이때 26번째 모양을 쓰시오.",
+        "QuestionConv": "앞에서부터 sha0 지붕을 가진 집 num0 채, sha1 지붕을 가진 집 num1 채, sha2 지붕을 가진 집 num2 채, sha3 지붕을 가진 집 num3 채가 반복되어 있습니다. 이때 ord0 번째 모양을 쓰시오.",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모",
+                "세모",
+                "타원"
+            ],
+            "rep": [
+                3,
+                4,
+                2,
+                1
+            ],
+            "ord0": 26
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "네모",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "운동장에 빨간 모자를 쓴 사람 2명, 노란 모자를 쓴 사람 1명, 흰 모자를 쓴 사람 1명, 검정 모자를 쓴 사람 3명이 이렇게 있습니다. 38째 색을 알아내시오.",
+        "QuestionConv": "운동장에 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명, col2 모자를 쓴 사람 num2 명, col3 모자를 쓴 사람 num3 명이 이렇게 있습니다. ord0 째 색을 알아내시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                2,
+                1,
+                1,
+                3
+            ],
+            "ord0": 38
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "앞에서부터 동그란 공 2개, 네모난 공 1개, 세모난 공 2개가 이렇게 있습니다. 이때 65째 모양은?",
+        "QuestionConv": "앞에서부터 sha0 공 num0 개, sha1 공 num1 개, sha2 공 num2 개가 이렇게 있습니다. 이때 ord0 째 모양은?",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모",
+                "세모"
+            ],
+            "rep": [
+                2,
+                1,
+                2
+            ],
+            "ord0": 65
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "세모",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "다음과 같은 규칙, 동그란 컵 2개, 네모난 컵 4개, 세모난 컵 5개가 이 패턴을 가지고 있습니다. 이때 78번째 모양을 구하시오.",
+        "QuestionConv": "다음과 같은 규칙, sha0 컵 num0 개, sha1 컵 num1 개, sha2 컵 num2 개가 이 패턴을 가지고 있습니다. 이때 ord0 번째 모양을 구하시오.",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모",
+                "세모"
+            ],
+            "rep": [
+                2,
+                4,
+                5
+            ],
+            "ord0": 78
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "동그라미",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "운동장에 빨간 모자를 쓴 사람 4명, 노란 모자를 쓴 사람 1명, 흰 모자를 쓴 사람 5명, 검정 모자를 쓴 사람 4명이 이 패턴으로 있습니다. 이때 75번째 색깔을 구하시오.",
+        "QuestionConv": "운동장에 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명, col2 모자를 쓴 사람 num2 명, col3 모자를 쓴 사람 num3 명이 이 패턴으로 있습니다. 이때 ord0 번째 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                4,
+                1,
+                5,
+                4
+            ],
+            "ord0": 78
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "흰색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "차례로 빨간색 카드 1장, 노란색 카드 1장, 흰색 카드 4장이 규칙을 가지고 있습니다. 56째 색은?",
+        "QuestionConv": "차례로 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장이 규칙을 가지고 있습니다. ord0 째 색은?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                1,
+                1,
+                4
+            ],
+            "ord0": 56
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "운동장에 빨간 모자를 쓴 사람 1명, 노란 모자를 쓴 사람 1명이 이렇게 있습니다. 34째 색깔을 쓰시오. ",
+        "QuestionConv": "운동장에 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명이 이렇게 있습니다. ord0 째 색깔을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                1,
+                1
+            ],
+            "ord0": 34
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "책상위에 빨간색 카드 5장, 노란색 카드 1장, 흰색 카드 2장이 이와같이 있습니다. 이때 67째 색깔은?",
+        "QuestionConv": "책상위에 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장이 이와같이 있습니다. 이때 ord0 째 색깔은?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                5,
+                1,
+                2
+            ],
+            "ord0": 67
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "다음의 규칙을 보고 문제를 푸시오. 빨간 공 5개, 노란 공 5개, 흰 공 1개가 이렇게 놓여 있습니다. 40째 색을 쓰시오.",
+        "QuestionConv": "다음의 규칙을 보고 문제를 푸시오. col0 공 num0 개, col1 공 num1 개, col2 공 num2 개가 이렇게 놓여 있습니다. ord0 째 색을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                5,
+                5,
+                1
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "다음의 규칙을 보고 문제를 푸시오. 빨간 모자를 쓴 사람 3명, 노란 모자를 쓴 사람 4명, 흰 모자를 쓴 사람 5명, 검정 모자를 쓴 사람 1명이 규칙으로 서 있습니다. 27번째 색깔을 구하시오.",
+        "QuestionConv": "다음의 규칙을 보고 문제를 푸시오. col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명, col2 모자를 쓴 사람 num2 명, col3 모자를 쓴 사람 num3 명이 규칙으로 서 있습니다. ord0 번째 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                3,
+                4,
+                5,
+                1
+            ],
+            "ord0": 27
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "책상위에 빨간 카드 5장, 노란 카드 3장, 흰 카드 3장, 검정 카드 4장이 이와같이 놓여 있습니다. 이때 35째 색을 알아내시오. ",
+        "QuestionConv": "책상위에 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장, col3 카드 num3 장이 이와같이 놓여 있습니다. 이때 ord0 째 색을 알아내시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                5,
+                3,
+                3,
+                4
+            ],
+            "ord0": 35
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "책상위에 빨간 카드 4장, 노란 카드 4장, 흰 카드 5장, 검정 카드 4장이 이 패턴을 가지고 있습니다. 33번째 색깔을 구하시오.",
+        "QuestionConv": "책상위에 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장, col3 카드 num3 장이 이 패턴을 가지고 있습니다. ord0 번째 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                4,
+                4,
+                5,
+                4
+            ],
+            "ord0": 33
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "검은색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "차례로 동그란 컵 5개, 네모난 컵 3개, 세모난 컵 3개, 타원형 컵 4개가 이렇게 놓여 있습니다. 이때 51번째 모양은?",
+        "QuestionConv": "차례로 sha0 컵 num0 개, sha1 컵 num1 개, sha2 컵 num2 개, sha3 컵 num3 개가 이렇게 놓여 있습니다. 이때 ord0 번째 모양은?",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모",
+                "세모",
+                "타원"
+            ],
+            "rep": [
+                5,
+                3,
+                3,
+                4
+            ],
+            "ord0": 51
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "네모",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "차례로 빨간 지붕을 가진 집 4채, 노란 지붕을 가진 집 2채, 흰 지붕을 가진 집 1채, 검정 지붕을 가진 집 5채가 규칙으로 지어져 있습니다. 82째 색깔을 구하시오.",
+        "QuestionConv": "차례로 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채, col2 지붕을 가진 집 num2 채, col3 지붕을 가진 집 num3 채가 규칙으로 지어져 있습니다. ord0 째 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                4,
+                2,
+                1,
+                5
+            ],
+            "ord0": 82
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "검은색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "차례로 빨간색 컵 2개, 노란색 컵 1개, 흰색 컵 5개, 검정색 컵 3개가 이 패턴을 가지고 놓여 있습니다. 이때 26번째 색은 무엇인가요?",
+        "QuestionConv": "차례로 col0 컵 num0 개, col1 컵 num1 개, col2 컵 num2 개, col3 컵 num3 개가 이 패턴을 가지고 놓여 있습니다. 이때 ord0 번째 색은 무엇인가요?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                2,
+                1,
+                5,
+                3
+            ],
+            "ord0": 26
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "흰색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "마을에 빨간색 지붕을 가진 집 1채, 노란색 지붕을 가진 집 5채, 흰색 지붕을 가진 집 1채가 반복되어 지어져 있습니다. 이때 52째 색깔을 구하시오.",
+        "QuestionConv": "마을에 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채, col2 지붕을 가진 집 num2 채가 반복되어 지어져 있습니다. 이때 ord0 째 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                1,
+                5,
+                1
+            ],
+            "ord0": 52
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "차례로 빨간 카드 2장, 노란 카드 4장, 흰 카드 2장, 검정 카드 5장이 이 패턴을 가지고 있습니다. 65번째 색깔을 쓰시오.",
+        "QuestionConv": "차례로 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장, col3 카드 num3 장이 이 패턴을 가지고 있습니다. ord0 번째 색깔을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                2,
+                4,
+                2,
+                5
+            ],
+            "ord0": 65
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "검은색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "앞에서부터 빨간 지붕을 가진 집 3채, 노란 지붕을 가진 집 4채, 흰 지붕을 가진 집 5채, 검정 지붕을 가진 집 4채가 규칙으로 지어져 있습니다. 이때 79째 색깔은?",
+        "QuestionConv": "앞에서부터 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채, col2 지붕을 가진 집 num2 채, col3 지붕을 가진 집 num3 채가 규칙으로 지어져 있습니다. 이때 ord0 째 색깔은?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                3,
+                4,
+                5,
+                4
+            ],
+            "ord0": 79
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "검은색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "다음의 규칙을 보고 문제를 푸시오. 빨간 모자를 쓴 사람 3명, 노란 모자를 쓴 사람 2명이 이렇게 서 있습니다. 이때 69번째 색깔은 무엇인가요?",
+        "QuestionConv": "다음의 규칙을 보고 문제를 푸시오. col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명이 이렇게 서 있습니다. 이때 ord0 번째 색깔은 무엇인가요?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                3,
+                2
+            ],
+            "ord0": 69
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "지붕위에 빨간 깃발 4개, 노란 깃발 5개, 흰 깃발 4개, 검정 깃발 1개가 반복해서 있습니다. 이때 49번째 색깔은?",
+        "QuestionConv": "지붕위에 col0 깃발 num0 개, col1 깃발 num1 개, col2 깃발 num2 개, col3 깃발 num3 개가 반복해서 있습니다. 이때 ord0 번째 색깔은?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검정색"
+            ],
+            "rep": [
+                4,
+                5,
+                4,
+                1
+            ],
+            "ord0": 49
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "왼쪽부터 빨간색 공 1개, 노란색 공 2개, 흰색 공 3개, 검정색 공 3개가 규칙을 가지고 있습니다. 이때 52째 색을 쓰시오. ",
+        "QuestionConv": "왼쪽부터 col0 공 num0 개, col1 공 num1 개, col2 공 num2 개, col3 공 num3 개가 규칙을 가지고 있습니다. 이때 ord0 째 색을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검정색"
+            ],
+            "rep": [
+                1,
+                2,
+                3,
+                3
+            ],
+            "ord0": 52
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "검정색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "왼쪽부터 빨간색 카드 2장, 노란색 카드 5장이 반복되어 있습니다. 50번째 색은?",
+        "QuestionConv": "왼쪽부터 col0 카드 num0 장, col1 카드 num1 장이 반복되어 있습니다. ord0 번째 색은?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                2,
+                5
+            ],
+            "ord0": 50
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "마을에 빨간색 지붕을 가진 집 5채, 노란색 지붕을 가진 집 3채, 흰색 지붕을 가진 집 4채가 이 패턴을 가지고 있습니다. 68번째 색깔은 무엇인가요?",
+        "QuestionConv": "마을에 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채, col2 지붕을 가진 집 num2 채가 이 패턴을 가지고 있습니다. ord0 번째 색깔은 무엇인가요?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                5,
+                3,
+                4
+            ],
+            "ord0": 68
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "차례로 빨간 지붕을 가진 집 3채, 노란 지붕을 가진 집 5채가 반복해서 있습니다. 51번째 색은?",
+        "QuestionConv": "차례로 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채가 반복해서 있습니다. ord0 번째 색은?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                3,
+                5
+            ],
+            "ord0": 51
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "운동장에 동그란 모자를 쓴 사람 4명, 네모난 모자를 쓴 사람 4명, 세모난 모자를 쓴 사람 5명이 반복해서 있습니다. 50째 모양을 쓰시오.",
+        "QuestionConv": "운동장에 sha0 모자를 쓴 사람 num0 명, sha1 모자를 쓴 사람 num1 명, sha2 모자를 쓴 사람 num2 명이 반복해서 있습니다. ord0 째 모양을 쓰시오.",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모",
+                "세모"
+            ],
+            "rep": [
+                4,
+                4,
+                5
+            ],
+            "ord0": 50
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "세모",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "책상위에 빨간색 카드 3장, 노란색 카드 1장, 흰색 카드 1장이 반복되어 있습니다. 이때 84째 색깔을 구하시오.",
+        "QuestionConv": "책상위에 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장이 반복되어 있습니다. 이때 ord0 째 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                3,
+                1,
+                1
+            ],
+            "ord0": 84
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "앞에서부터 빨간색 지붕을 가진 집 1채, 노란색 지붕을 가진 집 2채, 흰색 지붕을 가진 집 3채, 검정색 지붕을 가진 집 3채가 이와같이 있습니다. 이때 38째 색깔은 무엇인가요?",
+        "QuestionConv": "앞에서부터 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채, col2 지붕을 가진 집 num2 채, col3 지붕을 가진 집 num3 채가 이와같이 있습니다. 이때 ord0 째 색깔은 무엇인가요?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검정색"
+            ],
+            "rep": [
+                1,
+                2,
+                3,
+                3
+            ],
+            "ord0": 38
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "차례로 빨간색 지붕을 가진 집 1채, 노란색 지붕을 가진 집 4채가 규칙으로 지어져 있습니다. 30번째 색깔은 무엇인가요?",
+        "QuestionConv": "차례로 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채가 규칙으로 지어져 있습니다. ord0 번째 색깔은 무엇인가요?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                1,
+                4
+            ],
+            "ord0": 30
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "왼쪽부터 동그란 컵 1개, 네모난 컵 5개, 세모난 컵 4개가 이 패턴을 가지고 있습니다. 73번째 모양은 무엇인가요?",
+        "QuestionConv": "왼쪽부터 sha0 컵 num0 개, sha1 컵 num1 개, sha2 컵 num2 개가 이 패턴을 가지고 있습니다. ord0 번째 모양은 무엇인가요?",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모",
+                "세모"
+            ],
+            "rep": [
+                1,
+                5,
+                4
+            ],
+            "ord0": 73
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "네모",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "다음과 같은 규칙, 빨간 모자를 쓴 사람 4명, 노란 모자를 쓴 사람 1명, 흰 모자를 쓴 사람 3명이 이렇게 서 있습니다. 이때 53번째 색을 알아내시오.",
+        "QuestionConv": "다음과 같은 규칙, col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명, col2 모자를 쓴 사람 num2 명이 이렇게 서 있습니다. 이때 ord0 번째 색을 알아내시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                4,
+                1,
+                3
+            ],
+            "ord0": 53
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "다음의 규칙을 보고 문제를 푸시오. 빨간 카드 4장, 노란 카드 1장이 이 패턴을 가지고 있습니다. 55번째 색을 구하시오.",
+        "QuestionConv": "다음의 규칙을 보고 문제를 푸시오. col0 카드 num0 장, col1 카드 num1 장이 이 패턴을 가지고 있습니다. ord0 번째 색을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                4,
+                1
+            ],
+            "ord0": 55
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "앞에서부터 빨간색 카드 1장, 노란색 카드 1장, 흰색 카드 5장, 검정색 카드 5장이 이 패턴을 가지고 있습니다. 이때 31번째 색을 알아내시오.",
+        "QuestionConv": "앞에서부터 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장, col3 카드 num3 장이 이 패턴을 가지고 있습니다. 이때 ord0 번째 색을 알아내시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검정색"
+            ],
+            "rep": [
+                1,
+                1,
+                5,
+                5
+            ],
+            "ord0": 31
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "흰색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "마을에 빨간색 지붕을 가진 집 4채, 노란색 지붕을 가진 집 2채, 흰색 지붕을 가진 집 3채, 검정색 지붕을 가진 집 4채가 이 패턴으로 있습니다. 50번째 색은?",
+        "QuestionConv": "마을에 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채, col2 지붕을 가진 집 num2 채, col3 지붕을 가진 집 num3 채가 이 패턴으로 있습니다. ord0 번째 색은?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검정색"
+            ],
+            "rep": [
+                4,
+                2,
+                3,
+                4
+            ],
+            "ord0": 50
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "검정색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "지붕위에 빨간 깃발 2개, 노란 깃발 3개, 흰 깃발 2개가 반복되어 있습니다. 이때 75번째 색깔을 쓰시오.",
+        "QuestionConv": "지붕위에 col0 깃발 num0 개, col1 깃발 num1 개, col2 깃발 num2 개가 반복되어 있습니다. 이때 ord0 번째 색깔을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                2,
+                3,
+                2
+            ],
+            "ord0": 75
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "왼쪽부터 동그란 깃발 5개, 네모난 깃발 1개가 반복해서 꽂혀 있습니다. 이때 70째 모양을 쓰시오.",
+        "QuestionConv": "왼쪽부터 sha0 깃발 num0 개, sha1 깃발 num1 개가 반복해서 꽂혀 있습니다. 이때 ord0 째 모양을 쓰시오.",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모"
+            ],
+            "rep": [
+                5,
+                1
+            ],
+            "ord0": 70
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "동그라미",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "왼쪽부터 빨간 컵 4개, 노란 컵 2개, 흰 컵 5개가 이 패턴을 가지고 놓여 있습니다. 이때 41번째 색을 쓰시오.",
+        "QuestionConv": "왼쪽부터 col0 컵 num0 개, col1 컵 num1 개, col2 컵 num2 개가 이 패턴을 가지고 놓여 있습니다. 이때 ord0 번째 색을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                4,
+                2,
+                5
+            ],
+            "ord0": 41
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "흰색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "마을에 빨간 지붕을 가진 집 1채, 노란 지붕을 가진 집 2채, 흰 지붕을 가진 집 2채, 검정 지붕을 가진 집 2채가 이 패턴을 가지고 지어져 있습니다. 41째 색은 무엇인가요?",
+        "QuestionConv": "마을에 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채, col2 지붕을 가진 집 num2 채, col3 지붕을 가진 집 num3 채가 이 패턴을 가지고 지어져 있습니다. ord0 째 색은 무엇인가요?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검정색"
+            ],
+            "rep": [
+                1,
+                2,
+                2,
+                2
+            ],
+            "ord0": 41
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "검정색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "다음의 규칙을 보고 문제를 푸시오. 동그란 깃발 5개, 네모난 깃발 2개, 세모난 깃발 3개가 규칙으로 있습니다. 이때 79째 모양을 쓰시오.",
+        "QuestionConv": "다음의 규칙을 보고 문제를 푸시오. sha0 깃발 num0 개, sha1 깃발 num1 개, sha2 깃발 num2 개가 규칙으로 있습니다. 이때 ord0 째 모양을 쓰시오.",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모",
+                "세모"
+            ],
+            "rep": [
+                5,
+                2,
+                3
+            ],
+            "ord0": 79
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "세모",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "다음과 같은 규칙, 빨간 지붕을 가진 집 3채, 노란 지붕을 가진 집 2채, 흰 지붕을 가진 집 1채가 이 패턴을 가지고 있습니다. 이때 50번째 색을 알아내시오.",
+        "QuestionConv": "다음과 같은 규칙, col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채, col2 지붕을 가진 집 num2 채가 이 패턴을 가지고 있습니다. 이때 ord0 번째 색을 알아내시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                3,
+                2,
+                1
+            ],
+            "ord0": 50
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "앞에서부터 빨간색 모자를 쓴 사람 3명, 노란색 모자를 쓴 사람 3명, 흰색 모자를 쓴 사람 1명이 이렇게 있습니다. 44번째 색은?",
+        "QuestionConv": "앞에서부터 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명, col2 모자를 쓴 사람 num2 명이 이렇게 있습니다. ord0 번째 색은?",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                3,
+                3,
+                1
+            ],
+            "ord0": 44
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "다음의 규칙을 보고 문제를 푸시오. 빨간 카드 5장, 노란 카드 4장이 규칙으로 있습니다. 42째 색을 알아내시오.",
+        "QuestionConv": "다음의 규칙을 보고 문제를 푸시오. col0 카드 num0 장, col1 카드 num1 장이 규칙으로 있습니다. ord0 째 색을 알아내시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                5,
+                4
+            ],
+            "ord0": 42
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "순서대로 빨간색 모자를 쓴 사람 2명, 노란색 모자를 쓴 사람 4명이 이 패턴으로 서 있습니다. 이때 62째 색을 쓰시오.",
+        "QuestionConv": "순서대로 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명이 이 패턴으로 서 있습니다. 이때 ord0 째 색을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                2,
+                4
+            ],
+            "ord0": 62
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "마을에 빨간 지붕을 가진 집 5채, 노란 지붕을 가진 집 3채, 흰 지붕을 가진 집 3채, 검정 지붕을 가진 집 2채가 이렇게 지어져 있습니다. 75번째 색깔을 알아내시오.",
+        "QuestionConv": "마을에 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채, col2 지붕을 가진 집 num2 채, col3 지붕을 가진 집 num3 채가 이렇게 지어져 있습니다. ord0 번째 색깔을 알아내시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                5,
+                3,
+                3,
+                2
+            ],
+            "ord0": 75
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "흰색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "차례로 빨간 컵 3개, 노란 컵 1개가 이 패턴을 가지고 놓여 있습니다. 48번째 색깔을 구하시오.",
+        "QuestionConv": "차례로 col0 컵 num0 개, col1 컵 num1 개가 이 패턴을 가지고 놓여 있습니다. ord0 번째 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                3,
+                1
+            ],
+            "ord0": 48
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "왼쪽부터 빨간색 지붕을 가진 집 1채, 노란색 지붕을 가진 집 3채, 흰색 지붕을 가진 집 2채, 검정색 지붕을 가진 집 4채가 이 패턴을 가지고 지어져 있습니다. 이때 64째 색깔을 알아내시오.",
+        "QuestionConv": "왼쪽부터 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채, col2 지붕을 가진 집 num2 채, col3 지붕을 가진 집 num3 채가 이 패턴을 가지고 지어져 있습니다. 이때 ord0 째 색깔을 알아내시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검은색"
+            ],
+            "rep": [
+                1,
+                3,
+                2,
+                4
+            ],
+            "ord0": 64
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "왼쪽부터 빨간 컵 2개, 노란 컵 4개, 흰 컵 2개가 이 패턴을 가지고 있습니다. 55째 색깔을 쓰시오.",
+        "QuestionConv": "왼쪽부터 col0 컵 num0 개, col1 컵 num1 개, col2 컵 num2 개가 이 패턴을 가지고 있습니다. ord0 째 색깔을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                2,
+                4,
+                2
+            ],
+            "ord0": 55
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "흰색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "책상위에 빨간 카드 4장, 노란 카드 2장, 흰 카드 5장, 검정 카드 1장이 규칙을 가지고 있습니다. 25째 색깔을 쓰시오.",
+        "QuestionConv": "책상위에 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장, col3 카드 num3 장이 규칙을 가지고 있습니다. ord0 째 색깔을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색",
+                "검정색"
+            ],
+            "rep": [
+                4,
+                2,
+                5,
+                1
+            ],
+            "ord0": 25
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "운동장에 빨간 모자를 쓴 사람 2명, 노란 모자를 쓴 사람 1명, 흰 모자를 쓴 사람 4명이 이렇게 서 있습니다. 55째 색깔을 구하시오.",
+        "QuestionConv": "운동장에 col0 모자를 쓴 사람 num0 명, col1 모자를 쓴 사람 num1 명, col2 모자를 쓴 사람 num2 명이 이렇게 서 있습니다. ord0 째 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                2,
+                1,
+                4
+            ],
+            "ord0": 55
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "흰색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "왼쪽부터 빨간 지붕을 가진 집 3채, 노란 지붕을 가진 집 3채가 이와같이 있습니다. 이때 49번째 색깔을 쓰시오.",
+        "QuestionConv": "왼쪽부터 col0 지붕을 가진 집 num0 채, col1 지붕을 가진 집 num1 채가 이와같이 있습니다. 이때 ord0 번째 색깔을 쓰시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                3,
+                3
+            ],
+            "ord0": 49
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "차례로 동그란 모자를 쓴 사람 3명, 네모난 모자를 쓴 사람 2명, 세모난 모자를 쓴 사람 5명, 타원형 모자를 쓴 사람 3명이 규칙으로 있습니다. 82번째 모양을 알아내시오.",
+        "QuestionConv": "차례로 sha0 모자를 쓴 사람 num0 명, sha1 모자를 쓴 사람 num1 명, sha2 모자를 쓴 사람 num2 명, sha3 모자를 쓴 사람 num3 명이 규칙으로 있습니다. ord0 번째 모양을 알아내시오.",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모",
+                "세모",
+                "타원"
+            ],
+            "rep": [
+                3,
+                2,
+                5,
+                3
+            ],
+            "ord0": 82
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "네모",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "앞에서부터 동그란 컵 2개, 네모난 컵 5개, 세모난 컵 3개, 타원형 컵 4개가 규칙으로 놓여 있습니다. 이때 77째 모양은?",
+        "QuestionConv": "앞에서부터 sha0 컵 num0 개, sha1 컵 num1 개, sha2 컵 num2 개, sha3 컵 num3 개가 규칙으로 놓여 있습니다. 이때 ord0 째 모양은?",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모",
+                "세모",
+                "타원"
+            ],
+            "rep": [
+                2,
+                5,
+                3,
+                4
+            ],
+            "ord0": 77
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "네모",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "다음과 같은 규칙, 동그란 지붕을 가진 집 4채, 네모난 지붕을 가진 집 4채, 세모난 지붕을 가진 집 1채가 이 패턴으로 지어져 있습니다. 이때 51번째 모양을 쓰시오.",
+        "QuestionConv": "다음과 같은 규칙, sha0 지붕을 가진 집 num0 채, sha1 지붕을 가진 집 num1 채, sha2 지붕을 가진 집 num2 채가 이 패턴으로 지어져 있습니다. 이때 ord0 번째 모양을 쓰시오.",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모",
+                "세모"
+            ],
+            "rep": [
+                4,
+                4,
+                1
+            ],
+            "ord0": 51
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "네모",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "책상위에 빨간 카드 5장, 노란 카드 4장, 흰 카드 2장이 이 패턴을 가지고 있습니다. 이때 52번째 색깔을 구하시오.",
+        "QuestionConv": "책상위에 col0 카드 num0 장, col1 카드 num1 장, col2 카드 num2 장이 이 패턴을 가지고 있습니다. 이때 ord0 번째 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색",
+                "흰색"
+            ],
+            "rep": [
+                5,
+                4,
+                2
+            ],
+            "ord0": 52
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "노란색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "지붕위에 빨간 깃발 5개, 노란 깃발 4개가 이 패턴을 가지고 꽂혀 있습니다. 55째 색깔을 구하시오",
+        "QuestionConv": "지붕위에 col0 깃발 num0 개, col1 깃발 num1 개가 이 패턴을 가지고 꽂혀 있습니다. ord0 째 색깔을 구하시오.",
+        "Numbers": {
+            "col": [
+                "빨간색",
+                "노란색"
+            ],
+            "rep": [
+                5,
+                4
+            ],
+            "ord0": 55
+        },
+        "Equation": "func_findord(func_findbasicseq(col, rep), ord0)",
+        "Answer": "빨간색",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "100개의 사탕을 태형, 남준, 윤기, 석진 4명에게 순서대로 2 개씩 나누어 줍니다. 59번째 사탕을 받는 사람은 누구입니까?",
+        "QuestionConv": "num0 개의 사탕을 nae0, nae1, nae2, nae3 num1 명에게 순서대로 rep0 개씩 나누어 줍니다. ord0 번째 사탕을 받는 사람은 누구입니까?",
+        "Numbers": {
+            "nae": [
+                "태형",
+                "남준",
+                "윤기",
+                "석진"
+            ],
+            "rep": [
+                2,
+                2,
+                2,
+                2
+            ],
+            "ord0": 59
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "남준",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "책상위에 동그란 카드 5장, 네모난 카드 5장, 세모난 카드 5장, 타원형 카드 4장이 반복되어 있습니다. 39번째 모양은 무엇인가요?",
+        "QuestionConv": "책상위에 sha0 카드 num0 장, sha1 카드 num1 장, sha2 카드 num2 장, sha3 카드 num3 장이 반복되어 있습니다. ord0 번째 모양은 무엇인가요?",
+        "Numbers": {
+            "sha": [
+                "동그라미",
+                "네모",
+                "세모",
+                "타원"
+            ],
+            "rep": [
+                5,
+                5,
+                5,
+                4
+            ],
+            "ord0": 39
+        },
+        "Equation": "func_findord(func_findbasicseq(sha, rep), ord0)",
+        "Answer": "동그라미",
+        "Type": "Textrule 2"
+    },
+    {
+        "Question": "100개의 사탕을 태형, 남준 2명에게 순서대로 2 개씩 나누어 줍니다. 40번째 사탕을 받는 사람은 누구입니까?",
+        "QuestionConv": "num0 개의 사탕을 nae0, nae1 num1 명에게 순서대로 rep0 개씩 나누어 줍니다. ord0 번째 사탕을 받는 사람은 누구입니까?",
+        "Numbers": {
+            "nae": [
+                "태형",
+                "남준"
+            ],
+            "rep": [
+                2,
+                2
+            ],
+            "ord0": 40
+        },
+        "Equation": "func_findord(func_findbasicseq(nae, rep), ord0)",
+        "Answer": "남준",
+        "Type": "Textrule 2"
+    }
+]

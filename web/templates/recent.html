@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+	<title>MathAI</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='images/MathAI Logo.png')}}">
+</head>
+<body>
+	<div class="head">
+	<div id="header">
+		<a href="/" class="logo">
+		    <h1>MathAI</h1>
+		</a>
+		<ul id="navigation">
+			<li class="selected">
+				<a href="/">홈</a>
+			</li>
+			<li>
+				<a href="type">문제유형</a>
+			</li>
+			<li>
+				<a href="recent">최근문제</a>
+			</li>
+		</ul>
+	</div>
+    </div>
+    <div class="recents">
+        <h2>문제</h2>
+        <hr />
+        <div class="indent">
+	    <ul>
+            {{ rq }}
+	    </ul>
+        </div>
+        <h2>파이썬 코드 풀이</h2>
+        <hr />
+        <div class="indent">
+            <ul>
+            {% for i in recpc %}
+                {% if (i[0]==" ")and(i[4]!=" ") %}
+                    &nbsp;&nbsp;&nbsp;&nbsp;{{ i }}<br>
+                {% elif (i[0]==" ")and(i[4]==" ") %}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ i }}<br>
+                {% else %}
+                    {{ i }}<br>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
+		<h2>한글 풀이</h2>
+		<hr />
+		<div class="indent">
+            <ul>
+            {% for i in recans %}
+            {{ i }}<br>
+            {% endfor %}
+            </ul>
+		</div>
+    </div>
+	<div id="footer">
+		<div>
+			<p>&copy; 2021 by MathAI. All rights reserved.</p>
+		</div>
+	</div>
+</body>
+</html>

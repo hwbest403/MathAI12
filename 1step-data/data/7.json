@@ -1,0 +1,2737 @@
+[
+    {
+        "Question": "수들의 규칙을 찾고, A 안에 알맞은 수를 써넣으세요 821, 721, 621, 521, A",
+        "QuestionConv": "수들의 규칙을 찾고, unk0 안에 알맞은 수를 써넣으세요 seq0",
+        "Numbers": {
+            "seq0": [
+                821,
+                721,
+                621,
+                521,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 421,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "규칙에 따라 수를 늘어놓은 것입니다. A 안에 들어갈 수를 써 보세요. 5, 3, 2, 5, 3, 2, 5, 3, A, 5",
+        "QuestionConv": "규칙에 따라 수를 늘어놓은 것입니다. unk0 안에 들어갈 수를 써 보세요. seq0",
+        "Numbers": {
+            "seq0": [
+                5,
+                3,
+                2,
+                5,
+                3,
+                2,
+                5,
+                3,
+                "A",
+                5
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 2,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1, 17, 33, 49, 65와 같은 규칙에서 25번째 놓일 수와 40번째 놓일 수를 각각 A와 B라 할 때, B-A를 구하시오. ",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk1 opr0 unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                1,
+                17,
+                33,
+                49,
+                65
+            ],
+            "ord0": 25,
+            "ord1": 40,
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "-"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))))",
+        "Answer": 240,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 규칙에 따라 4, 7, 10, A, 16, 19를 배열하였습니다. A에 알맞은 수를 구하시오.",
+        "QuestionConv": "자연수를 규칙에 따라 seq0 를 배열하였습니다. unk0 에 알맞은 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                4,
+                7,
+                10,
+                "A",
+                16,
+                19
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 13,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1, 5, 14, 30, 55, 91과 같은 규칙으로 수를 배열하고 있습니다. 9 번째 수는 무엇입니까?",
+        "QuestionConv": "seq0 과 같은 규칙으로 수를 배열하고 있습니다. ord0 번째 수는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                5,
+                14,
+                30,
+                55,
+                91
+            ],
+            "ord0": 7
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 140,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "A 안에 알맞은 수를 써넣으세요 51,52,53,54,55,56,57,58,59,60,A",
+        "QuestionConv": "unk0 안에 알맞은 수를 써넣으세요 seq0",
+        "Numbers": {
+            "seq0": [
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 61,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "수 배열표를 보고 A 안에 알맞은 수를 써넣으세요.111,211,311,411,511, A",
+        "QuestionConv": "수 배열표를 보고 unk0 안에 알맞은 수를 써넣으세요. seq0",
+        "Numbers": {
+            "seq0": [
+                111,
+                211,
+                311,
+                411,
+                511,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 611,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "규칙적인 수의 배열에서 A에 알맞은 수를 써넣으세요 4,8,16,32, A",
+        "QuestionConv": "규칙적인 수의 배열에서 unk0 에 알맞은 수를 써넣으세요 seq0",
+        "Numbers": {
+            "seq0": [
+                4,
+                8,
+                16,
+                32,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 64.0,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "수 배열표를 보고 22번째 들어갈 수를 찾으세요 1,3,5,7,9,11,13",
+        "QuestionConv": "수 배열표를 보고 ord0 번째 들어갈 수를 찾으세요 seq0",
+        "Numbers": {
+            "seq0": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13
+            ],
+            "ord0": 22
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 43,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 수를 일정한 순서로 1,4,12,25,43,66, A 를 배열하였다. A의 값을 구하시오",
+        "QuestionConv": "어떤 수를 일정한 순서로 seq0 를 배열하였다. unk0 의 값을 구하시오",
+        "Numbers": {
+            "seq0": [
+                1,
+                4,
+                12,
+                25,
+                43,
+                66,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 94,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 차례로 A,8,15,22, 29 를 배열하였습니다. A는?",
+        "QuestionConv": "어떤 값을 차례로 seq0 를 배열하였습니다. unk0 는?",
+        "Numbers": {
+            "seq0": [
+                "A",
+                8,
+                15,
+                22,
+                29
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 1,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "임의의 값을 규칙을 정하여 2, 10, 18, 26, A, 42 가 놓였습니다. A에 알맞은 수를 구하시오.",
+        "QuestionConv": "임의의 값을 규칙을 정하여 seq0 가 놓였습니다. unk0 에 알맞은 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                2,
+                10,
+                18,
+                26,
+                "A",
+                42
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 34,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "임의의 수를 다음과 같이 7,A,27,37,47,57 를 배열했을 때, A에 들어갈 수는?",
+        "QuestionConv": "임의의 수를 다음과 같이 seq0 를 배열했을 때, unk0 에 들어갈 수는?",
+        "Numbers": {
+            "seq0": [
+                7,
+                "A",
+                27,
+                37,
+                47,
+                57
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 17,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "임의의 수를 다음과 같이 3,7,11,A,19,23 를 세웠을 때, A에 들어갈 수는?",
+        "QuestionConv": "임의의 수를 다음과 같이 seq0 를 세웠을 때, unk0 에 들어갈 수는?",
+        "Numbers": {
+            "seq0": [
+                3,
+                7,
+                11,
+                "A",
+                19,
+                23
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 15,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 규칙에 따라 1250, 60, 40, 70, 80, 1250, 60, 40,70,80, A 이렇게 배열하였습니다. A의 수를 구하시오.",
+        "QuestionConv": "자연수를 규칙에 따라 seq0 이렇게 배열하였습니다. unk0 의 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                1250,
+                60,
+                40,
+                70,
+                80,
+                1250,
+                60,
+                40,
+                70,
+                80,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 1250,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 규칙을 정하여 2,12,72,432,A,15552 이렇게 배열하였습니다. A의 값을 구하시오",
+        "QuestionConv": "자연수를 규칙을 정하여 seq0 이렇게 배열하였습니다. unk0 의 값을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                2,
+                12,
+                72,
+                432,
+                "A",
+                15552
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 2592,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 수를 차례로 1296,216,36,6,A 를 세웠을 때, A의 값을 구하시오.",
+        "QuestionConv": "어떤 수를 차례로 seq0 를 세웠을 때, unk0 의 값을 구하시오",
+        "Numbers": {
+            "seq0": [
+                1296,
+                216,
+                36,
+                6,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 1,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "임의의 값을 다음과 같이 90, A, 76, 69, 62 가 놓였다. A의 값은?",
+        "QuestionConv": "임의의 값을 다음과 같이 seq0 가 놓였다. unk0 의 값은?",
+        "Numbers": {
+            "seq0": [
+                90,
+                "A",
+                76,
+                69,
+                62
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 83,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "임의의 값을 규칙에 따라 6,12, 18, 24, 30 를 배열했을 때, 12번째 놓일 수와 15번째 놓일 수를 각각 A와 B라 할 때, A+B를 구하시오.",
+        "QuestionConv": "임의의 값을 규칙에 따라 seq0 를 배열했을 때, ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk0 opr0 unk1 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                6,
+                12,
+                18,
+                24,
+                30
+            ],
+            "ord0": 12,
+            "ord1": 15,
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "+"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1))))",
+        "Answer": 162,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙에 따라 4,7, 10 ,13 ,16, 19 이렇게 배열하였습니다. 8번째 놓일 수와 10번째 놓일 수를 각각 A와 B라 할 때, A*B를 구하시오.",
+        "QuestionConv": "어떤 값을 규칙에 따라 seq0 이렇게 배열하였습니다. ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk0 opr0 unk1 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                4,
+                7,
+                10,
+                13,
+                16,
+                19
+            ],
+            "ord0": 8,
+            "ord1": 10,
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "*"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1))))",
+        "Answer": 775,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 수를 규칙에 따라 54, 18, 6, A 가 놓였을 때, A의 수를 구하시오.",
+        "QuestionConv": "어떤 수를 규칙에 따라 seq0 가 놓였을 때, unk0 의 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                54,
+                18,
+                6,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 2,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 다음과 같이 2, 6, 10, 14, A 를 정렬하였습니다. A와 3, 5, 7, 9, 11, B를 정렬 하였을 때 B를 구하여 A-B 값은?",
+        "QuestionConv": "어떤 값을 다음과 같이 seq0 를 정렬하였습니다. unk0 와 seq1 를 정렬 하였을 때 unk1 를 구하여 unk0 opr0 unk1 값은?",
+        "Numbers": {
+            "seq0": [
+                2,
+                6,
+                10,
+                14,
+                "A"
+            ],
+            "seq1": [
+                3,
+                5,
+                7,
+                9,
+                11,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "-"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq1, func_transform_list(func_findrule(seq1,none), func_findindex(seq1, unk1)))))",
+        "Answer": 5,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 수를 규칙에 따라 5,15,45,A,405,1215 를 놨을 때, A의 수를 구하시오.",
+        "QuestionConv": "어떤 수를 규칙에 따라 seq0 를 놨을 때, unk0 의 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                5,
+                15,
+                45,
+                "A",
+                405,
+                1215
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 135,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 차례로 700000,A,7000,700,70,7 이렇게 배열하였습니다. A를 구하시오.",
+        "QuestionConv": "자연수를 차례로 seq0 이렇게 배열하였습니다. unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                700000,
+                "A",
+                7000,
+                700,
+                70,
+                7
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 70000,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 차례로 A,8,32,128,512 이렇게 배열하였습니다. A를 구하시오.",
+        "QuestionConv": "자연수를 차례로 seq0 이렇게 배열하였습니다. unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                8,
+                32,
+                128,
+                512
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 2,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙에 따라 6,A, 20,27,34,41,48, B를 배열했을 때, A와 B를 구하고 B-A를 하여라",
+        "QuestionConv": "어떤 값을 규칙에 따라 seq0 를 배열했을 때, unk0 와 unk1 를 구하고 unk1 opr0 unk0 를 하여라",
+        "Numbers": {
+            "seq0": [
+                6,
+                "A",
+                20,
+                27,
+                34,
+                41,
+                48,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "-"
+        },
+        "Equation": "func_operator(opr0 ,func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))))",
+        "Answer": 42,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 다음과 같이 A,70,700,7000,70000 이렇게 배열하였다. A에 들어갈 알맞은 수를 구하시오.",
+        "QuestionConv": "어떤 값을 다음과 같이 seq0 이렇게 배열하였다. unk0 에 들어갈 알맞은 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                70,
+                700,
+                7000,
+                70000
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 7,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 규칙에 따라 A,11,9,7,5 가 놓였습니다. A의 수를 구하시오.",
+        "QuestionConv": "자연수를 규칙에 따라 seq0 가 놓였습니다. unk0 의 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                11,
+                9,
+                7,
+                5
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 13,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 수를 규칙에 따라 110,89,68,A,26,5, 를 배열했을 때, A에 들어갈 알맞은 수를 구하시오.",
+        "QuestionConv": "어떤 수를 규칙에 따라 seq0 를 배열했을 때, unk0 에 들어갈 알맞은 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                110,
+                89,
+                68,
+                "A",
+                26,
+                5
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 47,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 일정한 순서로 1,16,31, 46, A 가 놓였습니다. A에 들어갈 수는?",
+        "QuestionConv": "자연수를 일정한 순서로 seq0 가 놓였습니다. unk0 에 들어갈 수는?",
+        "Numbers": {
+            "seq0": [
+                1,
+                16,
+                31,
+                46,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 61,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 수를 차례로 A,6,9, 12, 15, B 이렇게 배열했을 때, A와 B를 구하고 B/ A를 하여라",
+        "QuestionConv": "어떤 수를 차례로 seq0 이렇게 배열했을 때, unk0 와 unk1 를 구하고 unk1 opr0 unk0 를 하여라",
+        "Numbers": {
+            "seq0": [
+                "A",
+                6,
+                9,
+                12,
+                15,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "/"
+        },
+        "Equation": "func_operator(opr0 ,func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1)))))",
+        "Answer": 6,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙을 정하여 A,7,8,9,10,B 를 정렬했을 때, A와 B를 구하고 A * B를 하여라",
+        "QuestionConv": "어떤 값을 규칙을 정하여 seq0 를 정렬했을 때, unk0 와 unk1 를 구하고 unk0 opr0 unk1 를 하여라",
+        "Numbers": {
+            "seq0": [
+                "A",
+                7,
+                8,
+                9,
+                10,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "*"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1)))))",
+        "Answer": 66,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "임의의 값을 다음과 같이 45, A, 35, 30, 25, 20 를 배열하였습니다. A의 값을 구하시오",
+        "QuestionConv": "임의의 값을 다음과 같이 seq0 를 배열하였습니다. unk0 의 값을 구하시오",
+        "Numbers": {
+            "seq0": [
+                45,
+                "A",
+                35,
+                30,
+                25,
+                20
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 40,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "자연수를 다음과 같이 A, 12, 19, 26, 33, 40, 47 를 배열하였습니다. A는?",
+        "QuestionConv": "자연수를 다음과 같이 seq0 를 배열하였습니다. unk0 는?",
+        "Numbers": {
+            "seq0": [
+                "A",
+                12,
+                19,
+                26,
+                33,
+                40,
+                47
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 5,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 값을 차례로 7, 11, 15, 19, 23, A, 31 이렇게 배열하였다. A는?",
+        "QuestionConv": "어떤 값을 차례로 seq0 이렇게 배열하였다. unk0 는?",
+        "Numbers": {
+            "seq0": [
+                7,
+                11,
+                15,
+                19,
+                23,
+                "A",
+                31
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 27,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "자연수를 다음과 같이 2, 2, 1, 5, 6, 2, 2, 1, 5, 6, 2, A 를 배열하였습니다. A에 알맞은 수를 구하시오.",
+        "QuestionConv": "자연수를 다음과 같이 seq0 를 배열하였습니다. unk0 에 알맞은 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                2,
+                2,
+                1,
+                5,
+                6,
+                2,
+                2,
+                1,
+                5,
+                6,
+                2,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 2,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 값을 일정한 순서로 2,5,8,11,14 를 배열하였다. 25번째 놓일 수와 40번째 놓일 수를 각각 A와 B라 할 때, B-A를 구하시오.",
+        "QuestionConv": "어떤 값을 일정한 순서로 seq0 를 배열하였다. ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk1 opr0 unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                2,
+                5,
+                8,
+                11,
+                14
+            ],
+            "ord0": 25,
+            "ord1": 40,
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "-"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))))",
+        "Answer": 45,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 일정한 순서로 10000,1000,100,10,A 를 배열했을 때, A에 알맞은 수를 구하시오.",
+        "QuestionConv": "자연수를 일정한 순서로 seq0 를 배열했을 때, unk0 에 알맞은 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                10000,
+                1000,
+                100,
+                10,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 1.0,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "임의의 값을 차례로 4, 3, 12, 4, 3, 12, 4, A 를 세웠을 때, A를 구하시오.",
+        "QuestionConv": "임의의 값을 차례로 seq0 를 세웠을 때, unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                4,
+                3,
+                12,
+                4,
+                3,
+                12,
+                4,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 3,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 값을 차례로 3, 1, 2, 4, 3, 1, A, 4를 배열하였습니다. A를 구하시오.",
+        "QuestionConv": "어떤 값을 차례로 seq0 를 배열하였습니다. unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                3,
+                1,
+                2,
+                4,
+                3,
+                1,
+                "A",
+                4
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 2.0,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 값을 규칙에 따라 100, 100, 100, 100, A 를 배열하였습니다. A에 알맞은 수를 구하시오.",
+        "QuestionConv": "어떤 값을 규칙에 따라 seq0 를 배열하였습니다. unk0 에 알맞은 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                100,
+                100,
+                100,
+                100,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 100,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 값을 일정한 순서로 9, 2, 16, 9, 2, 16, 9, 2, A 이렇게 배열했을 때, A의 값을 구하시오",
+        "QuestionConv": "어떤 값을 일정한 순서로 seq0 이렇게 배열했을 때, unk0 의 값을 구하시오",
+        "Numbers": {
+            "seq0": [
+                9,
+                2,
+                16,
+                9,
+                2,
+                16,
+                9,
+                2,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 16,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 값을 다음과 같이 16807,2401,343,A,7,1 를 배열하였다. A의 값을 구하시오",
+        "QuestionConv": "어떤 값을 다음과 같이 seq0 를 배열하였다. unk0 의 값을 구하시오",
+        "Numbers": {
+            "seq0": [
+                16807,
+                2401,
+                343,
+                "A",
+                7,
+                1
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 49,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "자연수를 일정한 순서로 A, 14, 21, 28, 35 이렇게 배열하였다. A에 알맞은 수를 구하시오.",
+        "QuestionConv": "자연수를 일정한 순서로 seq0 이렇게 배열하였다. unk0 에 알맞은 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                14,
+                21,
+                28,
+                35
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 7,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 값을 규칙을 정하여 5, 8 , A,  14, 17, 20를 세웠을 때, A의 값은?",
+        "QuestionConv": "어떤 값을 규칙을 정하여 seq0 를 세웠을 때, unk0 의 값은?",
+        "Numbers": {
+            "seq0": [
+                5,
+                8,
+                "A",
+                14,
+                17,
+                20
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 11,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "자연수를 규칙에 따라 6, 9, 12, 15, 18, A 가 놓였습니다. A의 값을 구하시오",
+        "QuestionConv": "자연수를 규칙에 따라 seq0 가 놓였습니다. unk0 의 값을 구하시오",
+        "Numbers": {
+            "seq0": [
+                6,
+                9,
+                12,
+                15,
+                18,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 21,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 값을 일정한 순서로 A, 42, 35, 28, 21, 14 를 배열했을 때, A는?",
+        "QuestionConv": "어떤 값을 일정한 순서로 seq0 를 배열했을 때, unk0 는?",
+        "Numbers": {
+            "seq0": [
+                "A",
+                42,
+                35,
+                28,
+                21,
+                14
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 49,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "임의의 수를 규칙에 따라 162,A,18,6,2 를 배열했을 때, A에 들어갈 수는?",
+        "QuestionConv": "임의의 수를 규칙에 따라 seq0 를 배열했을 때, unk0 에 들어갈 수는?",
+        "Numbers": {
+            "seq0": [
+                162,
+                "A",
+                18,
+                6,
+                2
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 54.0,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 수를 규칙을 정하여 108, 88, 68, A, 28, 8 를 정렬했을 때, A의 값을 구하시오",
+        "QuestionConv": "어떤 수를 규칙을 정하여 seq0 를 정렬했을 때, unk0 의 값을 구하시오",
+        "Numbers": {
+            "seq0": [
+                108,
+                88,
+                68,
+                "A",
+                28,
+                8
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 48,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 수를 차례로 A, 12, 36, 108, 324를 세웠을 때, A의 값은?",
+        "QuestionConv": "어떤 수를 차례로 seq0 를 세웠을 때, unk0 의 값은?",
+        "Numbers": {
+            "seq0": [
+                "A",
+                12,
+                36,
+                108,
+                324
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 4.0,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 수를 차례로  6, 18, A, 162, 486 를 세웠을 때, A의 값은?",
+        "QuestionConv": "어떤 수를 차례로 seq0 를 세웠을 때, unk0 의 값은?",
+        "Numbers": {
+            "seq0": [
+                6,
+                18,
+                "A",
+                162,
+                486
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 54.0,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 수를 차례로 2, 4, 8, 16, 32, A 를 세웠을 때, A의 값은?",
+        "QuestionConv": "어떤 수를 차례로 seq0 를 세웠을 때, unk0 의 값은?",
+        "Numbers": {
+            "seq0": [
+                2,
+                4,
+                8,
+                16,
+                32,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 64.0,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "자연수를 규칙에 따라 A, 5000, 500, 50, 5 를 세웠을 때, A의 값은?",
+        "QuestionConv": "자연수를 규칙에 따라 seq0 를 세웠을 때, unk0 의 값은?",
+        "Numbers": {
+            "seq0": [
+                "A",
+                5000,
+                500,
+                50,
+                5
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 50000.0,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 수를 차례로 243,81,A,9,3 를 세웠을 때, A의 값은?",
+        "QuestionConv": "어떤 수를 차례로 seq0 를 세웠을 때, unk0 의 값은?",
+        "Numbers": {
+            "seq0": [
+                243,
+                81,
+                "A",
+                9,
+                3
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 27.0,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 수를 규칙을 정하여 1024, 256, 64, 16, A 를 정렬했을 때, A의 값을 구하시오",
+        "QuestionConv": "어떤 수를 규칙을 정하여 seq0 를 정렬했을 때, unk0 의 값을 구하시오",
+        "Numbers": {
+            "seq0": [
+                1024,
+                256,
+                64,
+                16,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 4.0,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 수를 규칙에 따라 5,25,5,25,5,25,5,25,A 를 놨을 때, A를 구하시오.",
+        "QuestionConv": "어떤 수를 규칙에 따라 seq0 를 놨을 때, unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                5,
+                25,
+                5,
+                25,
+                5,
+                25,
+                5,
+                25,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 5,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 값을 일정한 순서로 32, 16, 32, 16, 32, A, 32 이렇게 배열했을 때, A의 값을 구하시오.",
+        "QuestionConv": "어떤 값을 일정한 순서로 seq0 이렇게 배열했을 때, unk0 의 값을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                32,
+                16,
+                32,
+                16,
+                32,
+                "A",
+                32
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 16,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 값을 일정한 순서로 5, 7 ,2, 5, 7, 2, 5, 7, 2, A 이렇게 배열했을 때, A의 값을 구하시오.",
+        "QuestionConv": "어떤 값을 일정한 순서로 seq0 이렇게 배열했을 때, unk0 의 값을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                5,
+                7,
+                2,
+                5,
+                7,
+                2,
+                5,
+                7,
+                2,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 5,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "어떤 값을 일정한 순서로 1,2,3,4,1,2,3,4, 1,2, A 이렇게 배열했을 때, A의 값을 구하시오.",
+        "QuestionConv": "어떤 값을 일정한 순서로 seq0 이렇게 배열했을 때, unk0 의 값을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                4,
+                1,
+                2,
+                3,
+                4,
+                1,
+                2,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 3,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "임의의 값을 규칙에 따라 3, 13, 23, 33 ,43 ,53 를 배열했을 때, 8번째 놓일 수와 10번째 놓일 수를 각각 A와 B라 할 때, A+B를 구하시오.",
+        "QuestionConv": "임의의 값을 규칙에 따라 seq0 를 배열했을 때, ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk0 opr0 unk1 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                3,
+                13,
+                23,
+                33,
+                43,
+                53
+            ],
+            "ord0": 8,
+            "ord1": 10,
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "+"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1))))",
+        "Answer": 166,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "5, 12, 19, 26, 33와 같은 규칙에서 17번째 놓일 수와 21번째 놓일 수를 각각 A와 B라 할 때, B-A를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk1 opr0 unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                5,
+                12,
+                19,
+                26,
+                33
+            ],
+            "ord0": 17,
+            "ord1": 21,
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "-"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))))",
+        "Answer": 28,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "2, 5, 8, 11, 14, 17와 같은 규칙에서 40번째 놓일 수와 32번째 놓일 수를 각각 A와 B라 할 때, A- B를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk0 opr0 unk1 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                2,
+                5,
+                8,
+                11,
+                14,
+                17
+            ],
+            "ord0": 40,
+            "ord1": 32,
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "-"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1))))",
+        "Answer": 24,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "임의의 값을 규칙에 따라 11, 15, 19, 23, 27 를 배열했을 때, 6번째 놓일 수와 11번째 놓일 수를 각각 A와 B라 할 때, A*B를 구하시오.",
+        "QuestionConv": "임의의 값을 규칙에 따라 seq0 를 배열했을 때, ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk0 opr0 unk1 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                11,
+                15,
+                19,
+                23,
+                27
+            ],
+            "ord0": 6,
+            "ord1": 11,
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "*"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1))))",
+        "Answer": 1581,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "임의의 값을 규칙에 따라 0, 5, 10, 15, 20, 25 를 배열했을 때, 7번째 놓일 수와 25번째 놓일 수를 각각 A와 B라 할 때, B / A를 구하시오",
+        "QuestionConv": "임의의 값을 규칙에 따라 seq0 를 배열했을 때, ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk1 opr0 unk0 를 구하시오",
+        "Numbers": {
+            "seq0": [
+                0,
+                5,
+                10,
+                15,
+                20,
+                25
+            ],
+            "ord0": 7,
+            "ord1": 25,
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "/"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))))",
+        "Answer": 4.0,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "임의의 값을 규칙에 따라 4, 8, 12, 16, 20, 24 를 배열했을 때, 10번째 놓인 수와 2번째 놓일 수를 각각 A와 B라 할 때, A / B를 구하시오.",
+        "QuestionConv": "임의의 값을 규칙에 따라 seq0 를 배열했을 때, ord0 번째 놓인 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk0 opr0 unk1 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                4,
+                8,
+                12,
+                16,
+                20,
+                24
+            ],
+            "ord0": 10,
+            "ord1": 2,
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "/"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1))))",
+        "Answer": 5.0,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "수의 순서에 맞게 A에 알맞은 수를 써넣으세요. 81, 83, 85, 87, 89, 91, 93, 95, A",
+        "QuestionConv": "수의 순서에 맞게 unk0 에 알맞은 수를 써넣으세요. seq0",
+        "Numbers": {
+            "seq0": [
+                81,
+                83,
+                85,
+                87,
+                89,
+                91,
+                93,
+                95,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 97,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "자연수를 일정한 순서로 A, 6,8,10,12,14, 16, B를 배열하였습니다. 각각 A와 B를 구하여, B- A를 구하시오.",
+        "QuestionConv": "자연수를 일정한 순서로 seq0 를 배열하였습니다. 각각 unk0 와 unk1 를 구하여, unk1 opr0 unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                6,
+                8,
+                10,
+                12,
+                14,
+                16,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "-"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))))",
+        "Answer": 14,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 일정한 순서로 3, A, 7, 9, 11, B, 15를 배열하였습니다. 각각 A와 B를 구하여, A * B를 구하시오.",
+        "QuestionConv": "자연수를 일정한 순서로 seq0 를 배열하였습니다. 각각 unk0 와 unk1 를 구하여, unk0 opr0 unk1 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                3,
+                "A",
+                7,
+                9,
+                11,
+                "B",
+                15
+            ],
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "*"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1)))))",
+        "Answer": 65,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 일정한 순서로 A, 4, 6, 8, 10, B, 14를 배열하였습니다. 각각 A와 B를 구하여,  B / A를 구하시오.",
+        "QuestionConv": "자연수를 일정한 순서로 seq0 를 배열하였습니다. 각각 unk0 와 unk1 를 구하여, unk1 opr0 unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                4,
+                6,
+                8,
+                10,
+                "B",
+                14
+            ],
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "/"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))))",
+        "Answer": 6.0,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 규칙을 정하여 81,61,41,21,A 가 놓였다. A를 구하시오.",
+        "QuestionConv": "자연수를 규칙을 정하여 seq0 가 놓였다. unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                81,
+                61,
+                41,
+                21,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 1,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 일정한 순서로 2,6, 9 ,2 , 6, 9, 2,6, 9 ,2, A 이렇게 배열했을 때, A의 값을 구하시오.",
+        "QuestionConv": "어떤 값을 일정한 순서로 seq0 이렇게 배열했을 때, unk0 의 값을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                2,
+                6,
+                9,
+                2,
+                6,
+                9,
+                2,
+                6,
+                9,
+                2,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 6,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 일정한 순서로 22, 15 ,16, 17, 22, 15, 16, 17, 22, 15 이렇게 배열했을 때 22번째 수를 A라할때 A의 값을 구하시오.",
+        "QuestionConv": "어떤 값을 일정한 순서로 seq0 이렇게 배열했을 때 ord0 번째 수를 unk0 라할때 unk0 의 값을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                22,
+                15,
+                16,
+                17,
+                22,
+                15,
+                16,
+                17,
+                22,
+                15
+            ],
+            "ord0": 22,
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 15,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 일정한 순서로 1, 3, 9, 27, 81 이렇게 배열했을 때 8번째 수의 값을 구하시오.",
+        "QuestionConv": "어떤 값을 일정한 순서로 seq0 이렇게 배열했을 때 ord0 번째 수의 값을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                1,
+                3,
+                9,
+                27,
+                81
+            ],
+            "ord0": 8
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 2187.0,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 일정한 순서로 2187, 729, 243, 81, 27  이렇게 배열했을 때 7번째 수의 값을 구하시오.",
+        "QuestionConv": "어떤 값을 일정한 순서로 seq0 이렇게 배열했을 때 ord0 번째 수의 값을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                2187,
+                729,
+                243,
+                81,
+                27
+            ],
+            "ord0": 7
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 3.0,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1, 5, 14, 30, 55, A 과 같은 규칙으로 수를 배열하고 있습니다. A의 값은 무엇입니까?",
+        "QuestionConv": "seq0 과 같은 규칙으로 수를 배열하고 있습니다. unk0 의 값은 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                5,
+                14,
+                30,
+                55,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 91,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 수를 일정한 순서로 1,4,12,25,43 를 배열하였다. 6번째 의 값을 구하시오",
+        "QuestionConv": "어떤 수를 일정한 순서로 seq0 를 배열하였다. ord0 번째 의 값을 구하시오",
+        "Numbers": {
+            "seq0": [
+                1,
+                4,
+                12,
+                25,
+                43
+            ],
+            "ord0": 6
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 66,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 규칙을 정하여 A, 4, 8, 16, 32 이렇게 배열하였습니다. A의 값을 구하시오",
+        "QuestionConv": "자연수를 규칙을 정하여 seq0 이렇게 배열하였습니다. unk0 의 값을 구하시오",
+        "Numbers": {
+            "seq0": [
+                "A",
+                4,
+                8,
+                16,
+                32
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 2.0,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 일정한 순서로 A, 729, 243, 81,  27 이렇게 배열했을 때 A의 값을 구하시오.",
+        "QuestionConv": "어떤 값을 일정한 순서로 seq0 이렇게 배열했을 때 unk0 의 값을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                729,
+                243,
+                81,
+                27
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 2187.0,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "2,5,10,17,26,37,50 와 같은 규칙에서 10번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                2,
+                5,
+                10,
+                17,
+                26,
+                37,
+                50
+            ],
+            "ord0": 10
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 101,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "3,6,11,18,27 와 같은 규칙에서 8번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                3,
+                6,
+                11,
+                18,
+                27
+            ],
+            "ord0": 8
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 66,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "5,8,13,20,29,40 와 같은 규칙에서 10번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                5,
+                8,
+                13,
+                20,
+                29,
+                40
+            ],
+            "ord0": 10
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 104,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "7,10,15,22,31 와 같은 규칙에서 12번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                7,
+                10,
+                15,
+                22,
+                31
+            ],
+            "ord0": 12
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 150,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "11,14,19,26,35 와 같은 규칙에서 10번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                11,
+                14,
+                19,
+                26,
+                35
+            ],
+            "ord0": 10
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 110,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "15,18,23,30,39 와 같은 규칙에서 8번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                15,
+                18,
+                23,
+                30,
+                39
+            ],
+            "ord0": 8
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 78,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "25,28,33,40,49 와 같은 규칙에서 9번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                25,
+                28,
+                33,
+                40,
+                49
+            ],
+            "ord0": 9
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 105,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "40,43,48,55,64,75 와 같은 규칙에서 9번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                40,
+                43,
+                48,
+                55,
+                64,
+                75
+            ],
+            "ord0": 9
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 120,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "49,52,57,64,73,84 와 같은 규칙에서 11번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                49,
+                52,
+                57,
+                64,
+                73,
+                84
+            ],
+            "ord0": 11
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 169,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "26,29,34,41,50,61 와 같은 규칙에서 10번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                26,
+                29,
+                34,
+                41,
+                50,
+                61
+            ],
+            "ord0": 10
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 125,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "31,34,39,46,55,66,79 와 같은 규칙에서 8번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                31,
+                34,
+                39,
+                46,
+                55,
+                66,
+                79
+            ],
+            "ord0": 8
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 94,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "50,53,58,65,74,85 와 같은 규칙에서 9번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                50,
+                53,
+                58,
+                65,
+                74,
+                85
+            ],
+            "ord0": 9
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 130,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1,4,9,16,25 와 같은 규칙에서 9번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                1,
+                4,
+                9,
+                16,
+                25
+            ],
+            "ord0": 9
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 81,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "4,7,12,19,28,39 와 같은 규칙에서 9번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                4,
+                7,
+                12,
+                19,
+                28,
+                39
+            ],
+            "ord0": 9
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 84,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "6,9,14,21,30 와 같은 규칙에서 8번째 놓일 수를 구하시오.",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                6,
+                9,
+                14,
+                21,
+                30
+            ],
+            "ord0": 8
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))",
+        "Answer": 69,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "주어진 수열이 다음과 같을 때, A 안에 알맞은 수를 써넣으세요 821, 721, 621, 521, A",
+        "QuestionConv": "주어진 수열이 다음과 같을 때, unk0 안에 알맞은 수를 써넣으세요 seq0",
+        "Numbers": {
+            "seq0": [
+                821,
+                721,
+                621,
+                521,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 421,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "주어진 수열이 다음과 같을 때, A 안에 알맞은 수를 써넣으세요 821, 721, 621, 521, A",
+        "QuestionConv": "주어진 수열이 다음과 같을 때, unk0 안에 알맞은 수를 써넣으세요 seq0",
+        "Numbers": {
+            "seq0": [
+                821,
+                721,
+                621,
+                521,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 421,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "주어진 수열이 다음과 같을 때, A 자리에 어떤 수가 들어가야 할까요? 821, 721, 621, 521, A",
+        "QuestionConv": "주어진 수열이 다음과 같을 때, unk0 자리에 어떤 수가 들어가야 할까요 seq0",
+        "Numbers": {
+            "seq0": [
+                821,
+                721,
+                621,
+                521,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 421,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "숫자를 나열해보았을 때, A 자리에 어떤 수가 들어가야 할까요? 821, 721, 621, 521, A",
+        "QuestionConv": "숫자를 나열해보았을 때, unk0 자리에 어떤 수가 들어가야 할까요 seq0",
+        "Numbers": {
+            "seq0": [
+                821,
+                721,
+                621,
+                521,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 421,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "821, 721, 621, 521, A에서 A에 어떤 수가 와야 할까요? ",
+        "QuestionConv": "seq0 에서 unk0 에 어떤 수가 와야 할까요",
+        "Numbers": {
+            "seq0": [
+                821,
+                721,
+                621,
+                521,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 421,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "규칙에 따라 수를 늘어놓은 것입니다. A 에 어떤 수가 들어가야 할까요? 5, 3, 2, 5, 3, 2, 5, 3, A, 5",
+        "QuestionConv": "규칙에 따라 수를 늘어놓은 것입니다. unk0 에 어떤 수가 들어가야 할까요? seq0",
+        "Numbers": {
+            "seq0": [
+                5,
+                3,
+                2,
+                5,
+                3,
+                2,
+                5,
+                3,
+                "A",
+                5
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 2,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "규칙을 찾아 A에 들어갈 숫자를 찾아라. 5, 3, 2, 5, 3, 2, 5, 3, A, 5",
+        "QuestionConv": "규칙을 찾아 unk0 에 들어갈 숫자를 찾아라. seq0",
+        "Numbers": {
+            "seq0": [
+                5,
+                3,
+                2,
+                5,
+                3,
+                2,
+                5,
+                3,
+                "A",
+                5
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 2,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "다음 수열을 관찰하고, 규칙을 찾아 A에 들어갈 숫자를 찾아라. 5, 3, 2, 5, 3, 2, 5, 3, A, 5",
+        "QuestionConv": "다음 수열을 관찰하고, 규칙을 찾아 unk0 에 들어갈 숫자를 찾아라. seq0",
+        "Numbers": {
+            "seq0": [
+                5,
+                3,
+                2,
+                5,
+                3,
+                2,
+                5,
+                3,
+                "A",
+                5
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 2,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "다음 수열에는 규칙이 있습니다. 규칙에 따라 A에 알맞은 수를 찾으세요. 5, 3, 2, 5, 3, 2, 5, 3, A, 5",
+        "QuestionConv": "다음 수열에는 규칙이 있습니다 규칙에 따라 unk0 에 알맞은 수를 찾으세요 seq0",
+        "Numbers": {
+            "seq0": [
+                5,
+                3,
+                2,
+                5,
+                3,
+                2,
+                5,
+                3,
+                "A",
+                5
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 2,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1, 17, 33, 49, 65와 같은 나열된 숫자에서 25번째에 들어갈 숫자와 40번째 들어갈 숫자를 각각 A와 B라 할 때, B-A를 구하시오. ",
+        "QuestionConv": "seq0 와 같은 나열된 숫자에서 ord0 번째에 들어갈 숫자와 ord1 번째 들어갈 숫자를 각각 unk0 와 unk1 라 할 때, unk1 opr0 unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                1,
+                17,
+                33,
+                49,
+                65
+            ],
+            "ord0": 25,
+            "ord1": 40,
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "-"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))))",
+        "Answer": 240,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1, 17, 33, 49, 65와 같은 규칙에서 25번째 놓일 수를 A라 하고, 40번째 놓일 수를 B라 할 때, B-A를 구하시오. ",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 unk0 라 하고, ord1 번째 놓일 수를 unk1 라 할 때, unk1 opr0 unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                1,
+                17,
+                33,
+                49,
+                65
+            ],
+            "ord0": 25,
+            "ord1": 40,
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "-"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0))))",
+        "Answer": 240,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1, 17, 33, 49, 65와 같은 규칙에서 25번째 놓일 수를 A라 하고, 40번째 놓일 수를 B라 할 때, B와 A의 차를 구하시오. ",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 unk0 라 하고, ord1 번째 놓일 수를 unk1 라 할 때, unk1 와 unk0 의 차를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                1,
+                17,
+                33,
+                49,
+                65
+            ],
+            "ord0": 25,
+            "ord1": 40,
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_minus(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)))",
+        "Answer": 240,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1, 17, 33, 49, 65와 같은 규칙에서 25번째 놓일 수를 A라 하고, 40번째 놓일 수를 B라 할 때, B에서 A를 뺀 값을 구하시오. ",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 unk0 라 하고, ord1 번째 놓일 수를 unk1 라 할 때, unk1 에서 unk0 를 뺀 값을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                1,
+                17,
+                33,
+                49,
+                65
+            ],
+            "ord0": 25,
+            "ord1": 40,
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_minus(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)))",
+        "Answer": 240,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1, 17, 33, 49, 65와 같은 규칙에서 25번째 놓일 수를 A라 하고, 40번째 놓일 수를 B라 할 때, B와 A의 합을 구하시오. ",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 unk0 라 하고, ord1 번째 놓일 수를 unk1 라 할 때, unk1 와 unk0 의 합을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                1,
+                17,
+                33,
+                49,
+                65
+            ],
+            "ord0": 25,
+            "ord1": 40,
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_add(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)))",
+        "Answer": 1010,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1, 17, 33, 49, 65와 같은 규칙에서 25번째 놓일 수를 A라 하고, 40번째 놓일 수를 B라 할 때, B에 A를 더한 값을 구하시오. ",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 unk0 라 하고, ord1 번째 놓일 수를 unk1 라 할 때, unk1 에 unk0 를 더한 값을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                1,
+                17,
+                33,
+                49,
+                65
+            ],
+            "ord0": 25,
+            "ord1": 40,
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_add(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)))",
+        "Answer": 1010,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "1, 17, 33, 49, 65와 같은 규칙에서 25번째 놓일 수를 A라 하고, 40번째 놓일 수를 B라 할 때, B와 A를 합치면 어떤 수가 나올까요? ",
+        "QuestionConv": "seq0 와 같은 규칙에서 ord0 번째 놓일 수를 unk0 라 하고, ord1 번째 놓일 수를 unk1 라 할 때, unk1 와 unk0 를 합치면 어떤 수가 나올까요?",
+        "Numbers": {
+            "seq0": [
+                1,
+                17,
+                33,
+                49,
+                65
+            ],
+            "ord0": 25,
+            "ord1": 40,
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_add(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)))",
+        "Answer": 1010,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 규칙에 따라 4, 7, 10, A, 16, 19를 늘어놓았습니다. A에 알맞은 수를 구하시오.",
+        "QuestionConv": "자연수를 규칙에 따라 seq0 를 늘어놓았습니다. unk0 에 알맞은 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                4,
+                7,
+                10,
+                "A",
+                16,
+                19
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 13,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 규칙에 따라 4, 7, 10, A, 16, 19를 늘어놓았습니다. A에 들어갈 숫자는 무엇일까요?",
+        "QuestionConv": "자연수를 규칙에 따라 seq0 를 늘어놓았습니다. unk0 에 들어갈 숫자는 무엇일까요?",
+        "Numbers": {
+            "seq0": [
+                4,
+                7,
+                10,
+                "A",
+                16,
+                19
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 13,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "자연수를 일정한 순서로 놓았습니다. 1,16,31, 46에서 바로 다음에 들어갈 수는?",
+        "QuestionConv": "자연수를 일정한 순서로 놓았습니다. seq0 에서 바로 다음에 들어갈 수는?",
+        "Numbers": {
+            "seq0": [
+                1,
+                16,
+                31,
+                46
+            ],
+            "one": 1
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0,none)))",
+        "Answer": 61,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "숫자를 나열해보았을 때, 맨 뒤에 어떤 수가 들어가야 할까요? 821, 721, 621, 521",
+        "QuestionConv": "숫자를 나열해보았을 때, 맨 뒤에 어떤 수가 들어가야 할까요 seq0",
+        "Numbers": {
+            "seq0": [
+                821,
+                721,
+                621,
+                521
+            ],
+            "one": 1
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0,none)))",
+        "Answer": 421,
+        "Type": "NumRule"
+    },
+    {
+        "Question": "A 자리에 들어갈 알맞은 수를 써넣으세요 51,52,53,54,55,56,57,58,59,60,A",
+        "QuestionConv": "unk0 자리에 들어갈 알맞은 수를 써넣으세요 seq0",
+        "Numbers": {
+            "seq0": [
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                "A"
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 61,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "맨 뒷 자리에 들어갈 알맞은 수를 써넣으세요 51,52,53,54,55,56,57,58,59,60",
+        "QuestionConv": "맨 뒷 자리에 들어갈 알맞은 수를 써넣으세요 seq0",
+        "Numbers": {
+            "seq0": [
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60
+            ],
+            "one": 1
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0,none)))",
+        "Answer": 61,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "수 배열표를 보고 제일 마지막에 들어갈 알맞은 수를 써넣으세요.111,211,311,411,511",
+        "QuestionConv": "수 배열표를 보고 제일 마지막에 들어갈 알맞은 수를 써넣으세요. seq0",
+        "Numbers": {
+            "seq0": [
+                111,
+                211,
+                311,
+                411,
+                511
+            ],
+            "one": 1
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0,none)))",
+        "Answer": 611,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "규칙적인 수의 배열에서 맨 뒤에 들어갈 알맞은 수를 써넣으세요 4,8,16,32",
+        "QuestionConv": "규칙적인 수의 배열에서 맨 뒤에 들어갈 알맞은 수를 써넣으세요 seq0",
+        "Numbers": {
+            "seq0": [
+                4,
+                8,
+                16,
+                32
+            ],
+            "one": 1
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0,none)))",
+        "Answer": 64.0,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "윤기가 임의의 숫자 규칙에 따라 4,7, 10 ,13 ,16, 19 이렇게 배열하였습니다. 8번째 놓일 수와 10번째 놓일 수를 각각 A와 B라 할 때, A*B를 구하시오.",
+        "QuestionConv": "nae0 가 임의의 숫자 규칙에 따라 seq0 이렇게 배열하였습니다. ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk0 opr0 unk1 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                4,
+                7,
+                10,
+                13,
+                16,
+                19
+            ],
+            "ord0": 8,
+            "ord1": 10,
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "*"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1))))",
+        "Answer": 775,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "윤기가 임의의 숫자 규칙에 따라 4,7, 10 ,13 ,16, 19 이렇게 배열하였습니다. 8번째 놓일 수와 10번째 놓일 수를 각각 A와 B라 할 때, A와 B의 곱을 구하시오.",
+        "QuestionConv": "nae0 가 임의의 숫자 규칙에 따라 seq0 이렇게 배열하였습니다. ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk0 와 unk1 의 곱을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                4,
+                7,
+                10,
+                13,
+                16,
+                19
+            ],
+            "ord0": 8,
+            "ord1": 10,
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_multiply(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)))",
+        "Answer": 775,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "윤기가 임의의 숫자 규칙에 따라 4,7, 10 ,13 ,16, 19 이렇게 배열하였습니다. 8번째 놓일 수와 10번째 놓일 수를 각각 A와 B라 할 때, A와 B의 차를 구하시오.",
+        "QuestionConv": "nae0 가 임의의 숫자 규칙에 따라 seq0 이렇게 배열하였습니다. ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk0 와 unk1 의 차를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                4,
+                7,
+                10,
+                13,
+                16,
+                19
+            ],
+            "ord0": 8,
+            "ord1": 10,
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_difference(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)),func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)))",
+        "Answer": 6,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "윤기가 임의의 숫자 규칙에 따라 4,7, 10 ,13 ,16, 19 이렇게 배열하였습니다. 8번째 놓일 수와 10번째 놓일 수를 각각 A와 B라 할 때, B와 A의 차를 구하시오.",
+        "QuestionConv": "nae0 가 임의의 숫자 규칙에 따라 seq0 이렇게 배열하였습니다. ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk1 와 unk0 의 차를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                4,
+                7,
+                10,
+                13,
+                16,
+                19
+            ],
+            "ord0": 8,
+            "ord1": 10,
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_difference(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)),func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)))",
+        "Answer": 6,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "윤기가 임의의 숫자 규칙에 따라 4,7, 10 ,13 ,16, 19 이렇게 배열하였습니다. 8번째 놓일 수와 10번째 놓일 수를 각각 A와 B라 할 때, B와 A의 합을 구하시오.",
+        "QuestionConv": "nae0 가 임의의 숫자 규칙에 따라 seq0 이렇게 배열하였습니다. ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk1 와 unk0 의 합을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                4,
+                7,
+                10,
+                13,
+                16,
+                19
+            ],
+            "ord0": 8,
+            "ord1": 10,
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_add(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)))",
+        "Answer": 56,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "윤기가 임의의 숫자 규칙에 따라 4,7, 10 ,13 ,16, 19 이렇게 배열하였습니다. 8번째 놓일 수와 10번째 놓일 수를 각각 A와 B라 할 때, B에서 A를 뺀 값을 구하시오.",
+        "QuestionConv": "nae0 가 임의의 숫자 규칙에 따라 seq0 이렇게 배열하였습니다. ord0 번째 놓일 수와 ord1 번째 놓일 수를 각각 unk0 와 unk1 라 할 때, unk1 에서 unk0 를 뺀 값을 구하시오.",
+        "Numbers": {
+            "seq0": [
+                4,
+                7,
+                10,
+                13,
+                16,
+                19
+            ],
+            "ord0": 8,
+            "ord1": 10,
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_minus(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord1)),func_seqval(seq0, func_transform_list(func_findrule(seq0,none), ord0)))",
+        "Answer": 6,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙에 따라 6,A, 20,27,34,41,48, B를 배열했을 때, A와 B를 구하고 B와 A의 차를 구하여라",
+        "QuestionConv": "어떤 값을 규칙에 따라 seq0 를 배열했을 때, unk0 와 unk1 를 구하고 unk1 와 unk0 의 차를 구하여라",
+        "Numbers": {
+            "seq0": [
+                6,
+                "A",
+                20,
+                27,
+                34,
+                41,
+                48,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_difference(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))),func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))))",
+        "Answer": 42,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙에 따라 6,A, 20,27,34,41,48, B를 배열했을 때, A와 B를 구하고 B와 A의 합을 구하여라",
+        "QuestionConv": "어떤 값을 규칙에 따라 seq0 를 배열했을 때, unk0 와 unk1 를 구하고 unk1 와 unk0 의 합을 구하여라",
+        "Numbers": {
+            "seq0": [
+                6,
+                "A",
+                20,
+                27,
+                34,
+                41,
+                48,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_add(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))),func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))))",
+        "Answer": 68,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙에 따라 6,A, 20,27,34,41,48, B를 배열했을 때, A와 B를 구하고 A와 B의 합을 구하여라",
+        "QuestionConv": "어떤 값을 규칙에 따라 seq0 를 배열했을 때, unk0 와 unk1 를 구하고 unk0 와 unk1 의 합을 구하여라",
+        "Numbers": {
+            "seq0": [
+                6,
+                "A",
+                20,
+                27,
+                34,
+                41,
+                48,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_add(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))),func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))))",
+        "Answer": 68,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙에 따라 6,A, 20,27,34,41,48, B를 배열했을 때, A와 B를 구하고 A와 B의 곱을 구하여라",
+        "QuestionConv": "어떤 값을 규칙에 따라 seq0 를 배열했을 때, unk0 와 unk1 를 구하고 unk0 와 unk1 의 곱을 구하여라",
+        "Numbers": {
+            "seq0": [
+                6,
+                "A",
+                20,
+                27,
+                34,
+                41,
+                48,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_multiply(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))),func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))))",
+        "Answer": 715,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙을 정하여 A, 81, 72, 63, 54, B 이렇게 배열하였습니다. A와 B를 구하고 A+B를 하여라.",
+        "QuestionConv": "어떤 값을 규칙을 정하여 seq0 이렇게 배열하였습니다. unk0 와 unk1 를 구하고 unk0 opr0 unk1 를 하여라.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                81,
+                72,
+                63,
+                54,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B",
+            "opr0": "+"
+        },
+        "Equation": "func_operator(opr0, func_transform_list(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1)))))",
+        "Answer": 135,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "윤기가 자연수를 규칙에 따라 놓았더니, A,11,9,7,5 가 놓였습니다. A의 수를 구하시오.",
+        "QuestionConv": "nae0 가 자연수를 규칙에 따라 놓았더니, seq0 가 놓였습니다. unk0 의 수를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                11,
+                9,
+                7,
+                5
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 13,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "윤기가 자연수를 규칙에 따라 놓았더니, A,11,9,7,5 가 놓였습니다. A를 구하시오.",
+        "QuestionConv": "nae0 가 자연수를 규칙에 따라 놓았더니, seq0 가 놓였습니다. unk0 를 구하시오.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                11,
+                9,
+                7,
+                5
+            ],
+            "unk0": "A"
+        },
+        "Equation": "func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0)))",
+        "Answer": 13,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙을 정하여 A, 81, 72, 63, 54, B 이렇게 배열하였습니다. A와 B를 구하고 A와 B를 더하여라.",
+        "QuestionConv": "어떤 값을 규칙을 정하여 seq0 이렇게 배열하였습니다. unk0 와 unk1 를 구하고 unk0 와 unk1 를 더하여라.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                81,
+                72,
+                63,
+                54,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_add(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))))",
+        "Answer": 135,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙을 정하여 A, 81, 72, 63, 54, B 이렇게 배열하였습니다. A와 B를 구하고 A와 B의 차를 구하여라.",
+        "QuestionConv": "어떤 값을 규칙을 정하여 seq0 이렇게 배열하였습니다. unk0 와 unk1 를 구하고 unk0 와 unk1 의 차를 구하여라.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                81,
+                72,
+                63,
+                54,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_difference(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))))",
+        "Answer": 45,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙을 정하여 A, 81, 72, 63, 54, B 이렇게 배열하였습니다. A와 B를 구하고 A와 B의 곱을 구하여라.",
+        "QuestionConv": "어떤 값을 규칙을 정하여 seq0 이렇게 배열하였습니다. unk0 와 unk1 를 구하고 unk0 와 unk1 의 곱을 구하여라.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                81,
+                72,
+                63,
+                54,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_multiply(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))))",
+        "Answer": 4050,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙을 정하여 A, 81, 72, 63, 54, B 이렇게 배열하였습니다. A와 B를 구하고 A를 B로 나눈 값을 구하여라.",
+        "QuestionConv": "어떤 값을 규칙을 정하여 seq0 이렇게 배열하였습니다. unk0 와 unk1 를 구하고 unk0 를 unk1 로 나눈 값을 구하여라.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                81,
+                72,
+                63,
+                54,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_divide(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))))",
+        "Answer": 2.0,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙을 정하여 A, 81, 72, 63, 54, B 이렇게 배열하였습니다. A와 B를 구하고 A와 B를 곱한 값을 구하여라.",
+        "QuestionConv": "어떤 값을 규칙을 정하여 seq0 이렇게 배열하였습니다. unk0 와 unk1 를 구하고 unk0 와 unk1 를 곱한 값을 구하여라.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                81,
+                72,
+                63,
+                54,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_multiply(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))))",
+        "Answer": 4050,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙을 정하여 A, 81, 72, 63, 54, B 이렇게 배열하였습니다. A와 B를 구하고 A와 B를 더한 값을 구하여라.",
+        "QuestionConv": "어떤 값을 규칙을 정하여 seq0 이렇게 배열하였습니다. unk0 와 unk1 를 구하고 unk0 와 unk1 를 더한 값을 구하여라.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                81,
+                72,
+                63,
+                54,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_add(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))))",
+        "Answer": 135,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙을 정하여 A, 81, 72, 63, 54, B 이렇게 배열하였습니다. A와 B를 구하고 A와 B를 더한 값은 무엇일까?",
+        "QuestionConv": "어떤 값을 규칙을 정하여 seq0 이렇게 배열하였습니다. unk0 와 unk1 를 구하고 unk0 와 unk1 를 더한 값은 무엇일까?",
+        "Numbers": {
+            "seq0": [
+                "A",
+                81,
+                72,
+                63,
+                54,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_add(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))))",
+        "Answer": 135,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙을 정하여 A, 81, 72, 63, 54, B 이렇게 배열하였습니다. A와 B를 구하고 A와 B를 곱한 값은 무엇일까?",
+        "QuestionConv": "어떤 값을 규칙을 정하여 seq0 이렇게 배열하였습니다. unk0 와 unk1 를 구하고 unk0 와 unk1 를 곱한 값은 무엇일까?",
+        "Numbers": {
+            "seq0": [
+                "A",
+                81,
+                72,
+                63,
+                54,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_multiply(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))))",
+        "Answer": 4050,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙을 정하여 A, 81, 72, 63, 54, B 이렇게 배열하였습니다. A와 B를 구하고 A를 B로 나눈 값은 무엇일까?",
+        "QuestionConv": "어떤 값을 규칙을 정하여 seq0 이렇게 배열하였습니다. unk0 와 unk1 를 구하고 unk0 를 unk1 로 나눈 값은 무엇일까?",
+        "Numbers": {
+            "seq0": [
+                "A",
+                81,
+                72,
+                63,
+                54,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_divide(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))))",
+        "Answer": 2.0,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 값을 규칙을 정하여 A, 81, 72, 63, 54, B 이렇게 배열하였습니다. A와 B를 구하고 A에서 B를 뺀 값을 구하여라.",
+        "QuestionConv": "어떤 값을 규칙을 정하여 seq0 이렇게 배열하였습니다. unk0 와 unk1 를 구하고 unk0 에서 unk1 를 뺀 값을 구하여라.",
+        "Numbers": {
+            "seq0": [
+                "A",
+                81,
+                72,
+                63,
+                54,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_minus(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))))",
+        "Answer": 45,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 수를 차례로 A,6,9, 12, 15, B 이렇게 배열했을 때, A와 B를 구하고 B를 A로 나누어라.",
+        "QuestionConv": "어떤 수를 차례로 seq0 이렇게 배열했을 때, unk0 와 unk1 를 구하고 unk1 를 unk0 로 나누어라",
+        "Numbers": {
+            "seq0": [
+                "A",
+                6,
+                9,
+                12,
+                15,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_divide(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))))",
+        "Answer": 6,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 수를 차례로 A,6,9, 12, 15, B 이렇게 배열했을 때, A와 B를 구하고 B와 A의 차를 구하여라.",
+        "QuestionConv": "어떤 수를 차례로 seq0 이렇게 배열했을 때, unk0 와 unk1 를 구하고 unk1 와 unk0 의 차를 구하여라",
+        "Numbers": {
+            "seq0": [
+                "A",
+                6,
+                9,
+                12,
+                15,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_difference(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))))",
+        "Answer": 15,
+        "Type": "Textrule 1"
+    },
+    {
+        "Question": "어떤 수를 차례로 A,6,9, 12, 15, B 이렇게 배열했을 때, A와 B를 구하고 A와 B의 차를 구하여라.",
+        "QuestionConv": "어떤 수를 차례로 seq0 이렇게 배열했을 때, unk0 와 unk1 를 구하고 unk0 와 unk1 의 차를 구하여라",
+        "Numbers": {
+            "seq0": [
+                "A",
+                6,
+                9,
+                12,
+                15,
+                "B"
+            ],
+            "unk0": "A",
+            "unk1": "B"
+        },
+        "Equation": "func_difference(func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk0))), func_seqval(seq0, func_transform_list(func_findrule(seq0,none), func_findindex(seq0, unk1))))",
+        "Answer": 15,
+        "Type": "Textrule 1"
+    }
+]

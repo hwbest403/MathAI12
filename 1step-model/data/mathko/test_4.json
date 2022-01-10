@@ -1,0 +1,658 @@
+[
+    {
+        "Question": "5개의 수 2, 9, 6, 8 ,7가 있습니다. 그 중에서 가장 큰 수 와 가장 작은 수의 차는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 그 중에서 가장 큰 수 와 가장 작은 수의 차는 얼마입니까 ?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                2,
+                9,
+                6,
+                8,
+                7
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindNumber(func_OrderedList(seq0, desc),first), func_FindNumber(func_OrderedList(seq0, desc),last)), sub)",
+        "Answer": 7,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 desc last sub",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 그 _ 중 에 서 _ 가 장 _ 큰 _ 수 _ 와 _ 가 장 _ 작 은 _ 수 의 _ 차 는 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 desc last sub"
+    },
+    {
+        "Question": "5개의 수 3,1,8,7,9가 있습니다. 내림차순으로 나열했을 때 맨 앞에 있는 수와 오름차순으로 나열했을때 가운데 있는 수의 합은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 내림차순으로 나열했을 때 맨 앞에 있는 수와 오름차순으로 나열했을때 가운데 있는 수의 합은 얼마입니까 ?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                3,
+                1,
+                8,
+                7,
+                9
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindNumber(func_OrderedList(seq0, desc), first), func_FindNumber(func_OrderedList(seq0, asc),middle)), add)",
+        "Answer": 16,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 asc middle add",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 내 림 차 순 으 로 _ 나 열 했 을 _ 때 _ 맨 _ 앞 에 _ 있 는 _ 수 와 _ 오 름 차 순 으 로 _ 나 열 했 을 때 _ 가 운 데 _ 있 는 _ 수 의 _ 합 은 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 asc middle add"
+    },
+    {
+        "Question": "151,130,26,156,37가 있습니다. 앞의 5개의 수를 작은 순으로 나열했을 때 그 중에서 2 번째에 있는 수는?",
+        "QuestionConv": "seq0 가 있습니다 . 앞의 num0 개의 수를 작은 순으로 나열했을 때 그 중에서 ord0 번째에 있는 수는 ?",
+        "Numbers": {
+            "seq0": [
+                151,
+                130,
+                26,
+                156,
+                37
+            ],
+            "num0": 5,
+            "ord0": 2
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc), ord0)",
+        "Answer": 151,
+        "Type": "NumFind_1",
+        "EquationConv": "func_FindNumber func_OrderedList seq0 desc ord0",
+        "src": "seq0 가 _ 있 습 니 다 _ 앞 의 _ num0 개 의 _ 수 를 _ 작 은 _ 순 으 로 _ 나 열 했 을 _ 때 _ 그 _ 중 에 서 _ ord0 번 째 에 _ 있 는 _ 수 는",
+        "trg": "func_FindNumber func_OrderedList seq0 desc ord0"
+    },
+    {
+        "Question": "2.3에 소수점을 왼쪽으로 한 자리 옮기면 A만큼 작아집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 왼쪽으로 dig0 자리 옮기면 unk0 만큼 작아집니다 . unk0 를 구하시오 .",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 2.3,
+            "unk0": "A"
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(left, dig0),num0)",
+        "Answer": 2.07,
+        "Type": "NumFind_1",
+        "EquationConv": "func_diff_Numbers func_movepoint left dig0 num0",
+        "src": "num0 에 _ 소 수 점 을 _ 왼 쪽 으 로 _ dig0 자 리 _ 옮 기 면 _ unk0 만 큼 _ 작 아 집 니 다 _ unk0 를 _ 구 하 시 오",
+        "trg": "func_diff_Numbers func_movepoint left dig0 num0"
+    },
+    {
+        "Question": "5개의 수 1,9, 6, 22, 15가 있습니다. 오름차순으로 나열했을 때 처음에 있는 수와 마지막에 있는 수의 곱은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 오름차순으로 나열했을 때 처음에 있는 수와 마지막에 있는 수의 곱은 얼마입니까 ?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                1,
+                9,
+                6,
+                22,
+                15
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindNumber(func_OrderedList(seq0, asc), first), func_FindNumber(func_OrderedList(seq0, asc),last)), mul)",
+        "Answer": 22,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 asc first func_FindNumber func_OrderedList seq0 asc last mul",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 오 름 차 순 으 로 _ 나 열 했 을 _ 때 _ 처 음 에 _ 있 는 _ 수 와 _ 마 지 막 에 _ 있 는 _ 수 의 _ 곱 은 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 asc first func_FindNumber func_OrderedList seq0 asc last mul"
+    },
+    {
+        "Question": "5개의 수 6,9, 3,1, 5가 있습니다. 오름차순으로 나열했을 때 마지막에 있는 수와 처음에 있는 수의 곱은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 오름차순으로 나열했을 때 마지막에 있는 수와 처음에 있는 수의 곱은 얼마입니까 ?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                6,
+                9,
+                3,
+                1,
+                5
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindNumber(func_OrderedList(seq0, asc), last), func_FindNumber(func_OrderedList(seq0, asc),first)), mul)",
+        "Answer": 9,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 asc last func_FindNumber func_OrderedList seq0 asc first mul",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 오 름 차 순 으 로 _ 나 열 했 을 _ 때 _ 마 지 막 에 _ 있 는 _ 수 와 _ 처 음 에 _ 있 는 _ 수 의 _ 곱 은 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 asc last func_FindNumber func_OrderedList seq0 asc first mul"
+    },
+    {
+        "Question": "0.5에 소수점을 왼쪽으로 세 자리 옮기면 A만큼 작아집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 왼쪽으로 dig0 자리 옮기면 unk0 만큼 작아집니다 . unk0 를 구하시오 .",
+        "Numbers": {
+            "dig0": 3,
+            "num0": 0.5,
+            "unk0": "A"
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(left, dig0),num0)",
+        "Answer": 0.5,
+        "Type": "NumFind_1",
+        "EquationConv": "func_diff_Numbers func_movepoint left dig0 num0",
+        "src": "num0 에 _ 소 수 점 을 _ 왼 쪽 으 로 _ dig0 자 리 _ 옮 기 면 _ unk0 만 큼 _ 작 아 집 니 다 _ unk0 를 _ 구 하 시 오",
+        "trg": "func_diff_Numbers func_movepoint left dig0 num0"
+    },
+    {
+        "Question": "151,130,26,156,37가 있습니다. 앞의 5개의 수를 작은 순으로 나열했을 때 그 중에서 2 번째에 있는 수는?",
+        "QuestionConv": "seq0 가 있습니다 . 앞의 num0 개의 수를 작은 순으로 나열했을 때 그 중에서 ord0 번째에 있는 수는 ?",
+        "Numbers": {
+            "seq0": [
+                151,
+                130,
+                26,
+                156,
+                37
+            ],
+            "num0": 5,
+            "ord0": 2
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc), ord0)",
+        "Answer": 151,
+        "Type": "NumFind_1",
+        "EquationConv": "func_FindNumber func_OrderedList seq0 desc ord0",
+        "src": "seq0 가 _ 있 습 니 다 _ 앞 의 _ num0 개 의 _ 수 를 _ 작 은 _ 순 으 로 _ 나 열 했 을 _ 때 _ 그 _ 중 에 서 _ ord0 번 째 에 _ 있 는 _ 수 는",
+        "trg": "func_FindNumber func_OrderedList seq0 desc ord0"
+    },
+    {
+        "Question": "7개의 수 3, 5, 132,92,91,124,36 가 있습니다. 2 번째로 큰 수는?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . ord0 번째로 큰 수는 ?",
+        "Numbers": {
+            "num0": 7,
+            "seq0": [
+                3,
+                5,
+                132,
+                92,
+                91,
+                124,
+                36
+            ],
+            "ord0": 2
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),ord0)",
+        "Answer": 124,
+        "Type": "NumFind_1",
+        "EquationConv": "func_FindNumber func_OrderedList seq0 desc ord0",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ ord0 번 째 로 _ 큰 _ 수 는",
+        "trg": "func_FindNumber func_OrderedList seq0 desc ord0"
+    },
+    {
+        "Question": "2.75에 소수점을 왼쪽으로 1 자리 옮기면 A만큼 작아집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 왼쪽으로 dig0 자리 옮기면 unk0 만큼 작아집니다 . unk0 를 구하시오 .",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 2.75,
+            "unk0": "A"
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(left, dig0),num0)",
+        "Answer": 2.48,
+        "Type": "NumFind_1",
+        "EquationConv": "func_diff_Numbers func_movepoint left dig0 num0",
+        "src": "num0 에 _ 소 수 점 을 _ 왼 쪽 으 로 _ dig0 자 리 _ 옮 기 면 _ unk0 만 큼 _ 작 아 집 니 다 _ unk0 를 _ 구 하 시 오",
+        "trg": "func_diff_Numbers func_movepoint left dig0 num0"
+    },
+    {
+        "Question": "3.69에 소수점을 오른쪽으로 세 자리 옮기면 A만큼 커집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 오른쪽으로 dig0 자리 옮기면 unk0 만큼 커집니다 . unk0 를 구하시오 .",
+        "Numbers": {
+            "dig0": 3,
+            "num0": 3.69,
+            "unk0": "A"
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(right, dig0),num0)",
+        "Answer": 3686.31,
+        "Type": "NumFind_1",
+        "EquationConv": "func_diff_Numbers func_movepoint right dig0 num0",
+        "src": "num0 에 _ 소 수 점 을 _ 오 른 쪽 으 로 _ dig0 자 리 _ 옮 기 면 _ unk0 만 큼 _ 커 집 니 다 _ unk0 를 _ 구 하 시 오",
+        "trg": "func_diff_Numbers func_movepoint right dig0 num0"
+    },
+    {
+        "Question": "작은 순으로  5개의 수 32,92,91,124,36 나열하려고 할 때 꼴등으로 오는 수를 구하시오",
+        "QuestionConv": "작은 순으로 num0 개의 수 seq0 나열하려고 할 때 꼴등으로 오는 수를 구하시오",
+        "Numbers": {
+            "seq0": [
+                32,
+                92,
+                91,
+                124,
+                36
+            ],
+            "num0": 5
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, asc),last)",
+        "Answer": 124,
+        "Type": "NumFind_1",
+        "EquationConv": "func_FindNumber func_OrderedList seq0 asc last",
+        "src": "작 은 _ 순 으 로 _ num0 개 의 _ 수 _ seq0 나 열 하 려 고 _ 할 _ 때 _ 꼴 등 으 로 _ 오 는 _ 수 를 _ 구 하 시 오",
+        "trg": "func_FindNumber func_OrderedList seq0 asc last"
+    },
+    {
+        "Question": "7개의 수 3, 11, 6, 9 ,7 ,4, 8가 있습니다. 내림차순으로 나열했을 때 2 번째 있는 수와 7 번째 있는 수를 나눈 값은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 내림차순으로 나열했을 때 ord0 번째 있는 수와 ord1 번째 있는 수를 나눈 값은 얼마입니까 ?",
+        "Numbers": {
+            "num0": 7,
+            "seq0": [
+                3,
+                11,
+                6,
+                9,
+                7,
+                4,
+                8
+            ],
+            "ord0": 2,
+            "ord1": 7
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindNumber(func_OrderedList(seq0, desc), ord0), func_FindNumber(func_OrderedList(seq0, desc),ord1)), div)",
+        "Answer": 3.0,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc ord0 func_FindNumber func_OrderedList seq0 desc ord1 div",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 내 림 차 순 으 로 _ 나 열 했 을 _ 때 _ ord0 번 째 _ 있 는 _ 수 와 _ ord1 번 째 _ 있 는 _ 수 를 _ 나 눈 _ 값 은 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc ord0 func_FindNumber func_OrderedList seq0 desc ord1 div"
+    },
+    {
+        "Question": "9, 105, 36, 72인 4개의 수를 높은 숫자 순으로 나열했을 때 제일 처음에 오는 수는 얼마입니까?",
+        "QuestionConv": "seq0 인 num0 개의 수를 높은 숫자 순으로 나열했을 때 제일 처음에 오는 수는 얼마입니까 ?",
+        "Numbers": {
+            "num0": 4,
+            "seq0": [
+                9,
+                105,
+                36,
+                72
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),first)",
+        "Answer": 105,
+        "Type": "NumFind_1",
+        "EquationConv": "func_FindNumber func_OrderedList seq0 desc first",
+        "src": "seq0 인 _ num0 개 의 _ 수 를 _ 높 은 _ 숫 자 _ 순 으 로 _ 나 열 했 을 _ 때 _ 제 일 _ 처 음 에 _ 오 는 _ 수 는 _ 얼 마 입 니 까",
+        "trg": "func_FindNumber func_OrderedList seq0 desc first"
+    },
+    {
+        "Question": "7개의 수 3, 11, 6, 9 ,7 ,4, 8가 있습니다. 내림차순으로 나열했을 때 2 번째 있는 수와 7 번째 있는 수를 나눈 값은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 내림차순으로 나열했을 때 ord0 번째 있는 수와 ord1 번째 있는 수를 나눈 값은 얼마입니까 ?",
+        "Numbers": {
+            "num0": 7,
+            "seq0": [
+                3,
+                11,
+                6,
+                9,
+                7,
+                4,
+                8
+            ],
+            "ord0": 2,
+            "ord1": 7
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindNumber(func_OrderedList(seq0, desc), ord0), func_FindNumber(func_OrderedList(seq0, desc),ord1)), div)",
+        "Answer": 3.0,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc ord0 func_FindNumber func_OrderedList seq0 desc ord1 div",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 내 림 차 순 으 로 _ 나 열 했 을 _ 때 _ ord0 번 째 _ 있 는 _ 수 와 _ ord1 번 째 _ 있 는 _ 수 를 _ 나 눈 _ 값 은 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc ord0 func_FindNumber func_OrderedList seq0 desc ord1 div"
+    },
+    {
+        "Question": "2.5에 소수점을 오른쪽으로 두 자리 옮기면 A만큼 커집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 오른쪽으로 dig0 자리 옮기면 unk0 만큼 커집니다 . unk0 를 구하시오 .",
+        "Numbers": {
+            "dig0": 2,
+            "num0": 2.5,
+            "unk0": "A"
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(right, dig0),num0)",
+        "Answer": 247.5,
+        "Type": "NumFind_1",
+        "EquationConv": "func_diff_Numbers func_movepoint right dig0 num0",
+        "src": "num0 에 _ 소 수 점 을 _ 오 른 쪽 으 로 _ dig0 자 리 _ 옮 기 면 _ unk0 만 큼 _ 커 집 니 다 _ unk0 를 _ 구 하 시 오",
+        "trg": "func_diff_Numbers func_movepoint right dig0 num0"
+    },
+    {
+        "Question": "25, 120, 124, 87, 92가 있습니다. 앞의 5개의 수를 오름차순으로 나열했을 때 그 중에서 중간에 있는 수는?",
+        "QuestionConv": "seq0 가 있습니다 . 앞의 num0 개의 수를 오름차순으로 나열했을 때 그 중에서 중간에 있는 수는 ?",
+        "Numbers": {
+            "seq0": [
+                25,
+                120,
+                124,
+                87,
+                92
+            ],
+            "num0": 5
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, asc),middle)",
+        "Answer": 92,
+        "Type": "NumFind_1",
+        "EquationConv": "func_FindNumber func_OrderedList seq0 asc middle",
+        "src": "seq0 가 _ 있 습 니 다 _ 앞 의 _ num0 개 의 _ 수 를 _ 오 름 차 순 으 로 _ 나 열 했 을 _ 때 _ 그 _ 중 에 서 _ 중 간 에 _ 있 는 _ 수 는",
+        "trg": "func_FindNumber func_OrderedList seq0 asc middle"
+    },
+    {
+        "Question": "0.5에 소수점을 왼쪽으로 2 자리 옮기면 A만큼 작아집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 왼쪽으로 dig0 자리 옮기면 unk0 만큼 작아집니다 . unk0 를 구하시오 .",
+        "Numbers": {
+            "dig0": 2,
+            "num0": 0.53,
+            "unk0": "A"
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(left, dig0),num0)",
+        "Answer": 0.52,
+        "Type": "NumFind_1",
+        "EquationConv": "func_diff_Numbers func_movepoint left dig0 num0",
+        "src": "num0 에 _ 소 수 점 을 _ 왼 쪽 으 로 _ dig0 자 리 _ 옮 기 면 _ unk0 만 큼 _ 작 아 집 니 다 _ unk0 를 _ 구 하 시 오",
+        "trg": "func_diff_Numbers func_movepoint left dig0 num0"
+    },
+    {
+        "Question": "9, 105, 36, 72인 4개의 수를 높은 숫자 순으로 나열했을 때 제일 처음에 오는 수는 얼마입니까?",
+        "QuestionConv": "seq0 인 num0 개의 수를 높은 숫자 순으로 나열했을 때 제일 처음에 오는 수는 얼마입니까 ?",
+        "Numbers": {
+            "num0": 4,
+            "seq0": [
+                9,
+                105,
+                36,
+                72
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),first)",
+        "Answer": 105,
+        "Type": "NumFind_1",
+        "EquationConv": "func_FindNumber func_OrderedList seq0 desc first",
+        "src": "seq0 인 _ num0 개 의 _ 수 를 _ 높 은 _ 숫 자 _ 순 으 로 _ 나 열 했 을 _ 때 _ 제 일 _ 처 음 에 _ 오 는 _ 수 는 _ 얼 마 입 니 까",
+        "trg": "func_FindNumber func_OrderedList seq0 desc first"
+    },
+    {
+        "Question": "6.9에 소수점을 왼쪽으로 세 자리 옮기면 A만큼 작아집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 왼쪽으로 dig0 자리 옮기면 unk0 만큼 작아집니다 . unk0 를 구하시오 .",
+        "Numbers": {
+            "dig0": 3,
+            "num0": 6.9,
+            "unk0": "A"
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(left, dig0),num0)",
+        "Answer": 6.89,
+        "Type": "NumFind_1",
+        "EquationConv": "func_diff_Numbers func_movepoint left dig0 num0",
+        "src": "num0 에 _ 소 수 점 을 _ 왼 쪽 으 로 _ dig0 자 리 _ 옮 기 면 _ unk0 만 큼 _ 작 아 집 니 다 _ unk0 를 _ 구 하 시 오",
+        "trg": "func_diff_Numbers func_movepoint left dig0 num0"
+    },
+    {
+        "Question": "6.7에 소수점을 왼쪽으로 한 자리 옮기면 A만큼 작아집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 왼쪽으로 dig0 자리 옮기면 unk0 만큼 작아집니다 . unk0 를 구하시오 .",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 6.7,
+            "unk0": "A"
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(left, dig0),num0)",
+        "Answer": 6.03,
+        "Type": "NumFind_1",
+        "EquationConv": "func_diff_Numbers func_movepoint left dig0 num0",
+        "src": "num0 에 _ 소 수 점 을 _ 왼 쪽 으 로 _ dig0 자 리 _ 옮 기 면 _ unk0 만 큼 _ 작 아 집 니 다 _ unk0 를 _ 구 하 시 오",
+        "trg": "func_diff_Numbers func_movepoint left dig0 num0"
+    },
+    {
+        "Question": "오름차순으로 나열했을 때 4 번째에 있는 수는 얼마입니까? 5개의 수 136,105,26,147,87가 있습니다.",
+        "QuestionConv": "오름차순으로 나열했을 때 ord0 번째에 있는 수는 얼마입니까 ? num0 개의 수 seq0 가 있습니다 .",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                136,
+                105,
+                26,
+                147,
+                87
+            ],
+            "ord0": 4
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, asc),ord0)",
+        "Answer": 136,
+        "Type": "NumFind_1",
+        "EquationConv": "func_FindNumber func_OrderedList seq0 asc ord0",
+        "src": "오 름 차 순 으 로 _ 나 열 했 을 _ 때 _ ord0 번 째 에 _ 있 는 _ 수 는 _ 얼 마 입 니 까 _ num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다",
+        "trg": "func_FindNumber func_OrderedList seq0 asc ord0"
+    },
+    {
+        "Question": "5개의 수 2, 11, 6, 8 ,7가 있습니다. 그 중에서 가장 큰 수 와 가장 작은 수의 합은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 그 중에서 가장 큰 수 와 가장 작은 수의 합은 얼마입니까 ?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                2,
+                11,
+                6,
+                8,
+                7
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(seq0, largest), func_FindFirstnumber(seq0 ,smallest)), add)",
+        "Answer": 13,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindFirstnumber seq0 largest func_FindFirstnumber seq0 smallest add",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 그 _ 중 에 서 _ 가 장 _ 큰 _ 수 _ 와 _ 가 장 _ 작 은 _ 수 의 _ 합 은 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindFirstnumber seq0 largest func_FindFirstnumber seq0 smallest add"
+    },
+    {
+        "Question": "5개의 수 2, 11, 9 ,5 ,17가 있습니다. 내림차순으로 나열했을 때 처음에 있는 수와 마지막에 있는 수의 곱은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 내림차순으로 나열했을 때 처음에 있는 수와 마지막에 있는 수의 곱은 얼마입니까 ?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                2,
+                11,
+                9,
+                5,
+                17
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindNumber(func_OrderedList(seq0, desc), first), func_FindNumber(func_OrderedList(seq0, desc),last)), mul)",
+        "Answer": 34,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 desc last mul",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 내 림 차 순 으 로 _ 나 열 했 을 _ 때 _ 처 음 에 _ 있 는 _ 수 와 _ 마 지 막 에 _ 있 는 _ 수 의 _ 곱 은 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 desc last mul"
+    },
+    {
+        "Question": "3개의 수 9, 3, 5가 있습니다. 내림차순으로 나열했을 때 처음 수와 가운데에 있는 수의 나눈값은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 내림차순으로 나열했을 때 처음 수와 가운데에 있는 수의 나눈값은 얼마입니까 ?",
+        "Numbers": {
+            "num0": 3,
+            "seq0": [
+                9,
+                3,
+                1
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindNumber(func_OrderedList(seq0, desc), first), func_FindNumber(func_OrderedList(seq0, desc),middle)), div)",
+        "Answer": 3,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 desc middle div",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 내 림 차 순 으 로 _ 나 열 했 을 _ 때 _ 처 음 _ 수 와 _ 가 운 데 에 _ 있 는 _ 수 의 _ 나 눈 값 은 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 desc middle div"
+    },
+    {
+        "Question": "5개의 수 6,9, 3,1, 5가 있습니다. 오름차순으로 나열했을 때 마지막에 있는 수와 처음에 있는 수의 차은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 오름차순으로 나열했을 때 마지막에 있는 수와 처음에 있는 수의 차은 얼마입니까 ?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                6,
+                9,
+                3,
+                1,
+                5
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindNumber(func_OrderedList(seq0, asc), last), func_FindNumber(func_OrderedList(seq0, asc),first)), sub)",
+        "Answer": 8,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 asc last func_FindNumber func_OrderedList seq0 asc first sub",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 오 름 차 순 으 로 _ 나 열 했 을 _ 때 _ 마 지 막 에 _ 있 는 _ 수 와 _ 처 음 에 _ 있 는 _ 수 의 _ 차 은 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 asc last func_FindNumber func_OrderedList seq0 asc first sub"
+    },
+    {
+        "Question": "4개의 수 53, 98, 69, 84가 있습니다. 그 중에서 가장 큰 수 와 가장 작은 수의 차는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 그 중에서 가장 큰 수 와 가장 작은 수의 차는 얼마입니까 ?",
+        "Numbers": {
+            "num0": 4,
+            "seq0": [
+                53,
+                98,
+                69,
+                84
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(seq0, largest), func_FindFirstnumber(seq0 ,smallest)), sub)",
+        "Answer": 45,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindFirstnumber seq0 largest func_FindFirstnumber seq0 smallest sub",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 그 _ 중 에 서 _ 가 장 _ 큰 _ 수 _ 와 _ 가 장 _ 작 은 _ 수 의 _ 차 는 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindFirstnumber seq0 largest func_FindFirstnumber seq0 smallest sub"
+    },
+    {
+        "Question": "5 개 수를 내림차순으로 59,121,136,62,131 나열하려고 할 때 중간에 나오는 수를 구하시오",
+        "QuestionConv": "num0 개 수를 내림차순으로 seq0 나열하려고 할 때 중간에 나오는 수를 구하시오",
+        "Numbers": {
+            "seq0": [
+                59,
+                121,
+                136,
+                62,
+                131
+            ],
+            "num0": 5
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),middle)",
+        "Answer": 121,
+        "Type": "NumFind_1",
+        "EquationConv": "func_FindNumber func_OrderedList seq0 desc middle",
+        "src": "num0 개 _ 수 를 _ 내 림 차 순 으 로 _ seq0 나 열 하 려 고 _ 할 _ 때 _ 중 간 에 _ 나 오 는 _ 수 를 _ 구 하 시 오",
+        "trg": "func_FindNumber func_OrderedList seq0 desc middle"
+    },
+    {
+        "Question": "6.9에 소수점을 왼쪽으로 한 자리 옮기면 A만큼 작아집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 왼쪽으로 dig0 자리 옮기면 unk0 만큼 작아집니다 . unk0 를 구하시오 .",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 6.9,
+            "unk0": "A"
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(left, dig0),num0)",
+        "Answer": 6.21,
+        "Type": "NumFind_1",
+        "EquationConv": "func_diff_Numbers func_movepoint left dig0 num0",
+        "src": "num0 에 _ 소 수 점 을 _ 왼 쪽 으 로 _ dig0 자 리 _ 옮 기 면 _ unk0 만 큼 _ 작 아 집 니 다 _ unk0 를 _ 구 하 시 오",
+        "trg": "func_diff_Numbers func_movepoint left dig0 num0"
+    },
+    {
+        "Question": "5개의 수 3,1,8,7,9가 있습니다. 내림차순으로 나열했을 때 맨 앞에 있는 수와 오름차순으로 나열했을때 가운데 있는 수의 차는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 내림차순으로 나열했을 때 맨 앞에 있는 수와 오름차순으로 나열했을때 가운데 있는 수의 차는 얼마입니까 ?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                3,
+                1,
+                8,
+                7,
+                9
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindNumber(func_OrderedList(seq0, desc), first), func_FindNumber(func_OrderedList(seq0, asc),middle)), sub)",
+        "Answer": 2,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 asc middle sub",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 내 림 차 순 으 로 _ 나 열 했 을 _ 때 _ 맨 _ 앞 에 _ 있 는 _ 수 와 _ 오 름 차 순 으 로 _ 나 열 했 을 때 _ 가 운 데 _ 있 는 _ 수 의 _ 차 는 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 asc middle sub"
+    },
+    {
+        "Question": "25, 120, 124, 87, 92가 있습니다. 앞의 5개의 수를 오름차순으로 나열했을 때 그 중에서 중간에 있는 수는?",
+        "QuestionConv": "seq0 가 있습니다 . 앞의 num0 개의 수를 오름차순으로 나열했을 때 그 중에서 중간에 있는 수는 ?",
+        "Numbers": {
+            "seq0": [
+                25,
+                120,
+                124,
+                87,
+                92
+            ],
+            "num0": 5
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, asc),middle)",
+        "Answer": 92,
+        "Type": "NumFind_1",
+        "EquationConv": "func_FindNumber func_OrderedList seq0 asc middle",
+        "src": "seq0 가 _ 있 습 니 다 _ 앞 의 _ num0 개 의 _ 수 를 _ 오 름 차 순 으 로 _ 나 열 했 을 _ 때 _ 그 _ 중 에 서 _ 중 간 에 _ 있 는 _ 수 는",
+        "trg": "func_FindNumber func_OrderedList seq0 asc middle"
+    },
+    {
+        "Question": "5개의 수 31, 53, 98, 69, 84가 있습니다. 그 중에서 가장 큰 수 와 가장 작은 수의 합은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 그 중에서 가장 큰 수 와 가장 작은 수의 합은 얼마입니까 ?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                31,
+                53,
+                98,
+                69,
+                84
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindNumber(func_OrderedList(seq0, desc),first), func_FindNumber(func_OrderedList(seq0, desc),last)), add)",
+        "Answer": 129,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 desc last add",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 그 _ 중 에 서 _ 가 장 _ 큰 _ 수 _ 와 _ 가 장 _ 작 은 _ 수 의 _ 합 은 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 desc last add"
+    },
+    {
+        "Question": "7개의 수 2, 9, 50, 6, 8 ,7,20가 있습니다. 내림차순으로 나열했을 때 맨 앞에 있는 수와 마지막 있는 수를 나눈 값은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다 . 내림차순으로 나열했을 때 맨 앞에 있는 수와 마지막 있는 수를 나눈 값은 얼마입니까 ?",
+        "Numbers": {
+            "num0": 7,
+            "seq0": [
+                2,
+                9,
+                50,
+                6,
+                8,
+                7,
+                20
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindNumber(func_OrderedList(seq0, desc), first), func_FindNumber(func_OrderedList(seq0, desc),last)), div)",
+        "Answer": 25.0,
+        "Type": "NumFind_1",
+        "EquationConv": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 desc last div",
+        "src": "num0 개 의 _ 수 _ seq0 가 _ 있 습 니 다 _ 내 림 차 순 으 로 _ 나 열 했 을 _ 때 _ 맨 _ 앞 에 _ 있 는 _ 수 와 _ 마 지 막 _ 있 는 _ 수 를 _ 나 눈 _ 값 은 _ 얼 마 입 니 까",
+        "trg": "func_rightoperator func_transform_list func_FindNumber func_OrderedList seq0 desc first func_FindNumber func_OrderedList seq0 desc last div"
+    },
+    {
+        "Question": "6.9에 소수점을 왼쪽으로 세 자리 옮기면 A만큼 작아집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 왼쪽으로 dig0 자리 옮기면 unk0 만큼 작아집니다 . unk0 를 구하시오 .",
+        "Numbers": {
+            "dig0": 3,
+            "num0": 6.9,
+            "unk0": "A"
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(left, dig0),num0)",
+        "Answer": 6.89,
+        "Type": "NumFind_1",
+        "EquationConv": "func_diff_Numbers func_movepoint left dig0 num0",
+        "src": "num0 에 _ 소 수 점 을 _ 왼 쪽 으 로 _ dig0 자 리 _ 옮 기 면 _ unk0 만 큼 _ 작 아 집 니 다 _ unk0 를 _ 구 하 시 오",
+        "trg": "func_diff_Numbers func_movepoint left dig0 num0"
+    },
+    {
+        "Question": "0.2에 소수점을 오른쪽으로 2자리 옮기면 A만큼 커집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 오른쪽으로 dig0 자리 옮기면 unk0 만큼 커집니다 . unk0 를 구하시오 .",
+        "Numbers": {
+            "dig0": 2,
+            "num0": 0.2,
+            "unk0": "A"
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(right, dig0),num0)",
+        "Answer": 19.8,
+        "Type": "NumFind_1",
+        "EquationConv": "func_diff_Numbers func_movepoint right dig0 num0",
+        "src": "num0 에 _ 소 수 점 을 _ 오 른 쪽 으 로 _ dig0 자 리 _ 옮 기 면 _ unk0 만 큼 _ 커 집 니 다 _ unk0 를 _ 구 하 시 오",
+        "trg": "func_diff_Numbers func_movepoint right dig0 num0"
+    }
+]

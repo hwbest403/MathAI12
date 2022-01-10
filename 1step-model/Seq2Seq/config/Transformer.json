@@ -1,0 +1,15 @@
+{
+    "hid_dim": 100,
+    "enc_layers": 3,
+    "dec_layers": 3,
+    "enc_heads": 2,
+    "dec_heads": 2,
+    "enc_pf_dim": 256,
+    "dec_pf_dim": 256,
+    "enc_dropout": 0.1,
+    "dec_dropout": 0.1,
+    "max_length": 150,
+    "vectors": true,
+    "param_init_xavier": true,
+    "param_init_he": false
+}

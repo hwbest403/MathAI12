@@ -1,0 +1,11 @@
+정국	NNP
+지민	NNP
+석진	NNP
+태형	NNP
+남준	NNP
+윤기	NNP
+호석	NNP
+민영	NNP
+유정	NNP
+은지	NNP
+유나	NNP

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+	<title>MathAI</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='images/MathAI Logo.png')}}">
+</head>
+<body>
+	<div class="head">
+		<div id="header">
+			<a href="/" class="logo">
+		    	<h1>MathAI</h1>
+			</a>
+			<ul id="navigation">
+				<li class="selected">
+					<a href="/">홈</a>
+				</li>
+				<li>
+					<a href="type">문제유형</a>
+				</li>
+				<li>
+					<a href="recent">최근문제</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<form method="POST">
+	<div id="selector">
+		<p>
+			유형별 문제에 대한 풀이를 제공합니다.<br>
+			<br>
+			Provides Solutions for your problem.
+		</p>
+		<p>
+  		<select>
+    		<option selected>유형 선택</option>
+    		<option>유형1</option>
+    		<option>유형2</option>
+    		<option>유형3</option>
+            <option>유형4</option>
+  		</select>
+			<br>
+			<div class="questext">
+			문제유형에서 유형을 확인하고 선택하시면 정답률이 올라갑니다.
+			</div>
+		</p>
+	</div>
+	<div class="textbox">
+            문제를 입력하세요.<br>
+			<input type="text" name="Question" class="texttag">
+	</div>
+	<div class="complete">
+		<button class="bc" type="button" onclick="location.href='answer'">완료</button>
+	</div>
+	</form>
+	<div id="footer">
+		<div>
+			<p>&copy; 2021 by MathAI. All rights reserved.</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,486 @@
+[
+    {
+        "Question": "은지는 총 79000원이 있다. 은지가 35000원의 카메라와 59000의 이어폰을 사려면 돈이 얼마 더 필요한지 구하시오.",
+        "QuestionConv": "nae0 는 총 num0 원이 있다 nae0 가 num1 원의 카메라와 num2 의 이어폰을 사려면 돈이 얼마 더 필요한지 구하시오 .",
+        "Numbers": {
+            "num0": 79000,
+            "num1": 35000,
+            "num2": 59000
+        },
+        "Equation": "func_minus(func_add(num1,num2),num0)",
+        "Answer": 15000,
+        "Type": "TVQ-Change",
+        "EquationConv": "func_minus func_add num1 num2 num0",
+        "src": "nae0 는 _ 총 _ num0 원 이 _ 있 다 _ nae0 가 _ num1 원 의 _ 카 메 라 와 _ num2 의 _ 이 어 폰 을 _ 사 려 면 _ 돈 이 _ 얼 마 _ 더 _ 필 요 한 지 _ 구 하 시 오",
+        "trg": "func_minus func_add num1 num2 num0"
+    },
+    {
+        "Question": "반지름이 50 cm인 원을 그렸습니다. 원의 지름은 몇 cm일까요?",
+        "QuestionConv": "반지름이 num0 cm 인 원을 그렸습니다 . 원의 지름은 몇 cm 일까요 ?",
+        "Numbers": {
+            "num0": 50,
+            "none": null
+        },
+        "Equation": "func_diameter(num0,none)",
+        "Answer": 100,
+        "Type": "Circle",
+        "EquationConv": "func_diameter num0 none",
+        "src": "반 지 름 이 _ num0 c m _ 인 _ 원 을 _ 그 렸 습 니 다 _ 원 의 _ 지 름 은 _ 몇 _ c m _ 일 까 요",
+        "trg": "func_diameter num0 none"
+    },
+    {
+        "Question": "남준, 은지, 유나의 영어 점수는 각각 90점, 80점, 88점입니다. 이 3을 제외한 학급의 영어 점수 평균은 67점입니다. 남준이네 학급 인원수가 30명일 때, 학급 영어 평균 점수는 몇 점입니까?",
+        "QuestionConv": "nae0 nae1 nae2 의 sbj0 점수는 각각 num0 점 num1 점 num2 점입니다 이 num3 을 제외한 학급의 sbj0 점수 평균은 num4 점입니다 nae0 이네 학급 인원수가 num5 명일 때 학급 sbj0 평균 점수는 몇 점입니까 ?",
+        "Numbers": {
+            "num0": 90,
+            "num1": 80,
+            "num2": 88,
+            "num3": 3,
+            "num4": 67,
+            "num5": 30
+        },
+        "Equation": "func_divide(func_add(func_add(func_add(func_multiply(func_minus(num5,num3),num4),num0),num1),num2),num5)",
+        "Answer": 68.9,
+        "Type": "Mean",
+        "EquationConv": "func_divide func_add func_add func_add func_multiply func_minus num5 num3 num4 num0 num1 num2 num5",
+        "src": "nae0 nae1 nae2 의 _ sbj0 점 수 는 _ 각 각 _ num0 점 _ num1 점 _ num2 점 입 니 다 _ 이 _ num3 을 _ 제 외 한 _ 학 급 의 _ sbj0 점 수 _ 평 균 은 _ num4 점 입 니 다 _ nae0 이 네 _ 학 급 _ 인 원 수 가 _ num5 명 일 _ 때 _ 학 급 _ sbj0 평 균 _ 점 수 는 _ 몇 _ 점 입 니 까",
+        "trg": "func_divide func_add func_add func_add func_multiply func_minus num5 num3 num4 num0 num1 num2 num5"
+    },
+    {
+        "Question": "과일 바구니 안에 사과가 4개, 오렌지가 6개 있습니다. 그중에서 사과는 2개, 오렌지는 3개를 먹었습니다. 과일 바구니 안의 사과와 오렌지의 개수의 합은?",
+        "QuestionConv": "과일 바구니 안에 foo0 가 num0 개 foo1 가 num1 개 있습니다 그중에서 foo0 는 num2 개 foo1 는 num3 개를 먹었습니다 과일 바구니 안의 foo0 와 foo1 의 개수의 합은 ?",
+        "Numbers": {
+            "num0": 4,
+            "num1": 6,
+            "num2": 2,
+            "num3": 3
+        },
+        "Equation": "func_minus(func_minus(func_add(num0,num1),num2),num3)",
+        "Answer": 5,
+        "Type": "TVQ-Final",
+        "EquationConv": "func_minus func_minus func_add num0 num1 num2 num3",
+        "src": "과 일 _ 바 구 니 _ 안 에 _ foo0 가 _ num0 개 _ foo1 가 _ num1 개 _ 있 습 니 다 _ 그 중 에 서 _ foo0 는 _ num2 개 _ foo1 는 _ num3 개 를 _ 먹 었 습 니 다 _ 과 일 _ 바 구 니 _ 안 의 _ foo0 와 _ foo1 의 _ 개 수 의 _ 합 은",
+        "trg": "func_minus func_minus func_add num0 num1 num2 num3"
+    },
+    {
+        "Question": "농장에 있는 돼지와 오리의 수를 세어 보니 모두 40마리였습니다. 돼지가 6마리라면 오리는 몇 마리인가요?",
+        "QuestionConv": "농장에 있는 ani0 와 ani1 의 수를 세어 보니 모두 num0 마리였습니다 ani0 가 num1 마리라면 ani1 는 몇 마리인가요 ?",
+        "Numbers": {
+            "num0": 40,
+            "num1": 6
+        },
+        "Equation": "func_minus(num0,num1)",
+        "Answer": 34,
+        "Type": "Subtraction",
+        "EquationConv": "func_minus num0 num1",
+        "src": "농 장 에 _ 있 는 _ ani0 와 _ ani1 의 _ 수 를 _ 세 어 _ 보 니 _ 모 두 _ num0 마 리 였 습 니 다 _ ani0 가 _ num1 마 리 라 면 _ ani1 는 _ 몇 _ 마 리 인 가 요",
+        "trg": "func_minus num0 num1"
+    },
+    {
+        "Question": "어떤 수에 6을 곱한 후 3으로 나누고 8을 빼었더니 10이 되었습니다. 어떤 수를 구해 보세요.",
+        "QuestionConv": "어떤 수에 num0 을 곱한 후 num1 으로 나누고 num2 을 빼었더니 num3 이 되었습니다 . 어떤 수를 구해 보세요 .",
+        "Numbers": {
+            "num0": 6,
+            "num1": 3,
+            "num2": 8,
+            "num3": 10
+        },
+        "Equation": "func_divide(func_multiply(func_add(num3,num2),num1),num0)",
+        "Answer": 9,
+        "Type": "Equation",
+        "EquationConv": "func_divide func_multiply func_add num3 num2 num1 num0",
+        "src": "어 떤 _ 수 에 _ num0 을 _ 곱 한 _ 후 _ num1 으 로 _ 나 누 고 _ num2 을 _ 빼 었 더 니 _ num3 이 _ 되 었 습 니 다 _ 어 떤 _ 수 를 _ 구 해 _ 보 세 요",
+        "trg": "func_divide func_multiply func_add num3 num2 num1 num0"
+    },
+    {
+        "Question": "석진과 유정이는 가지고 있던 돈을 합하여 7300원짜리 조립장난감을 샀습니다. 석진이가 낸 돈은 유정이가 낸 돈의 2배보다 700원이 더 많습니다. 유정이가 낸 돈은 얼마일까요?",
+        "QuestionConv": "nae0 과 nae1 이는 가지고 있던 돈을 합하여 num0 원짜리 조립장난감을 샀습니다 nae0 이가 낸 돈은 nae1 이가 낸 돈의 num1 배보다 num2 원이 더 많습니다 nae1 이가 낸 돈은 얼마일까요 ?",
+        "Numbers": {
+            "num0": 7300,
+            "num1": 2,
+            "num2": 700,
+            "none": null,
+            "one": 1
+        },
+        "Equation": "func_divide(func_minus(num0,num2),func_add(num1,one))",
+        "Answer": 2200,
+        "Type": "Equation",
+        "EquationConv": "func_divide func_minus num0 num2 func_add num1 one",
+        "src": "nae0 과 _ nae1 이 는 _ 가 지 고 _ 있 던 _ 돈 을 _ 합 하 여 _ num0 원 짜 리 _ 조 립 장 난 감 을 _ 샀 습 니 다 _ nae0 이 가 _ 낸 _ 돈 은 _ nae1 이 가 _ 낸 _ 돈 의 _ num1 배 보 다 _ num2 원 이 _ 더 _ 많 습 니 다 _ nae1 이 가 _ 낸 _ 돈 은 _ 얼 마 일 까 요",
+        "trg": "func_divide func_minus num0 num2 func_add num1 one"
+    },
+    {
+        "Question": "한 상자에 42개씩 담겨져 있는 귤이 4상자 있고, 34개씩 담겨져 있는 사과가 7상자 있습니다. 상자에 담긴 귤과 사과는 모두 몇 개입니까?",
+        "QuestionConv": "num0 상자에 rep0 개씩 담겨져 있는 귤이 num1 상자 있고 rep1 개씩 담겨져 있는 foo0 가 num2 상자 있습니다 상자에 담긴 귤과 foo0 는 모두 몇 개입니까 ?",
+        "Numbers": {
+            "rep0": 42,
+            "num1": 4,
+            "rep1": 34,
+            "num2": 7
+        },
+        "Equation": "func_add(func_multiply(rep0,num1),func_multiply(rep1,num2))",
+        "Answer": 406,
+        "Type": "Addition",
+        "EquationConv": "func_add func_multiply rep0 num1 func_multiply rep1 num2",
+        "src": "num0 상 자 에 _ rep0 개 씩 _ 담 겨 져 _ 있 는 _ 귤 이 _ num1 상 자 _ 있 고 _ rep1 개 씩 _ 담 겨 져 _ 있 는 _ foo0 가 _ num2 상 자 _ 있 습 니 다 _ 상 자 에 _ 담 긴 _ 귤 과 _ foo0 는 _ 모 두 _ 몇 _ 개 입 니 까",
+        "trg": "func_add func_multiply rep0 num1 func_multiply rep1 num2"
+    },
+    {
+        "Question": "과자 8개를 정국, 유정 2명이 똑같이 나누어 먹으려고 합니다. 한 명이 과자를 몇 개씩 가질 수 있나요?",
+        "QuestionConv": "foo0 num0 개를 nae0 , nae1 num1 명이 똑같이 나누어 먹으려고 합니다 . num2 명이 foo0 를 몇 개씩 가질 수 있나요 ?",
+        "Numbers": {
+            "num0": 8,
+            "num1": 2
+        },
+        "Equation": "func_divide(num0,num1)",
+        "Answer": 4,
+        "Type": "Common-Division",
+        "EquationConv": "func_divide num0 num1",
+        "src": "foo0 num0 개 를 _ nae0 nae1 num1 명 이 _ 똑 같 이 _ 나 누 어 _ 먹 으 려 고 _ 합 니 다 _ num2 명 이 _ foo0 를 _ 몇 _ 개 씩 _ 가 질 _ 수 _ 있 나 요",
+        "trg": "func_divide num0 num1"
+    },
+    {
+        "Question": "태형이는 과녁을 총 3 번 맞추었으며, 점수는 각각 8점, 6점, 9점이었다. 태형이가 맞춘 과녁의 점수의 평균을 구하시오.",
+        "QuestionConv": "nae0 이는 과녁을 총 num0 번 맞추었으며 점수는 각각 num1 점 num2 점 num3 점이었다 nae0 이가 맞춘 과녁의 점수의 평균을 구하시오 .",
+        "Numbers": {
+            "num0": 3,
+            "num1": 8,
+            "num2": 6,
+            "num3": 9
+        },
+        "Equation": "func_divide(func_add(func_add(num1,num2),num3),num0)",
+        "Answer": 7.67,
+        "Type": "Mean",
+        "EquationConv": "func_divide func_add func_add num1 num2 num3 num0",
+        "src": "nae0 이 는 _ 과 녁 을 _ 총 _ num0 번 _ 맞 추 었 으 며 _ 점 수 는 _ 각 각 _ num1 점 _ num2 점 _ num3 점 이 었 다 _ nae0 이 가 _ 맞 춘 _ 과 녁 의 _ 점 수 의 _ 평 균 을 _ 구 하 시 오",
+        "trg": "func_divide func_add func_add num1 num2 num3 num0"
+    },
+    {
+        "Question": "원의 지름이 8 m입니다. 넓이를 구하세요. 원주율 : 3.14",
+        "QuestionConv": "원의 지름이 num0 m 입니다 . 넓이를 구하세요 . 원주율 : num1",
+        "Numbers": {
+            "num0": 8,
+            "num1": 3.14,
+            "none": null
+        },
+        "Equation": "func_circlearea(func_radius(num0,none),num1)",
+        "Answer": 50.24,
+        "Type": "Circle",
+        "EquationConv": "func_circlearea func_radius num0 none num1",
+        "src": "원 의 _ 지 름 이 _ num0 m _ 입 니 다 _ 넓 이 를 _ 구 하 세 요 _ 원 주 율 _ : _ num1",
+        "trg": "func_circlearea func_radius num0 none num1"
+    },
+    {
+        "Question": "학교 텃밭에서 수확한 고구마 36개를 6개씩 봉지에 나누어 담으려고 합니다. 봉지는 몇 장 필요한가요?",
+        "QuestionConv": "plc0 텃밭에서 수확한 고구마 num0 개를 rep0 개씩 봉지에 나누어 담으려고 합니다 . 봉지는 몇 장 필요한가요 ?",
+        "Numbers": {
+            "num0": 36,
+            "rep0": 6
+        },
+        "Equation": "func_divide(num0,rep0)",
+        "Answer": 6,
+        "Type": "Common-Division",
+        "EquationConv": "func_divide num0 rep0",
+        "src": "plc0 텃 밭 에 서 _ 수 확 한 _ 고 구 마 _ num0 개 를 _ rep0 개 씩 _ 봉 지 에 _ 나 누 어 _ 담 으 려 고 _ 합 니 다 _ 봉 지 는 _ 몇 _ 장 _ 필 요 한 가 요",
+        "trg": "func_divide num0 rep0"
+    },
+    {
+        "Question": "198명이 제기 차기 놀이를 했어요. 203명이 제기 차기에 더 참가한다면 제기 차기 놀이를 체험하는 학생은 모두 몇 명인가요?",
+        "QuestionConv": "num0 명이 제기 차기 놀이를 했어요 . num1 명이 제기 차기에 더 참가한다면 제기 차기 놀이를 체험하는 학생은 모두 몇 명인가요 ?",
+        "Numbers": {
+            "num0": 198,
+            "num1": 203
+        },
+        "Equation": "func_add(num0,num1)",
+        "Answer": 401,
+        "Type": "Addition",
+        "EquationConv": "func_add num0 num1",
+        "src": "num0 명 이 _ 제 기 _ 차 기 _ 놀 이 를 _ 했 어 요 _ num1 명 이 _ 제 기 _ 차 기 에 _ 더 _ 참 가 한 다 면 _ 제 기 _ 차 기 _ 놀 이 를 _ 체 험 하 는 _ 학 생 은 _ 모 두 _ 몇 _ 명 인 가 요",
+        "trg": "func_add num0 num1"
+    },
+    {
+        "Question": "봉사 동아리 회원 4명의 평균 나이는 14살이다. 새로운 회원 한 명이 더 들어와서 나이의 평균이 1살 늘어났습니다. 회원이 더 들어오고 나서 전체 회원 나이의 총합은 몇 살 늘어났습니까?",
+        "QuestionConv": "봉사 동아리 회원 num0 명의 평균 나이는 num1 살이다 . 새로운 회원 num2 명이 더 들어와서 나이의 평균이 num3 살 늘어났습니다 . 회원이 더 들어오고 나서 전체 회원 나이의 총합은 몇 살 늘어났습니까 ?",
+        "Numbers": {
+            "num0": 4,
+            "num1": 14,
+            "num2": 1,
+            "none": null,
+            "one": 1
+        },
+        "Equation": "func_multiply(func_add(num0,one),num2)",
+        "Answer": 5,
+        "Type": "Mean",
+        "EquationConv": "func_multiply func_add num0 one num2",
+        "src": "봉 사 _ 동 아 리 _ 회 원 _ num0 명 의 _ 평 균 _ 나 이 는 _ num1 살 이 다 _ 새 로 운 _ 회 원 _ num2 명 이 _ 더 _ 들 어 와 서 _ 나 이 의 _ 평 균 이 _ num3 살 _ 늘 어 났 습 니 다 _ 회 원 이 _ 더 _ 들 어 오 고 _ 나 서 _ 전 체 _ 회 원 _ 나 이 의 _ 총 합 은 _ 몇 _ 살 _ 늘 어 났 습 니 까",
+        "trg": "func_multiply func_add num0 one num2"
+    },
+    {
+        "Question": "호석이는 과일 가게에 가서 한 개에 350원 하는 오렌지 9개와 수박 3통을 사고 20000원을 냈습니다. 거스름돈으로 4850원을 받았다면 수박 한 통의 값은 얼마인지 하나의 식으로 만들고 구하세요.",
+        "QuestionConv": "nae0 이는 과일 가게에 가서 num0 개에 num1 원 하는 foo0 num2 개와 foo1 num3 통을 사고 num4 원을 냈습니다 거스름돈으로 num5 원을 받았다면 foo1 num6 통의 값은 얼마인지 하나의 식으로 만들고 구하세요 .",
+        "Numbers": {
+            "num0": 1,
+            "num1": 350,
+            "num2": 9,
+            "num3": 3,
+            "num4": 20000,
+            "num5": 4850,
+            "num6": 1
+        },
+        "Equation": "func_multiply(func_divide(func_minus(func_minus(num4,num5),func_multiply(func_perobj(num1,num0),num2)),num3),num6)",
+        "Answer": 4000,
+        "Type": "Common-Division",
+        "EquationConv": "func_multiply func_divide func_minus func_minus num4 num5 func_multiply func_perobj num1 num0 num2 num3 num6",
+        "src": "nae0 이 는 _ 과 일 _ 가 게 에 _ 가 서 _ num0 개 에 _ num1 원 _ 하 는 _ foo0 num2 개 와 _ foo1 num3 통 을 _ 사 고 _ num4 원 을 _ 냈 습 니 다 _ 거 스 름 돈 으 로 _ num5 원 을 _ 받 았 다 면 _ foo1 num6 통 의 _ 값 은 _ 얼 마 인 지 _ 하 나 의 _ 식 으 로 _ 만 들 고 _ 구 하 세 요",
+        "trg": "func_multiply func_divide func_minus func_minus num4 num5 func_multiply func_perobj num1 num0 num2 num3 num6"
+    },
+    {
+        "Question": "민영이가 타고 온 비행기에는 158명이 타고 왔고, 유정이가 타고 온 비행기는 374명이 타고 왔어요. 민영이가 타고 온 비행기에 몇 명이 더 적게 타고 왔나요?",
+        "QuestionConv": "nae0 이가 타고 온 trn0 에는 num0 명이 타고 왔고 nae1 이가 타고 온 trn0 는 num1 명이 타고 왔어요 nae0 이가 타고 온 trn0 에 몇 명이 더 적게 타고 왔나요 ?",
+        "Numbers": {
+            "num0": 158,
+            "num1": 374
+        },
+        "Equation": "func_difference(num0,num1)",
+        "Answer": 216,
+        "Type": "Difference",
+        "EquationConv": "func_difference num0 num1",
+        "src": "nae0 이 가 _ 타 고 _ 온 _ trn0 에 는 _ num0 명 이 _ 타 고 _ 왔 고 _ nae1 이 가 _ 타 고 _ 온 _ trn0 는 _ num1 명 이 _ 타 고 _ 왔 어 요 _ nae0 이 가 _ 타 고 _ 온 _ trn0 에 _ 몇 _ 명 이 _ 더 _ 적 게 _ 타 고 _ 왔 나 요",
+        "trg": "func_difference num0 num1"
+    },
+    {
+        "Question": "유나는 게임을 좋아한다. 유나는 어제 게임을 37번 했고, 오늘은 게임을 49번 했다. 유나는 총 18번 졌다. 유나가 총 몇 번 이겼는지 구하시오.",
+        "QuestionConv": "nae0 는 게임을 좋아한다 nae0 는 어제 게임을 num0 번 했고 오늘은 게임을 num1 번 했다 nae0 는 총 num2 번 졌다 nae0 가 총 몇 번 이겼는지 구하시오 .",
+        "Numbers": {
+            "num0": 37,
+            "num1": 49,
+            "num2": 18
+        },
+        "Equation": "func_minus(func_add(num0,num1),num2)",
+        "Answer": 68,
+        "Type": "TVQ-Change",
+        "EquationConv": "func_minus func_add num0 num1 num2",
+        "src": "nae0 는 _ 게 임 을 _ 좋 아 한 다 _ nae0 는 _ 어 제 _ 게 임 을 _ num0 번 _ 했 고 _ 오 늘 은 _ 게 임 을 _ num1 번 _ 했 다 _ nae0 는 _ 총 _ num2 번 _ 졌 다 _ nae0 가 _ 총 _ 몇 _ 번 _ 이 겼 는 지 _ 구 하 시 오",
+        "trg": "func_minus func_add num0 num1 num2"
+    },
+    {
+        "Question": "배 한 개의 무게는 귤 5개의 무게와 같다고 합니다. 귤 한 개의 무게가 80 g 일 때, 배 4개의 무게는 몇 g 입니까?",
+        "QuestionConv": "foo0 num0 개의 무게는 귤 num1 개의 무게와 같다고 합니다 귤 num2 개의 무게가 num3 g 일 때 배 num4 개의 무게는 몇 g 입니까 ?",
+        "Numbers": {
+            "num0": 1,
+            "num1": 5,
+            "num2": 1,
+            "num3": 80,
+            "num4": 4
+        },
+        "Equation": "func_multiply(func_multiply(num1,func_perobj(num3,num2)),num4)",
+        "Answer": 1600,
+        "Type": "Multiplication",
+        "EquationConv": "func_multiply func_multiply num1 func_perobj num3 num2 num4",
+        "src": "foo0 num0 개 의 _ 무 게 는 _ 귤 _ num1 개 의 _ 무 게 와 _ 같 다 고 _ 합 니 다 _ 귤 _ num2 개 의 _ 무 게 가 _ num3 g _ 일 _ 때 _ 배 _ num4 개 의 _ 무 게 는 _ 몇 _ g _ 입 니 까",
+        "trg": "func_multiply func_multiply num1 func_perobj num3 num2 num4"
+    },
+    {
+        "Question": "가게에 우유는 12 개씩 6 줄로, 음료수는 14 개씩 4줄로 놓여 있습니다. 가게에 놓여 있는 우유와 음료수는 모두 몇 개입니까?",
+        "QuestionConv": "가게에 foo0 는 rep0 개씩 num0 줄로 foo1 는 rep1 개씩 num1 줄로 놓여 있습니다 가게에 놓여 있는 foo0 와 foo1 는 모두 몇 개입니까 ?",
+        "Numbers": {
+            "rep0": 12,
+            "num0": 6,
+            "rep1": 14,
+            "num1": 4
+        },
+        "Equation": "func_add(func_multiply(rep0,num0),func_multiply(rep1,num1))",
+        "Answer": 128,
+        "Type": "Addition",
+        "EquationConv": "func_add func_multiply rep0 num0 func_multiply rep1 num1",
+        "src": "가 게 에 _ foo0 는 _ rep0 개 씩 _ num0 줄 로 _ foo1 는 _ rep1 개 씩 _ num1 줄 로 _ 놓 여 _ 있 습 니 다 _ 가 게 에 _ 놓 여 _ 있 는 _ foo0 와 _ foo1 는 _ 모 두 _ 몇 _ 개 입 니 까",
+        "trg": "func_add func_multiply rep0 num0 func_multiply rep1 num1"
+    },
+    {
+        "Question": "귤 6 개와 감 3 개의 무게가 같고, 감 4 개와 사과 3개의 무게가 각각 같습니다. 귤 1 개의 무게가 150 g 이라면 사과 1 개의 무게는 몇 g 입니까?",
+        "QuestionConv": "foo0 num0 개와 감 num1 개의 무게가 같고 foo1 num2 개와 foo2 num3 개의 무게가 각각 같습니다 귤 num4 개의 무게가 num5 g 이라면 foo2 num6 개의 무게는 몇 g 입니까 ?",
+        "Numbers": {
+            "num0": 6,
+            "num1": 3,
+            "num2": 4,
+            "num3": 3,
+            "num4": 1,
+            "num5": 150,
+            "num6": 1
+        },
+        "Equation": "func_multiply(func_perobj(func_multiply(func_perobj(func_multiply(num0,func_perobj(num5,num4)),num1),num2),num3),num6)",
+        "Answer": 400,
+        "Type": "Multiplication",
+        "EquationConv": "func_multiply func_perobj func_multiply func_perobj func_multiply num0 func_perobj num5 num4 num1 num2 num3 num6",
+        "src": "foo0 num0 개 와 _ 감 _ num1 개 의 _ 무 게 가 _ 같 고 _ foo1 num2 개 와 _ foo2 num3 개 의 _ 무 게 가 _ 각 각 _ 같 습 니 다 _ 귤 _ num4 개 의 _ 무 게 가 _ num5 g _ 이 라 면 _ foo2 num6 개 의 _ 무 게 는 _ 몇 _ g _ 입 니 까",
+        "trg": "func_multiply func_perobj func_multiply func_perobj func_multiply num0 func_perobj num5 num4 num1 num2 num3 num6"
+    },
+    {
+        "Question": "지름이 50 m인 원을 그렸습니다. 원의 반지름은 몇 cm일까요?",
+        "QuestionConv": "지름이 num0 m 인 원을 그렸습니다 . 원의 반지름은 몇 cm 일까요 ?",
+        "Numbers": {
+            "num0": 50,
+            "none": null
+        },
+        "Equation": "func_m2cm(func_radius(num0,none),none)",
+        "Answer": 2500,
+        "Type": "Circle",
+        "EquationConv": "func_m2cm func_radius num0 none none",
+        "src": "지 름 이 _ num0 m _ 인 _ 원 을 _ 그 렸 습 니 다 _ 원 의 _ 반 지 름 은 _ 몇 _ c m _ 일 까 요",
+        "trg": "func_m2cm func_radius num0 none none"
+    },
+    {
+        "Question": "유정이가 모은 엽서는 민영가 모은 엽서의 수의 4배보다 9장이 더 적습니다. 유정이가 모은 엽서의 수가 91장일 때,민영이가 모은 엽서는 몇 장일까요?",
+        "QuestionConv": "nae0 이가 모은 엽서는 nae1 가 모은 엽서의 수의 num0 배보다 num1 장이 더 적습니다 nae0 이가 모은 엽서의 수가 num2 장일 때 nae1 이가 모은 엽서는 몇 장일까요 ?",
+        "Numbers": {
+            "num0": 4,
+            "num1": 9,
+            "num2": 91
+        },
+        "Equation": "func_divide(func_add(num2,num1),num0)",
+        "Answer": 25,
+        "Type": "Equation",
+        "EquationConv": "func_divide func_add num2 num1 num0",
+        "src": "nae0 이 가 _ 모 은 _ 엽 서 는 _ nae1 가 _ 모 은 _ 엽 서 의 _ 수 의 _ num0 배 보 다 _ num1 장 이 _ 더 _ 적 습 니 다 _ nae0 이 가 _ 모 은 _ 엽 서 의 _ 수 가 _ num2 장 일 _ 때 _ nae1 이 가 _ 모 은 _ 엽 서 는 _ 몇 _ 장 일 까 요",
+        "trg": "func_divide func_add num2 num1 num0"
+    },
+    {
+        "Question": "윤기는 270 원짜리 공책 1 권을 사고 500 원을 내었습니다. 거스름돈은 얼마를 받아야 합니까?",
+        "QuestionConv": "nae0 는 num0 원짜리 sta0 num1 권을 사고 num2 원을 내었습니다 . 거스름돈은 얼마를 받아야 합니까 ?",
+        "Numbers": {
+            "num0": 270,
+            "num1": 1,
+            "num2": 500
+        },
+        "Equation": "func_minus(num2, func_multiply(num0,num1))",
+        "Answer": 230,
+        "Type": "TVQ-Change",
+        "EquationConv": "func_minus num2 func_multiply num0 num1",
+        "src": "nae0 는 _ num0 원 짜 리 _ sta0 num1 권 을 _ 사 고 _ num2 원 을 _ 내 었 습 니 다 _ 거 스 름 돈 은 _ 얼 마 를 _ 받 아 야 _ 합 니 까",
+        "trg": "func_minus num2 func_multiply num0 num1"
+    },
+    {
+        "Question": "빵이 한 붕지에 9개씩 4봉지 있습니다. 빵을 한 접시에 6개씩 나누어 담으려면 접시는 몇 개 필요한가요?",
+        "QuestionConv": "빵이 num0 붕지에 rep0 개씩 num1 봉지 있습니다 . 빵을 num2 접시에 rep1 개씩 나누어 담으려면 접시는 몇 개 필요한가요 ?",
+        "Numbers": {
+            "rep0": 9,
+            "num1": 4,
+            "rep1": 6
+        },
+        "Equation": "func_divide(func_multiply(rep0,num1),rep1)",
+        "Answer": 6,
+        "Type": "Common-Division",
+        "EquationConv": "func_divide func_multiply rep0 num1 rep1",
+        "src": "빵 이 _ num0 붕 지 에 _ rep0 개 씩 _ num1 봉 지 _ 있 습 니 다 _ 빵 을 _ num2 접 시 에 _ rep1 개 씩 _ 나 누 어 _ 담 으 려 면 _ 접 시 는 _ 몇 _ 개 _ 필 요 한 가 요",
+        "trg": "func_divide func_multiply rep0 num1 rep1"
+    },
+    {
+        "Question": "쿠키가 50개 있습니다. 남학생 4명과 여학생 3명으로 이루어진 모둠에 1명에게 쿠키를 1 개씩 모두 6 모둠에 나누어 주고 선생님께서 쿠키 2개를 가지셨습니다. 남은 쿠키는 몇 개인지 알아보세요.",
+        "QuestionConv": "쿠키가 num0 개 있습니다 . 남학생 num1 명과 여학생 num2 명으로 이루어진 모둠에 num3 명에게 쿠키를 rep0 개씩 모두 num4 모둠에 나누어 주고 선생님께서 쿠키 num5 개를 가지셨습니다 . 남은 쿠키는 몇 개인지 알아보세요 .",
+        "Numbers": {
+            "num0": 50,
+            "num1": 4,
+            "num2": 3,
+            "num3": 1,
+            "num4": 6,
+            "num5": 2,
+            "rep0": 1
+        },
+        "Equation": "func_minus(func_minus(num0,func_multiply(func_multiply(func_add(num1,num2),rep0),num4)),num5)",
+        "Answer": 6,
+        "Type": "TVQ-Final",
+        "EquationConv": "func_minus func_minus num0 func_multiply func_multiply func_add num1 num2 rep0 num4 num5",
+        "src": "쿠 키 가 _ num0 개 _ 있 습 니 다 _ 남 학 생 _ num1 명 과 _ 여 학 생 _ num2 명 으 로 _ 이 루 어 진 _ 모 둠 에 _ num3 명 에 게 _ 쿠 키 를 _ rep0 개 씩 _ 모 두 _ num4 모 둠 에 _ 나 누 어 _ 주 고 _ 선 생 님 께 서 _ 쿠 키 _ num5 개 를 _ 가 지 셨 습 니 다 _ 남 은 _ 쿠 키 는 _ 몇 _ 개 인 지 _ 알 아 보 세 요",
+        "trg": "func_minus func_minus num0 func_multiply func_multiply func_add num1 num2 rep0 num4 num5"
+    },
+    {
+        "Question": "지민, 정국, 태형이의 수학 점수는 각각 94점, 82점, 88점입니다. 이 3을 제외한 학급의 수학 점수 평균은 78점입니다. 지민이네 학급 인원수가 30명일 때, 학급 수학 평균 점수는 몇 점입니까?",
+        "QuestionConv": "nae0 nae1 nae2 이의 sbj0 점수는 각각 num0 점 num1 점 num2 점입니다 이 num3 을 제외한 학급의 sbj0 점수 평균은 num4 점입니다 nae0 이네 학급 인원수가 num5 명일 때 학급 sbj0 평균 점수는 몇 점입니까 ?",
+        "Numbers": {
+            "num0": 94,
+            "num1": 82,
+            "num2": 88,
+            "num3": 3,
+            "num4": 78,
+            "num5": 30
+        },
+        "Equation": "func_divide(func_add(func_add(func_add(func_multiply(func_minus(num5,num3),num4),num0),num1),num2),num5)",
+        "Answer": 79,
+        "Type": "Mean",
+        "EquationConv": "func_divide func_add func_add func_add func_multiply func_minus num5 num3 num4 num0 num1 num2 num5",
+        "src": "nae0 nae1 nae2 이 의 _ sbj0 점 수 는 _ 각 각 _ num0 점 _ num1 점 _ num2 점 입 니 다 _ 이 _ num3 을 _ 제 외 한 _ 학 급 의 _ sbj0 점 수 _ 평 균 은 _ num4 점 입 니 다 _ nae0 이 네 _ 학 급 _ 인 원 수 가 _ num5 명 일 _ 때 _ 학 급 _ sbj0 평 균 _ 점 수 는 _ 몇 _ 점 입 니 까",
+        "trg": "func_divide func_add func_add func_add func_multiply func_minus num5 num3 num4 num0 num1 num2 num5"
+    },
+    {
+        "Question": "유나는 동화책 30 권 중에서 4 권을 동생에게 주고 아버지께 15 권을 선물로 받았습니다. 지금 유나가 가지고 있는 동화책은 몇 권입니까?",
+        "QuestionConv": "nae0 는 sta0 num0 권 중에서 num1 권을 동생에게 주고 아버지께 num2 권을 선물로 받았습니다 지금 nae0 가 가지고 있는 sta0 은 몇 권입니까 ?",
+        "Numbers": {
+            "num0": 30,
+            "num1": 4,
+            "num2": 15
+        },
+        "Equation": "func_add(func_minus(num0,num1),num2)",
+        "Answer": 41,
+        "Type": "TVQ-Change",
+        "EquationConv": "func_add func_minus num0 num1 num2",
+        "src": "nae0 는 _ sta0 num0 권 _ 중 에 서 _ num1 권 을 _ 동 생 에 게 _ 주 고 _ 아 버 지 께 _ num2 권 을 _ 선 물 로 _ 받 았 습 니 다 _ 지 금 _ nae0 가 _ 가 지 고 _ 있 는 _ sta0 은 _ 몇 _ 권 입 니 까",
+        "trg": "func_add func_minus num0 num1 num2"
+    },
+    {
+        "Question": "호석이는 동생보다 252 원 더 가지고 있습니다. 호석이가 가지고 있는 돈이 764 원이라면 동생이 가지고 있는 돈은 얼마입니까?",
+        "QuestionConv": "nae0 이는 동생보다 num0 원 더 가지고 있습니다 . nae0 이가 가지고 있는 돈이 num1 원이라면 동생이 가지고 있는 돈은 얼마입니까 ?",
+        "Numbers": {
+            "num0": 252,
+            "num1": 764
+        },
+        "Equation": "func_minus(num1, num0)",
+        "Answer": 512,
+        "Type": "Subtraction",
+        "EquationConv": "func_minus num1 num0",
+        "src": "nae0 이 는 _ 동 생 보 다 _ num0 원 _ 더 _ 가 지 고 _ 있 습 니 다 _ nae0 이 가 _ 가 지 고 _ 있 는 _ 돈 이 _ num1 원 이 라 면 _ 동 생 이 _ 가 지 고 _ 있 는 _ 돈 은 _ 얼 마 입 니 까",
+        "trg": "func_minus num1 num0"
+    },
+    {
+        "Question": "무 12개를 4명이 똑같이 나누어 가지면 한 명이 몇 개씩 가지면 되나요?",
+        "QuestionConv": "foo0 num0 개를 num1 명이 똑같이 나누어 가지면 num2 명이 몇 개씩 가지면 되나요 ?",
+        "Numbers": {
+            "num0": 12,
+            "num1": 4
+        },
+        "Equation": "func_divide(num0,num1)",
+        "Answer": 3,
+        "Type": "Common-Division",
+        "EquationConv": "func_divide num0 num1",
+        "src": "foo0 num0 개 를 _ num1 명 이 _ 똑 같 이 _ 나 누 어 _ 가 지 면 _ num2 명 이 _ 몇 _ 개 씩 _ 가 지 면 _ 되 나 요",
+        "trg": "func_divide num0 num1"
+    },
+    {
+        "Question": "열차의 일반실에 575명, 특실에는 147명이 탔어요. 이 열차에는 모두 몇 명이 탔나요?",
+        "QuestionConv": "열차의 일반실에 num0 명 , 특실에는 num1 명이 탔어요 . 이 열차에는 모두 몇 명이 탔나요 ?",
+        "Numbers": {
+            "num0": 575,
+            "num1": 147
+        },
+        "Equation": "func_add(num0,num1)",
+        "Answer": 722,
+        "Type": "Addition",
+        "EquationConv": "func_add num0 num1",
+        "src": "열 차 의 _ 일 반 실 에 _ num0 명 _ 특 실 에 는 _ num1 명 이 _ 탔 어 요 _ 이 _ 열 차 에 는 _ 모 두 _ 몇 _ 명 이 _ 탔 나 요",
+        "trg": "func_add num0 num1"
+    },
+    {
+        "Question": "단팥빵 39 개와 크림빵 69 개가 있습니다. 이 빵을 상자 12 개에 똑같은 개수로 나누어 담으려고 합니다. 한 상자에 몇 개씩 담아야 하는지 구해 보시오.?",
+        "QuestionConv": "단팥빵 num0 개와 크림빵 num1 개가 있습니다 . 이 빵을 상자 num2 개에 똑같은 개수로 나누어 담으려고 합니다 . num3 상자에 몇 개씩 담아야 하는지 구해 보시오 .",
+        "Numbers": {
+            "num0": 39,
+            "num1": 69,
+            "num2": 12
+        },
+        "Equation": "func_divide(func_add(num0,num1),num2)",
+        "Answer": 9,
+        "Type": "Common-Division",
+        "EquationConv": "func_divide func_add num0 num1 num2",
+        "src": "단 팥 빵 _ num0 개 와 _ 크 림 빵 _ num1 개 가 _ 있 습 니 다 _ 이 _ 빵 을 _ 상 자 _ num2 개 에 _ 똑 같 은 _ 개 수 로 _ 나 누 어 _ 담 으 려 고 _ 합 니 다 _ num3 상 자 에 _ 몇 _ 개 씩 _ 담 아 야 _ 하 는 지 _ 구 해 _ 보 시 오",
+        "trg": "func_divide func_add num0 num1 num2"
+    }
+]

@@ -1,0 +1,222 @@
+[
+    {
+        "Question": "태형이네 학교 어린이 62명과 남준이네 학교 어린이 83명이 어린이 캠프에 참가했습니다. 참가한 어린이는 모두 몇 명입니까?",
+        "QuestionConv": "nae0이네 학교 어린이 num0명과 nae1이네 학교 어린이 num1명이 어린이 캠프에 참가했습니다. 참가한 어린이는 모두 몇 명입니까?",
+        "Numbers": {
+            "num0": 62,
+            "num1": 83
+        },
+        "Equation": "func_add(num0, num1)",
+        "Answer": 145
+    },
+    {
+        "Question": "운동장에 23명의 운동 선수가 있습니다. 그중에서 9명이 여자 선수입니다. 남자 선수는 몇 명입니까?",
+        "QuestionConv": "운동장에 num0명의 운동 선수가 있습니다. 그중에서 num1명이 여자 선수입니다. 남자 선수는 몇 명입니까?",
+        "Numbers": {
+            "num0": 23,
+            "num1": 9
+        },
+        "Equation": "func_minus(num0, num1)",
+        "Answer": 14
+    },
+    {
+        "Question": "남준이와 석진이는 농구 시합을 하였습니다. 석진이가 남준이보다 18점을 더 얻었습니다. 남준이가 68점을 얻었다면 석진이가 얻은 점수는 몇 점입니까?",
+        "QuestionConv": "nae0이와 nae1이는 농구 시합을 하였습니다. nae1이가 nae0이보다 num0점을 더 얻었습니다. nae0이가 num1점을 얻었다면 nae1이가 얻은 점수는 몇 점입니까?",
+        "Numbers": {
+            "num0": 18,
+            "num1": 68
+        },
+        "Equation": "func_add(num0, num1)",
+        "Answer": 86
+    },
+    {
+        "Question": "트럭 두 대에 통나무가 실려 있습니다. 앞 트럭에는 52개의 통나무가 실려 있고, 뒷 트럭에는 앞 트럭보다 12개의 통나무가 더 실려 있습니다. 뒷 트럭에 실려 있는 통나무는 몇 개입니까?",
+        "QuestionConv": "트럭 num0 대에 통나무가 실려 있습니다. 앞 트럭에는 num1개의 통나무가 실려 있고, 뒷 트럭에는 앞 트럭보다 num2개의 통나무가 더 실려 있습니다. 뒷 트럭에 실려 있는 통나무는 몇 개입니까?",
+        "Numbers": {
+            "num0": 2,
+            "num1": 52,
+            "num2": 12
+        },
+        "Equation": "func_add(num1, num2)",
+        "Answer": 64
+    },
+    {
+        "Question": "윤기와 호석이는 함께 밤을 주웠습니다. 윤기는 54개를 주웠고, 호석이는 윤기보다 16개 적게 주웠습니다. 호석이는 밤을 몇 개 주웠습니까?",
+        "QuestionConv": "nae0와 nae1이는 함께 밤을 주웠습니다. nae0는 num0개를 주웠고, nae1이는 nae0보다 num1개 적게 주웠습니다. nae1이는 밤을 몇 개 주웠습니까?",
+        "Numbers": {
+            "num0": 54,
+            "num1": 16
+        },
+        "Equation": "func_minus(num0, num1)",
+        "Answer": 38
+    },
+    {
+        "Question": "은지는 색종이를 42장 가지고 있고, 유나는 은지보다 17장 적게 가지고 있습니다. 유나가 가지고 있는 색종이는 몇 장입니까?",
+        "QuestionConv": "nae0는 색종이를 num0장 가지고 있고, nae1는 nae0보다 num1장 적게 가지고 있습니다. nae1가 가지고 있는 색종이는 몇 장입니까?",
+        "Numbers": {
+            "num0": 42,
+            "num1": 17
+        },
+        "Equation": "func_minus(num0, num1)",
+        "Answer": 25
+    },
+    {
+        "Question": "지민이는 42개의 구슬을 가지고 목걸이를 만들었습니다. 정국이는 지민이보다 18개 더 많은 구슬을 가지고 목걸이를 만들었습니다. 두 사람이 목걸이를 만드는 데 사용한 구슬은 모두 몇 개입니까?",
+        "QuestionConv": "nae0이는 num0개의 구슬을 가지고 목걸이를 만들었습니다. nae1이는 nae0이보다 num1개 더 많은 구슬을 가지고 목걸이를 만들었습니다. num2 사람이 목걸이를 만드는 데 사용한 구슬은 모두 몇 개입니까?",
+        "Numbers": {
+            "num0": 42,
+            "num1": 18,
+            "num2": 2
+        },
+        "Equation": "func_add(num0, func_add(num0, num1))",
+        "Answer": 102
+    },
+    {
+        "Question": "민영이는 조개 껍데기를 19개 주웠습니다. 유정이는 민영이보다 3개 더 많이 주웠습니다. 민영이와 유정이가 주운 조개 껍데기는 모두 몇 개입니까?",
+        "QuestionConv": "nae0이는 조개 껍데기를 num0개 주웠습니다. nae1이는 nae0이보다 num1개 더 많이 주웠습니다. nae0이와 nae1이가 주운 조개 껍데기는 모두 몇 개입니까?",
+        "Numbers": {
+            "num0": 19,
+            "num1": 3
+        },
+        "Equation": "func_add(num0, func_add(num0, num1))",
+        "Answer": 41
+    },
+    {
+        "Question": "윤기는 장난감을 15개 가지고 있고, 호석이는 윤기보다 7개 적게 가지고 있습니다. 윤기와 호석이가 가지고 있는 장난감은 모두 몇 개입니까?",
+        "QuestionConv": "nae0는 장난감을 num0개 가지고 있고, nae1이는 nae0보다 num1개 적게 가지고 있습니다. nae0와 nae1이가 가지고 있는 장난감은 모두 몇 개입니까?",
+        "Numbers": {
+            "num0": 15,
+            "num1": 7
+        },
+        "Equation": "func_add(num0, func_minus(num0, num1))",
+        "Answer": 23
+    },
+    {
+        "Question": "유나는 별사탕을 27개 가지고 있습니다. 정국이는 유나보다 3개 적게 가지고 있습니다. 정국이와 유나가 가지고 있는 별사탕은 모두 몇 개입니까?",
+        "QuestionConv": "nae0는 별사탕을 num0개 가지고 있습니다. nae1이는 nae0보다 num1개 적게 가지고 있습니다. nae1이와 nae0가 가지고 있는 별사탕은 모두 몇 개입니까?",
+        "Numbers": {
+            "num0": 27,
+            "num1": 3
+        },
+        "Equation": "func_add(num0, func_minus(num0, num1))",
+        "Answer": 51
+    },
+    {
+        "Question": "버스에 20명이 타고 출발하여 첫 번째 정류장에서 13명이 내리고 7명이 탔습니다. 지금 버스 안에 있는 사람은 몇 명입니까?",
+        "QuestionConv": "버스에 num0명이 타고 출발하여 첫 번째 정류장에서 num1명이 내리고 num2명이 탔습니다. 지금 버스 안에 있는 사람은 몇 명입니까?",
+        "Numbers": {
+            "num0": 20,
+            "num1": 13,
+            "num2": 7
+        },
+        "Equation": "func_add(func_minus(num0, num1), num2)",
+        "Answer": 14
+    },
+    {
+        "Question": "태형이네 반은 남학생이 14명, 여학생이 13명입니다. 이 중에서 안경을 쓴 학생이 9명이라면 안경을 쓰지 않은 학생은 몇 명입니까?",
+        "QuestionConv": "nae0이네 반은 남학생이 num0명, 여학생이 num1명입니다. 이 중에서 안경을 쓴 학생이 num2명이라면 안경을 쓰지 않은 학생은 몇 명입니까?",
+        "Numbers": {
+            "num0": 14,
+            "num1": 13,
+            "num2": 9
+        },
+        "Equation": "func_minus(func_add(num0, num1), num2)",
+        "Answer": 18
+    },
+    {
+        "Question": "은지의 키는 138cm이고, 아버지의 키는 172cm입니다. 언니의 키는 소미보다 10cm 더 클 때, 아버지와 언니의 키의 차는 몇 cm입니까?",
+        "QuestionConv": "nae0의 키는 num0 cm이고, 아버지의 키는 num1 cm입니다. 언니의 키는 nae0보다 num2 cm 더 클 때, 아버지와 언니의 키의 차는 몇 cm입니까?",
+        "Numbers": {
+            "num0": 138,
+            "num1": 172,
+            "num2": 10
+        },
+        "Equation": "func_minus(num1, func_add(num0, num2))",
+        "Answer": 24
+    },
+    {
+        "Question": "복숭아가 한 봉지에 4개씩 6봉지 있습니다. 이것을 3명에게 똑같이 나누어 주려면 한 사람에게 몇 개씩 나누어 주면 됩니까?",
+        "QuestionConv": "복숭아가 num0 봉지에 num1 개씩 num2 봉지 있습니다. 이것을 num3 명에게 똑같이 나누어 주려면 한 사람에게 몇 개씩 나누어 주면 됩니까?",
+        "Numbers": {
+            "num0": 1,
+            "num1": 4,
+            "num2": 6,
+            "num3": 3
+        },
+        "Equation": "func_divide(func_multiply(num1, num2), num3)",
+        "Answer": 8
+    },
+    {
+        "Question": "민영이네 반 24명의 학생들은 6명씩 한 모둠을 만들어 하천 주변에서 쓰레기 줍기를 하였습니다. 한 모둠당 쓰레기봉투를 2개씩 받았다면 나누어 준 쓰레기봉투는 모두 몇 개입니까?",
+        "QuestionConv": "nae0 이네 반 num0 명의 학생들은 num1 명씩 num2 모둠을 만들어 하천 주변에서 쓰레기 줍기를 하였습니다. num3 모둠당 쓰레기봉투를 num4 개씩 받았다면 나누어 준 쓰레기봉투는 모두 몇 개입니까?",
+        "Numbers": {
+            "num0": 24,
+            "num1": 6,
+            "num2": 1,
+            "num3": 1,
+            "num4": 2
+        },
+        "Equation": "func_multiply(func_divide(num0, num1), num4)",
+        "Answer": 8
+    },
+    {
+        "Question": "색연필 한 타는 12자루입니다. 색연필 10타를 8명에게 똑같이 나누어 준다면 한 사람이 가지게 되는 색연필은 몇 자루입니까?",
+        "QuestionConv": "색연필 num0 타는 num1 자루입니다. 색연필 num2 타를 num3 명에게 똑같이 나누어 준다면 num4 사람이 가지게 되는 색연필은 몇 자루입니까?",
+        "Numbers": {
+            "num0": 1,
+            "num1": 12,
+            "num2": 10,
+            "num3": 8,
+            "num4": 1
+        },
+        "Equation": "func_multiply(func_divide(func_multiply(func_divide(num1, num0), num2), num3), num4)",
+        "Answer": 15
+    },
+    {
+        "Question": "한 사람이 한 시간에 종이학을 8개씩 만들 수 있다고 합니다. 4명이 종이학 160개를 만들려면 몇 시간이 걸립니까?",
+        "QuestionConv": "num0 사람이 num1 시간에 종이학을 num2 개씩 만들 수 있다고 합니다. num3 명이 종이학 num4 개를 만들려면 몇 시간이 걸립니까?",
+        "Numbers": {
+            "num0": 1,
+            "num1": 1,
+            "num2": 8,
+            "num3": 4,
+            "num4": 160
+        },
+        "Equation": "func_divide(func_divide(num4, num3), func_divide(func_divide(num2, num1), num0))",
+        "Answer": 5
+    },
+    {
+        "Question": "과일가게에 귤이 80개 있습니다. 석진이가 16개를 사갔고, 윤기가 12개를 사갔습니다. 과일가게에 남은 귤은 몇 개입니까?",
+        "QuestionConv": "과일가게에 귤이 num0 개 있습니다. nae0 이가 num1 개를 사갔고, nae1 가 num2 개를 사갔습니다. 과일가게에 남은 귤은 몇 개입니까?",
+        "Numbers": {
+            "num0": 80,
+            "num1": 16,
+            "num2": 12
+        },
+        "Equation": "func_minus(func_minus(num0, num1), num2)",
+        "Answer": 52
+    },
+    {
+        "Question": "(가) 도서관에서 하루에 11권의 과학책과 24권의 소설책이 대여됩니다. 일주일 동안 대여된 소설책은 같은 기간 동안에 대여된 과학책보다 몇 권이 더 많습니까?",
+        "QuestionConv": "(가) 도서관에서 하루에 num0 권의 과학책과 num1 권의 소설책이 대여됩니다. num2 동안 대여된 소설책은 같은 기간 동안에 대여된 과학책보다 몇 권이 더 많습니까?",
+        "Numbers": {
+            "num0": 11,
+            "num1": 24,
+            "num2": 7
+        },
+        "Equation": "func_minus(func_multiply(num1, num2), func_multiply(num0, num2))",
+        "Answer": 91
+    },
+    {
+        "Question": "빵 26개를 남학생 5명과 여학생 4명에게 각각 2개씩 나누어 주었습니다. 남은 빵은 몇 개 입니까?",
+        "QuestionConv": "빵 num0 개를 남학생 num1 명과 여학생 num2 명에게 각각 num3 개씩 나누어 주었습니다. 남은 빵은 몇 개 입니까?",
+        "Numbers": {
+            "num0": 26,
+            "num1": 5,
+            "num2": 4,
+            "num3": 2
+        },
+        "Equation": "func_minus(func_minus(num0, func_multiply(num1, num3)), func_multiply(num2, num3))",
+        "Answer": 8
+    }
+]

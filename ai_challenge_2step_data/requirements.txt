@@ -1,0 +1,7 @@
+konlpy
+pandas
+openpyxl
+transformers
+sklearn
+seaborn
+pytorchtools

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@98fe0f65-f7c7-45cc-a92e-290acfc12548" />
+        <remote-mappings server-id="python@sftp://kdg99098@163.239.28.24:22/home/kdg99098/Graph2Tree_kor/myenv/bin/python" />
+      </list>
+    </list>
+  </component>
+</project>

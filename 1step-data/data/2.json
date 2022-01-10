@@ -1,0 +1,1209 @@
+[
+    {
+        "Question": "20명의 학생들이 한 줄로 줄을 섰습니다. 윤기의 앞에 11명의 학생들이 서 있습니다. 윤기의 뒤에 서 있는 학생은 몇 명입니까?",
+        "QuestionConv": "num0 명의 학생들이 num1 줄로 줄을 섰습니다 nae0 의 앞에 num2 명의 학생들이 서 있습니다 nae0 의 뒤에 서 있는 학생은 몇 명입니까",
+        "Numbers": {
+            "num0": 20,
+            "num1": 1,
+            "num2": 11
+        },
+        "Equation": "func_minus(func_minus(func_perobj(num0,num1), num2),one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "20명의 학생들이 한 줄로 줄을 섰습니다. 윤기의 뒤에 11명의 학생들이 서 있습니다. 윤기의 앞에 서 있는 학생은 몇 명입니까?",
+        "QuestionConv": "num0 명의 학생들이 num1 줄로 줄을 섰습니다 nae0 의 뒤에 num2 명의 학생들이 서 있습니다 nae0 의 앞에 서 있는 학생은 몇 명입니까",
+        "Numbers": {
+            "num0": 20,
+            "num1": 1,
+            "num2": 11
+        },
+        "Equation": "func_minus(func_minus(func_perobj(num0,num1), num2),one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "20명의 학생들이 줄을 섰습니다. 윤기의 뒤에 11명의 학생들이 서 있습니다. 윤기의 앞에 서 있는 학생은 몇 명입니까?",
+        "QuestionConv": "num0 명의 학생들이 줄을 섰습니다 nae0 의 뒤에 num1 명의 학생들이 서 있습니다 nae0 의 앞에 서 있는 학생은 몇 명입니까",
+        "Numbers": {
+            "num0": 20,
+            "num1": 11
+        },
+        "Equation": "func_minus(func_minus(num0, num1),one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "학교 축제가 시작되었습니다. 20명의 학생들이 한 줄로 줄을 섰습니다. 윤기의 앞에 11명의 학생들이 서 있습니다. 윤기의 뒤에 서 있는 학생은 몇 명입니까?",
+        "QuestionConv": "학교 축제가 시작되었습니다. num0 명의 학생들이 num1 줄로 줄을 섰습니다. nae0 의 앞에 num2 명의 학생들이 서 있습니다. nae0 의 뒤에 서 있는 학생은 몇 명입니까?",
+        "Numbers": {
+            "num0": 20,
+            "num1": 1,
+            "num2": 11
+        },
+        "Equation": "func_minus(func_minus(func_perobj(num0,num1), num2),one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "식당이 문을 열기도 전에 20명의 손님들이 한 줄로 줄을 섰습니다. 윤기의 앞에 11명의 손님들이 서 있습니다. 윤기의 뒤에 서 있는 손님은 몇 명입니까?",
+        "QuestionConv": "식당이 문을 열기도 전에 num0 명의 손님들이 num1 줄로 줄을 섰습니다. nae0 의 앞에 num2 명의 손님들이 서 있습니다. nae0 의 뒤에 서 있는 손님은 몇 명입니까?",
+        "Numbers": {
+            "num0": 20,
+            "num1": 1,
+            "num2": 11
+        },
+        "Equation": "func_minus(func_minus(func_perobj(num0,num1), num2),one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "식당 앞에 20명의 손님들이 줄을 서고 대기하고 있습니다. 윤기의 앞에 11명의 손님들이 기다리고 있습니다. 윤기의 뒤에서 기다리고 있는 손님은 몇 명입니까?",
+        "QuestionConv": "식당 앞에 num0 명의 손님들이 줄을 서고 대기하고 있습니다. nae0 의 앞에 num1 명의 손님들이 기다리고 있습니다. nae0 의 뒤에서 기다리고 있는 손님은 몇 명입니까?",
+        "Numbers": {
+            "num0": 20,
+            "num1": 11
+        },
+        "Equation": "func_minus(func_minus(num0, num1),one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "식당 앞에 20명의 손님들이 줄을 서고 대기하고 있습니다. 윤기의 뒤에 11명의 손님들이 기다리고 있습니다. 윤기의 앞에서 기다리고 있는 손님은 몇 명입니까?",
+        "QuestionConv": "식당 앞에 num0 명의 손님들이 줄을 서고 대기하고 있습니다. nae0 의 뒤에 num1 명의 손님들이 기다리고 있습니다. nae0 의 앞에서 기다리고 있는 손님은 몇 명입니까?",
+        "Numbers": {
+            "num0": 20,
+            "num1": 11
+        },
+        "Equation": "func_minus(func_minus(num0, num1),one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "식당 앞에서 윤기의 뒤에 11명의 손님들이 기다리고 있습니다. 총 20명이 기다리고 있다고 할 때, 윤기의 앞에서 기다리고 있는 손님은 몇 명입니까?",
+        "QuestionConv": "식당 앞에서 nae0 의 뒤에 num0 명의 손님들이 기다리고 있습니다 총 num1 명이 기다리고 있다고 할 때 nae0 의 앞에서 기다리고 있는 손님은 몇 명입니까",
+        "Numbers": {
+            "num0": 11,
+            "num1": 20
+        },
+        "Equation": "func_minus(func_minus(num1, num0),one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "콘서트장에서 윤기의 앞에 11명의 사람들이 들어가길 기다리고 있습니다. 총 20명이 기다리고 있다고 할 때, 윤기의 뒤에서 기다리고 있는 사람은 몇 명입니까?",
+        "QuestionConv": "콘서트장에서 nae0 의 앞에 num0 명의 사람들이 들어가길 기다리고 있습니다 총 num1 명이 기다리고 있다고 할 때 nae0 의 뒤에서 기다리고 있는 사람은 몇 명입니까",
+        "Numbers": {
+            "num0": 11,
+            "num1": 20
+        },
+        "Equation": "func_minus(func_minus(num1, num0),one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "선착순 20명을 뽑는 이벤트가 있습니다. 지민이가 11번째일 때, 지민이 뒤로 몇 명이 더 뽑힐까요?",
+        "QuestionConv": "선착순 num0 명을 뽑는 이벤트가 있습니다 nae0 이가 ord0 번째일 때 nae0 이 뒤로 몇 명이 더 뽑힐까요",
+        "Numbers": {
+            "num0": 20,
+            "ord0": 11
+        },
+        "Equation": "func_minus(func_minus(num0, ord0),one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "선착순 20명을 뽑는 이벤트가 있습니다. 지민이가 11번째일 때, 지민이보다 몇 명이 더 먼저 뽑혔나요?",
+        "QuestionConv": "선착순 num0 명을 뽑는 이벤트가 있습니다 nae0 이가 ord0 번째일 때 nae0 이보다 몇 명이 더 먼저 뽑혔나요",
+        "Numbers": {
+            "num0": 20,
+            "ord0": 11
+        },
+        "Equation": "func_minus(ord0,one)",
+        "Answer": 10,
+        "Type": "Order"
+    },
+    {
+        "Question": "선착순 20명에게 신발을 증정할 예정입니다. 지민이가 11번째로 뽑혔을 때, 지민이 뒤로 몇 명이 신발을 증정받게 될까요?",
+        "QuestionConv": "선착순 num0 명에게 신발을 증정할 예정입니다 nae0 이가 ord0 번째로 뽑혔을 때 nae0 이 뒤로 몇 명이 신발을 증정받게 될까요",
+        "Numbers": {
+            "num0": 20,
+            "ord0": 11
+        },
+        "Equation": "func_minus(func_minus(num0, ord0),one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "달리기 시합에서 남준이는 2등을 했고, 윤기는 4등을 했습니다. 호석이는 윤기보다 잘했지만 남준이보다는 못했습니다. 호석이의 등수는 몇 등입니까?",
+        "QuestionConv": "달리기 시합에서 nae0 이는 num0 등을 했고 nae1 는 num1 등을 했습니다 nae2 이는 nae1 보다 잘했지만 nae0 이보다는 못했습니다 nae2 이의 등수는 몇 등입니까?",
+        "Numbers": {
+            "num0": 2,
+            "num1": 4
+        },
+        "Equation": "func_between(num0,num1)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "달리기 시합에서 남준이는 2번째로 결승선을 통과했고, 윤기는 4번째로 들어왔습니다. 호석이는 윤기보다 먼저 들어왔지만 남준이보다는 나중에 들어왔습니다. 호석이의 등수는 몇 등입니까?",
+        "QuestionConv": "달리기 시합에서 nae0 이는 ord0 번째로 결승선을 통과했고, nae1 는 ord1 번째로 들어왔습니다. nae2 이는 nae1 보다 먼저 들어왔지만 nae0 이보다는 나중에 들어왔습니다. nae2 이의 등수는 몇 등입니까?",
+        "Numbers": {
+            "ord0": 2,
+            "ord1": 4
+        },
+        "Equation": "func_between(ord0,ord1)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "수영 시합에서 남준이는 2번째로 터치패드를 찍었고, 윤기는 4번째로 찍었습니다. 호석이는 윤기보다 먼저 들어왔지만 남준이보다는 나중에 들어왔습니다. 호석이의 등수는 몇 등입니까?",
+        "QuestionConv": "수영 시합에서 nae0 이는 ord0 번째로 터치패드를 찍었고, nae1 는 ord1 번째로 찍었습니다. nae2 이는 nae1 보다 먼저 들어왔지만 nae0 이보다는 나중에 들어왔습니다. nae2 이의 등수는 몇 등입니까?",
+        "Numbers": {
+            "ord0": 2,
+            "ord1": 4
+        },
+        "Equation": "func_between(ord0,ord1)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "수영 시합에서 남준이는 2번째로 터치패드를 찍었고, 윤기는 4번째로 찍었습니다. 호석이는 윤기보다 먼저 들어왔지만 남준이보다는 나중에 들어왔습니다. 호석이는 몇 번째로 들어왔습니까?",
+        "QuestionConv": "수영 시합에서 nae0 이는 ord0 번째로 터치패드를 찍었고, nae1 는 ord1 번째로 찍었습니다. nae2 이는 nae1 보다 먼저 들어왔지만 nae0 이보다는 나중에 들어왔습니다. nae2 이는 몇 번째로 들어왔습니까?",
+        "Numbers": {
+            "ord0": 2,
+            "ord1": 4
+        },
+        "Equation": "func_between(ord0,ord1)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "수영 시합에서 남준이는 2번째로 결승선에 도달했고, 윤기는 4번째로 도착했습니다. 호석이는 윤기보다 먼저 도착했지만 남준이보다는 나중에 도착했습니다. 호석이는 몇 번째로 들어왔습니까?",
+        "QuestionConv": "수영 시합에서 nae0 이는 ord0 번째로 결승선에 도달했고, nae1 는 ord1 번째로 도착했습니다. nae2 이는 nae1 보다 먼저 도착했지만 nae0 이보다는 나중에 도착했습니다. nae2 이는 몇 번째로 들어왔습니까?",
+        "Numbers": {
+            "ord0": 2,
+            "ord1": 4
+        },
+        "Equation": "func_between(ord0,ord1)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "수영 시합에서 남준이는 4번째로 결승선에 도달했고, 윤기는 2번째로 도착했습니다. 호석이는 윤기보다 나중에 도착했지만 남준이보다는 먼저 도착했습니다. 호석이는 몇 번째로 들어왔습니까?",
+        "QuestionConv": "수영 시합에서 nae0 이는 ord0 번째로 결승선에 도달했고, nae1 는 ord1 번째로 도착했습니다. nae2 이는 nae1 보다 나중에 도착했지만 nae0 이보다는 먼저 도착했습니다. nae2 이는 몇 번째로 들어왔습니까?",
+        "Numbers": {
+            "ord0": 4,
+            "ord1": 2
+        },
+        "Equation": "func_between(ord1,ord0)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "스피드 스케이팅 시합에서 남준이는 4번째로 결승선을 통과하였고, 윤기는 2번째로 통과하였습니다. 호석이는 윤기보다 나중에 도착했지만 남준이보다는 먼저 도착했습니다. 호석이는 몇 번째로 통과했습니까?",
+        "QuestionConv": "스피드 스케이팅 시합에서 nae0 이는 ord0 번째로 결승선을 통과하였고, nae1 는 ord1 번째로 통과하였습니다. nae2 이는 nae1 보다 나중에 도착했지만 nae0 이보다는 먼저 도착했습니다. nae2 이는 몇 번째로 통과했습니까?",
+        "Numbers": {
+            "ord0": 4,
+            "ord1": 2
+        },
+        "Equation": "func_between(ord1,ord0)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "스피드 스케이팅 시합에서 남준이는 2번째로, 윤기는 4번째로 결승선을 통과하였습니다. 호석이는 남준이보다 나중에 도착했지만 윤기보다는 먼저 도착했습니다. 호석이는 몇 번째로 통과했습니까?",
+        "QuestionConv": "스피드 스케이팅 시합에서 nae0 이는 ord0 번째로, nae1 는 ord1 번째로 결승선을 통과하였습니다. nae2 이는 nae0 이보다 나중에 도착했지만 nae1 보다는 먼저 도착했습니다. nae2 이는 몇 번째로 통과했습니까?",
+        "Numbers": {
+            "ord0": 2,
+            "ord1": 4
+        },
+        "Equation": "func_between(ord0,ord1)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "이어달리기 시간입니다. 남준이는 2번째로, 윤기는 4번째로 달리기로 하였습니다. 호석이는 남준이보다 나중에 출발하지만 윤기보다는 먼저 출발합니다. 호석이는 몇 번째로 뛰기로 했습니까?",
+        "QuestionConv": "이어달리기 시간입니다. nae0 이는 ord0 번째로, nae1 는 ord1 번째로 달리기로 하였습니다. nae2 이는 nae0 이보다 나중에 출발하지만 nae1 보다는 먼저 출발합니다. nae2 이는 몇 번째로 뛰기로 했습니까?",
+        "Numbers": {
+            "ord0": 2,
+            "ord1": 4
+        },
+        "Equation": "func_between(ord0,ord1)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "키가 작은 사람부터 순서대로 9명이 한 줄로 서 있습니다. 호석이가 앞에서부터 5번째에 서 있습니다. 키가 큰 사람부터 순서대로 다시 줄을 서면 호석이는 앞에서부터 몇 번째에 서게 됩니까?",
+        "QuestionConv": "키가 작은 사람부터 순서대로 num0 명이 num1 줄로 서 있습니다. nae0 이가 앞에서부터 ord0 번째에 서 있습니다. 키가 큰 사람부터 순서대로 다시 줄을 서면 nae0 이는 앞에서부터 몇 번째에 서게 됩니까?",
+        "Numbers": {
+            "num0": 9,
+            "num1": 1,
+            "ord0": 5
+        },
+        "Equation": "func_add(func_minus(func_perobj(num0,num1), ord0),one)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "키가 작은 사람부터 순서대로 9명이 서 있습니다. 호석이가 앞에서부터 5번째에 서 있습니다. 키가 큰 사람부터 순서대로 다시 줄을 서면 호석이는 앞에서부터 몇 번째에 서게 됩니까?",
+        "QuestionConv": "키가 작은 사람부터 순서대로 num0 명이 서 있습니다. nae0 이가 앞에서부터 ord0 번째에 서 있습니다. 키가 큰 사람부터 순서대로 다시 줄을 서면 nae0 이는 앞에서부터 몇 번째에 서게 됩니까?",
+        "Numbers": {
+            "num0": 9,
+            "ord0": 5
+        },
+        "Equation": "func_add(func_minus(num0, ord0),one)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "키가 작은 사람부터 순서대로 9명이 서 있습니다. 호석이가 앞에서부터 5번째에 서 있습니다. 키가 큰 사람부터 순서대로 다시 줄을 서면 호석이는 뒤에서부터 몇 번째에 서게 됩니까?",
+        "QuestionConv": "키가 작은 사람부터 순서대로 num0 명이 서 있습니다. nae0 이가 앞에서부터 ord0 번째에 서 있습니다. 키가 큰 사람부터 순서대로 다시 줄을 서면 nae0 이는 뒤에서부터 몇 번째에 서게 됩니까?",
+        "Numbers": {
+            "num0": 9,
+            "ord0": 5
+        },
+        "Equation": "func_same(ord0,none)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "키가 큰 사람부터 한 줄로  순서대로 9명이 서 있습니다. 호석이가 앞에서부터 5번째에 서 있습니다. 키가 작은 사람부터 순서대로 다시 줄을 서면 호석이는 앞에서부터 몇 번째에 서게 됩니까?",
+        "QuestionConv": "키가 큰 사람부터 num0 줄로 순서대로 num1 명이 서 있습니다. nae0 이가 앞에서부터 ord0 번째에 서 있습니다. 키가 작은 사람부터 순서대로 다시 줄을 서면 nae0 이는 앞에서부터 몇 번째에 서게 됩니까?",
+        "Numbers": {
+            "num0": 1,
+            "num1": 9,
+            "ord0": 5
+        },
+        "Equation": "func_add(func_minus(func_perobj(num1,num0), ord0),one)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "키가 큰 사람부터 순서대로 9명이 한 줄로 서 있습니다. 호석이가 앞에서부터 5번째에 서 있습니다. 키가 작은 사람부터 순서대로 다시 줄을 서면 호석이는 앞에서부터 몇 번째에 서게 됩니까?",
+        "QuestionConv": "키가 큰 사람부터 순서대로 num0 명이 num1 줄로 서 있습니다. nae0 이가 앞에서부터 ord0 번째에 서 있습니다. 키가 작은 사람부터 순서대로 다시 줄을 서면 nae0 이는 앞에서부터 몇 번째에 서게 됩니까?",
+        "Numbers": {
+            "num0": 9,
+            "num1": 1,
+            "ord0": 5
+        },
+        "Equation": "func_add(func_minus(func_perobj(num0,num1), ord0),one)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "키가 큰 사람부터 순서대로 9명이 서 있습니다. 호석이가 앞에서부터 5번째에 서 있습니다. 키가 작은 사람부터 순서대로 다시 줄을 서면 호석이는 앞에서부터 몇 번째에 서게 됩니까?",
+        "QuestionConv": "키가 큰 사람부터 순서대로 num0 명이 서 있습니다. nae0 이가 앞에서부터 ord0 번째에 서 있습니다. 키가 작은 사람부터 순서대로 다시 줄을 서면 nae0 이는 앞에서부터 몇 번째에 서게 됩니까?",
+        "Numbers": {
+            "num0": 9,
+            "ord0": 5
+        },
+        "Equation": "func_add(func_minus(num0, ord0),one)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "키가 큰 사람부터 순서대로 9명이 서 있습니다. 호석이가 앞에서부터 5번째에 서 있습니다. 키가 작은 사람부터 순서대로 다시 줄을 서면 호석이는 뒤에서부터 몇 번째에 서게 됩니까?",
+        "QuestionConv": "키가 큰 사람부터 순서대로 num0 명이 서 있습니다. nae0 이가 앞에서부터 ord0 번째에 서 있습니다. 키가 작은 사람부터 순서대로 다시 줄을 서면 nae0 이는 뒤에서부터 몇 번째에 서게 됩니까?",
+        "Numbers": {
+            "num0": 9,
+            "ord0": 5
+        },
+        "Equation": "func_same(ord0,none)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "키가 큰 사람부터 한 줄로 순서대로 9명이 서 있습니다. 호석이가 앞에서부터 5번째에 서 있습니다. 키가 작은 사람부터 순서대로 다시 줄을 서면 호석이는 뒤에서부터 몇 번째에 서게 됩니까?",
+        "QuestionConv": "키가 큰 사람부터 num0 줄로 순서대로 num1 명이 서 있습니다. nae0 이가 앞에서부터 ord0 번째에 서 있습니다. 키가 작은 사람부터 순서대로 다시 줄을 서면 nae0 이는 뒤에서부터 몇 번째에 서게 됩니까?",
+        "Numbers": {
+            "num0": 1,
+            "num1": 9,
+            "ord0": 5
+        },
+        "Equation": "func_same(ord0,none)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "출석번호 오름차순으로 9명이 앉아있습니다. 호석이가 앞에서부터 5번째에 앉아 있을 때, 출석번호 내림차순으로 다시 앉으면 호석이는 뒤에서부터 몇 번째에 앉아 있을까요?",
+        "QuestionConv": "출석번호 오름차순으로 num0 명이 앉아있습니다 nae0 이가 앞에서부터 ord0 번째에 앉아 있을 때 출석번호 내림차순으로 다시 앉으면 nae0 이는 뒤에서부터 몇 번째에 앉아 있을까요",
+        "Numbers": {
+            "num0": 9,
+            "ord0": 5
+        },
+        "Equation": "func_same(ord0,none)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "출석번호 오름차순으로 9명이 앉아있습니다. 호석이가 앞에서부터 5번째에 앉아 있을 때, 출석번호 내림차순으로 다시 앉으면 호석이는 앞에서부터 몇 번째에 앉아 있을까요?",
+        "QuestionConv": "출석번호 오름차순으로 num0 명이 앉아있습니다 nae0 이가 앞에서부터 ord0 번째에 앉아 있을 때 출석번호 내림차순으로 다시 앉으면 nae0 이는 앞에서부터 몇 번째에 앉아 있을까요",
+        "Numbers": {
+            "num0": 9,
+            "ord0": 5
+        },
+        "Equation": "func_add(func_minus(num0, ord0),one)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "출석번호순으로 9명이 앉아있습니다. 호석이가 왼쪽에서 부터 5번째에 앉아 있을 때, 오른쪽에서부터는 몇 번째에 앉아 있을까요?",
+        "QuestionConv": "출석번호순으로 num0 명이 앉아있습니다 nae0 이가 왼쪽에서 부터 ord0 번째에 앉아 있을 때 오른쪽에서부터는 몇 번째에 앉아 있을까요",
+        "Numbers": {
+            "num0": 9,
+            "ord0": 5
+        },
+        "Equation": "func_add(func_minus(num0, ord0),one)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "총 9개의 의자가 한 줄로 놓여 있다. 호석이가 왼쪽에서 부터 5번째에 앉아 있을 때, 오른쪽에서부터는 몇 번째에 앉아 있을까요?",
+        "QuestionConv": "총 num0 개의 의자가 num1 줄로 놓여 있다 nae0 이가 왼쪽에서 부터 ord0 번째에 앉아 있을 때 오른쪽에서부터는 몇 번째에 앉아 있을까요",
+        "Numbers": {
+            "num0": 9,
+            "ord0": 5
+        },
+        "Equation": "func_add(func_minus(num0, ord0),one)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "놀이 공원에 들어가려고 친구들이 줄을 서 있습니다. 남준이는 앞에서 4번째, 뒤에서 5번째에 서 있습니다. 줄을 서 있는 어린이는 모두 몇 명입니까?",
+        "QuestionConv": "놀이 공원에 들어가려고 친구들이 줄을 서 있습니다. nae0 이는 앞에서 ord0 번째 뒤에서 ord1 번째에 서 있습니다. 줄을 서 있는 어린이는 모두 몇 명입니까?",
+        "Numbers": {
+            "ord0": 4,
+            "ord1": 5
+        },
+        "Equation": "func_add(func_minus(ord0,one),ord1)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "콘서트장에 들어가려고 친구들이 한 줄로 서 있습니다. 남준이는 앞에서 4번째, 뒤에서 5번째에 서 있습니다. 줄을 서 있는 사람은 모두 몇 명입니까?",
+        "QuestionConv": "콘서트장에 들어가려고 친구들이 num0 줄로 서 있습니다. nae0 이는 앞에서 ord0 번째 뒤에서 ord1 번째에 서 있습니다. 줄을 서 있는 사람은 모두 몇 명입니까?",
+        "Numbers": {
+            "num0": 1,
+            "ord0": 4,
+            "ord1": 5
+        },
+        "Equation": "func_add(func_minus(ord0,one),ord1)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "콘서트장에 들어가려고 친구들이 한 줄로 서 있습니다. 남준이는 뒤에서 4번째, 앞에서 5번째에 서 있습니다. 줄을 서 있는 사람은 모두 몇 명입니까?",
+        "QuestionConv": "콘서트장에 들어가려고 친구들이 num0 줄로 서 있습니다. nae0 이는 뒤에서 ord0 번째 앞에서 ord1 번째에 서 있습니다. 줄을 서 있는 사람은 모두 몇 명입니까?",
+        "Numbers": {
+            "num0": 1,
+            "ord0": 4,
+            "ord1": 5
+        },
+        "Equation": "func_add(func_minus(ord1,one),ord0)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "영화관 의자에 친구들이 한 줄로 앉아 있습니다. 남준이는 왼쪽에서 4번째, 오른쪽에서 5번째에 앉아 있습니다. 한 줄에 앉아 있는 친구들은 모두 몇 명입니까?",
+        "QuestionConv": "영화관 의자에 친구들이 num0 줄로 앉아 있습니다. nae0 이는 왼쪽에서 ord0 번째 오른쪽에서 ord1 번째에 앉아 있습니다. num1 줄에 앉아 있는 친구들은 모두 몇 명입니까?",
+        "Numbers": {
+            "num0": 1,
+            "ord0": 4,
+            "ord1": 5,
+            "num1": 1
+        },
+        "Equation": "func_add(func_minus(ord1,one),ord0)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "영화관 의자에 친구들이 한 줄로 앉아 있습니다. 남준이는 오른쪽에서 4번째, 왼쪽에서 5번째에 앉아 있습니다. 한 줄에 앉아 있는 친구들은 모두 몇 명입니까?",
+        "QuestionConv": "영화관 의자에 친구들이 num0 줄로 앉아 있습니다. nae0 이는 오른쪽에서 ord0 번째 왼쪽에서 ord1 번째에 앉아 있습니다. num1 줄에 앉아 있는 친구들은 모두 몇 명입니까?",
+        "Numbers": {
+            "num0": 1,
+            "ord0": 4,
+            "ord1": 5,
+            "num1": 1
+        },
+        "Equation": "func_add(func_minus(ord1,one),ord0)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "윤기네 모둠 학생들이 한 줄로 서 있습니다. 윤기는 앞에서 3번째, 뒤에서 5번째에 서 있습니다. 윤기네 모둠 학생은 모두 몇 명일까요?",
+        "QuestionConv": "nae0 네 모둠 학생들이 num0 줄로 서 있습니다. nae0 는 앞에서 ord0 번째 뒤에서 ord1 번째에 서 있습니다. nae0 네 모둠 학생은 모두 몇 명일까요?",
+        "Numbers": {
+            "num0": 1,
+            "ord0": 3,
+            "ord1": 5
+        },
+        "Equation": "func_add(func_minus(ord0,one),ord1)",
+        "Answer": 7,
+        "Type": "Order"
+    },
+    {
+        "Question": "유나는 앞에서 5번째, 뒤에서 2번째에 앉아 있습니다. 모두 몇 명이 앉아 있을까요?",
+        "QuestionConv": "nae0 는 앞에서 ord0 번째 뒤에서 ord1 번째에 앉아 있습니다. 모두 몇 명이 앉아 있을까요?",
+        "Numbers": {
+            "ord0": 5,
+            "ord1": 2
+        },
+        "Equation": "func_add(func_minus(ord0,one),ord1)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "은지는 달리기에서 7등을 했습니다. 은지보다 빨리 달린 사람은 모두 몇 명일까요?",
+        "QuestionConv": "nae0 는 달리기에서 num0 등을 했습니다. nae0 보다 빨리 달린 사람은 모두 몇 명일까요?",
+        "Numbers": {
+            "num0": 7
+        },
+        "Equation": "func_minus(num0,one)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "은지는 달리기 시합에서 7번째로 결승선을 통과했습니다. 은지보다 빨리 달린 사람은 모두 몇 명일까요?",
+        "QuestionConv": "nae0 는 달리기 시합에서 ord0 번째로 결승선을 통과했습니다. nae0 보다 빨리 달린 사람은 모두 몇 명일까요?",
+        "Numbers": {
+            "ord0": 7
+        },
+        "Equation": "func_minus(ord0,one)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "은지는 수영 시합에서 7번째로 터치패드를 찍었습니다. 은지보다 빨리 도착한 사람은 모두 몇 명일까요?",
+        "QuestionConv": "nae0 는 수영 시합에서 ord0 번째로 터치패드를 찍었습니다. nae0 보다 빨리 도착한 사람은 모두 몇 명일까요?",
+        "Numbers": {
+            "ord0": 7
+        },
+        "Equation": "func_minus(ord0,one)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "호석이네 모둠은 6명입니다. 호석이는 모둠에서 몸무게가 제일 많이 나가고, 유정이는 호석이 다음으로 몸무게가 많이 나갑니다. 유정이보다 몸무게가 적은 학생은 모두 몇 명일까요?",
+        "QuestionConv": "nae0 이네 모둠은 num0 명입니다. nae0 이는 모둠에서 몸무게가 제일 많이 나가고, nae2 이는 nae0 이 다음으로 몸무게가 많이 나갑니다. nae2 이보다 몸무게가 적은 학생은 모두 몇 명일까요?",
+        "Numbers": {
+            "num0": 6
+        },
+        "Equation": "func_minus(func_minus(num0,one),one)",
+        "Answer": 4,
+        "Type": "Order"
+    },
+    {
+        "Question": "호석이네 모둠은 6명입니다. 호석이는 모둠에서 몸무게가 제일 적게 나가고, 유정이는 호석이 다음으로 몸무게가 적게 나갑니다. 유정이보다 몸무게가 많은 학생은 모두 몇 명일까요?",
+        "QuestionConv": "nae0 이네 모둠은 num0 명입니다. nae0 이는 모둠에서 몸무게가 제일 적게 나가고, nae2 이는 nae0 이 다음으로 몸무게가 적게 나갑니다. nae2 이보다 몸무게가 많은 학생은 모두 몇 명일까요?",
+        "Numbers": {
+            "num0": 6
+        },
+        "Equation": "func_minus(func_minus(num0,one),one)",
+        "Answer": 4,
+        "Type": "Order"
+    },
+    {
+        "Question": "호석이는 모둠에서 몸무게가 제일 적게 나가고, 유정이는 호석이 다음으로 몸무게가 적게 나갑니다. 호석이네 모둠은 총 6명일 때, 유정이보다 몸무게가 많은 학생은 모두 몇 명일까요?",
+        "QuestionConv": "nae0 이는 모둠에서 몸무게가 제일 적게 나가고, nae1 이는 nae0 이 다음으로 몸무게가 적게 나갑니다. nae0 이네 모둠은 총 num0 명일 때, nae1 이보다 몸무게가 많은 학생은 모두 몇 명일까요?",
+        "Numbers": {
+            "num0": 6
+        },
+        "Equation": "func_minus(func_minus(num0,one),one)",
+        "Answer": 4,
+        "Type": "Order"
+    },
+    {
+        "Question": "민영이네 모둠 학생들이 달리기를 하였습니다. 민영이는 앞에서 4번째로 달리고 있고, 정국이는 뒤에서 2번째로 달리고 있습니다. 민영이와 정국이 사이에는 은지와 태형이만 달리고 있다면 민영이네 모둠 학생은 몇 명일까요?",
+        "QuestionConv": "nae0 이네 모둠 학생들이 달리기를 하였습니다. nae0 이는 앞에서 ord0 번째로 달리고 있고, nae2 이는 뒤에서 ord1 번째로 달리고 있습니다. nae0 이와 nae2 이 사이에는 nae5 와 nae6 이만 달리고 있다면 nae0 이네 모둠 학생은 몇 명일까요?",
+        "Numbers": {
+            "ord0": 4,
+            "ord1": 2
+        },
+        "Equation": "func_add(func_add(func_add(ord0,ord1),one),one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "급식대 앞에 어린이가 한 줄로 서 있습니다. 석진이는 앞에서부터 4번째, 뒤에서부터 6번째에 서 있습니다. 급식대 앞에 서 있는 어린이는 모두 몇 명일까요?",
+        "QuestionConv": "급식대 앞에 어린이가 num0 줄로 서 있습니다 nae0 이는 앞에서부터 ord0 번째 뒤에서부터 ord1 번째에 서 있습니다 급식대 앞에 서 있는 어린이는 모두 몇 명일까요?",
+        "Numbers": {
+            "num0": 1,
+            "ord0": 4,
+            "ord1": 6
+        },
+        "Equation": "func_add(func_minus(ord0,one),ord1)",
+        "Answer": 9,
+        "Type": "Order"
+    },
+    {
+        "Question": "7명이 달리기를 하여 남준이는 3등을 하였습니다. 남준이보다 늦게 도착한 학생은 몇 명일까요?",
+        "QuestionConv": "num0 명이 달리기를 하여 nae0 이는 num1 등을 하였습니다 nae0 이보다 늦게 도착한 학생은 몇 명일까요?",
+        "Numbers": {
+            "num0": 7,
+            "num1": 3
+        },
+        "Equation": "func_minus(num0,num1)",
+        "Answer": 4,
+        "Type": "Order"
+    },
+    {
+        "Question": "유정이는 오늘 학교에 3번째로 왔습니다. 유정이보다 학교에 먼저 온 어린이는 몇 명일까요?",
+        "QuestionConv": "nae0 이는 오늘 학교에 ord0 번째로 왔습니다 nae0 이보다 학교에 먼저 온 어린이는 몇 명일까요?",
+        "Numbers": {
+            "ord0": 3
+        },
+        "Equation": "func_minus(ord0,one)",
+        "Answer": 2,
+        "Type": "Order"
+    },
+    {
+        "Question": "5명의 친구들이 놀이 기구를 타려고 줄을 서 있습니다. 석진이는 앞에서부터 2번째에 서 있고, 윤기는 앞에서부터 5번째에 서 있습니다. 석진이와 윤기 사이에는 몇 명이 서 있을까요?",
+        "QuestionConv": "num0 명의 친구들이 놀이 기구를 타려고 줄을 서 있습니다 nae0 이는 앞에서부터 ord0 번째에 서 있고 nae1 는 앞에서부터 ord1 번째에 서 있습니다 nae0 이와 nae1 사이에는 몇 명이 서 있을까요?",
+        "Numbers": {
+            "num0": 5,
+            "ord0": 2,
+            "ord1": 5
+        },
+        "Equation": "func_minus(func_minus(ord1,one),ord0)",
+        "Answer": 2,
+        "Type": "Order"
+    },
+    {
+        "Question": "호석이는 저축을 하기 위해 은행을 갔습니다. 번호표를 뽑았더니 번호표에는 5번이라고 쓰여져 있었습니다. 그렇다면 호석이보다 먼저 은행 일을 볼 수 있는 사람은 모두 몇 명일까요?",
+        "QuestionConv": "nae0 이는 저축을 하기 위해 은행을 갔습니다 번호표를 뽑았더니 번호표에는 num0 번이라고 쓰여져 있었습니다 그렇다면 nae0 이보다 먼저 은행 일을 볼 수 있는 사람은 모두 몇 명일까요?",
+        "Numbers": {
+            "num0": 5
+        },
+        "Equation": "func_minus(num0,one)",
+        "Answer": 4,
+        "Type": "Order"
+    },
+    {
+        "Question": "셔츠에 단추가 9개 달려 있습니다. 3번째 단추와 7번째 단추 사이에는 몇 개 있을까요?",
+        "QuestionConv": "셔츠에 단추가 num0 개 달려 있습니다. ord0 번째 단추와 ord1 번째 단추 사이에는 몇 개 있을까요?",
+        "Numbers": {
+            "num0": 9,
+            "ord0": 3,
+            "ord1": 7
+        },
+        "Equation": "func_minus(func_minus(ord1,one),ord0)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "지민이는 기차를 탔습니다. 지민이가 타고 있는 칸은 앞에서부터 세어 보면 3번째이고, 뒤에서부터 세어 보면 6번째입니다. 지민이가 타고 있는 기차는 모두 몇 칸일까요?",
+        "QuestionConv": "nae0 이는 기차를 탔습니다 nae0 이가 타고 있는 칸은 앞에서부터 세어 보면 ord0 번째이고 뒤에서부터 세어 보면 ord1 번째입니다 nae0 이가 타고 있는 기차는 모두 몇 칸일까요?",
+        "Numbers": {
+            "ord0": 3,
+            "ord1": 6
+        },
+        "Equation": "func_add(func_minus(ord0,one),ord1)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "급식을 받기 위해 5명의 어린이가 한 줄로 서 있습니다. 태형이는 앞에서부터 1번째에 서 있고, 정국이는 뒤에서부터 2번째에 서 있습니다. 태형이와 정국이 사이에 서 있는 어린이는 몇 명일까요?",
+        "QuestionConv": "급식을 받기 위해 num0 명의 어린이가 num1 줄로 서 있습니다 nae0 이는 앞에서부터 ord0 번째에 서 있고 nae1 이는 뒤에서부터 ord1 번째에 서 있습니다 nae0 이와 nae1 이 사이에 서 있는 어린이는 몇 명일까요?",
+        "Numbers": {
+            "num0": 5,
+            "num1": 1,
+            "ord0": 1,
+            "ord1": 2
+        },
+        "Equation": "func_minus(func_minus(func_perobj(num0,num1),ord0),ord1)",
+        "Answer": 2,
+        "Type": "Order"
+    },
+    {
+        "Question": "개미 9마리가 한 줄로 기어가고 있습니다. 3번째 개미와 8번째 개미 사이에는 개미가 몇 마리 있을까요?",
+        "QuestionConv": "개미 num0 마리가 num1 줄로 기어가고 있습니다. ord0 번째 개미와 ord1 번째 개미 사이에는 개미가 몇 마리 있을까요?",
+        "Numbers": {
+            "num0": 9,
+            "num1": 1,
+            "ord0": 3,
+            "ord1": 8
+        },
+        "Equation": "func_minus(func_minus(ord1,one),ord0)",
+        "Answer": 4,
+        "Type": "Order"
+    },
+    {
+        "Question": "민영이는 앞에서 4번째에 서 있고, 유정이는 앞에서 7번째에 서 있습니다. 은지는 유정이 바로 뒤에 서 있다면, 민영이와 은지 사이에 서 있는 사람은 몇 명일까요?",
+        "QuestionConv": "nae0 이는 앞에서 ord0 번째에 서 있고 nae1 이는 앞에서 ord1 번째에 서 있습니다 nae2 는 nae1 이 바로 뒤에 서 있다면 nae0 이와 nae2 사이에 서 있는 사람은 몇 명일까요?",
+        "Numbers": {
+            "ord0": 4,
+            "ord1": 7
+        },
+        "Equation": "func_minus(func_minus(func_add(ord1,one),one),ord0)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "버스 정류장에 5명의 어린이가 서 있습니다. 유나는 2번째에 서 있고, 은지는 4번째에 서 있습니다. 유나와 은지 사이에 서 있는 어린이는 몇 명일까요?",
+        "QuestionConv": "버스 정류장에 num0 명의 어린이가 서 있습니다 nae0 는 ord0 번째에 서 있고 nae1 는 ord1 번째에 서 있습니다 nae0 와 nae1 사이에 서 있는 어린이는 몇 명일까요",
+        "Numbers": {
+            "num0": 5,
+            "ord0": 2,
+            "ord1": 4
+        },
+        "Equation": "func_minus(func_minus(ord1,one),ord0)",
+        "Answer": 1,
+        "Type": "Order"
+    },
+    {
+        "Question": "유정이와 친구들이 영화표를 사려고 줄을 서 있습니다. 유정이는 앞에서 4번째, 뒤에서 6번째에 서 있습니다. 줄을 서 있는 어린이는 모두 몇 명일까요?",
+        "QuestionConv": "nae0 이와 친구들이 영화표를 사려고 줄을 서 있습니다 nae0 이는 앞에서 ord0 번째 뒤에서 ord1 번째에 서 있습니다 줄을 서 있는 어린이는 모두 몇 명일까요?",
+        "Numbers": {
+            "ord0": 4,
+            "ord1": 6
+        },
+        "Equation": "func_add(func_minus(ord0,one),ord1)",
+        "Answer": 9,
+        "Type": "Order"
+    },
+    {
+        "Question": "민영이는 1번째에 서 있고, 정국이는 4번째에 서 있습니다. 민영이와 정국이 사이에 서 있는 어린이는 몇 명일까요?",
+        "QuestionConv": "nae0 이는 ord0 번째에 서 있고 nae1 이는 ord1 번째에 서 있습니다 nae0 이와 nae1 이 사이에 서 있는 어린이는 몇 명일까요?",
+        "Numbers": {
+            "ord0": 1,
+            "ord1": 4
+        },
+        "Equation": "func_minus(func_minus(ord1,one),ord0)",
+        "Answer": 2,
+        "Type": "Order"
+    },
+    {
+        "Question": "버스 정류장에 5명의 어린이가 서 있습니다. 태형이는 2번째에 서 있고, 지민이는 4번째에 서 있습니다. 태형이와 지민이 사이에 서 있는 어린이는 몇 명일까요?",
+        "QuestionConv": "버스 정류장에 num0 명의 어린이가 서 있습니다 nae0 이는 ord0 번째에 서 있고 nae1 이는 ord1 번째에 서 있습니다 nae0 이와 nae1 이 사이에 서 있는 어린이는 몇 명일까요?",
+        "Numbers": {
+            "num0": 5,
+            "ord0": 2,
+            "ord1": 4
+        },
+        "Equation": "func_minus(func_minus(ord1,one),ord0)",
+        "Answer": 1,
+        "Type": "Order"
+    },
+    {
+        "Question": "책장에 동화책이 8권 꽂혀 있습니다. 4번째 동화책과 6번째 동화책 사이에는 동화책이 몇 권 있을까요?",
+        "QuestionConv": "책장에 동화책이 num0 권 꽂혀 있습니다. ord0 번째 동화책과 ord1 번째 동화책 사이에는 동화책이 몇 권 있을까요?",
+        "Numbers": {
+            "num0": 8,
+            "ord0": 4,
+            "ord1": 6
+        },
+        "Equation": "func_minus(func_minus(ord1,one),ord0)",
+        "Answer": 1,
+        "Type": "Order"
+    },
+    {
+        "Question": "어린이 8명이 버스를 타기 위해 줄을 서 있습니다. 2번째 어린이와 7번째 어린이 사이에는 몇 명의 어린이가 있을까요?",
+        "QuestionConv": "어린이 num0 명이 버스를 타기 위해 줄을 서 있습니다. ord0 번째 어린이와 ord1 번째 어린이 사이에는 몇 명의 어린이가 있을까요?",
+        "Numbers": {
+            "num0": 8,
+            "ord0": 2,
+            "ord1": 7
+        },
+        "Equation": "func_minus(func_minus(ord1,one),ord0)",
+        "Answer": 4,
+        "Type": "Order"
+    },
+    {
+        "Question": "호석이는 3번째에 서 있습니다. 호석이 앞에 서 있는 사람은 몇 명일까요?",
+        "QuestionConv": "nae0 이는 ord0 번째에 서 있습니다 nae0 이 앞에 서 있는 사람은 몇 명일까요?",
+        "Numbers": {
+            "ord0": 3
+        },
+        "Equation": "func_minus(ord0,one)",
+        "Answer": 2,
+        "Type": "Order"
+    },
+    {
+        "Question": "윤기는 앞에서부터 3번째, 뒤에서부터 6번째에 서 있습니다. 서 있는 사람은 모두 몇 명일까요?",
+        "QuestionConv": "nae0 는 앞에서부터 ord0 번째 뒤에서부터 ord1 번째에 서 있습니다 서 있는 사람은 모두 몇 명일까요?",
+        "Numbers": {
+            "ord0": 3,
+            "ord1": 6
+        },
+        "Equation": "func_add(func_minus(ord0,one),ord1)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "석진이네 모둠 학생 9명이 달리기를 합니다. 석진이는 6등을 하였습니다. 석진이보다 빨리 달린 어린이는 몇 명입니까?",
+        "QuestionConv": "nae0 이네 모둠 학생 num0 명이 달리기를 합니다 nae0 이는 num1 등을 하였습니다 nae0 이보다 빨리 달린 어린이는 몇 명입니까?",
+        "Numbers": {
+            "num0": 9,
+            "num1": 6
+        },
+        "Equation": "func_minus(num1,one)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "9명의 친구가 달리기를 하여 남준이는 3등을 하였습니다. 남준이보다 늦게 도착한 학생은 모두 몇 명일까요?",
+        "QuestionConv": "num0 명의 친구가 달리기를 하여 nae0 이는 num1 등을 하였습니다 nae0 이보다 늦게 도착한 학생은 모두 몇 명일까요?",
+        "Numbers": {
+            "num0": 9,
+            "num1": 3
+        },
+        "Equation": "func_minus(num0,num1)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "석진이는 달리기에서 결승선에 4번째로 들어왔습니다. 결승선에 1 명씩 차례로 들어왔다면 석진이보다 먼저 들어온 어린이는 몇 명일까요?",
+        "QuestionConv": "nae0 이는 달리기에서 결승선에 ord0 번째로 들어왔습니다 결승선에 num0 명씩 차례로 들어왔다면 nae0 이보다 먼저 들어온 어린이는 몇 명일까요?",
+        "Numbers": {
+            "ord0": 4,
+            "num0": 1
+        },
+        "Equation": "func_minus(ord0,one)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "달리기에서 윤기는 4등을 하였고, 윤기보다 늦게 들어온 어린이는 2명이었습니다. 어린이들이 1 명씩 차례로 들어왔다면 윤기네 모둠은 몇 명일까요?",
+        "QuestionConv": "달리기에서 nae0 는 num0 등을 하였고 nae0 보다 늦게 들어온 어린이는 num1 명이었습니다 어린이들이 num2 명씩 차례로 들어왔다면 nae0 네 모둠은 몇 명일까요?",
+        "Numbers": {
+            "num0": 4,
+            "num1": 2,
+            "num2": 1
+        },
+        "Equation": "func_add(num0,num1)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "호석이 앞에는 5명이 서 있고, 뒤에는 3명이 서있습니다. 모두 몇 명이 서 있는지 구하세요.",
+        "QuestionConv": "nae0 이 앞에는 num0 명이 서 있고 뒤에는 num1 명이 서있습니다 모두 몇 명이 서 있는지 구하세요.",
+        "Numbers": {
+            "num0": 5,
+            "num1": 3
+        },
+        "Equation": "func_add(func_add(num0,num1),one)",
+        "Answer": 9,
+        "Type": "Order"
+    },
+    {
+        "Question": "수행평가에서 지민이는 6개, 태형이는 8개를 맞혔습니다. 정국이는 지민이보다는 많이 맞혔지만 태형이보다는 적게 맞혔습니다. 정국이는 몇 개를 맞을까요?",
+        "QuestionConv": "수행평가에서 nae0 이는 num0 개 nae1 이는 num1 개를 맞혔습니다 nae2 이는 nae0 이보다는 많이 맞혔지만 nae1 이보다는 적게 맞혔습니다 nae2 이는 몇 개를 맞을까요?",
+        "Numbers": {
+            "num0": 6,
+            "num1": 8
+        },
+        "Equation": "func_between(num0,num1)",
+        "Answer": 7,
+        "Type": "Order"
+    },
+    {
+        "Question": "달리기 시합을 하였습니다. 유나는 1등, 민영이는 4등을 하였습니다. 유나가 도착점에 들어온 후, 몇 명이 더 들어온 뒤에 민영이가 들어왔을까요?",
+        "QuestionConv": "달리기 시합을 하였습니다 nae0 는 num0 등 nae1 이는 num1 등을 하였습니다 nae0 가 도착점에 들어온 후 몇 명이 더 들어온 뒤에 nae1 이가 들어왔을까요?",
+        "Numbers": {
+            "num0": 1,
+            "num1": 4
+        },
+        "Equation": "func_minus(func_minus(num1,one),num0)",
+        "Answer": 2,
+        "Type": "Order"
+    },
+    {
+        "Question": "9명이 키가 큰 순서대로 서 있습니다. 유정이는 앞에서부터 5번째에 서 있습니다. 키가 작은 순서대로 서면 유정이는 앞에서부터 몇 번째에 서 있을까요?",
+        "QuestionConv": "num0 명이 키가 큰 순서대로 서 있습니다 nae0 이는 앞에서부터 ord0 번째에 서 있습니다 키가 작은 순서대로 서면 nae0 이는 앞에서부터 몇 번째에 서 있을까요?",
+        "Numbers": {
+            "num0": 9,
+            "ord0": 5
+        },
+        "Equation": "func_add(func_minus(num0,ord0),one)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "5칸짜리 놀이기구가 있습니다. 민영이는 뒤에서부터 5번째 칸에 타고 있습니다. 민영이가 타고 있는 칸은 앞에서부터 몇 번째 칸일까요?",
+        "QuestionConv": "num0 칸짜리 놀이기구가 있습니다 nae0 이는 뒤에서부터 ord0 번째 칸에 타고 있습니다 nae0 이가 타고 있는 칸은 앞에서부터 몇 번째 칸일까요?",
+        "Numbers": {
+            "num0": 5,
+            "ord0": 5
+        },
+        "Equation": "func_add(func_minus(num0,ord0),one)",
+        "Answer": 1,
+        "Type": "Order"
+    },
+    {
+        "Question": "버스 정류장에 5명의 어린이가 서있습니다. 지민이는 뒤에서부터 2번째에 서 있을 때, 앞에서부터 몇 번째에 서 있을까요?",
+        "QuestionConv": "버스 정류장에 num0 명의 어린이가 서있습니다 nae0 이는 뒤에서부터 ord0 번째에 서 있을 때 앞에서부터 몇 번째에 서 있을까요?",
+        "Numbers": {
+            "num0": 5,
+            "ord0": 2
+        },
+        "Equation": "func_add(func_minus(num0,ord0),one)",
+        "Answer": 4,
+        "Type": "Order"
+    },
+    {
+        "Question": "지민이네 가족 5명이 공원 의자에 앉았습니다. 지민이는 왼쪽에서부터 3번째에 앉았습니다. 지민이는 오른쪽에서부터 몇 번째에 앉아 있습니까?",
+        "QuestionConv": "nae0 이네 가족 num0 명이 공원 의자에 앉았습니다 nae0 이는 왼쪽에서부터 ord0 번째에 앉았습니다 nae0 이는 오른쪽에서부터 몇 번째에 앉아 있습니까?",
+        "Numbers": {
+            "num0": 5,
+            "ord0": 3
+        },
+        "Equation": "func_add(func_minus(num0,ord0),one)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "태형이와 남준이는 같은 아파트에 살고 있습니다. 태형이가 6층에 살고 있고, 남준이는 태형이의 바로 위층에 살고 있습니다. 남준이는 몇 층에 살고 있습니까?",
+        "QuestionConv": "nae0 이와 nae1 이는 같은 아파트에 살고 있습니다 nae0 이가 num0 층에 살고 있고 nae1 이는 nae0 이의 바로 위층에 살고 있습니다 nae1 이는 몇 층에 살고 있습니까?",
+        "Numbers": {
+            "num0": 6
+        },
+        "Equation": "func_add(num0,one)",
+        "Answer": 7,
+        "Type": "Order"
+    },
+    {
+        "Question": "5명의 어린이가 나란히 줄을 서 있습니다. 정국이는 앞에서 2번째에 서 있습니다. 정국이는 뒤에서 몇 번째에 서 있습니까?",
+        "QuestionConv": "num0 명의 어린이가 나란히 줄을 서 있습니다 nae0 이는 앞에서 ord0 번째에 서 있습니다 nae0 이는 뒤에서 몇 번째에 서 있습니까?",
+        "Numbers": {
+            "num0": 5,
+            "ord0": 2
+        },
+        "Equation": "func_add(func_minus(num0,ord0),one)",
+        "Answer": 4,
+        "Type": "Order"
+    },
+    {
+        "Question": "5명이 달리기를 하고 있습니다. 호석이는 3등이고, 호석이는 바로 뒤에 유정이가 달리고 있습니다. 유정이는 뒤에서 몇 번째로 달리고 있을까요?",
+        "QuestionConv": "num0 명이 달리기를 하고 있습니다 nae0 이는 num1 등이고 nae0 이는 바로 뒤에 nae2 이가 달리고 있습니다 nae2 이는 뒤에서 몇 번째로 달리고 있을까요?",
+        "Numbers": {
+            "num0": 5,
+            "num1": 3
+        },
+        "Equation": "func_add(func_minus(num0,func_add(num1,one)),one)",
+        "Answer": 2,
+        "Type": "Order"
+    },
+    {
+        "Question": "1부터 9까지의 수를 왼쪽에서부터 작은 순서대로 늘어놓을 때, 오른쪽에서 2번째에 놓이는 수는 얼마일까요?",
+        "QuestionConv": "num0 부터 num1 까지의 수를 왼쪽에서부터 작은 순서대로 늘어놓을 때, 오른쪽에서 ord0 번째에 놓이는 수는 얼마일까요?",
+        "Numbers": {
+            "num0": 1,
+            "num1": 9,
+            "ord0": 2
+        },
+        "Equation": "func_listindexright(func_range(num0,num1),ord0)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "1부터 9까지의 수를 왼쪽에서부터 작은 순서대로 늘어놓을 때, 2번째에 놓이는 수는 얼마일까요?",
+        "QuestionConv": "num0 부터 num1 까지의 수를 왼쪽에서부터 작은 순서대로 늘어놓을 때, ord0 번째에 놓이는 수는 얼마일까요?",
+        "Numbers": {
+            "num0": 1,
+            "num1": 9,
+            "ord0": 2
+        },
+        "Equation": "func_listindex(func_range(num0,num1),ord0)",
+        "Answer": 2,
+        "Type": "Order"
+    },
+    {
+        "Question": "유나네 모둠 8명의 학생들이 나란히 줄을 섰습니다. 윤기가 앞에서부터 3번째에 서 있었을 때, 뒤에서부터는 몇 번째에 서 있는 것일까요?",
+        "QuestionConv": "nae0 네 모둠 num0 명의 학생들이 나란히 줄을 섰습니다 nae1 가 앞에서부터 ord0 번째에 서 있었을 때 뒤에서부터는 몇 번째에 서 있는 것일까요?",
+        "Numbers": {
+            "num0": 8,
+            "ord0": 3
+        },
+        "Equation": "func_add(func_minus(num0,ord0),one)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "정국이네 모둠 10명의 학생들이 나란히 줄을 섰습니다. 정국이가 앞에서부터 5번째에 서 있다면 뒤에서부터는 몇 번째에 서 있는 것일까요?",
+        "QuestionConv": "nae0 이네 모둠 num0 명의 학생들이 나란히 줄을 섰습니다 nae0 이가 앞에서부터 ord0 번째에 서 있다면 뒤에서부터는 몇 번째에 서 있는 것일까요?",
+        "Numbers": {
+            "num0": 10,
+            "ord0": 5
+        },
+        "Equation": "func_add(func_minus(num0,ord0),one)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "태형이네 모둠 9명의 학생들이 나란히 줄을 섰습니다. 태형이가 앞에서부터 6번째에 서 있다면 뒤에서부터는 몇 번째에 서 있는 것일까요?",
+        "QuestionConv": "nae0 이네 모둠 num0 명의 학생들이 나란히 줄을 섰습니다 nae0 이가 앞에서부터 ord0 번째에 서 있다면 뒤에서부터는 몇 번째에 서 있는 것일까요?",
+        "Numbers": {
+            "num0": 9,
+            "ord0": 6
+        },
+        "Equation": "func_add(func_minus(num0,ord0),one)",
+        "Answer": 4,
+        "Type": "Order"
+    },
+    {
+        "Question": "버스정류장에 9명의 어린이가 1 줄로 서 있습니다. 앞에서부터 4번째에 서 있는 어린이는 뒤에서부터 몇 번째일까요?",
+        "QuestionConv": "버스정류장에 num0 명의 어린이가 num1 줄로 서 있습니다. 앞에서부터 ord0 번째에 서 있는 어린이는 뒤에서부터 몇 번째일까요?",
+        "Numbers": {
+            "num0": 9,
+            "num1": 1,
+            "ord0": 4
+        },
+        "Equation": "func_add(func_minus(num0,ord0),one)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "지민이와 친구들이 복도에 1 줄로 서 있습니다. 지민이는 4번째에 서 있고, 호석이는 그 앞에 서 있습니다. 호석이는 몇 번째에 서 있을까요?",
+        "QuestionConv": "nae0 이와 친구들이 복도에 num0 줄로 서 있습니다 nae0 이는 ord0 번째에 서 있고 nae2 이는 그 앞에 서 있습니다 nae2 이는 몇 번째에 서 있을까요?",
+        "Numbers": {
+            "num0": 1,
+            "ord0": 4
+        },
+        "Equation": "func_minus(ord0,one)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "9명의 어린이가 수영을 하였습니다. 은지 뒤에 들어온 어린이가 3명이라면, 은지는 몇 등을 하였을까요?",
+        "QuestionConv": "num0 명의 어린이가 수영을 하였습니다 nae0 뒤에 들어온 어린이가 num1 명이라면 nae0 는 몇 등을 하였을까요?",
+        "Numbers": {
+            "num0": 9,
+            "num1": 3
+        },
+        "Equation": "func_minus(num0,num1)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "석진이네 모둠 11명이 달리기를 하였습니다. 석진이보다 늦게 도착한 어린이가 2명 있었습니다. 석진이는 몇 등일까요?",
+        "QuestionConv": "nae0 이네 모둠 num0 명이 달리기를 하였습니다 nae0 이보다 늦게 도착한 어린이가 num1 명 있었습니다 nae0 이는 몇 등일까요?",
+        "Numbers": {
+            "num0": 11,
+            "num1": 2
+        },
+        "Equation": "func_minus(num0,num1)",
+        "Answer": 9,
+        "Type": "Order"
+    },
+    {
+        "Question": "건물에 학원은 8층에 있고, 치과는 학원 바로 윗층에 있습니다. 치과는 몇 층에 있을까요?",
+        "QuestionConv": "건물에 학원은 num0 층에 있고, 치과는 학원 바로 윗층에 있습니다. 치과는 몇 층에 있을까요?",
+        "Numbers": {
+            "num0": 8
+        },
+        "Equation": "func_add(num0,one)",
+        "Answer": 9,
+        "Type": "Order"
+    },
+    {
+        "Question": "매표소 앞에 사람들이 표를 사기 위해 줄을 섰습니다. 남준이의 앞에 7명이 서 있습니다. 남준이는 몇 번째에 서 있는지 구하세요.",
+        "QuestionConv": "매표소 앞에 사람들이 표를 사기 위해 줄을 섰습니다 nae0 이의 앞에 num0 명이 서 있습니다 nae0 이는 몇 번째에 서 있는지 구하세요.",
+        "Numbers": {
+            "num0": 7
+        },
+        "Equation": "func_add(num0,one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "5번째 바로 앞에서 달리는 어린이는 몇 번째로 달리고 있을까요?",
+        "QuestionConv": "ord0 번째 바로 앞에서 달리는 어린이는 몇 번째로 달리고 있을까요?",
+        "Numbers": {
+            "ord0": 5
+        },
+        "Equation": "func_minus(ord0,one)",
+        "Answer": 4,
+        "Type": "Order"
+    },
+    {
+        "Question": "버스를 타기 위해 사람들이 줄을 섰습니다. 유정이의 앞에 8명이 서 있습니다. 유정이는 몇 번째에 서 있는지 답을 구하세요.",
+        "QuestionConv": "버스를 타기 위해 사람들이 줄을 섰습니다 nae0 이의 앞에 num0 명이 서 있습니다 nae0 이는 몇 번째에 서 있는지 답을 구하세요.",
+        "Numbers": {
+            "num0": 8
+        },
+        "Equation": "func_add(num0,one)",
+        "Answer": 9,
+        "Type": "Order"
+    },
+    {
+        "Question": "줄을 서 있는 사람은 모두 5명입니다. 호석이보다 먼저 온 사람은 2명입니다. 호석이는 앞에서 몇 번째에 서 있을까요?",
+        "QuestionConv": "줄을 서 있는 사람은 모두 num0 명입니다 nae0 이보다 먼저 온 사람은 num1 명입니다 nae0 이는 앞에서 몇 번째에 서 있을까요?",
+        "Numbers": {
+            "num0": 5,
+            "num1": 2
+        },
+        "Equation": "func_add(num1,one)",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "지민이네 모둠 9명이 키가 큰 어린이부터 순서대로 한 줄을 섰습니다. 지민이 뒤에 3명이 서 있습니다. 지민이의 키는 몇 번째로 큰지 구하세요.",
+        "QuestionConv": "nae0 이네 모둠 num0 명이 키가 큰 어린이부터 순서대로 num1 줄을 섰습니다 nae0 이 뒤에 num2 명이 서 있습니다 nae0 이의 키는 몇 번째로 큰지 구하세요.",
+        "Numbers": {
+            "num0": 9,
+            "num1": 1,
+            "num2": 3
+        },
+        "Equation": "func_minus(func_perobj(num0,num1),num2)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "9명의 어린이가 달리기를 하고 있습니다. 결승점에 태형이보다 먼저 도착한 어린이는 5명입니다. 태형이는 몇 등으로 도착했을까요?",
+        "QuestionConv": "num0 명의 어린이가 달리기를 하고 있습니다 결승점에 nae0 이보다 먼저 도착한 어린이는 num1 명입니다 nae0 이는 몇 등으로 도착했을까요?",
+        "Numbers": {
+            "num0": 9,
+            "num1": 5
+        },
+        "Equation": "func_add(num1,one)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "은지, 유정, 윤기가 계단에서 놀이를 하고 있습니다. 은지는 아래에서 3번째 계단에 있습니다. 유정이는 은지보다 2 계단 위에 있고, 윤기는 은지보다 5 계단 위에 있습니다. 유정이는 윤기보다 몇 계단 아래에 있을까요?",
+        "QuestionConv": "nae0 nae1 nae2 가 계단에서 놀이를 하고 있습니다 nae0 는 아래에서 ord0 번째 계단에 있습니다 nae1 이는 nae0 보다 num0 계단 위에 있고 nae2 는 nae0 보다 num1 계단 위에 있습니다 nae1 이는 nae2 보다 몇 계단 아래에 있을까요?",
+        "Numbers": {
+            "ord0": 3,
+            "num0": 2,
+            "num1": 5
+        },
+        "Equation": "func_minus(func_add(ord0,num1),func_add(ord0,num0))",
+        "Answer": 3,
+        "Type": "Order"
+    },
+    {
+        "Question": "유나네 모둠 9명의 어린이가 버스를 타려고 한 줄로 서 있습니다. 유나 뒤에 남준, 석진, 윤기가 차례로 서 있습니다. 유나가 뒤에서부터 6번째에 서 있다면, 윤기는 앞에서부터 몇 번째에 서 있을까요?",
+        "QuestionConv": "nae0 네 모둠 num0 명의 어린이가 버스를 타려고 num1 줄로 서 있습니다 nae0 뒤에 nae2 nae3 nae4 가 차례로 서 있습니다 nae0 가 뒤에서부터 ord0 번째에 서 있다면 nae4 는 앞에서부터 몇 번째에 서 있을까요?",
+        "Numbers": {
+            "num0": 9,
+            "num1": 1,
+            "ord0": 6
+        },
+        "Equation": "func_add(func_add(func_add(ord0,one),one),one)",
+        "Answer": 9,
+        "Type": "Order"
+    },
+    {
+        "Question": "키가 큰 순서대로 9명이 앉아 있습니다. 지민이는 4번째로 앉아 있습니다. 키가 작은 순서대로 앉으면 지민이는 몇 번째로 앉게 될까요?",
+        "QuestionConv": "키가 큰 순서대로 num0 명이 앉아 있습니다 nae0 이는 ord0 번째로 앉아 있습니다 키가 작은 순서대로 앉으면 nae0 이는 몇 번째로 앉게 될까요?",
+        "Numbers": {
+            "num0": 9,
+            "ord0": 4
+        },
+        "Equation": "func_add(func_minus(num0,ord0),one)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "화장실에서 친구들이 한 줄로 서 있습니다. 유나는 7번째에 서 있고, 유정이는 유나 뒤에 서 있습니다. 유정이는 몇 번째에 서 있을까요?",
+        "QuestionConv": "화장실에서 친구들이 num0 줄로 서 있습니다 nae0 는 ord0 번째에 서 있고 nae1 이는 nae0 뒤에 서 있습니다 nae1 이는 몇 번째에 서 있을까요?",
+        "Numbers": {
+            "num0": 1,
+            "ord0": 7
+        },
+        "Equation": "func_add(ord0,one)",
+        "Answer": 8,
+        "Type": "Order"
+    },
+    {
+        "Question": "9 명이 달리기를 하고 있습니다. 태형이는 뒤에서 7번째로 달리고 있고, 지민이는 태형이 바로 앞에서 달리고 있습니다. 지민이는 몇 등으로 달리고 있을까요?",
+        "QuestionConv": "num0 명이 달리기를 하고 있습니다 nae0 이는 뒤에서 ord0 번째로 달리고 있고 nae1 이는 nae0 이 바로 앞에서 달리고 있습니다 nae1 이는 몇 등으로 달리고 있을까요?",
+        "Numbers": {
+            "num0": 9,
+            "ord0": 7
+        },
+        "Equation": "func_minus(func_add(func_minus(num0,ord0),one),one)",
+        "Answer": 2,
+        "Type": "Order"
+    },
+    {
+        "Question": "달리기 대회에서 은지는 5번째로 들어 왔습니다. 은지의 바로 뒤에 들어온 사람이 윤기라면 윤기는 몇 등으로 들어왔습니까?",
+        "QuestionConv": "달리기 대회에서 nae0 는 ord0 번째로 들어 왔습니다 nae0 의 바로 뒤에 들어온 사람이 nae2 라면 nae2 는 몇 등으로 들어왔습니까?",
+        "Numbers": {
+            "ord0": 5
+        },
+        "Equation": "func_add(ord0,one)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "9명의 어린이가 지하철을 타기 위해 줄을 서 있습니다. 지민이 뒤에 서 있는 어린이가 4명이라면, 지민이는 몇 번째로 타겠습니까?",
+        "QuestionConv": "num0 명의 어린이가 지하철을 타기 위해 줄을 서 있습니다 nae0 이 뒤에 서 있는 어린이가 num1 명이라면 nae0 이는 몇 번째로 타겠습니까?",
+        "Numbers": {
+            "num0": 9,
+            "num1": 4
+        },
+        "Equation": "func_minus(num0,num1)",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "마트에서 남준이네 물건은 3번째 물건의 바로 뒤에 있습니다. 남준이네 물건은 몇 번째일까요?",
+        "QuestionConv": "마트에서 nae0 이네 물건은 ord0 번째 물건의 바로 뒤에 있습니다 nae0 이네 물건은 몇 번째일까요?",
+        "Numbers": {
+            "ord0": 3
+        },
+        "Equation": "func_add(ord0,one)",
+        "Answer": 4,
+        "Type": "Order"
+    },
+    {
+        "Question": "지민이네 반 학생들이 번호 순서대로 줄을 서 있습니다. 19번과 24번 사이에 줄을 서 있는 학생은 모두 몇 명일까요?",
+        "QuestionConv": "nae0 이네 반 학생들이 번호 순서대로 줄을 서 있습니다 num0 번과 num1 번 사이에 줄을 서 있는 학생은 모두 몇 명일까요?",
+        "Numbers": {
+            "num0": 19,
+            "num1": 24
+        },
+        "Equation": "func_minus(func_minus(num1,num0),one)",
+        "Answer": 4,
+        "Type": "Order"
+    },
+    {
+        "Question": "어린이들이 번호 순서대로 줄을 서 있습니다. 26번과 33번 사이에 서 있는 어린이는 모두 몇 명일까요?",
+        "QuestionConv": "어린이들이 번호 순서대로 줄을 서 있습니다. num0 번과 num1 번 사이에 서 있는 어린이는 모두 몇 명일까요?",
+        "Numbers": {
+            "num0": 26,
+            "num1": 33
+        },
+        "Equation": "func_minus(func_minus(num1,num0),one)",
+        "Answer": 6,
+        "Type": "Order"
+    },
+    {
+        "Question": "0 부터 9까지의 숫자 카드를 0부터 순서대로 놓았습니다. 5번째 카드와 7번째 카드 사이에 놓인 숫자 카드의 수를 쓰세요.",
+        "QuestionConv": "num0 부터 num1 까지의 숫자 카드를 num2 부터 순서대로 놓았습니다. ord0 번째 카드와 ord1 번째 카드 사이에 놓인 숫자 카드의 수를 쓰세요.",
+        "Numbers": {
+            "num0": 0,
+            "num1": 9,
+            "num2": 0,
+            "ord0": 5,
+            "ord1": 7
+        },
+        "Equation": "func_listindex(func_range(num0,num1),func_between(ord0,ord1))",
+        "Answer": 5,
+        "Type": "Order"
+    },
+    {
+        "Question": "정국이네 학교 학생들이 키가 작은 순서대로 번호를 붙여 줄을 섰습니다. 68번인 정국이와 은지 사이에 3명이 서 있다면 은지의 번호는 몇 번입니까?",
+        "QuestionConv": "nae0 이네 학교 학생들이 키가 작은 순서대로 번호를 붙여 줄을 섰습니다 num0 번인 nae0 이와 nae2 사이에 num1 명이 서 있다면 nae2 의 번호는 몇 번입니까?",
+        "Numbers": {
+            "num0": 68,
+            "num1": 3
+        },
+        "Equation": "func_add(func_add(num0,num1),one)",
+        "Answer": 72,
+        "Type": "Order"
+    },
+    {
+        "Question": "정국, 은지, 태형이가 교실에 있습니다. 잠시 후 윤기가 교실에 들어왔습니다. 윤기는 몇 번째로 교실에 들어왔을까요?",
+        "QuestionConv": "nae0 nae1 nae2 이가 교실에 있습니다 잠시 후 nae3 가 교실에 들어왔습니다 nae3 는 몇 번째로 교실에 들어왔을까요?",
+        "Numbers": {
+            "none": null
+        },
+        "Equation": "func_add(func_add(func_add(one,one),one),one)",
+        "Answer": 4,
+        "Type": "Order"
+    }
+]

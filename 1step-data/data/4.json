@@ -1,0 +1,1358 @@
+[
+    {
+        "Question": "5개의 수 105,62,116,89,43가 있습니다. 내림차순으로 나열했을 때 마지막으로 오는 수는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 내림차순으로 나열했을 때 마지막으로 오는 수는 얼마입니까?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                105,
+                62,
+                116,
+                89,
+                43
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),last)",
+        "Answer": 43,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 120,124,87,119,92가 있습니다. 오름차순으로 나열했을 때 그 중에서 가운데 있는 수는?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 오름차순으로 나열했을 때 그 중에서 가운데 있는 수는?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                120,
+                124,
+                87,
+                119,
+                92
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, asc),middle)",
+        "Answer": 119,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 151,130,26,156,37가 있습니다. 내림차순으로 나열했을 때 3번째 수는?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 내림차순으로 나열했을 때 ord0 번째 수는?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                151,
+                130,
+                26,
+                156,
+                37
+            ],
+            "ord0": 3
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),ord0)",
+        "Answer": 130,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 88,115,90,168,32가 있습니다. 내림차순으로 나열했을 때 맨 앞에 있는 수는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 내림차순으로 나열했을 때 맨 앞에 있는 수는 얼마입니까?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                151,
+                130,
+                26,
+                156,
+                37
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),first)",
+        "Answer": 156,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 79,75,76,71,112가 있습니다. 내림차순으로 나열했을 때 3번째 수는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 내림차순으로 나열했을 때 ord0 번째 수는 얼마입니까?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                79,
+                75,
+                76,
+                71,
+                112
+            ],
+            "ord0": 3
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),ord0)",
+        "Answer": 76,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 81,38,127,98,53가 있습니다. 내림차순으로 나열했을 때 맨 앞에 있는 수는?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 내림차순으로 나열했을 때 맨 앞에 있는 수는?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                81,
+                38,
+                127,
+                98,
+                53
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),first)",
+        "Answer": 127,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 59,121,136,62,131가 있습니다. 오름차순으로 나열했을 때 제일 처음에 나오는 수를 구하시오",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 오름차순으로 나열했을 때 제일 처음에 나오는 수를 구하시오",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                59,
+                121,
+                136,
+                62,
+                131
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, asc),first)",
+        "Answer": 59,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 39,156,159,48,153가 있습니다. 오름차순으로 나열했을 때 그 중에서 가운데 있는 수는?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 오름차순으로 나열했을 때 그 중에서 가운데 있는 수는?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                39,
+                156,
+                159,
+                48,
+                153
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, asc),middle)",
+        "Answer": 153,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 91,149,125,71,68가 있습니다. 내림차순으로 나열했을 때 3번째 수는?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 내림차순으로 나열했을 때 ord0 번째 수는?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                91,
+                149,
+                125,
+                71,
+                68
+            ],
+            "ord0": 3
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),ord0)",
+        "Answer": 91,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 132,92,91,124,36가 있습니다. 오름차순으로 나열했을 때 3번째 수를 구하시오",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 오름차순으로 나열했을 때 ord0 번째 수를 구하시오.",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                132,
+                92,
+                91,
+                124,
+                36
+            ],
+            "ord0": 3
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, asc),ord0)",
+        "Answer": 92,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 61,152,103,68,31가 있습니다. 오름차순으로 나열했을 때 제일 처음에 나오는 수를 구하시오",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 오름차순으로 나열했을 때 제일 처음에 나오는 수를 구하시오",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                61,
+                152,
+                103,
+                68,
+                31
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, asc),first)",
+        "Answer": 31,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 119,99,135,37,85가 있습니다. 내림차순으로 나열했을 때 4번째 수를 구하시오",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 내림차순으로 나열했을 때 ord0 번째 수를 구하시오",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                119,
+                99,
+                135,
+                37,
+                85
+            ],
+            "ord0": 4
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),ord0)",
+        "Answer": 85,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 23,73,121,115,142가 있습니다. 오름차순으로 나열했을 때 맨 앞에 있는 수는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 오름차순으로 나열했을 때 맨 앞에 있는 수는 얼마입니까?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                23,
+                73,
+                121,
+                115,
+                142
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, asc),first)",
+        "Answer": 23,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 136,105,26,147,87가 있습니다. 내림차순으로 나열했을 때 3번째 수를 구하시오",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 내림차순으로 나열했을 때 ord0 번째 수를 구하시오",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                136,
+                105,
+                26,
+                147,
+                87
+            ],
+            "ord0": 3
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),ord0)",
+        "Answer": 105,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 86,69,94,46,156가 있습니다. 오름차순으로 나열했을 때 4번째 수는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 오름차순으로 나열했을 때 ord0 번째 수는 얼마입니까?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                86,
+                69,
+                94,
+                46,
+                156
+            ],
+            "ord0": 4
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, asc),ord0)",
+        "Answer": 94,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 68,47,148,132,68가 있습니다. 내림차순으로 나열했을 때 마지막으로 오는 수는?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 내림차순으로 나열했을 때 마지막으로 오는 수는?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                68,
+                47,
+                148,
+                132,
+                68
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),last)",
+        "Answer": 47,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 150,26,82,107,125가 있습니다. 내림차순으로 나열했을 때 마지막으로 오는 수를 구하시오",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 내림차순으로 나열했을 때 마지막으로 오는 수를 구하시오",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                150,
+                26,
+                82,
+                107,
+                125
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc), last)",
+        "Answer": 26,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 130,134,37,85,170가 있습니다. 내림차순으로 나열했을 때 3번째 수는?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 내림차순으로 나열했을 때 ord0 번째 수는?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                130,
+                134,
+                37,
+                85,
+                170
+            ],
+            "ord0": 3
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),ord0)",
+        "Answer": 130,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 152,109,66,69,47가 있습니다. 오름차순으로 나열했을 때 맨 앞에 있는 수는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 오름차순으로 나열했을 때 맨 앞에 있는 수는 얼마입니까?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                152,
+                109,
+                66,
+                69,
+                47
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, asc),first)",
+        "Answer": 47,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 170,71,102,137,65가 있습니다. 내림차순으로 나열했을 때 마지막으로 오는 수는?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 내림차순으로 나열했을 때 마지막으로 오는 수는?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                170,
+                71,
+                102,
+                137,
+                65
+            ]
+        },
+        "Equation": "func_FindNumber(func_OrderedList(seq0, desc),last)",
+        "Answer": 65,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "어떤 소수의 소수점을 오른쪽으로 한 자리 옮기면 원래보다 2.7만큼 커집니다. 원래의 소수를 구하시오.",
+        "QuestionConv": "어떤 소수의 소수점을 오른쪽으로 dig0 자리 옮기면 원래보다 num0 만큼 커집니다. 원래의 소수를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 2.7
+        },
+        "Equation": "func_OriginNumber(func_movepoint(right, dig0),num0)",
+        "Answer": 0.3,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "어떤 소수의 소수점을 오른쪽으로 한 자리 옮기면 원래보다 22.5만큼 커집니다. 원래의 소수를 구하시오.",
+        "QuestionConv": "어떤 소수의 소수점을 오른쪽으로 dig0 자리 옮기면 원래보다 num0 만큼 커집니다. 원래의 소수를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 22.5
+        },
+        "Equation": "func_OriginNumber(func_movepoint(right, dig0),num0)",
+        "Answer": 2.5,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "어떤 소수의 소수점을 오른쪽으로 한 자리 옮기면 원래보다 19.8만큼 커집니다. 원래의 소수를 구하시오.",
+        "QuestionConv": "어떤 소수의 소수점을 오른쪽으로 dig0 자리 옮기면 원래보다 num0 만큼 커집니다. 원래의 소수를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 19.8
+        },
+        "Equation": "func_OriginNumber(func_movepoint(right, dig0),num0)",
+        "Answer": 2.2,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "어떤 소수의 소수점을 오른쪽으로 한 자리 옮기면 원래보다 47.7만큼 커집니다. 원래의 소수를 구하시오.",
+        "QuestionConv": "어떤 소수의 소수점을 오른쪽으로 dig0 자리 옮기면 원래보다 num0 만큼 커집니다. 원래의 소수를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 47.7
+        },
+        "Equation": "func_OriginNumber(func_movepoint(right, dig0),num0)",
+        "Answer": 5.3,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "어떤 소수의 소수점을 오른쪽으로 한 자리 옮기면 원래보다 53.1만큼 커집니다. 원래의 소수를 구하시오.",
+        "QuestionConv": "어떤 소수의 소수점을 오른쪽으로 dig0 자리 옮기면 원래보다 num0 만큼 커집니다. 원래의 소수를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 53.1
+        },
+        "Equation": "func_OriginNumber(func_movepoint(right, dig0),num0)",
+        "Answer": 5.9,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "어떤 소수의 소수점을 오른쪽으로 한 자리 옮기면 원래보다 28.8만큼 커집니다. 원래의 소수를 구하시오.",
+        "QuestionConv": "어떤 소수의 소수점을 오른쪽으로 dig0 자리 옮기면 원래보다 num0 만큼 커집니다. 원래의 소수를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 28.8
+        },
+        "Equation": "func_OriginNumber(func_movepoint(right, dig0),num0)",
+        "Answer": 3.2,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "어떤 소수의 소수점을 오른쪽으로 한 자리 옮기면 원래보다 35.1만큼 커집니다. 원래의 소수를 구하시오.",
+        "QuestionConv": "어떤 소수의 소수점을 오른쪽으로 dig0 자리 옮기면 원래보다 num0 만큼 커집니다. 원래의 소수를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 35.1
+        },
+        "Equation": "func_OriginNumber(func_movepoint(right, dig0),num0)",
+        "Answer": 3.9,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "어떤 소수의 소수점을 오른쪽으로 한 자리 옮기면 원래보다 36.9만큼 커집니다. 원래의 소수를 구하시오.",
+        "QuestionConv": "어떤 소수의 소수점을 오른쪽으로 dig0 자리 옮기면 원래보다 num0 만큼 커집니다. 원래의 소수를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 36.9
+        },
+        "Equation": "func_OriginNumber(func_movepoint(right, dig0),num0)",
+        "Answer": 4.1,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "어떤 소수의 소수점을 오른쪽으로 한 자리 옮기면 원래보다 27.9만큼 커집니다. 원래의 소수를 구하시오.",
+        "QuestionConv": "어떤 소수의 소수점을 오른쪽으로 dig0 자리 옮기면 원래보다 num0 만큼 커집니다. 원래의 소수를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 27.9
+        },
+        "Equation": "func_OriginNumber(func_movepoint(right, dig0),num0)",
+        "Answer": 3.1,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "어떤 소수의 소수점을 오른쪽으로 한 자리 옮기면 원래보다 6.3만큼 커집니다. 원래의 소수를 구하시오.",
+        "QuestionConv": "어떤 소수의 소수점을 오른쪽으로 dig0 자리 옮기면 원래보다 num0 만큼 커집니다. 원래의 소수를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 6.3
+        },
+        "Equation": "func_OriginNumber(func_movepoint(right, dig0),num0)",
+        "Answer": 0.7,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "어떤 소수의 소수점을 오른쪽으로 한 자리 옮기면 원래보다 46.8만큼 커집니다. 원래의 소수를 구하시오.",
+        "QuestionConv": "어떤 소수의 소수점을 오른쪽으로 dig0 자리 옮기면 원래보다 num0 만큼 커집니다. 원래의 소수를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 46.8
+        },
+        "Equation": "func_OriginNumber(func_movepoint(right, dig0),num0)",
+        "Answer": 5.2,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "0.3에 소수점을 오른쪽으로 한 자리 옮기면 A만큼 커집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 오른쪽으로 dig0 자리 옮기면 A 만큼 커집니다. A 를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 0.3
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(right, dig0),num0)",
+        "Answer": 2.7,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5.3에 소수점을 오른쪽으로 한 자리 옮기면 A만큼 커집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 오른쪽으로 dig0 자리 옮기면 A 만큼 커집니다. A 를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 5.3
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(right, dig0),num0)",
+        "Answer": 47.7,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "4.5에 소수점을 오른쪽으로 한 자리 옮기면 A만큼 커집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 오른쪽으로 dig0 자리 옮기면 A 만큼 커집니다. A 를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 4.5
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(right, dig0),num0)",
+        "Answer": 40.5,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5.5에 소수점을 오른쪽으로 한 자리 옮기면 A만큼 커집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 오른쪽으로 dig0 자리 옮기면 A 만큼 커집니다. A 를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 5.5
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(right, dig0),num0)",
+        "Answer": 49.5,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "1.9에 소수점을 오른쪽으로 한 자리 옮기면 A만큼 커집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 오른쪽으로 dig0 자리 옮기면 A 만큼 커집니다. A 를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 1.9
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(right, dig0),num0)",
+        "Answer": 17.1,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "3.8에 소수점을 오른쪽으로 한 자리 옮기면 A만큼 커집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 오른쪽으로 dig0 자리 옮기면 A 만큼 커집니다. A 를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 3.8
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(right, dig0),num0)",
+        "Answer": 34.2,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "0.2에 소수점을 오른쪽으로 한 자리 옮기면 A만큼 커집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 오른쪽으로 dig0 자리 옮기면 A 만큼 커집니다. A 를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 0.2
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(right, dig0),num0)",
+        "Answer": 1.8,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5.3에 소수점을 오른쪽으로 한 자리 옮기면 A만큼 커집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 오른쪽으로 dig0 자리 옮기면 A 만큼 커집니다. A 를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 5.3
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(right, dig0),num0)",
+        "Answer": 47.7,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5.7에 소수점을 오른쪽으로 한 자리 옮기면 A만큼 커집니다. A를 구하시오.",
+        "QuestionConv": "num0 에 소수점을 오른쪽으로 dig0 자리 옮기면 A 만큼 커집니다. A 를 구하시오.",
+        "Numbers": {
+            "dig0": 1,
+            "num0": 5.7
+        },
+        "Equation": "func_diff_Numbers(func_movepoint(right, dig0),num0)",
+        "Answer": 51.3,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "6개의 수 93,102,50,41,132,137가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수의 1의 자리 수와 10의 자리 수의 합을 구하시오",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수의 num1 의 자리 수와 num2 의 자리 수의 합을 구하시오",
+        "Numbers": {
+            "num0": 6,
+            "seq0": [
+                93,
+                102,
+                50,
+                41,
+                132,
+                137
+            ],
+            "num1": 1,
+            "num2": 10
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FinddigitNumber(func_SplitNumber(func_FindFirstnumber(func_removeelement(seq0, smallest),largest), none),func_SplitNumber(num1,none)),func_FinddigitNumber(func_SplitNumber(func_FindFirstnumber(func_removeelement(seq0, smallest),largest), none),func_SplitNumber(num2,none))), add)",
+        "Answer": 10,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 165,92,153,109,64가 있습니다. 가장 큰 수를 뺀 뒤 남은 수 중에서 가장 큰 수의 1의 자리 수와 10의 자리 수의 합은?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 큰 수를 뺀 뒤 남은 수 중에서 가장 큰 수의 num1 의 자리 수와 num2 의 자리 수의 합은?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                165,
+                92,
+                153,
+                109,
+                64
+            ],
+            "num1": 1,
+            "num2": 10
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FinddigitNumber(func_SplitNumber(func_FindFirstnumber(func_removeelement(seq0, largest),largest), none),func_SplitNumber(num1,none)),func_FinddigitNumber(func_SplitNumber(func_FindFirstnumber(func_removeelement(seq0, largest),largest), none),func_SplitNumber(num2,none))), add)",
+        "Answer": 8,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "4개의 수 165,57,108,118가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수의 1의 자리 수와 10의 자리 수의 합은?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수의 num1 의 자리 수와 num2 의 자리 수의 합은?",
+        "Numbers": {
+            "num0": 4,
+            "seq0": [
+                165,
+                57,
+                108,
+                118
+            ],
+            "num1": 1,
+            "num2": 10
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FinddigitNumber(func_SplitNumber(func_FindFirstnumber(func_removeelement(seq0, smallest),largest), none),func_SplitNumber(num1,none)),func_FinddigitNumber(func_SplitNumber(func_FindFirstnumber(func_removeelement(seq0, smallest),largest), none),func_SplitNumber(num2,none))), add)",
+        "Answer": 11,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "4개의 수 88,83,29,160가 있습니다. 가장 큰 수를 뺀 뒤 남은 수 중에서 가장 큰 수의 1의 자리 수와 10의 자리 수의 합은?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 큰 수를 뺀 뒤 남은 수 중에서 가장 큰 수의 num1 의 자리 수와 num2 의 자리 수의 합은?",
+        "Numbers": {
+            "num0": 4,
+            "seq0": [
+                88,
+                83,
+                29,
+                160
+            ],
+            "num1": 1,
+            "num2": 10
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FinddigitNumber(func_SplitNumber(func_FindFirstnumber(func_removeelement(seq0, largest),largest), none),func_SplitNumber(num1,none)),func_FinddigitNumber(func_SplitNumber(func_FindFirstnumber(func_removeelement(seq0, largest),largest), none),func_SplitNumber(num2,none))), add)",
+        "Answer": 16,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "4개의 수 53,98, 69, 84가 있습니다. 그 중에서 가장 큰 수와 가장 작은 수의 차는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 그 중에서 가장 큰 수와 가장 작은 수의 차는 얼마입니까?",
+        "Numbers": {
+            "num0": 4,
+            "seq0": [
+                53,
+                98,
+                69,
+                84
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(seq0, largest),func_FindFirstnumber(seq0, smallest)),sub)",
+        "Answer": 45,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "3개의 수 62, 12, 25가 있습니다. 그 중에서 가장 큰 수와 가장 작은 수의 차는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 그 중에서 가장 큰 수와 가장 작은 수의 차는 얼마입니까?",
+        "Numbers": {
+            "num0": 3,
+            "seq0": [
+                62,
+                12,
+                25
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(seq0, largest),func_FindFirstnumber(seq0, smallest)),sub)",
+        "Answer": 50,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "4개의 수 166,158,52,42가 있습니다. 그 중에서 가장 큰 수와 가장 작은 수의 합은?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 그 중에서 가장 큰 수와 가장 작은 수의 합은?",
+        "Numbers": {
+            "num0": 4,
+            "seq0": [
+                166,
+                158,
+                52,
+                42
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(seq0, largest),func_FindFirstnumber(seq0, smallest)),add)",
+        "Answer": 208,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 126,35,69,23,97가 있습니다. 그 중에서 가장 큰 수를 가장 작은 수로 나눈 나머지는?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 그 중에서 가장 큰 수를 가장 작은 수로 나눈 나머지는?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                126,
+                35,
+                69,
+                23,
+                97
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(seq0, largest),func_FindFirstnumber(seq0, smallest)),mod)",
+        "Answer": 11,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "다음 수 중에서 가장 큰 수와 가장 작은 수의 합을 구하세요. 1 , 8, 3, 5 , 7, 9",
+        "QuestionConv": "다음 수 중에서 가장 큰 수와 가장 작은 수의 합을 구하세요. seq0",
+        "Numbers": {
+            "seq0": [
+                1,
+                8,
+                3,
+                5,
+                7,
+                9
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(seq0, largest),func_FindFirstnumber(seq0, smallest)),add)",
+        "Answer": 10,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "다음 수 중에서 가장 큰 수와 가장 작은 수의 차를 구하세요. 2, 5, 7, 9, 3, 6",
+        "QuestionConv": "다음 수 중에서 가장 큰 수와 가장 작은 수의 차를 구하세요. seq0",
+        "Numbers": {
+            "seq0": [
+                2,
+                5,
+                7,
+                9,
+                3,
+                6
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(seq0, largest),func_FindFirstnumber(seq0, smallest)),sub)",
+        "Answer": 7,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 25, 16, 36, 57, 63가 있습니다. 그 중에서 가장 큰 수와 2번째 큰 수의 차는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 그 중에서 가장 큰 수와 ord0 번째 큰 수의 차는 얼마입니까?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                25,
+                16,
+                36,
+                57,
+                63
+            ],
+            "ord0": 2
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(seq0, largest),func_FindFirstnumber(seq0, ord0)),sub)",
+        "Answer": 6,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 25, 16, 36, 57, 63가 있습니다. 그 중에서 가장 큰 수와 2번째 큰 수의 합은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 그 중에서 가장 큰 수와 ord0 번째 큰 수의 합은 얼마입니까?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                25,
+                16,
+                36,
+                57,
+                63
+            ],
+            "ord0": 2
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(seq0, largest),func_FindFirstnumber(seq0, ord0)),add)",
+        "Answer": 120,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 84,104,165,42,52가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수와 가장 작은 수의 차를 구하시오",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수와 가장 작은 수의 차를 구하시오",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                84,
+                104,
+                165,
+                42,
+                52
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(func_removeelement(seq0, smallest),largest),func_FindFirstnumber(func_removeelement(seq0, smallest),smallest)),sub)",
+        "Answer": 113,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "6개의 수 52,135,88,137,58,139가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수를 가장 작은 수로 나눈 나머지를 구하시오",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수를 가장 작은 수로 나눈 나머지를 구하시오",
+        "Numbers": {
+            "num0": 6,
+            "seq0": [
+                52,
+                135,
+                88,
+                137,
+                58,
+                139
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(func_removeelement(seq0, smallest),largest),func_FindFirstnumber(func_removeelement(seq0, smallest),smallest)),mod)",
+        "Answer": 23,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "6개의 수 166,66,134,40,66,28가 있습니다. 가장 큰 수를 뺀 뒤 남은 수 중에서 가장 작은 수와 가장 큰 수의 곱은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 큰 수를 뺀 뒤 남은 수 중에서 가장 작은 수와 가장 큰 수의 곱은 얼마입니까?",
+        "Numbers": {
+            "num0": 6,
+            "seq0": [
+                166,
+                66,
+                134,
+                40,
+                66,
+                28
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(func_removeelement(seq0, largest),smallest),func_FindFirstnumber(func_removeelement(seq0, largest),largest)),mul)",
+        "Answer": 3752,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "4개의 수 125,131,162,37가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수와 가장 작은 수의 합을 구하시오",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수와 가장 작은 수의 합을 구하시오",
+        "Numbers": {
+            "num0": 4,
+            "seq0": [
+                125,
+                131,
+                162,
+                37
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(func_removeelement(seq0, smallest), largest),func_FindFirstnumber(func_removeelement(seq0, smallest),smallest)),add)",
+        "Answer": 287,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 138,25,167,165,85가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 작은 수와 가장 큰 수의 곱은 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 작은 수와 가장 큰 수의 곱은 얼마입니까?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                138,
+                25,
+                167,
+                165,
+                85
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(func_removeelement(seq0, smallest),smallest),func_FindFirstnumber(func_removeelement(seq0, smallest),largest)),mul)",
+        "Answer": 14195,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 48,99,105,102,117가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수와 가장 작은 수의 차는?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수와 가장 작은 수의 차는?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                48,
+                99,
+                105,
+                102,
+                117
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(func_removeelement(seq0, smallest),largest),func_FindFirstnumber(func_removeelement(seq0, smallest),smallest)),sub)",
+        "Answer": 18,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "6개의 수 111,121,163,169,26,86가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 작은 수와 가장 큰 수의 곱은?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 작은 수와 가장 큰 수의 곱은?",
+        "Numbers": {
+            "num0": 6,
+            "seq0": [
+                111,
+                121,
+                163,
+                169,
+                26,
+                86
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(func_removeelement(seq0, smallest),smallest),func_FindFirstnumber(func_removeelement(seq0, smallest),largest)),mul)",
+        "Answer": 14534,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "6개의 수 64,122,134,161,85,116가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수와 가장 작은 수의 합을 구하시오",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 큰 수와 가장 작은 수의 합을 구하시오?",
+        "Numbers": {
+            "num0": 6,
+            "seq0": [
+                64,
+                122,
+                134,
+                161,
+                85,
+                116
+            ]
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_FindFirstnumber(func_removeelement(seq0, smallest),largest),func_FindFirstnumber(func_removeelement(seq0, smallest),smallest)),add)",
+        "Answer": 246,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 58,68,143,51,131가 있습니다. 그 중에서 가장 큰 수를 구하시오",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 그 중에서 가장 큰 수를 구하시오",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                58,
+                68,
+                143,
+                51,
+                131
+            ]
+        },
+        "Equation": "func_FindFirstnumber(seq0, largest)",
+        "Answer": 143,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "6개의 수 164,136,115,127,133,95가 있습니다. 그 중에서 가장 큰 수는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 그 중에서 가장 큰 수는 얼마입니까?",
+        "Numbers": {
+            "num0": 6,
+            "seq0": [
+                164,
+                136,
+                115,
+                127,
+                133,
+                95
+            ]
+        },
+        "Equation": "func_FindFirstnumber(seq0, largest)",
+        "Answer": 164,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "4개의 수 30,39,96,42가 있습니다. 가장 큰 수를 뺀 뒤 남은 수 중에서 가장 작은 수는 얼마입니까?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 큰 수를 뺀 뒤 남은 수 중에서 가장 작은 수는 얼마입니까?",
+        "Numbers": {
+            "num0": 4,
+            "seq0": [
+                30,
+                39,
+                96,
+                42
+            ]
+        },
+        "Equation": "func_FindFirstnumber(func_removeelement(seq0, largest),smallest)",
+        "Answer": 30,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "5개의 수 68,73,35,120,51가 있습니다. 가장 큰 수를 뺀 뒤 남은 수 중에서 가장 작은 수는?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 큰 수를 뺀 뒤 남은 수 중에서 가장 작은 수는?",
+        "Numbers": {
+            "num0": 5,
+            "seq0": [
+                68,
+                73,
+                35,
+                120,
+                51
+            ]
+        },
+        "Equation": "func_FindFirstnumber(func_removeelement(seq0, largest),smallest)",
+        "Answer": 35,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "4개의 수 83,26,76,127가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 작은 수는?",
+        "QuestionConv": "num0 개의 수 seq0 가 있습니다. 가장 작은 수를 뺀 뒤 남은 수 중에서 가장 작은 수는?",
+        "Numbers": {
+            "num0": 4,
+            "seq0": [
+                83,
+                26,
+                76,
+                127
+            ]
+        },
+        "Equation": "func_FindFirstnumber(func_removeelement(seq0, smallest),smallest)",
+        "Answer": 76,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "3개의 수 2, 3, 9로 나누어 떨어질 수 있는 세 자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 3,
+            "seq0": [
+                2,
+                3,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 50,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "3개의 수 9,10,8로 나누어 떨어질 수 있는 3자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 3,
+            "seq0": [
+                9,
+                10,
+                8
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 2,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "3개의 수 5,6,3로 나누어 떨어질 수 있는 3자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 3,
+            "seq0": [
+                5,
+                6,
+                3
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 30,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "3개의 수 5,3,11로 나누어 떨어질 수 있는 3자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 3,
+            "seq0": [
+                5,
+                3,
+                11
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 6,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "3개의 수 8,10,5로 나누어 떨어질 수 있는 3자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 3,
+            "seq0": [
+                8,
+                10,
+                5
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 22,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "3개의 수 4,6,10로 나누어 떨어질 수 있는 3자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 3,
+            "seq0": [
+                4,
+                6,
+                10
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 15,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "3개의 수 2,8,11로 나누어 떨어질 수 있는 3자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 3,
+            "seq0": [
+                2,
+                8,
+                11
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 10,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "3개의 수 3,11,9로 나누어 떨어질 수 있는 3자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 3,
+            "seq0": [
+                3,
+                11,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 9,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "3개의 수 7,10,11로 나누어 떨어질 수 있는 3자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 3,
+            "seq0": [
+                7,
+                10,
+                11
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 1,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "3개의 수 5,7,8로 나누어 떨어질 수 있는 3자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 3,
+            "seq0": [
+                5,
+                7,
+                8
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 3,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "3개의 수 7,5,6로 나누어 떨어질 수 있는 3자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 3,
+            "seq0": [
+                7,
+                5,
+                6
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 4,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "2개의 수 2, 7로 나누어 떨어질 수 있는 세 자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 2,
+            "seq0": [
+                2,
+                7
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 64,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "2개의 수 3 , 9로 나누어 떨어질 수 있는 두 자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 2,
+            "seq0": [
+                3,
+                9
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 10,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "2개의 수 5,8로 나누어 떨어질 수 있는 2자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 2,
+            "seq0": [
+                5,
+                8
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 2,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "2개의 수 8,4로 나누어 떨어질 수 있는 2자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 2,
+            "seq0": [
+                8,
+                4
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 11,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "2개의 수 9,4로 나누어 떨어질 수 있는 2자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 2,
+            "seq0": [
+                9,
+                4
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 2,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "2개의 수 5,8로 나누어 떨어질 수 있는 2자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 2,
+            "seq0": [
+                5,
+                8
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 2,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "2개의 수 7,2로 나누어 떨어질 수 있는 2자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 2,
+            "seq0": [
+                7,
+                2
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 7,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "2개의 수 4,8로 나누어 떨어질 수 있는 2자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 2,
+            "seq0": [
+                4,
+                8
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 11,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "2개의 수 6,11로 나누어 떨어질 수 있는 2자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 2,
+            "seq0": [
+                6,
+                11
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 1,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "2개의 수 10,6로 나누어 떨어질 수 있는 2자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 2,
+            "seq0": [
+                10,
+                6
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 3,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "2개의 수 5,10로 나누어 떨어질 수 있는 2자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 2,
+            "seq0": [
+                5,
+                10
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 9,
+        "Type": "NumFind_1"
+    },
+    {
+        "Question": "2개의 수 5,6로 나누어 떨어질 수 있는 2자리 수는 모두 몇 개 있습니까?",
+        "QuestionConv": "num0 개의 수 seq0 로 나누어 떨어질 수 있는 dig0 자리 수는 모두 몇 개 있습니까?",
+        "Numbers": {
+            "num0": 2,
+            "seq0": [
+                5,
+                6
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_Count(func_Cal_CommonDivisor_1(func_FindDivisor(func_MakeSeq(dig0  , none),seq0),none),none)",
+        "Answer": 3,
+        "Type": "NumFind_1"
+    }
+]

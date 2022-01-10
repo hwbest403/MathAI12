@@ -1,0 +1,558 @@
+[
+    {
+        "Question": "어떤 수가 있는데, 85을 더했더니 131가 되었습니다. 어떤 수에서 53를 곱하면 몇인지 구하시오.",
+        "QuestionConv": "어떤 수가 있는데 , num0 을 더했더니 num1 가 되었습니다 . 어떤 수에서 num2 를 곱하면 몇인지 구하시오 .",
+        "Numbers": {
+            "num0": 85,
+            "num1": 131,
+            "num2": 53
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), add),num2),mul)",
+        "Answer": 2438,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 add num2 mul",
+        "src": "어 떤 _ 수 가 _ 있 는 데 _ num0 을 _ 더 했 더 니 _ num1 가 _ 되 었 습 니 다 _ 어 떤 _ 수 에 서 _ num2 를 _ 곱 하 면 _ 몇 인 지 _ 구 하 시 오",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 add num2 mul"
+    },
+    {
+        "Question": "남준이는 41을 더해야 했는데 실수로 45을 곱한 결과가 450이 돼버렸다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 더해야 했는데 실수로 num1 을 곱한 결과가 num2 이 돼버렸다 . 원래대로 계산한 결과는 얼마인가요 ?",
+        "Numbers": {
+            "num0": 41,
+            "num1": 45,
+            "num2": 450
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), mul),num0),add)",
+        "Answer": 51,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 mul num0 add",
+        "src": "nae0 이 는 _ num0 을 _ 더 해 야 _ 했 는 데 _ 실 수 로 _ num1 을 _ 곱 한 _ 결 과 가 _ num2 이 _ 돼 버 렸 다 _ 원 래 대 로 _ 계 산 한 _ 결 과 는 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 mul num0 add"
+    },
+    {
+        "Question": "시험답안에서 42을 나눠야 하는데 실수로 곱해버려서 5292이 되었다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "시험답안에서 num0 을 나눠야 하는데 실수로 곱해버려서 num1 이 되었다 . 원래대로 계산하면 얼마인가요 ?",
+        "Numbers": {
+            "num0": 42,
+            "num1": 5292
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), mul),num0),div)",
+        "Answer": 3,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 mul num0 div",
+        "src": "시 험 답 안 에 서 _ num0 을 _ 나 눠 야 _ 하 는 데 _ 실 수 로 _ 곱 해 버 려 서 _ num1 이 _ 되 었 다 _ 원 래 대 로 _ 계 산 하 면 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 mul num0 div"
+    },
+    {
+        "Question": "문제지에서 70을 빼야 했는데 잘못하여 18을 더한 결과가 125이 나왔다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "문제지에서 num0 을 빼야 했는데 잘못하여 num1 을 더한 결과가 num2 이 나왔다 . 원래대로 계산하면 얼마인가요 ?",
+        "Numbers": {
+            "num0": 70,
+            "num1": 18,
+            "num2": 125
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), add),num0),sub)",
+        "Answer": 37,
+        "Type": "FindNumberRule1",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 add num0 sub",
+        "src": "문 제 지 에 서 _ num0 을 _ 빼 야 _ 했 는 데 _ 잘 못 하 여 _ num1 을 _ 더 한 _ 결 과 가 _ num2 이 _ 나 왔 다 _ 원 래 대 로 _ 계 산 하 면 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 add num0 sub"
+    },
+    {
+        "Question": "임의의 수가 있는데, 31을 곱해야 했다. 그런데 55을 나눠서 1이 돼버렸다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "임의의 수가 있는데 , num0 을 곱해야 했다 . 그런데 num1 을 나눠서 num2 이 돼버렸다 . 원래대로 계산하면 얼마인가요 ?",
+        "Numbers": {
+            "num0": 31,
+            "num1": 55,
+            "num2": 1
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), div),num0),mul)",
+        "Answer": 1705,
+        "Type": "FindNumberRule1",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 div num0 mul",
+        "src": "임 의 의 _ 수 가 _ 있 는 데 _ num0 을 _ 곱 해 야 _ 했 다 _ 그 런 데 _ num1 을 _ 나 눠 서 _ num2 이 _ 돼 버 렸 다 _ 원 래 대 로 _ 계 산 하 면 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 div num0 mul"
+    },
+    {
+        "Question": "유나 이가 4을 더해야 하는데 실수로 75을 더해서 96이 되었다. 바르게 계산하면 얼마인지 구하시오",
+        "QuestionConv": "nae0 이가 num0 을 더해야 하는데 실수로 num1 을 더해서 num2 이 되었다 . 바르게 계산하면 얼마인지 구하시오",
+        "Numbers": {
+            "num0": 4,
+            "num1": 75,
+            "num2": 96
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), add),num0),add)",
+        "Answer": 25,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 add num0 add",
+        "src": "nae0 이 가 _ num0 을 _ 더 해 야 _ 하 는 데 _ 실 수 로 _ num1 을 _ 더 해 서 _ num2 이 _ 되 었 다 _ 바 르 게 _ 계 산 하 면 _ 얼 마 인 지 _ 구 하 시 오",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 add num0 add"
+    },
+    {
+        "Question": "어느날 정국이는 81을 나눠야 한다. 그러나 37을 빼버려서 결과가 1097이 되었다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "어느날 nae0 이는 num0 을 나눠야 한다 . 그러나 num1 을 빼버려서 결과가 num2 이 되었다 . 원래대로 계산한 결과를 구하시오 .",
+        "Numbers": {
+            "num0": 81,
+            "num1": 37,
+            "num2": 1097
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), sub),num0),div)",
+        "Answer": 14,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 sub num0 div",
+        "src": "어 느 날 _ nae0 이 는 _ num0 을 _ 나 눠 야 _ 한 다 _ 그 러 나 _ num1 을 _ 빼 버 려 서 _ 결 과 가 _ num2 이 _ 되 었 다 _ 원 래 대 로 _ 계 산 한 _ 결 과 를 _ 구 하 시 오",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 sub num0 div"
+    },
+    {
+        "Question": "어떤 문제에서 42을 곱해야 한다. 그러나 81을 나눴더니 2이 나왔다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "어떤 문제에서 num0 을 곱해야 한다 . 그러나 num1 을 나눴더니 num2 이 나왔다 . 원래대로 계산한 결과를 구하시오 .",
+        "Numbers": {
+            "num0": 42,
+            "num1": 81,
+            "num2": 2
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), div),num0),mul)",
+        "Answer": 6804,
+        "Type": "FindNumberRule1",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 div num0 mul",
+        "src": "어 떤 _ 문 제 에 서 _ num0 을 _ 곱 해 야 _ 한 다 _ 그 러 나 _ num1 을 _ 나 눴 더 니 _ num2 이 _ 나 왔 다 _ 원 래 대 로 _ 계 산 한 _ 결 과 를 _ 구 하 시 오",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 div num0 mul"
+    },
+    {
+        "Question": "어떤 수에서 5을 나눠야 했는데 실수로 92을 곱해서 결과가 5060이 나왔다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "QuestionConv": "어떤 수에서 num0 을 나눠야 했는데 실수로 num1 을 곱해서 결과가 num2 이 나왔다 . 원래 계산했어야 하는 결과는 얼마인가요 ?",
+        "Numbers": {
+            "num0": 5,
+            "num1": 92,
+            "num2": 5060
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), mul),num0),div)",
+        "Answer": 11.0,
+        "Type": "FindNumberRule1",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 mul num0 div",
+        "src": "어 떤 _ 수 에 서 _ num0 을 _ 나 눠 야 _ 했 는 데 _ 실 수 로 _ num1 을 _ 곱 해 서 _ 결 과 가 _ num2 이 _ 나 왔 다 _ 원 래 _ 계 산 했 어 야 _ 하 는 _ 결 과 는 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 mul num0 div"
+    },
+    {
+        "Question": "어떤 수가 있다. 7을 나눴더니 12가 되었습니다. 어떤 수에서 45를 곱하면 얼마가 되는지 구하시오.",
+        "QuestionConv": "어떤 수가 있다 . num0 을 나눴더니 num1 가 되었습니다 . 어떤 수에서 num2 를 곱하면 얼마가 되는지 구하시오 .",
+        "Numbers": {
+            "num0": 7,
+            "num1": 12,
+            "num2": 45
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), div),num2),mul)",
+        "Answer": 3780,
+        "Type": "FindNumberRule2",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num2 mul",
+        "src": "어 떤 _ 수 가 _ 있 다 _ num0 을 _ 나 눴 더 니 _ num1 가 _ 되 었 습 니 다 _ 어 떤 _ 수 에 서 _ num2 를 _ 곱 하 면 _ 얼 마 가 _ 되 는 지 _ 구 하 시 오",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num2 mul"
+    },
+    {
+        "Question": "어느날 민영이는 90을 빼야 하는건데 실수로 56을 더했더니 181이 나왔다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "어느날 민영이는 num0 을 빼야 하는건데 실수로 num1 을 더했더니 num2 이 나왔다 . 바르게 계산한 결과를 구하시오 .",
+        "Numbers": {
+            "num0": 90,
+            "num1": 56,
+            "num2": 181
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), add),num0),sub)",
+        "Answer": 35,
+        "Type": "FindNumberRule1",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 add num0 sub",
+        "src": "어 느 날 _ nae0 이 는 _ num0 을 _ 빼 야 _ 하 는 건 데 _ 실 수 로 _ num1 을 _ 더 했 더 니 _ num2 이 _ 나 왔 다 _ 바 르 게 _ 계 산 한 _ 결 과 를 _ 구 하 시 오",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 add num0 sub"
+    },
+    {
+        "Question": "임의의 수가 있다. 96을 나눴더니 1가 되었습니다. 임의의 수에서 57를 빼면 얼마인지 구하시오.",
+        "QuestionConv": "임의의 수가 있다 . num0 을 나눴더니 num1 가 되었습니다 . 임의의 수에서 num2 를 빼면 얼마인지 구하시오 .",
+        "Numbers": {
+            "num0": 96,
+            "num1": 1,
+            "num2": 57
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), div),num2),sub)",
+        "Answer": 39,
+        "Type": "FindNumberRule2",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num2 sub",
+        "src": "임 의 의 _ 수 가 _ 있 다 _ num0 을 _ 나 눴 더 니 _ num1 가 _ 되 었 습 니 다 _ 임 의 의 _ 수 에 서 _ num2 를 _ 빼 면 _ 얼 마 인 지 _ 구 하 시 오",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num2 sub"
+    },
+    {
+        "Question": "어떤 수가 있는데, 30을 나눴더니 2가 되었습니다. 어떤 수에서 91를 더하면 얼마인가?",
+        "QuestionConv": "어떤 수가 있는데 , num0 을 나눴더니 num1 가 되었습니다 . 어떤 수에서 num2 를 더하면 얼마인가 ?",
+        "Numbers": {
+            "num0": 30,
+            "num1": 2,
+            "num2": 91
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), div),num2),add)",
+        "Answer": 151,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num2 add",
+        "src": "어 떤 _ 수 가 _ 있 는 데 _ num0 을 _ 나 눴 더 니 _ num1 가 _ 되 었 습 니 다 _ 어 떤 _ 수 에 서 _ num2 를 _ 더 하 면 _ 얼 마 인 가",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num2 add"
+    },
+    {
+        "Question": "풀이에서 12을 나눠야 했다. 그러나 곱해서 결과가 1584이 돼버렸다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "풀이에서 num0 을 나눠야 했다 . 그러나 곱해서 결과가 num1 이 돼버렸다 . 원래대로 계산한 결과는 얼마인가요 ?",
+        "Numbers": {
+            "num0": 12,
+            "num1": 1584
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), mul),num0),div)",
+        "Answer": 11,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 mul num0 div",
+        "src": "풀 이 에 서 _ num0 을 _ 나 눠 야 _ 했 다 _ 그 러 나 _ 곱 해 서 _ 결 과 가 _ num1 이 _ 돼 버 렸 다 _ 원 래 대 로 _ 계 산 한 _ 결 과 는 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 mul num0 div"
+    },
+    {
+        "Question": "어떤 수에서 91을 나눴더니 1가 되었습니다. 어떤 수에서 64를 곱하면 얼마인가?",
+        "QuestionConv": "어떤 수에서 num0 을 나눴더니 num1 가 되었습니다 . 어떤 수에서 num2 를 곱하면 얼마인가 ?",
+        "Numbers": {
+            "num0": 91,
+            "num1": 1,
+            "num2": 64
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), div),num2),mul)",
+        "Answer": 5824,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num2 mul",
+        "src": "어 떤 _ 수 에 서 _ num0 을 _ 나 눴 더 니 _ num1 가 _ 되 었 습 니 다 _ 어 떤 _ 수 에 서 _ num2 를 _ 곱 하 면 _ 얼 마 인 가",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num2 mul"
+    },
+    {
+        "Question": "남준이는 36을 빼야 하는데 잘못하여 68을 더해서 결과가 151이 되었다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 빼야 하는데 잘못하여 num1 을 더해서 결과가 num2 이 되었다 . 원래대로 계산하면 얼마인가요 ?",
+        "Numbers": {
+            "num0": 36,
+            "num1": 68,
+            "num2": 151
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), add),num0),sub)",
+        "Answer": 47,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 add num0 sub",
+        "src": "nae0 이 는 _ num0 을 _ 빼 야 _ 하 는 데 _ 잘 못 하 여 _ num1 을 _ 더 해 서 _ 결 과 가 _ num2 이 _ 되 었 다 _ 원 래 대 로 _ 계 산 하 면 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 add num0 sub"
+    },
+    {
+        "Question": "남준이는 74을 곱해야 했었다. 그런데 나눠서 2이 나왔습니다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 곱해야 했었다 . 그런데 나눠서 num1 이 나왔습니다 . 원래 계산했어야 하는 결과는 얼마인가요 ?",
+        "Numbers": {
+            "num0": 74,
+            "num1": 2
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), div),num0),mul)",
+        "Answer": 10952,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num0 mul",
+        "src": "nae0 이 는 _ num0 을 _ 곱 해 야 _ 했 었 다 _ 그 런 데 _ 나 눠 서 _ num1 이 _ 나 왔 습 니 다 _ 원 래 _ 계 산 했 어 야 _ 하 는 _ 결 과 는 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num0 mul"
+    },
+    {
+        "Question": "임의의 수에서 13을 곱했더니 1157가 되었습니다. 임의의 수에서 53를 빼면 몇인지 구하시오.",
+        "QuestionConv": "임의의 수에서 num0 을 곱했더니 num1 가 되었습니다 . 임의의 수에서 num2 를 빼면 몇인지 구하시오 .",
+        "Numbers": {
+            "num0": 13,
+            "num1": 1157,
+            "num2": 53
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), mul),num2),sub)",
+        "Answer": 36.0,
+        "Type": "FindNumberRule2",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 mul num2 sub",
+        "src": "임 의 의 _ 수 에 서 _ num0 을 _ 곱 했 더 니 _ num1 가 _ 되 었 습 니 다 _ 임 의 의 _ 수 에 서 _ num2 를 _ 빼 면 _ 몇 인 지 _ 구 하 시 오",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 mul num2 sub"
+    },
+    {
+        "Question": "남준이 98을 곱해야 했는데 잘못하여 68을 나눠버려서 2이 나왔다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "남준이 num0 을 곱해야 했는데 잘못하여 num1 을 나눠버려서 num2 이 나왔다 . 원래대로 계산하면 얼마인가요 ?",
+        "Numbers": {
+            "num0": 98,
+            "num1": 68,
+            "num2": 2
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), div),num0),mul)",
+        "Answer": 13328,
+        "Type": "FindNumberRule1",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 div num0 mul",
+        "src": "nae0 이 _ num0 을 _ 곱 해 야 _ 했 는 데 _ 잘 못 하 여 _ num1 을 _ 나 눠 버 려 서 _ num2 이 _ 나 왔 다 _ 원 래 대 로 _ 계 산 하 면 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 div num0 mul"
+    },
+    {
+        "Question": "남준이는 17을 곱해야 했는데 실수로 나눴더니 결과가 2이 나왔습니다. 바르게 계산한 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 곱해야 했는데 실수로 나눴더니 결과가 num1 이 나왔습니다 . 바르게 계산한 결과는 얼마인가요 ?",
+        "Numbers": {
+            "num0": 17,
+            "num1": 2
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), div),num0),mul)",
+        "Answer": 578,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num0 mul",
+        "src": "nae0 이 는 _ num0 을 _ 곱 해 야 _ 했 는 데 _ 실 수 로 _ 나 눴 더 니 _ 결 과 가 _ num1 이 _ 나 왔 습 니 다 _ 바 르 게 _ 계 산 한 _ 결 과 는 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num0 mul"
+    },
+    {
+        "Question": "어떤 수에서 71을 나눠야 했었다. 그런데 95을 나눠버려서 결과가 2911이 되었다. 제대로 계산한 결과를 얼마인가요?",
+        "QuestionConv": "어떤 수에서 num0 을 나눠야 했었다 . 그런데 num1 을 나눠버려서 결과가 num2 이 되었다 . 제대로 계산한 결과를 얼마인가요 ?",
+        "Numbers": {
+            "num0": 71,
+            "num1": 95,
+            "num2": 2911
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), div),num0),div)",
+        "Answer": 3895,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 div num0 div",
+        "src": "어 떤 _ 수 에 서 _ num0 을 _ 나 눠 야 _ 했 었 다 _ 그 런 데 _ num1 을 _ 나 눠 버 려 서 _ 결 과 가 _ num2 이 _ 되 었 다 _ 제 대 로 _ 계 산 한 _ 결 과 를 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 div num0 div"
+    },
+    {
+        "Question": "임의의 수가 있습니다. 68을 곱했더니 4148가 되었습니다. 임의의 수에서 23를 빼면 몇인가?",
+        "QuestionConv": "임의의 수가 있습니다 . num0 을 곱했더니 num1 가 되었습니다 . 임의의 수에서 num2 를 빼면 몇인가 ?",
+        "Numbers": {
+            "num0": 68,
+            "num1": 4148,
+            "num2": 23
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), mul),num2),sub)",
+        "Answer": 38,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 mul num2 sub",
+        "src": "임 의 의 _ 수 가 _ 있 습 니 다 _ num0 을 _ 곱 했 더 니 _ num1 가 _ 되 었 습 니 다 _ 임 의 의 _ 수 에 서 _ num2 를 _ 빼 면 _ 몇 인 가",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 mul num2 sub"
+    },
+    {
+        "Question": "59에 어떤 수를 더하고 16을 빼야 할 것을 잘못하여 59에서 어떤 수를 빼었더니 44가 되었습니다. 바르게 계산하면 얼마일까요",
+        "QuestionConv": "num0 에 어떤 수를 더하고 num1 을 빼야 할 것을 잘못하여 num2 에서 어떤 수를 빼었더니 num3 가 되었습니다 . 바르게 계산하면 얼마일까요",
+        "Numbers": {
+            "num0": 59,
+            "num1": 16,
+            "num2": 59,
+            "num3": 44
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_rightoperator(func_transform_list(num0, func_rightoperator(func_transform_list(num2, num3),sub)),add),num1),sub)",
+        "Answer": 58,
+        "Type": "FindNumberRule7",
+        "EquationConv": "func_rightoperator func_transform_list func_rightoperator func_transform_list num0 func_rightoperator func_transform_list num2 num3 sub add num1 sub",
+        "src": "num0 에 _ 어 떤 _ 수 를 _ 더 하 고 _ num1 을 _ 빼 야 _ 할 _ 것 을 _ 잘 못 하 여 _ num2 에 서 _ 어 떤 _ 수 를 _ 빼 었 더 니 _ num3 가 _ 되 었 습 니 다 _ 바 르 게 _ 계 산 하 면 _ 얼 마 일 까 요",
+        "trg": "func_rightoperator func_transform_list func_rightoperator func_transform_list num0 func_rightoperator func_transform_list num2 num3 sub add num1 sub"
+    },
+    {
+        "Question": "어떤 수가 있다. 43을 더해야 했는데 잘못하여 42을 곱했더니 결과가 2016이 나왔다. 바르게 계산한 결과는 얼마인가요?",
+        "QuestionConv": "어떤 수가 있다 . num0 을 더해야 했는데 잘못하여 num1 을 곱했더니 결과가 num2 이 나왔다 . 바르게 계산한 결과는 얼마인가요 ?",
+        "Numbers": {
+            "num0": 43,
+            "num1": 42,
+            "num2": 2016
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), mul),num0),add)",
+        "Answer": 91.0,
+        "Type": "FindNumberRule1",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 mul num0 add",
+        "src": "어 떤 _ 수 가 _ 있 다 _ num0 을 _ 더 해 야 _ 했 는 데 _ 잘 못 하 여 _ num1 을 _ 곱 했 더 니 _ 결 과 가 _ num2 이 _ 나 왔 다 _ 바 르 게 _ 계 산 한 _ 결 과 는 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 mul num0 add"
+    },
+    {
+        "Question": "시험답안에서 75을 더해야 했는데 실수로 81을 빼서 결과가 34이 돼버렸다. 제대로 계산한 결과를 얼마인가요?",
+        "QuestionConv": "시험답안에서 num0 을 더해야 했는데 실수로 num1 을 빼서 결과가 num2 이 돼버렸다 . 제대로 계산한 결과를 얼마인가요 ?",
+        "Numbers": {
+            "num0": 75,
+            "num1": 81,
+            "num2": 34
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), sub),num0),add)",
+        "Answer": 190,
+        "Type": "FindNumberRule1",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 sub num0 add",
+        "src": "시 험 답 안 에 서 _ num0 을 _ 더 해 야 _ 했 는 데 _ 실 수 로 _ num1 을 _ 빼 서 _ 결 과 가 _ num2 이 _ 돼 버 렸 다 _ 제 대 로 _ 계 산 한 _ 결 과 를 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 sub num0 add"
+    },
+    {
+        "Question": "임의의 수가 있는데, 34을 빼야 한다. 그런데 나눴더니 결과가 2이 나왔다. 제대로 계산한 결과를 얼마인가요?",
+        "QuestionConv": "임의의 수가 있는데 , num0 을 빼야 한다 . 그런데 나눴더니 결과가 num1 이 나왔다 . 제대로 계산한 결과를 얼마인가요 ?",
+        "Numbers": {
+            "num0": 34,
+            "num1": 2
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), div),num0),sub)",
+        "Answer": 34,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num0 sub",
+        "src": "임 의 의 _ 수 가 _ 있 는 데 _ num0 을 _ 빼 야 _ 한 다 _ 그 런 데 _ 나 눴 더 니 _ 결 과 가 _ num1 이 _ 나 왔 다 _ 제 대 로 _ 계 산 한 _ 결 과 를 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 div num0 sub"
+    },
+    {
+        "Question": "임의의 수가 있습니다. 61을 더했더니 88가 되었습니다. 임의의 수에서 13를 빼면 몇이 되는지 구하시오.",
+        "QuestionConv": "임의의 수가 있습니다 . num0 을 더했더니 num1 가 되었습니다 . 임의의 수에서 num2 를 빼면 몇이 되는지 구하시오 .",
+        "Numbers": {
+            "num0": 61,
+            "num1": 88,
+            "num2": 13
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), add),num2),sub)",
+        "Answer": 14,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 add num2 sub",
+        "src": "임 의 의 _ 수 가 _ 있 습 니 다 _ num0 을 _ 더 했 더 니 _ num1 가 _ 되 었 습 니 다 _ 임 의 의 _ 수 에 서 _ num2 를 _ 빼 면 _ 몇 이 _ 되 는 지 _ 구 하 시 오",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 add num2 sub"
+    },
+    {
+        "Question": "어느날 정국이는 49을 빼야 했었다. 그런데 92을 더해버려서 결과가 177이 돼버렸다. 바르게 계산하면 얼마인지 구하시오",
+        "QuestionConv": "어느날 nae0 이는 num0 을 빼야 했었다 . 그런데 num1 을 더해버려서 결과가 num2 이 돼버렸다 . 바르게 계산하면 얼마인지 구하시오",
+        "Numbers": {
+            "num0": 49,
+            "num1": 92,
+            "num2": 177
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), add),num0),sub)",
+        "Answer": 36,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 add num0 sub",
+        "src": "어 느 날 _ nae0 이 는 _ num0 을 _ 빼 야 _ 했 었 다 _ 그 런 데 _ num1 을 _ 더 해 버 려 서 _ 결 과 가 _ num2 이 _ 돼 버 렸 다 _ 바 르 게 _ 계 산 하 면 _ 얼 마 인 지 _ 구 하 시 오",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 add num0 sub"
+    },
+    {
+        "Question": "임의의 수에서 12을 더했더니 86가 되었습니다. 임의의 수에서 44를 빼면 몇이 되는지 구하시오.",
+        "QuestionConv": "임의의 수에서 num0 을 더했더니 num1 가 되었습니다 . 임의의 수에서 num2 를 빼면 몇이 되는지 구하시오 .",
+        "Numbers": {
+            "num0": 12,
+            "num1": 86,
+            "num2": 44
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), add),num2),sub)",
+        "Answer": 30,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 add num2 sub",
+        "src": "임 의 의 _ 수 에 서 _ num0 을 _ 더 했 더 니 _ num1 가 _ 되 었 습 니 다 _ 임 의 의 _ 수 에 서 _ num2 를 _ 빼 면 _ 몇 이 _ 되 는 지 _ 구 하 시 오",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 add num2 sub"
+    },
+    {
+        "Question": "어떤 문제에서 24을 더해야 한다. 그런데 36을 빼버려서 결과가 21이 돼버렸다. 제대로 계산한 결과를 얼마인가요?",
+        "QuestionConv": "어떤 문제에서 num0 을 더해야 한다 . 그런데 num1 을 빼버려서 결과가 num2 이 돼버렸다 . 제대로 계산한 결과를 얼마인가요 ?",
+        "Numbers": {
+            "num0": 24,
+            "num1": 36,
+            "num2": 21
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), sub),num0),add)",
+        "Answer": 81,
+        "Type": "FindNumberRule1",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 sub num0 add",
+        "src": "어 떤 _ 문 제 에 서 _ num0 을 _ 더 해 야 _ 한 다 _ 그 런 데 _ num1 을 _ 빼 버 려 서 _ 결 과 가 _ num2 이 _ 돼 버 렸 다 _ 제 대 로 _ 계 산 한 _ 결 과 를 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 sub num0 add"
+    },
+    {
+        "Question": "어떤 수가 있습니다. 12을 곱했더니 12가 되었습니다. 어떤 수에서 90를 더하면 얼마인가?",
+        "QuestionConv": "어떤 수가 있습니다 . num0 을 곱했더니 num1 가 되었습니다 . 어떤 수에서 num2 를 더하면 얼마인가 ?",
+        "Numbers": {
+            "num0": 12,
+            "num1": 12,
+            "num2": 90
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), mul),num2),add)",
+        "Answer": 91,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 mul num2 add",
+        "src": "어 떤 _ 수 가 _ 있 습 니 다 _ num0 을 _ 곱 했 더 니 _ num1 가 _ 되 었 습 니 다 _ 어 떤 _ 수 에 서 _ num2 를 _ 더 하 면 _ 얼 마 인 가",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 mul num2 add"
+    },
+    {
+        "Question": "시험답안에서 84을 더해야 했었다. 그러나 67을 나눴더니 결과가 12이 나왔다. 제대로 계산한 결과를 구하시오.",
+        "QuestionConv": "시험답안에서 num0 을 더해야 했었다 . 그러나 num1 을 나눴더니 결과가 num2 이 나왔다 . 제대로 계산한 결과를 구하시오 .",
+        "Numbers": {
+            "num0": 84,
+            "num1": 67,
+            "num2": 12
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), div),num0),add)",
+        "Answer": 888,
+        "Type": "FindNumberRule1",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 div num0 add",
+        "src": "시 험 답 안 에 서 _ num0 을 _ 더 해 야 _ 했 었 다 _ 그 러 나 _ num1 을 _ 나 눴 더 니 _ 결 과 가 _ num2 이 _ 나 왔 다 _ 제 대 로 _ 계 산 한 _ 결 과 를 _ 구 하 시 오",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 div num0 add"
+    },
+    {
+        "Question": "어떤 수를 12로 나눈 다음 8을 더해야 할 것을 잘못하여 어떤 수에 12를 곱한 다음 8을 더했더니 296이 되었습니다. 바르게 계산하면 얼마일까요",
+        "QuestionConv": "어떤 수를 num0 로 나눈 다음 num1 을 더해야 할 것을 잘못하여 어떤 수에 num2 를 곱한 다음 num3 을 더했더니 num4 이 되었습니다 . 바르게 계산하면 얼마일까요",
+        "Numbers": {
+            "num0": 12,
+            "num1": 8,
+            "num2": 12,
+            "num3": 8,
+            "num4": 296
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num2,func_inverseoperator(func_transform_list(num3, num4), add)), mul),num0),div),num1),add)",
+        "Answer": 10.0,
+        "Type": "FindNumberRule3",
+        "EquationConv": "func_rightoperator func_transform_list func_rightoperator func_transform_list func_inverseoperator func_transform_list num2 func_inverseoperator func_transform_list num3 num4 add mul num0 div num1 add",
+        "src": "어 떤 _ 수 를 _ num0 로 _ 나 눈 _ 다 음 _ num1 을 _ 더 해 야 _ 할 _ 것 을 _ 잘 못 하 여 _ 어 떤 _ 수 에 _ num2 를 _ 곱 한 _ 다 음 _ num3 을 _ 더 했 더 니 _ num4 이 _ 되 었 습 니 다 _ 바 르 게 _ 계 산 하 면 _ 얼 마 일 까 요",
+        "trg": "func_rightoperator func_transform_list func_rightoperator func_transform_list func_inverseoperator func_transform_list num2 func_inverseoperator func_transform_list num3 num4 add mul num0 div num1 add"
+    },
+    {
+        "Question": "어떤 수에 6을 곱하고 8을 빼어야 할 것을 잘못하여 8을 곱하고 6을 빼었더니 42가 되었습니다. 바르게 계산한 값을 구하세요.",
+        "QuestionConv": "어떤 수에 num0 을 곱하고 num1 을 빼어야 할 것을 잘못하여 num2 을 곱하고 num3 을 빼었더니 num4 가 되었습니다 . 바르게 계산한 값을 구하세요 .",
+        "Numbers": {
+            "num0": 6,
+            "num1": 8,
+            "num2": 8,
+            "num3": 6,
+            "num4": 42
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num2,func_inverseoperator(func_transform_list(num3, num4), sub)), mul),num0),mul),num1),sub)",
+        "Answer": 28.0,
+        "Type": "FindNumberRule3",
+        "EquationConv": "func_rightoperator func_transform_list func_rightoperator func_transform_list func_inverseoperator func_transform_list num2 func_inverseoperator func_transform_list num3 num4 sub mul num0 mul num1 sub",
+        "src": "어 떤 _ 수 에 _ num0 을 _ 곱 하 고 _ num1 을 _ 빼 어 야 _ 할 _ 것 을 _ 잘 못 하 여 _ num2 을 _ 곱 하 고 _ num3 을 _ 빼 었 더 니 _ num4 가 _ 되 었 습 니 다 _ 바 르 게 _ 계 산 한 _ 값 을 _ 구 하 세 요",
+        "trg": "func_rightoperator func_transform_list func_rightoperator func_transform_list func_inverseoperator func_transform_list num2 func_inverseoperator func_transform_list num3 num4 sub mul num0 mul num1 sub"
+    },
+    {
+        "Question": "석진이가 71을 빼야 했다. 그러나 45을 나눠버려서 결과가 3이 나왔습니다. 바르게 계산한 결과는 얼마인가요?",
+        "QuestionConv": "석진이가 num0 을 빼야 했다 . 그러나 num1 을 나눠버려서 결과가 num2 이 나왔습니다 . 바르게 계산한 결과는 얼마인가요 ?",
+        "Numbers": {
+            "num0": 71,
+            "num1": 45,
+            "num2": 3
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num1, num2), div),num0),sub)",
+        "Answer": 64,
+        "Type": "FindNumberRule1",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 div num0 sub",
+        "src": "nae0 이 가 _ num0 을 _ 빼 야 _ 했 다 _ 그 러 나 _ num1 을 _ 나 눠 버 려 서 _ 결 과 가 _ num2 이 _ 나 왔 습 니 다 _ 바 르 게 _ 계 산 한 _ 결 과 는 _ 얼 마 인 가 요",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num1 num2 div num0 sub"
+    },
+    {
+        "Question": "어떤 수에 13을 곱하고 3으로 나누어야 할 것을 잘못하여 3을 곱하고 13을 빼었더니 14가 되었습니다. 바르게 계산한 값은 얼마일까요",
+        "QuestionConv": "어떤 수에 num0 을 곱하고 num1 으로 나누어야 할 것을 잘못하여 num2 을 곱하고 num3 을 빼었더니 num4 가 되었습니다 . 바르게 계산한 값은 얼마일까요",
+        "Numbers": {
+            "num0": 13,
+            "num1": 3,
+            "num2": 3,
+            "num3": 13,
+            "num4": 14
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num2,func_inverseoperator(func_transform_list(num3, num4), sub)), mul),num0),mul),num1),div)",
+        "Answer": 39.0,
+        "Type": "FindNumberRule3",
+        "EquationConv": "func_rightoperator func_transform_list func_rightoperator func_transform_list func_inverseoperator func_transform_list num2 func_inverseoperator func_transform_list num3 num4 sub mul num0 mul num1 div",
+        "src": "어 떤 _ 수 에 _ num0 을 _ 곱 하 고 _ num1 으 로 _ 나 누 어 야 _ 할 _ 것 을 _ 잘 못 하 여 _ num2 을 _ 곱 하 고 _ num3 을 _ 빼 었 더 니 _ num4 가 _ 되 었 습 니 다 _ 바 르 게 _ 계 산 한 _ 값 은 _ 얼 마 일 까 요",
+        "trg": "func_rightoperator func_transform_list func_rightoperator func_transform_list func_inverseoperator func_transform_list num2 func_inverseoperator func_transform_list num3 num4 sub mul num0 mul num1 div"
+    },
+    {
+        "Question": "유나 이가 65을 더해야 한다. 그런데 빼서 9이 나왔습니다. 바르게 계산하면 얼마인지 구하시오",
+        "QuestionConv": "nae0 이가 num0 을 더해야 한다 . 그런데 빼서 num1 이 나왔습니다 . 바르게 계산하면 얼마인지 구하시오",
+        "Numbers": {
+            "num0": 65,
+            "num1": 9
+        },
+        "Equation": "func_rightoperator(func_transform_list(func_inverseoperator(func_transform_list(num0, num1), sub),num0), add)",
+        "Answer": 139,
+        "Type": "FindNumberRule 3",
+        "EquationConv": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 sub num0 add",
+        "src": "nae0 이 가 _ num0 을 _ 더 해 야 _ 한 다 _ 그 런 데 _ 빼 서 _ num1 이 _ 나 왔 습 니 다 _ 바 르 게 _ 계 산 하 면 _ 얼 마 인 지 _ 구 하 시 오",
+        "trg": "func_rightoperator func_transform_list func_inverseoperator func_transform_list num0 num1 sub num0 add"
+    }
+]

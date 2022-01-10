@@ -1,0 +1,2812 @@
+[
+    {
+        "Question": "어떤 수에서 36을 빼야 하는데 잘못하여 63을 뺀 결과가 8이 나왔습니다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 을 빼야 하는데 잘못하여 num1 을 뺀 결과가 num2 이 나왔습니다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 36,
+            "num1": 63,
+            "num2": 8
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 35,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수에서 46을 뺐더니 15가 되었습니다. 어떤 수에서 29를 빼면 얼마가 되는지 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 을 뺐더니 num1 가 되었습니다. 어떤 수에서 num2 를 빼면 얼마가 되는지 구하시오.",
+        "Numbers": {
+            "num0": 46,
+            "num1": 15,
+            "num2": 29
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), sub),num2)",
+        "Answer": 32,
+        "Type": "FindNumberRule2"
+    },
+    {
+        "Question": "어떤 수를 12로 나눈 다음 8을 더해야 할 것을 잘못하여 어떤 수에 12를 곱한 다음 8을 더했더니 296이 되었습니다. 바르게 계산하면 얼마일까요",
+        "QuestionConv": "어떤 수를 num0 로 나눈 다음 num1 을 더해야 할 것을 잘못하여 어떤 수에 num2 를 곱한 다음 num3 을 더했더니 num4 이 되었습니다. 바르게 계산하면 얼마일까요",
+        "Numbers": {
+            "num0": 12,
+            "num1": 8,
+            "num2": 12,
+            "num3": 8,
+            "num4": 296
+        },
+        "Equation": "func_add(func_divide(func_inverseoperator(func_makelist(num2,func_inverseoperator(func_makelist(num3, num4),add)), mul),num0),num1)",
+        "Answer": 10.0,
+        "Type": "FindNumberRule3"
+    },
+    {
+        "Question": "59에 어떤 수를 더하고 16을 빼야 할 것을 잘못하여 59에서 어떤 수를 빼었더니 44가 되었습니다. 바르게 계산하면 얼마일까요",
+        "QuestionConv": "num0 에 어떤 수를 더하고 num1 을 빼야 할 것을 잘못하여 num2 에서 어떤 수를 빼었더니 num3 가 되었습니다. 바르게 계산하면 얼마일까요",
+        "Numbers": {
+            "num0": 59,
+            "num1": 16,
+            "num2": 59,
+            "num3": 44
+        },
+        "Equation": "func_minus(func_add(num0, func_minus(num2, num3)),num1)",
+        "Answer": 58,
+        "Type": "FindNumberRule4"
+    },
+    {
+        "Question": "2에 어떤 수를 곱해야 할 것을 잘못하여 5에 어떤 수를 곱했더니 40이 되었습니다. 바르게 계산하면 얼마인지 구하시오.",
+        "QuestionConv": "num0 에 어떤 수를 곱해야 할 것을 잘못하여 num1 에 어떤 수를 곱했더니 num2 이 되었습니다. 바르게 계산하면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 2,
+            "num1": 5,
+            "num2": 40
+        },
+        "Equation": "func_multiply(num0,func_inverseoperator(func_makelist(num1, num2),mul))",
+        "Answer": 16.0,
+        "Type": "FindNumberRule5"
+    },
+    {
+        "Question": "80에서 어떤 수를 빼고 2를 곱했어야 하는데, 잘못하여 80에 어떤 수를 더하고 2로 나누었더니 550이 되었습니다. 바르게 계산하면 얼마일까요",
+        "QuestionConv": "num0 에서 어떤 수를 빼고 num1 를 곱했어야 하는데, 잘못하여 num2 에 어떤 수를 더하고 num3 로 나누었더니 num4 이 되었습니다. 바르게 계산하면 얼마일까요",
+        "Numbers": {
+            "num0": 80,
+            "num1": 2,
+            "num2": 80,
+            "num3": 2,
+            "num4": 550
+        },
+        "Equation": "func_multiply(func_minus(num0, func_inverseoperator(func_makelist(num2, func_inverseoperator(func_makelist(num3, num4),div)),add)), num1)",
+        "Answer": -1880,
+        "Type": "FindNumberRule6"
+    },
+    {
+        "Question": "18에 어떤 수의 2배를 더한 다음 6으로 나누어야 할 것을 잘못하여 어떤 수의 2배를 6으로 나눈 다음 18을 더하였더니 21이 되었습니다. 바르게 계산하면 얼마입니까",
+        "QuestionConv": "num0 에 어떤 수의 num1 배를 더한 다음 num2 으로 나누어야 할 것을 잘못하여 어떤 수의 num3 배를 num4 으로 나눈 다음 num5 을 더하였더니 num6 이 되었습니다. 바르게 계산하면 얼마입니까",
+        "Numbers": {
+            "num0": 18,
+            "num1": 2,
+            "num2": 6,
+            "num3": 2,
+            "num4": 6,
+            "num5": 18,
+            "num6": 21
+        },
+        "Equation": "func_divide(func_add(num0, func_multiply(func_inverseoperator(func_makelist(num3,func_inverseoperator(func_makelist(func_inverseoperator(func_makelist(num5, num6),add),num4),div)),mul),num1)),num2)",
+        "Answer": 6.0,
+        "Type": "FindNumberRule7"
+    },
+    {
+        "Question": "어떤 수를 12로 나눈 다음 8을 더해야 할 것을 잘못하여 어떤 수에 12를 곱한 다음 8을 더했더니 296이 되었습니다. 바르게 계산한 값은 얼마인지 풀이 과정을 쓰고, 답을 구하세요.",
+        "QuestionConv": "어떤 수를 num0 로 나눈 다음 num1 을 더해야 할 것을 잘못하여 어떤 수에 num2 를 곱한 다음 num3 을 더했더니 num4 이 되었습니다. 바르게 계산한 값은 얼마인지 풀이 과정을 쓰고, 답을 구하세요.",
+        "Numbers": {
+            "num0": 12,
+            "num1": 8,
+            "num2": 12,
+            "num3": 8,
+            "num4": 296
+        },
+        "Equation": "func_add(func_divide(func_inverseoperator(func_makelist(num2,func_inverseoperator(func_makelist(num3, num4), add)), mul),num0),num1)",
+        "Answer": 10.0,
+        "Type": "FindNumberRule3"
+    },
+    {
+        "Question": "어떤 수에 6을 곱하고 8을 빼어야 할 것을 잘못하여 8을 곱하고 6을 빼었더니 42가 되었습니다. 바르게 계산한 값을 구하세요.",
+        "QuestionConv": "어떤 수에 num0 을 곱하고 num1 을 빼어야 할 것을 잘못하여 num2 을 곱하고 num3 을 빼었더니 num4 가 되었습니다. 바르게 계산한 값을 구하세요.",
+        "Numbers": {
+            "num0": 6,
+            "num1": 8,
+            "num2": 8,
+            "num3": 6,
+            "num4": 42
+        },
+        "Equation": "func_minus(func_multiply(func_inverseoperator(func_makelist(num2,func_inverseoperator(func_makelist(num3, num4), sub)), mul),num0),num1)",
+        "Answer": 28.0,
+        "Type": "FindNumberRule3"
+    },
+    {
+        "Question": "어떤 수에 13을 곱하고 3으로 나누어야 할 것을 잘못하여 3을 곱하고 13을 빼었더니 14가 되었습니다. 바르게 계산한 값은 얼마일까요",
+        "QuestionConv": "어떤 수에 num0 을 곱하고 num1 으로 나누어야 할 것을 잘못하여 num2 을 곱하고 num3 을 빼었더니 num4 가 되었습니다. 바르게 계산한 값은 얼마일까요",
+        "Numbers": {
+            "num0": 13,
+            "num1": 3,
+            "num2": 3,
+            "num3": 13,
+            "num4": 14
+        },
+        "Equation": "func_divide(func_multiply(func_inverseoperator(func_makelist(num2,func_inverseoperator(func_makelist(num3, num4), sub)), mul),num0),num1)",
+        "Answer": 39.0,
+        "Type": "FindNumberRule3"
+    },
+    {
+        "Question": "어떤 수를 6으로 나눈 다음 36을 빼어야 할 것을 잘못하여 어떤 수에 6을 곱한 다음 36을 더하였더니 2556이 되었습니다. 바르게 계산하면 얼마일까요",
+        "QuestionConv": "어떤 수를 num0 으로 나눈 다음 num1 을 빼어야 할 것을 잘못하여 어떤 수에 num2 을 곱한 다음 num3 을 더하였더니 num4 이 되었습니다. 바르게 계산하면 얼마일까요",
+        "Numbers": {
+            "num0": 6,
+            "num1": 36,
+            "num2": 6,
+            "num3": 36,
+            "num4": 2556
+        },
+        "Equation": "func_minus(func_divide(func_inverseoperator(func_makelist(num2,func_inverseoperator(func_makelist(num3, num4), add)), mul),num0),num1)",
+        "Answer": 34.0,
+        "Type": "FindNumberRule3"
+    },
+    {
+        "Question": "어떤 수를 8로 나눈 다음 20을 더해야 할 것을 잘못해서 어떤 수에 8을 곱한 다음 20을 더했더니 980이 되었습니다. 바르게 계산했을 때의 답을 구해 보세요.",
+        "QuestionConv": "어떤 수를 num0 로 나눈 다음 num1 을 더해야 할 것을 잘못해서 어떤 수에 num2 을 곱한 다음 num3 을 더했더니 num4 이 되었습니다. 바르게 계산했을 때의 답을 구해 보세요.",
+        "Numbers": {
+            "num0": 8,
+            "num1": 20,
+            "num2": 8,
+            "num3": 20,
+            "num4": 980
+        },
+        "Equation": "func_add(func_divide(func_inverseoperator(func_makelist(num2,func_inverseoperator(func_makelist(num3, num4), add)), mul),num0),num1)",
+        "Answer": 35.0,
+        "Type": "FindNumberRule3"
+    },
+    {
+        "Question": "어떤 수를 8로 나눈 다음 25를 더해야 할 것을 잘못해서 8을 곱한 다음 25를 빼었더니 2471이 되었습니다. 바르게 계산하면 얼마일까요",
+        "QuestionConv": "어떤 수를 num0 로 나눈 다음 num1 를 더해야 할 것을 잘못해서 num2 을 곱한 다음 num3 를 빼었더니 num4 이 되었습니다. 바르게 계산하면 얼마일까요",
+        "Numbers": {
+            "num0": 8,
+            "num1": 25,
+            "num2": 8,
+            "num3": 25,
+            "num4": 2471
+        },
+        "Equation": "func_add(func_divide(func_inverseoperator(func_makelist(num2,func_inverseoperator(func_makelist(num3, num4), sub)), mul),num0),num1)",
+        "Answer": 64.0,
+        "Type": "FindNumberRule3"
+    },
+    {
+        "Question": "어떤 수를 5로 나눈 후 12를 더해야 할 것을 잘못하여 5를 곱한 후 12를 빼었더니 113이 되었습니다. 처음 구하려고 한 답을 구해 보세요.",
+        "QuestionConv": "어떤 수를 num0 로 나눈 후 num1 를 더해야 할 것을 잘못하여 num2 를 곱한 후 num3 를 빼었더니 num4 이 되었습니다. 처음 구하려고 한 답을 구해 보세요.",
+        "Numbers": {
+            "num0": 5,
+            "num1": 12,
+            "num2": 5,
+            "num3": 12,
+            "num4": 113
+        },
+        "Equation": "func_add(func_divide(func_inverseoperator(func_makelist(num2,func_inverseoperator(func_makelist(num3, num4), sub)), mul),num0),num1)",
+        "Answer": 17.0,
+        "Type": "FindNumberRule3"
+    },
+    {
+        "Question": "어떤 수를 4를 나눈 다음 15를 더해야 할 것을 잘못하여 어떤 수에 4를 곱한 다음 15를 더했더니 95가 되었습니다. 바르게 계산했을 때의 답을 구하세요.",
+        "QuestionConv": "어떤 수를 num0 를 나눈 다음 num1 를 더해야 할 것을 잘못하여 어떤 수에 num2 를 곱한 다음 num3 를 더했더니 num4 가 되었습니다. 바르게 계산했을 때의 답을 구하세요.",
+        "Numbers": {
+            "num0": 4,
+            "num1": 15,
+            "num2": 4,
+            "num3": 15,
+            "num4": 95
+        },
+        "Equation": "func_add(func_divide(func_inverseoperator(func_makelist(num2,func_inverseoperator(func_makelist(num3, num4), add)), mul),num0),num1)",
+        "Answer": 20.0,
+        "Type": "FindNumberRule3"
+    },
+    {
+        "Question": "18에 어떤 수의 2배를 더한 다음 6으로 나누어야 할 것을 잘못하여 어떤 수의 2배를 6으로 나눈 다음 18을 더하였더니 21이 되었습니다. 바르게 계산하면 얼마입니까",
+        "QuestionConv": "num0 에 어떤 수의 num1 배를 더한 다음 num2 으로 나누어야 할 것을 잘못하여 어떤 수의 num3 배를 num4 으로 나눈 다음 num5 을 더하였더니 num6 이 되었습니다. 바르게 계산하면 얼마입니까",
+        "Numbers": {
+            "num0": 18,
+            "num1": 2,
+            "num2": 6,
+            "num3": 2,
+            "num4": 6,
+            "num5": 18,
+            "num6": 21
+        },
+        "Equation": "func_divide(func_add(num0, func_multiply(func_inverseoperator(func_makelist(num3,func_inverseoperator(func_makelist(func_inverseoperator(func_makelist(num5, num6),add),num4),div)),mul),num1)),num2)",
+        "Answer": 6.0,
+        "Type": "FindNumberRule7"
+    },
+    {
+        "Question": "어떤 수를 7로 나눈 후 18을 더해야 할 것을 잘못하여 어떤 수에 7을 곱한 후 18을 빼었더니 864가 되었습니다. 바르게 계산하면 얼마일까요",
+        "QuestionConv": "어떤 수를 num0 로 나눈 후 num1 을 더해야 할 것을 잘못하여 어떤 수에 num2 을 곱한 후 num3 을 빼었더니 num4 가 되었습니다. 바르게 계산하면 얼마일까요",
+        "Numbers": {
+            "num0": 7,
+            "num1": 18,
+            "num2": 7,
+            "num3": 18,
+            "num4": 864
+        },
+        "Equation": "func_add(func_divide(func_inverseoperator(func_makelist(num2,func_inverseoperator(func_makelist(num3, num4), sub)), mul),num0),num1)",
+        "Answer": 36.0,
+        "Type": "FindNumberRule7"
+    },
+    {
+        "Question": "59에 어떤 수를 더하고 16을 빼야 할 것을 잘못하여 59에서 어떤 수를 빼었더니 44가 되었습니다. 바르게 계산하면 얼마일까요",
+        "QuestionConv": "num0 에 어떤 수를 더하고 num1 을 빼야 할 것을 잘못하여 num2 에서 어떤 수를 빼었더니 num3 가 되었습니다. 바르게 계산하면 얼마일까요",
+        "Numbers": {
+            "num0": 59,
+            "num1": 16,
+            "num2": 59,
+            "num3": 44
+        },
+        "Equation": "func_minus(func_add(num0, func_minus(num2, num3)),num1)",
+        "Answer": 58,
+        "Type": "FindNumberRule7"
+    },
+    {
+        "Question": "시험답안에서 13을 나눠야 하는데 실수로 50을 더해버려서 89이 나왔다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "시험답안에서 num0 을 나눠야 하는데 실수로 num1 을 더해버려서 num2 이 나왔다. 원래대로 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 13,
+            "num1": 50,
+            "num2": 89
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 3.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "남준이는 71을 곱해야 했었다. 그런데 56을 빼서 44이 돼버렸다. 제대로 계산한 결과를 구하시오.",
+        "QuestionConv": "남준이는 num0 을 곱해야 했었다. 그런데 num1 을 빼서 num2 이 돼버렸다. 제대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 71,
+            "num1": 56,
+            "num2": 44
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 7100,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수가 있다. 97을 더해야 했는데 잘못하여 92을 곱해버려서 결과가 1472이 나왔다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "어떤 수가 있다. num0 을 더해야 했는데 잘못하여 num1 을 곱해버려서 결과가 num2 이 나왔다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 97,
+            "num1": 92,
+            "num2": 1472
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 113.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "석진이는 49을 빼야 한다. 그런데 43을 빼버려서 96이 나왔습니다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "석진이는 num0 을 빼야 한다. 그런데 num1 을 빼버려서 num2 이 나왔습니다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 49,
+            "num1": 43,
+            "num2": 96
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 90,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 문제에서 35을 곱해야 한다. 그러나 97을 나눴더니 결과가 1이 나왔다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "QuestionConv": "어떤 문제에서 num0 을 곱해야 한다. 그러나 num1 을 나눴더니 결과가 num2 이 나왔다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 35,
+            "num1": 97,
+            "num2": 1
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 3395,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "시험답안에서 75을 더해야 했는데 실수로 81을 빼서 결과가 34이 돼버렸다. 제대로 계산한 결과를 얼마인가요?",
+        "QuestionConv": "시험답안에서 num0 을 더해야 했는데 실수로 num1 을 빼서 결과가 num2 이 돼버렸다. 제대로 계산한 결과를 얼마인가요?",
+        "Numbers": {
+            "num0": 75,
+            "num1": 81,
+            "num2": 34
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 190,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "풀이에서 26을 나눠야 한다. 그런데 53을 나눴더니 546이 나왔습니다. 바르게 계산한 결과는 얼마인가요?",
+        "QuestionConv": "풀이에서 num0 을 나눠야 한다. 그런데 num1 을 나눴더니 num2 이 나왔습니다. 바르게 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 26,
+            "num1": 53,
+            "num2": 546
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 1113.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수가 있다. 82을 빼야 한다. 그런데 43을 곱해서 4816이 돼버렸다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "어떤 수가 있다. num0 을 빼야 한다. 그런데 num1 을 곱해서 num2 이 돼버렸다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 82,
+            "num1": 43,
+            "num2": 4816
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 30,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수가 있다. 43을 더해야 했는데 잘못하여 42을 곱했더니 결과가 2016이 나왔다. 바르게 계산한 결과는 얼마인가요?",
+        "QuestionConv": "어떤 수가 있다. num0 을 더해야 했는데 잘못하여 num1 을 곱했더니 결과가 num2 이 나왔다. 바르게 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 43,
+            "num1": 42,
+            "num2": 2016
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 91.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "민영이가 91을 곱해야 하는데 잘못하여 3을 곱해서 결과가 105이 되었다. 원래대로 계산하면 얼마인지 구하시오",
+        "QuestionConv": "민영이가 num0 을 곱해야 하는데 잘못하여 num1 을 곱해서 결과가 num2 이 되었다. 원래대로 계산하면 얼마인지 구하시오",
+        "Numbers": {
+            "num0": 91,
+            "num1": 3,
+            "num2": 105
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 3185.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "풀이에서 52을 곱해야 했다. 그러나 3을 뺐더니 40이 돼버렸다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "QuestionConv": "풀이에서 num0 을 곱해야 했다. 그러나 num1 을 뺐더니 num2 이 돼버렸다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 52,
+            "num1": 3,
+            "num2": 40
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 2236,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "민영이가 59을 빼야 하는건데 실수로 34을 더했더니 108이 되었다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "민영이가 num0 을 빼야 하는건데 실수로 num1 을 더했더니 num2 이 되었다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 59,
+            "num1": 34,
+            "num2": 108
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 15,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "호석이는 15을 나눠야 했었다. 그러나 19을 더해버려서 184이 되었다. 원래대로 계산한 결과를 구하시오",
+        "QuestionConv": "호석이는 num0 을 나눠야 했었다. 그러나 num1 을 더해버려서 num2 이 되었다. 원래대로 계산한 결과를 구하시오",
+        "Numbers": {
+            "num0": 15,
+            "num1": 19,
+            "num2": 184
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 11.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수가 있습니다. 83을 곱했더니 2158가 되었습니다. 임의의 수에서 1를 곱하면 몇이 되는지 구하시오.",
+        "QuestionConv": "임의의 수가 있습니다. num0 을 곱했더니 num1 가 되었습니다. 임의의 수에서 num2 를 곱하면 몇이 되는지 구하시오.",
+        "Numbers": {
+            "num0": 83,
+            "num1": 2158,
+            "num2": 1
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), mul),num2)",
+        "Answer": 26.0,
+        "Type": "FindNumberRule2"
+    },
+    {
+        "Question": "석진이가 71을 빼야 했다. 그러나 45을 나눠버려서 결과가 3이 나왔습니다. 바르게 계산한 결과는 얼마인가요?",
+        "QuestionConv": "석진이가 num0 을 빼야 했다. 그러나 num1 을 나눠버려서 결과가 num2 이 나왔습니다. 바르게 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 71,
+            "num1": 45,
+            "num2": 3
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 64,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수가 있다. 19을 더했더니 49가 되었습니다. 임의의 수에서 29를 빼면 몇이 되는지 구하시오.",
+        "QuestionConv": "임의의 수가 있다. num0 을 더했더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 몇이 되는지 구하시오.",
+        "Numbers": {
+            "num0": 19,
+            "num1": 49,
+            "num2": 29
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), add),num2)",
+        "Answer": 1,
+        "Type": "FindNumberRule2"
+    },
+    {
+        "Question": "어떤 문제에서 82을 나눠야 하는건데 잘못하여 84을 뺀 결과가 818이 나왔습니다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "어떤 문제에서 num0 을 나눠야 하는건데 잘못하여 num1 을 뺀 결과가 num2 이 나왔습니다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 82,
+            "num1": 84,
+            "num2": 818
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 11.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수가 있다. 16을 뺐더니 732가 되었습니다. 임의의 수에서 68를 나누면 몇인가?",
+        "QuestionConv": "임의의 수가 있다. num0 을 뺐더니 num1 가 되었습니다. 임의의 수에서 num2 를 나누면 몇인가?",
+        "Numbers": {
+            "num0": 16,
+            "num1": 732,
+            "num2": 68
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0, num1), sub),num2)",
+        "Answer": 11.0,
+        "Type": "FindNumberRule2"
+    },
+    {
+        "Question": "윤기는 11을 빼야 했는데 잘못하여 75을 나눠버려서 결과가 1이 나왔습니다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "윤기는 num0 을 빼야 했는데 잘못하여 num1 을 나눠버려서 결과가 num2 이 나왔습니다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 11,
+            "num1": 75,
+            "num2": 1
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 64,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수에서 10을 곱했더니 190가 되었습니다. 어떤 수에서 55를 더하면 얼마가 되는지 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 을 곱했더니 num1 가 되었습니다. 어떤 수에서 num2 를 더하면 얼마가 되는지 구하시오.",
+        "Numbers": {
+            "num0": 10,
+            "num1": 190,
+            "num2": 55
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), mul),num2)",
+        "Answer": 74.0,
+        "Type": "FindNumberRule2"
+    },
+    {
+        "Question": "풀이에서 88을 빼야 하는데 잘못하여 68을 나눠서 2이 돼버렸다. 바르게 계산하면 얼마인지 구하시오",
+        "QuestionConv": "풀이에서 num0 을 빼야 하는데 잘못하여 num1 을 나눠서 num2 이 돼버렸다. 바르게 계산하면 얼마인지 구하시오",
+        "Numbers": {
+            "num0": 88,
+            "num1": 68,
+            "num2": 2
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 48,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수가 있다. 7을 나눴더니 12가 되었습니다. 어떤 수에서 45를 곱하면 얼마가 되는지 구하시오.",
+        "QuestionConv": "어떤 수가 있다. num0 을 나눴더니 num1 가 되었습니다. 어떤 수에서 num2 를 곱하면 얼마가 되는지 구하시오.",
+        "Numbers": {
+            "num0": 7,
+            "num1": 12,
+            "num2": 45
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), div),num2)",
+        "Answer": 3780,
+        "Type": "FindNumberRule2"
+    },
+    {
+        "Question": "호석이가 3을 빼야 하는데 잘못하여 8을 곱했더니 416이 돼버렸다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "호석이가 num0 을 빼야 하는데 잘못하여 num1 을 곱했더니 num2 이 돼버렸다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 3,
+            "num1": 8,
+            "num2": 416
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 49.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수가 있습니다. 52을 나눴더니 7가 되었습니다. 임의의 수에서 8를 더하면 얼마가 되는지 구하시오.",
+        "QuestionConv": "임의의 수가 있습니다. num0 을 나눴더니 num1 가 되었습니다. 임의의 수에서 num2 를 더하면 얼마가 되는지 구하시오.",
+        "Numbers": {
+            "num0": 52,
+            "num1": 7,
+            "num2": 8
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), div),num2)",
+        "Answer": 372,
+        "Type": "FindNumberRule2"
+    },
+    {
+        "Question": "지민이는 94을 곱해야 했다. 그러나 47을 더해버려서 결과가 81이 되었다. 제대로 계산한 결과를 얼마인가요?",
+        "QuestionConv": "지민이는 num0 을 곱해야 했다. 그러나 num1 을 더해버려서 결과가 num2 이 되었다. 제대로 계산한 결과를 얼마인가요?",
+        "Numbers": {
+            "num0": 94,
+            "num1": 47,
+            "num2": 81
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 3196,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수가 있다. 100을 곱했더니 5300가 되었습니다. 임의의 수에서 35를 빼면 몇인가?",
+        "QuestionConv": "임의의 수가 있다. num0 을 곱했더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 몇인가?",
+        "Numbers": {
+            "num0": 100,
+            "num1": 5300,
+            "num2": 35
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), mul),num2)",
+        "Answer": 18.0,
+        "Type": "FindNumberRule2"
+    },
+    {
+        "Question": "윤기는 15을 나눠야 한다. 그러나 1을 더했더니 151이 나왔다. 바르게 계산하면 얼마인가요?",
+        "QuestionConv": "윤기는 num0 을 나눠야 한다. 그러나 num1 을 더했더니 num2 이 나왔다. 바르게 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 15,
+            "num1": 1,
+            "num2": 151
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 10.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수에서 13을 곱했더니 1157가 되었습니다. 임의의 수에서 53를 빼면 몇인지 구하시오.",
+        "QuestionConv": "임의의 수에서 num0 을 곱했더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 몇인지 구하시오.",
+        "Numbers": {
+            "num0": 13,
+            "num1": 1157,
+            "num2": 53
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), mul),num2)",
+        "Answer": 36.0,
+        "Type": "FindNumberRule2"
+    },
+    {
+        "Question": "태형이는 84을 더해야 한다. 그런데 19을 더해서 46이 돼버렸다. 바르게 계산하면 얼마인지 구하시오.",
+        "QuestionConv": "태형이는 num0 을 더해야 한다. 그런데 num1 을 더해서 num2 이 돼버렸다. 바르게 계산하면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 84,
+            "num1": 19,
+            "num2": 46
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 111,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수가 있습니다. 18을 뺐더니 64가 되었습니다. 임의의 수에서 58를 빼면 몇이 되는지 구하시오.",
+        "QuestionConv": "임의의 수가 있습니다. num0 을 뺐더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 몇이 되는지 구하시오.",
+        "Numbers": {
+            "num0": 18,
+            "num1": 64,
+            "num2": 58
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), sub),num2)",
+        "Answer": 24,
+        "Type": "FindNumberRule2"
+    },
+    {
+        "Question": "문제지에서 70을 빼야 했는데 잘못하여 18을 더한 결과가 125이 나왔다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "문제지에서 num0 을 빼야 했는데 잘못하여 num1 을 더한 결과가 num2 이 나왔다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 70,
+            "num1": 18,
+            "num2": 125
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 37,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수가 있다. 96을 나눴더니 1가 되었습니다. 임의의 수에서 57를 빼면 얼마인지 구하시오.",
+        "QuestionConv": "임의의 수가 있다. num0 을 나눴더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 96,
+            "num1": 1,
+            "num2": 57
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), div),num2)",
+        "Answer": 39,
+        "Type": "FindNumberRule2"
+    },
+    {
+        "Question": "임의의 수가 있는데, 84을 빼야 했는데 잘못하여 42을 곱했더니 5376이 나왔습니다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "임의의 수가 있는데, num0 을 빼야 했는데 잘못하여 num1 을 곱했더니 num2 이 나왔습니다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 84,
+            "num1": 42,
+            "num2": 5376
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 44,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수가 있습니다. 10을 나눴더니 760가 되었습니다. 임의의 수에서 95를 나누면 몇이 되는지 구하시오.",
+        "QuestionConv": "임의의 수가 있습니다. num0 을 나눴더니 num1 가 되었습니다. 임의의 수에서 num2 를 나누면 몇이 되는지 구하시오.",
+        "Numbers": {
+            "num0": 10,
+            "num1": 760,
+            "num2": 95
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0, num1), div),num2)",
+        "Answer": 80.0,
+        "Type": "FindNumberRule2"
+    },
+    {
+        "Question": "석진이가 43을 더해야 한다. 그러나 85을 빼서 48이 나왔습니다. 원래 계산했어야 하는 결과를 구하시오.",
+        "QuestionConv": "석진이가 num0 을 더해야 한다. 그러나 num1 을 빼서 num2 이 나왔습니다. 원래 계산했어야 하는 결과를 구하시오.",
+        "Numbers": {
+            "num0": 43,
+            "num1": 85,
+            "num2": 48
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 176,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "정국이는 83을 곱해야 하는데 잘못하여 43을 곱해서 1591이 되었다. 바르게 계산하면 얼마인지 구하시오.",
+        "QuestionConv": "정국이는 num0 을 곱해야 하는데 잘못하여 num1 을 곱해서 num2 이 되었다. 바르게 계산하면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 83,
+            "num1": 43,
+            "num2": 1591
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 3071.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "유나는 59을 곱해야 했는데 실수로 90을 빼버려서 41이 나왔다. 원래 계산했어야 하는 결과를 구하시오.",
+        "QuestionConv": "유나는 num0 을 곱해야 했는데 실수로 num1 을 빼버려서 num2 이 나왔다. 원래 계산했어야 하는 결과를 구하시오.",
+        "Numbers": {
+            "num0": 59,
+            "num1": 90,
+            "num2": 41
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 7729,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 문제에서 42을 곱해야 한다. 그러나 81을 나눴더니 2이 나왔다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "어떤 문제에서 num0 을 곱해야 한다. 그러나 num1 을 나눴더니 num2 이 나왔다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 42,
+            "num1": 81,
+            "num2": 2
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 6804,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 문제에서 24을 더해야 한다. 그런데 36을 빼버려서 결과가 21이 돼버렸다. 제대로 계산한 결과를 얼마인가요?",
+        "QuestionConv": "어떤 문제에서 num0 을 더해야 한다. 그런데 num1 을 빼버려서 결과가 num2 이 돼버렸다. 제대로 계산한 결과를 얼마인가요?",
+        "Numbers": {
+            "num0": 24,
+            "num1": 36,
+            "num2": 21
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 81,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "유정이는 43을 곱해야 했는데 잘못하여 4을 뺐더니 32이 나왔다. 바르게 계산하면 얼마인가요?",
+        "QuestionConv": "유정이는 num0 을 곱해야 했는데 잘못하여 num1 을 뺐더니 num2 이 나왔다. 바르게 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 43,
+            "num1": 4,
+            "num2": 32
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 1548,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "민영이 64을 빼야 하는데 실수로 14을 더했더니 106이 돼버렸다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "민영이 num0 을 빼야 하는데 실수로 num1 을 더했더니 num2 이 돼버렸다. 원래대로 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 64,
+            "num1": 14,
+            "num2": 106
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 28,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "시험답안에서 35을 곱해야 했는데 잘못하여 62을 곱했더니 2170이 나왔다. 바르게 계산한 결과는 얼마인가요?",
+        "QuestionConv": "시험답안에서 num0 을 곱해야 했는데 잘못하여 num1 을 곱했더니 num2 이 나왔다. 바르게 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 35,
+            "num1": 62,
+            "num2": 2170
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 1225.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "태형이는 26을 곱해야 했다. 그러나 90을 곱했더니 4050이 나왔습니다. 원래대로 계산하면 얼마인지 구하시오.",
+        "QuestionConv": "태형이는 num0 을 곱해야 했다. 그러나 num1 을 곱했더니 num2 이 나왔습니다. 원래대로 계산하면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 26,
+            "num1": 90,
+            "num2": 4050
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 1170.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어느날 민영이는 90을 빼야 하는건데 실수로 56을 더했더니 181이 나왔다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "어느날 민영이는 num0 을 빼야 하는건데 실수로 num1 을 더했더니 num2 이 나왔다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 90,
+            "num1": 56,
+            "num2": 181
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 35,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수가 있는데, 63을 나눠야 하는건데 실수로 11을 곱했더니 8316이 나왔다. 원래대로 계산하면 얼마인지 구하시오.",
+        "QuestionConv": "임의의 수가 있는데, num0 을 나눠야 하는건데 실수로 num1 을 곱했더니 num2 이 나왔다. 원래대로 계산하면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 63,
+            "num1": 11,
+            "num2": 8316
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 12.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수에서 20을 빼야 한다. 그러나 92을 곱해버려서 2668이 나왔다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "어떤 수에서 num0 을 빼야 한다. 그러나 num1 을 곱해버려서 num2 이 나왔다. 원래대로 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 20,
+            "num1": 92,
+            "num2": 2668
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 9.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수에서 15을 나눠야 하는건데 잘못하여 35을 더해서 결과가 260이 돼버렸다. 바르게 계산하면 얼마인지 구하시오.",
+        "QuestionConv": "임의의 수에서 num0 을 나눠야 하는건데 잘못하여 num1 을 더해서 결과가 num2 이 돼버렸다. 바르게 계산하면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 15,
+            "num1": 35,
+            "num2": 260
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 15.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "유정이는 38을 더해야 했다. 그러나 53을 더해서 97이 나왔습니다. 바르게 계산하면 얼마인가요?",
+        "QuestionConv": "유정이는 num0 을 더해야 했다. 그러나 num1 을 더해서 num2 이 나왔습니다. 바르게 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 38,
+            "num1": 53,
+            "num2": 97
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 82,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "정국이는 82을 곱해야 하는건데 잘못하여 17을 나눠서 8이 나왔습니다. 바르게 계산하면 얼마인지 구하시오.",
+        "QuestionConv": "정국이는 num0 을 곱해야 하는건데 잘못하여 num1 을 나눠서 num2 이 나왔습니다. 바르게 계산하면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 82,
+            "num1": 17,
+            "num2": 8
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 11152,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 문제에서 82을 곱해야 한다. 그러나 5을 빼서 결과가 16이 나왔습니다. 제대로 계산한 결과를 구하시오.",
+        "QuestionConv": "어떤 문제에서 num0 을 곱해야 한다. 그러나 num1 을 빼서 결과가 num2 이 나왔습니다. 제대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 82,
+            "num1": 5,
+            "num2": 16
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 1722,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수가 있는데, 3을 더해야 하는건데 실수로 96을 나눠버려서 결과가 15이 돼버렸다. 원래 계산했어야 하는 결과를 구하시오.",
+        "QuestionConv": "임의의 수가 있는데, num0 을 더해야 하는건데 실수로 num1 을 나눠버려서 결과가 num2 이 돼버렸다. 원래 계산했어야 하는 결과를 구하시오.",
+        "Numbers": {
+            "num0": 3,
+            "num1": 96,
+            "num2": 15
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 1443,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "석진이는 92을 빼야 하는데 실수로 55을 곱했더니 결과가 5170이 나왔다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "석진이는 num0 을 빼야 하는데 실수로 num1 을 곱했더니 결과가 num2 이 나왔다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 92,
+            "num1": 55,
+            "num2": 5170
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 2.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 문제에서 52을 곱해야 했다. 그러나 100을 나눠서 1이 돼버렸다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "어떤 문제에서 num0 을 곱해야 했다. 그러나 num1 을 나눠서 num2 이 돼버렸다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 52,
+            "num1": 100,
+            "num2": 1
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 5200,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 문제에서 59을 더해야 했는데 잘못하여 34을 더한 결과가 69이 되었다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "어떤 문제에서 num0 을 더해야 했는데 잘못하여 num1 을 더한 결과가 num2 이 되었다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 59,
+            "num1": 34,
+            "num2": 69
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 94,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "은지는 3을 빼야 했었다. 그런데 24을 더해버려서 결과가 72이 되었다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "은지는 num0 을 빼야 했었다. 그런데 num1 을 더해버려서 결과가 num2 이 되었다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 3,
+            "num1": 24,
+            "num2": 72
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 45,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수에서 97을 더해야 했다. 그러나 57을 나눴더니 결과가 9이 나왔습니다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "임의의 수에서 num0 을 더해야 했다. 그러나 num1 을 나눴더니 결과가 num2 이 나왔습니다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 97,
+            "num1": 57,
+            "num2": 9
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 610,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "시험답안에서 62을 빼야 한다. 그러나 1을 더한 결과가 98이 돼버렸다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "시험답안에서 num0 을 빼야 한다. 그러나 num1 을 더한 결과가 num2 이 돼버렸다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 62,
+            "num1": 1,
+            "num2": 98
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 35,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "시험답안에서 43을 곱해야 했는데 잘못하여 31을 더해서 결과가 36이 돼버렸다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "시험답안에서 num0 을 곱해야 했는데 잘못하여 num1 을 더해서 결과가 num2 이 돼버렸다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 43,
+            "num1": 31,
+            "num2": 36
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 215,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수가 있다. 29을 더해야 한다. 그러나 50을 나눠서 결과가 6이 되었다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "어떤 수가 있다. num0 을 더해야 한다. 그러나 num1 을 나눠서 결과가 num2 이 되었다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 29,
+            "num1": 50,
+            "num2": 6
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 329,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "지민이는 76을 더해야 한다. 그러나 11을 나눠버려서 11이 나왔습니다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "지민이는 num0 을 더해야 한다. 그러나 num1 을 나눠버려서 num2 이 나왔습니다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 76,
+            "num1": 11,
+            "num2": 11
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 197,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "풀이에서 7을 빼야 했는데 실수로 14을 빼서 40이 되었다. 제대로 계산한 결과를 구하시오.",
+        "QuestionConv": "풀이에서 num0 을 빼야 했는데 실수로 num1 을 빼서 num2 이 되었다. 제대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 7,
+            "num1": 14,
+            "num2": 40
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 47,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "남준이 98을 곱해야 했는데 잘못하여 68을 나눠버려서 2이 나왔다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "남준이 num0 을 곱해야 했는데 잘못하여 num1 을 나눠버려서 num2 이 나왔다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 98,
+            "num1": 68,
+            "num2": 2
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 13328,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "석진이는 33을 나눠야 하는데 잘못하여 98을 빼서 397이 되었다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "석진이는 num0 을 나눠야 하는데 잘못하여 num1 을 빼서 num2 이 되었다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 33,
+            "num1": 98,
+            "num2": 397
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 15.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "윤기는 39을 빼야 했다. 그런데 75을 나눠서 1이 나왔다. 원래대로 계산하면 얼마인지 구하시오.",
+        "QuestionConv": "윤기는 num0 을 빼야 했다. 그런데 num1 을 나눠서 num2 이 나왔다. 원래대로 계산하면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 39,
+            "num1": 75,
+            "num2": 1
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 36,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "호석이는 3을 나눠야 하는데 실수로 25을 나눠버려서 75이 되었다. 원래 계산했어야 하는 결과를 구하시오.",
+        "QuestionConv": "호석이는 num0 을 나눠야 하는데 실수로 num1 을 나눠버려서 num2 이 되었다. 원래 계산했어야 하는 결과를 구하시오.",
+        "Numbers": {
+            "num0": 3,
+            "num1": 25,
+            "num2": 75
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 625,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "지민이는 72을 더해야 했다. 그런데 43을 빼서 결과가 29이 나왔다. 바르게 계산한 결과는 얼마인가요?",
+        "QuestionConv": "지민이는 num0 을 더해야 했다. 그런데 num1 을 빼서 결과가 num2 이 나왔다. 바르게 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 72,
+            "num1": 43,
+            "num2": 29
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 144,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "태형이는 89을 곱해야 했는데 실수로 42을 빼버려서 18이 돼버렸다. 원래 계산했어야 하는 결과를 구하시오.",
+        "QuestionConv": "태형이는 num0 을 곱해야 했는데 실수로 num1 을 빼버려서 num2 이 돼버렸다. 원래 계산했어야 하는 결과를 구하시오.",
+        "Numbers": {
+            "num0": 89,
+            "num1": 42,
+            "num2": 18
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 5340,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수가 있다. 99을 곱해야 했는데 잘못하여 4을 나눠버려서 30이 되었다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "QuestionConv": "어떤 수가 있다. num0 을 곱해야 했는데 잘못하여 num1 을 나눠버려서 num2 이 되었다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 99,
+            "num1": 4,
+            "num2": 30
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 11880,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "정국이가 3을 곱해야 했었다. 그런데 78을 곱해버려서 결과가 3198이 나왔다. 원래대로 계산하면 얼마인지 구하시오.",
+        "QuestionConv": "정국이가 num0 을 곱해야 했었다. 그런데 num1 을 곱해버려서 결과가 num2 이 나왔다. 원래대로 계산하면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 3,
+            "num1": 78,
+            "num2": 3198
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 123.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수가 있다. 27을 나눠야 했다. 그러나 39을 더해서 결과가 390이 나왔다. 바르게 계산하면 얼마인지 구하시오.",
+        "QuestionConv": "어떤 수가 있다. num0 을 나눠야 했다. 그러나 num1 을 더해서 결과가 num2 이 나왔다. 바르게 계산하면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 27,
+            "num1": 39,
+            "num2": 390
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 13.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "민영이는 45을 빼야 했는데 잘못하여 24을 곱해버려서 결과가 2088이 되었다. 바르게 계산한 결과는 얼마인가요?",
+        "QuestionConv": "민영이는 num0 을 빼야 했는데 잘못하여 num1 을 곱해버려서 결과가 num2 이 되었다. 바르게 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 45,
+            "num1": 24,
+            "num2": 2088
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 42.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "은지가 78을 빼야 했는데 실수로 71을 더했더니 158이 나왔다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "은지가 num0 을 빼야 했는데 실수로 num1 을 더했더니 num2 이 나왔다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 78,
+            "num1": 71,
+            "num2": 158
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 9,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수에서 87을 나눠야 한다. 그러나 89을 나눠버려서 2523이 나왔습니다. 원래 계산했어야 하는 결과를 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 을 나눠야 한다. 그러나 num1 을 나눠버려서 num2 이 나왔습니다. 원래 계산했어야 하는 결과를 구하시오.",
+        "Numbers": {
+            "num0": 87,
+            "num1": 89,
+            "num2": 2523
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 2581.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수가 있는데, 83을 나눠야 하는데 실수로 5을 더했더니 결과가 503이 나왔다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "임의의 수가 있는데, num0 을 나눠야 하는데 실수로 num1 을 더했더니 결과가 num2 이 나왔다. 원래대로 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 83,
+            "num1": 5,
+            "num2": 503
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 6.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "시험답안에서 88을 더해야 했었다. 그러나 73을 뺐더니 23이 나왔다. 원래 계산했어야 하는 결과를 구하시오.",
+        "QuestionConv": "시험답안에서 num0 을 더해야 했었다. 그러나 num1 을 뺐더니 num2 이 나왔다. 원래 계산했어야 하는 결과를 구하시오.",
+        "Numbers": {
+            "num0": 88,
+            "num1": 73,
+            "num2": 23
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 184,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "시험답안에서 84을 더해야 했었다. 그러나 67을 나눴더니 결과가 12이 나왔다. 제대로 계산한 결과를 구하시오.",
+        "QuestionConv": "시험답안에서 num0 을 더해야 했었다. 그러나 num1 을 나눴더니 결과가 num2 이 나왔다. 제대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 84,
+            "num1": 67,
+            "num2": 12
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 888,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수가 있는데, 8을 나눠야 했었다. 그런데 63을 더했더니 결과가 111이 나왔습니다. 제대로 계산한 결과를 얼마인가요?",
+        "QuestionConv": "임의의 수가 있는데, num0 을 나눠야 했었다. 그런데 num1 을 더했더니 결과가 num2 이 나왔습니다. 제대로 계산한 결과를 얼마인가요?",
+        "Numbers": {
+            "num0": 8,
+            "num1": 63,
+            "num2": 111
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 6.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "민영이는 41을 더해야 했었다. 그런데 13을 더해서 39이 되었다. 바르게 계산하면 얼마인지 구하시오.",
+        "QuestionConv": "민영이는 num0 을 더해야 했었다. 그런데 num1 을 더해서 num2 이 되었다. 바르게 계산하면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 41,
+            "num1": 13,
+            "num2": 39
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 67,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수가 있다. 86을 나눠야 하는데 잘못하여 4을 곱했더니 344이 나왔습니다. 원래대로 계산하면 얼마인지 구하시오.",
+        "QuestionConv": "어떤 수가 있다. num0 을 나눠야 하는데 잘못하여 num1 을 곱했더니 num2 이 나왔습니다. 원래대로 계산하면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 86,
+            "num1": 4,
+            "num2": 344
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 1.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수에서 5을 나눠야 했는데 실수로 92을 곱해서 결과가 5060이 나왔다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "QuestionConv": "어떤 수에서 num0 을 나눠야 했는데 실수로 num1 을 곱해서 결과가 num2 이 나왔다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 5,
+            "num1": 92,
+            "num2": 5060
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 11.0,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "임의의 수가 있는데, 31을 곱해야 했다. 그런데 55을 나눠서 1이 돼버렸다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "임의의 수가 있는데, num0 을 곱해야 했다. 그런데 num1 을 나눠서 num2 이 돼버렸다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 31,
+            "num1": 55,
+            "num2": 1
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 1705,
+        "Type": "FindNumberRule1"
+    },
+    {
+        "Question": "어떤 수에서 56을 뺏더니 48가 되었습니다. 어떤 수에서 13를 곱하면 얼마인가?",
+        "QuestionConv": "어떤 수에서 num0 을 뺏더니 num1 가 되었습니다. 어떤 수에서 num2 를 곱하면 얼마인가?",
+        "Numbers": {
+            "num0": 56,
+            "num1": 48,
+            "num2": 13
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), sub),num2)",
+        "Answer": 1352,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "지민이는 73을 나눠야 한다. 그러나 뺐더니 결과가 146이 되었다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 나눠야 한다. 그러나 뺐더니 결과가 num1 이 되었다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 73,
+            "num1": 146
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0, num1), sub),num0)",
+        "Answer": 3,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수가 있다. 4을 더해야 하는데 잘못하여 99을 더한 결과가 145이 돼버렸다. 원래대로 계산하면 얼마인지 구하시오",
+        "QuestionConv": "어떤 수가 있다. num0 을 더해야 하는데 잘못하여 num1 을 더한 결과가 num2 이 돼버렸다. 원래대로 계산하면 얼마인지 구하시오",
+        "Numbers": {
+            "num0": 4,
+            "num1": 99,
+            "num2": 145
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 50,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수에서 91을 나눴더니 1가 되었습니다. 어떤 수에서 64를 곱하면 얼마인가?",
+        "QuestionConv": "어떤 수에서 num0 을 나눴더니 num1 가 되었습니다. 어떤 수에서 num2 를 곱하면 얼마인가?",
+        "Numbers": {
+            "num0": 91,
+            "num1": 1,
+            "num2": 64
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), div),num2)",
+        "Answer": 5824,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수에서 60을 빼야 하는데 실수로 더해서 126이 나왔습니다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 을 빼야 하는데 실수로 더해서 num1 이 나왔습니다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 60,
+            "num1": 126
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), add),num0)",
+        "Answer": 6,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "시험답안에서 70을 곱해야 하는건데 잘못하여 22을 곱했더니 결과가 594이 나왔습니다. 바르게 계산하면 얼마인지 구하시오",
+        "QuestionConv": "시험답안에서 num0 을 곱해야 하는건데 잘못하여 num1 을 곱했더니 결과가 num2 이 나왔습니다. 바르게 계산하면 얼마인지 구하시오",
+        "Numbers": {
+            "num0": 70,
+            "num1": 22,
+            "num2": 594
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 1890,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있는데, 100을 나눴더니 684가 되었습니다. 임의의 수에서 57를 나누면 몇인가?",
+        "QuestionConv": "임의의 수가 있는데, num0 을 나눴더니 num1 가 되었습니다. 임의의 수에서 num2 를 나누면 몇인가?",
+        "Numbers": {
+            "num0": 100,
+            "num1": 684,
+            "num2": 57
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0, num1), div),num2)",
+        "Answer": 1200,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "지민이는 18을 더해야 한다. 그러나 빼버려서 결과가 46이 돼버렸다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 더해야 한다. 그러나 빼버려서 결과가 num1 이 돼버렸다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 18,
+            "num1": 46
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), sub),num0)",
+        "Answer": 82,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "태형이가 9을 나눠야 했었다. 그러나 26을 뺐더니 343이 돼버렸다. 제대로 계산한 결과를 구하시오.",
+        "QuestionConv": "nae0 이가 num0 을 나눠야 했었다. 그러나 num1 을 뺐더니 num2 이 돼버렸다. 제대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 9,
+            "num1": 26,
+            "num2": 343
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 41,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있다. 33을 곱했더니 1089가 되었습니다. 임의의 수에서 11를 빼면 몇인가?",
+        "QuestionConv": "임의의 수가 있다. num0 을 곱했더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 몇인가?",
+        "Numbers": {
+            "num0": 33,
+            "num1": 1089,
+            "num2": 11
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), mul),num2)",
+        "Answer": 22,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "남준이는 17을 곱해야 했는데 실수로 나눴더니 결과가 2이 나왔습니다. 바르게 계산한 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 곱해야 했는데 실수로 나눴더니 결과가 num1 이 나왔습니다. 바르게 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 17,
+            "num1": 2
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), div),num0)",
+        "Answer": 578,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "풀이에서 5을 더해야 하는데 잘못하여 39을 나눠서 결과가 10이 나왔다. 원래대로 계산하면 얼마인지 구하시오",
+        "QuestionConv": "풀이에서 num0 을 더해야 하는데 잘못하여 num1 을 나눠서 결과가 num2 이 나왔다. 원래대로 계산하면 얼마인지 구하시오",
+        "Numbers": {
+            "num0": 5,
+            "num1": 39,
+            "num2": 10
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 395,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수가 있습니다. 12을 곱했더니 12가 되었습니다. 어떤 수에서 90를 더하면 얼마인가?",
+        "QuestionConv": "어떤 수가 있습니다. num0 을 곱했더니 num1 가 되었습니다. 어떤 수에서 num2 를 더하면 얼마인가?",
+        "Numbers": {
+            "num0": 12,
+            "num1": 12,
+            "num2": 90
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), mul),num2)",
+        "Answer": 91,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수가 있다. 47을 곱해야 했었다. 그런데 나눴더니 2이 돼버렸다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "어떤 수가 있다. num0 을 곱해야 했었다. 그런데 나눴더니 num1 이 돼버렸다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 47,
+            "num1": 2
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), div),num0)",
+        "Answer": 4418,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 문제에서 16을 나눠야 했는데 실수로 80을 곱해버려서 1280이 되었다. 바르게 계산하면 얼마인가요?",
+        "QuestionConv": "어떤 문제에서 num0 을 나눠야 했는데 실수로 num1 을 곱해버려서 num2 이 되었다. 바르게 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 16,
+            "num1": 80,
+            "num2": 1280
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 1,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있다. 61을 나눴더니 5가 되었습니다. 임의의 수에서 93를 더하면 얼마인가?",
+        "QuestionConv": "임의의 수가 있다. num0 을 나눴더니 num1 가 되었습니다. 임의의 수에서 num2 를 더하면 얼마인가?",
+        "Numbers": {
+            "num0": 61,
+            "num1": 5,
+            "num2": 93
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), div),num2)",
+        "Answer": 398,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "지민이는 84을 빼야 하는데 실수로 곱했더니 9996이 돼버렸다. 원래대로 계산하면 얼마인지 구하시오",
+        "QuestionConv": "nae0 이는 num0 을 빼야 하는데 실수로 곱했더니 num1 이 돼버렸다. 원래대로 계산하면 얼마인지 구하시오",
+        "Numbers": {
+            "num0": 84,
+            "num1": 9996
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), mul),num0)",
+        "Answer": 35,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수에서 71을 나눠야 했었다. 그런데 95을 나눠버려서 결과가 2911이 되었다. 제대로 계산한 결과를 얼마인가요?",
+        "QuestionConv": "어떤 수에서 num0 을 나눠야 했었다. 그런데 num1 을 나눠버려서 결과가 num2 이 되었다. 제대로 계산한 결과를 얼마인가요?",
+        "Numbers": {
+            "num0": 71,
+            "num1": 95,
+            "num2": 2911
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 3895,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있는데, 96을 더했더니 1016가 되었습니다. 임의의 수에서 92를 나누면 몇인가?",
+        "QuestionConv": "임의의 수가 있는데, num0 을 더했더니 num1 가 되었습니다. 임의의 수에서 num2 를 나누면 몇인가?",
+        "Numbers": {
+            "num0": 96,
+            "num1": 1016,
+            "num2": 92
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0, num1), add),num2)",
+        "Answer": 10,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수가 있다. 45을 더해야 했다. 그러나 나눴더니 결과가 6이 되었다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "어떤 수가 있다. num0 을 더해야 했다. 그러나 나눴더니 결과가 num1 이 되었다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 45,
+            "num1": 6
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), div),num0)",
+        "Answer": 315,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "선생님이 30을 곱해야 했는데 잘못하여 100을 뺐더니 결과가 34이 나왔다. 바르게 계산한 결과는 얼마인가요?",
+        "QuestionConv": "선생님이 num0 을 곱해야 했는데 잘못하여 num1 을 뺐더니 결과가 num2 이 나왔다. 바르게 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 30,
+            "num1": 100,
+            "num2": 34
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 4020,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있다. 78을 뺏더니 28가 되었습니다. 임의의 수에서 84를 곱하면 얼마인가?",
+        "QuestionConv": "임의의 수가 있다. num0 을 뺏더니 num1 가 되었습니다. 임의의 수에서 num2 를 곱하면 얼마인가?",
+        "Numbers": {
+            "num0": 78,
+            "num1": 28,
+            "num2": 84
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), sub),num2)",
+        "Answer": 8904,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수에서 76을 더해야 한다. 그런데 곱해버려서 결과가 1748이 나왔다. 제대로 계산한 결과를 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 을 더해야 한다. 그런데 곱해버려서 결과가 num1 이 나왔다. 제대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 76,
+            "num1": 1748
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), mul),num0)",
+        "Answer": 99,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어느날 정국이는 49을 빼야 했었다. 그런데 92을 더해버려서 결과가 177이 돼버렸다. 바르게 계산하면 얼마인지 구하시오",
+        "QuestionConv": "어느날 nae0 이는 num0 을 빼야 했었다. 그런데 num1 을 더해버려서 결과가 num2 이 돼버렸다. 바르게 계산하면 얼마인지 구하시오",
+        "Numbers": {
+            "num0": 49,
+            "num1": 92,
+            "num2": 177
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 36,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수에서 44을 더했더니 94가 되었습니다. 임의의 수에서 30를 빼면 얼마인가?",
+        "QuestionConv": "임의의 수에서 num0 을 더했더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 얼마인가?",
+        "Numbers": {
+            "num0": 44,
+            "num1": 94,
+            "num2": 30
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), add),num2)",
+        "Answer": 20,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있는데, 85을 빼야 하는데 실수로 나눠서 결과가 2이 되었다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "임의의 수가 있는데, num0 을 빼야 하는데 실수로 나눠서 결과가 num1 이 되었다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 85,
+            "num1": 2
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), div),num0)",
+        "Answer": 85,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "유나 이가 4을 더해야 하는데 실수로 75을 더해서 96이 되었다. 바르게 계산하면 얼마인지 구하시오",
+        "QuestionConv": "nae0 이가 num0 을 더해야 하는데 실수로 num1 을 더해서 num2 이 되었다. 바르게 계산하면 얼마인지 구하시오",
+        "Numbers": {
+            "num0": 4,
+            "num1": 75,
+            "num2": 96
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 25,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있는데, 42을 더했더니 84가 되었습니다. 임의의 수에서 65를 더하면 몇이 되는지 구하시오.",
+        "QuestionConv": "임의의 수가 있는데, num0 을 더했더니 num1 가 되었습니다. 임의의 수에서 num2 를 더하면 몇이 되는지 구하시오.",
+        "Numbers": {
+            "num0": 42,
+            "num1": 84,
+            "num2": 65
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), add),num2)",
+        "Answer": 107,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "유나 이가 24을 빼야 했었다. 그러나 나눠버려서 결과가 2이 돼버렸다. 바르게 계산한 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이가 num0 을 빼야 했었다. 그러나 나눠버려서 결과가 num1 이 돼버렸다. 바르게 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 24,
+            "num1": 2
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), div),num0)",
+        "Answer": 24,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "지민이는 48을 나눠야 했었다. 그러나 41을 곱해서 결과가 27552이 나왔다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "nae0 이는 num0 을 나눠야 했었다. 그러나 num1 을 곱해서 결과가 num2 이 나왔다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 48,
+            "num1": 41,
+            "num2": 27552
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 14,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수가 있습니다. 85을 나눴더니 1가 되었습니다. 어떤 수에서 56를 빼면 얼마인지 구하시오.",
+        "QuestionConv": "어떤 수가 있습니다. num0 을 나눴더니 num1 가 되었습니다. 어떤 수에서 num2 를 빼면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 85,
+            "num1": 1,
+            "num2": 56
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), div),num2)",
+        "Answer": 29,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "민영이는 3을 더해야 하는데 잘못하여 빼버려서 결과가 37이 되었다. 제대로 계산한 결과를 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 더해야 하는데 잘못하여 빼버려서 결과가 num1 이 되었다. 제대로 계산한 결과를 얼마인가요?",
+        "Numbers": {
+            "num0": 3,
+            "num1": 37
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), sub),num0)",
+        "Answer": 43,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어느날 정국이는 81을 나눠야 한다. 그러나 37을 빼버려서 결과가 1097이 되었다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "어느날 nae0 이는 num0 을 나눠야 한다. 그러나 num1 을 빼버려서 결과가 num2 이 되었다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 81,
+            "num1": 37,
+            "num2": 1097
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 14,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있습니다. 48을 더했더니 840가 되었습니다. 임의의 수에서 72를 나누면 얼마인지 구하시오.",
+        "QuestionConv": "임의의 수가 있습니다. num0 을 더했더니 num1 가 되었습니다. 임의의 수에서 num2 를 나누면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 48,
+            "num1": 840,
+            "num2": 72
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0, num1), add),num2)",
+        "Answer": 11,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "선생님이 5을 빼야 했는데 잘못하여 더해서 45이 나왔습니다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "선생님이 num0 을 빼야 했는데 잘못하여 더해서 num1 이 나왔습니다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 5,
+            "num1": 45
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), add),num0)",
+        "Answer": 35,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "지민이는 49을 곱해야 한다. 그러나 25을 더한 결과가 60이 나왔다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 곱해야 한다. 그러나 num1 을 더한 결과가 num2 이 나왔다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 49,
+            "num1": 25,
+            "num2": 60
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 1715,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있다. 86을 나눴더니 2가 되었습니다. 임의의 수에서 80를 빼면 얼마인지 구하시오.",
+        "QuestionConv": "임의의 수가 있다. num0 을 나눴더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 86,
+            "num1": 2,
+            "num2": 80
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), div),num2)",
+        "Answer": 92,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수에서 3을 곱해야 하는건데 실수로 더한 결과가 38이 나왔습니다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "임의의 수에서 num0 을 곱해야 하는건데 실수로 더한 결과가 num1 이 나왔습니다. 원래대로 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 3,
+            "num1": 38
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), add),num0)",
+        "Answer": 105,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "남준이는 41을 더해야 했는데 실수로 45을 곱한 결과가 450이 돼버렸다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 더해야 했는데 실수로 num1 을 곱한 결과가 num2 이 돼버렸다. 원래대로 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 41,
+            "num1": 45,
+            "num2": 450
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 51,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수가 있는데, 30을 나눴더니 2가 되었습니다. 어떤 수에서 91를 더하면 얼마인가?",
+        "QuestionConv": "어떤 수가 있는데, num0 을 나눴더니 num1 가 되었습니다. 어떤 수에서 num2 를 더하면 얼마인가?",
+        "Numbers": {
+            "num0": 30,
+            "num1": 2,
+            "num2": 91
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), div),num2)",
+        "Answer": 151,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "풀이에서 12을 나눠야 했다. 그러나 곱해서 결과가 1584이 돼버렸다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "풀이에서 num0 을 나눠야 했다. 그러나 곱해서 결과가 num1 이 돼버렸다. 원래대로 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 12,
+            "num1": 1584
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0, num1), mul),num0)",
+        "Answer": 11,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있는데, 27을 더해야 하는데 실수로 31을 뺐더니 결과가 1이 되었다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "임의의 수가 있는데, num0 을 더해야 하는데 실수로 num1 을 뺐더니 결과가 num2 이 되었다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 27,
+            "num1": 31,
+            "num2": 1
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 59,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있다. 99을 뺏더니 138가 되었습니다. 임의의 수에서 95를 빼면 얼마인가?",
+        "QuestionConv": "임의의 수가 있다. num0 을 뺏더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 얼마인가?",
+        "Numbers": {
+            "num0": 99,
+            "num1": 138,
+            "num2": 95
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), sub),num2)",
+        "Answer": 142,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "선생님이 67을 나눠야 한다. 그러나 더했더니 603이 나왔다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "선생님이 num0 을 나눠야 한다. 그러나 더했더니 num1 이 나왔다. 원래대로 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 67,
+            "num1": 603
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0, num1), add),num0)",
+        "Answer": 8,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "유나 이가 31을 나눠야 했다. 그런데 23을 곱했더니 2852이 나왔습니다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "nae0 이가 num0 을 나눠야 했다. 그런데 num1 을 곱했더니 num2 이 나왔습니다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 31,
+            "num1": 23,
+            "num2": 2852
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 4,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있습니다. 61을 더했더니 88가 되었습니다. 임의의 수에서 13를 빼면 몇이 되는지 구하시오.",
+        "QuestionConv": "임의의 수가 있습니다. num0 을 더했더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 몇이 되는지 구하시오.",
+        "Numbers": {
+            "num0": 61,
+            "num1": 88,
+            "num2": 13
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), add),num2)",
+        "Answer": 14,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "지민이는 35을 나눠야 한다. 그러나 곱했더니 결과가 13475이 되었다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 나눠야 한다. 그러나 곱했더니 결과가 num1 이 되었다. 원래대로 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 35,
+            "num1": 13475
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0, num1), mul),num0)",
+        "Answer": 11,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "유나 이가 16을 나눠야 한다. 그러나 71을 곱해버려서 결과가 10224이 되었다. 제대로 계산한 결과를 구하시오.",
+        "QuestionConv": "nae0 이가 num0 을 나눠야 한다. 그러나 num1 을 곱해버려서 결과가 num2 이 되었다. 제대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 16,
+            "num1": 71,
+            "num2": 10224
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 9,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수에서 96을 뺏더니 7가 되었습니다. 임의의 수에서 15를 더하면 몇인가?",
+        "QuestionConv": "임의의 수에서 num0 을 뺏더니 num1 가 되었습니다. 임의의 수에서 num2 를 더하면 몇인가?",
+        "Numbers": {
+            "num0": 96,
+            "num1": 7,
+            "num2": 15
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), sub),num2)",
+        "Answer": 118,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "민영이는 70을 빼야 했는데 잘못하여 더해서 172이 나왔다. 원래 계산했어야 하는 결과를 구하시오.",
+        "QuestionConv": "nae0 이는 num0 을 빼야 했는데 잘못하여 더해서 num1 이 나왔다. 원래 계산했어야 하는 결과를 구하시오.",
+        "Numbers": {
+            "num0": 70,
+            "num1": 172
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), add),num0)",
+        "Answer": 32,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어느날 정국이는 80을 곱해야 했는데 잘못하여 60을 뺐더니 결과가 11이 되었다. 바르게 계산하면 얼마인지 구하시오",
+        "QuestionConv": "어느날 nae0 이는 num0 을 곱해야 했는데 잘못하여 num1 을 뺐더니 결과가 num2 이 되었다. 바르게 계산하면 얼마인지 구하시오",
+        "Numbers": {
+            "num0": 80,
+            "num1": 60,
+            "num2": 11
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 5680,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수가 있습니다. 19을 더했더니 33가 되었습니다. 어떤 수에서 93를 곱하면 몇이 되는지 구하시오.",
+        "QuestionConv": "어떤 수가 있습니다. num0 을 더했더니 num1 가 되었습니다. 어떤 수에서 num2 를 곱하면 몇이 되는지 구하시오.",
+        "Numbers": {
+            "num0": 19,
+            "num1": 33,
+            "num2": 93
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), add),num2)",
+        "Answer": 1302,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "시험답안에서 27을 곱해야 했는데 잘못하여 뺐더니 결과가 15이 나왔습니다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "시험답안에서 num0 을 곱해야 했는데 잘못하여 뺐더니 결과가 num1 이 나왔습니다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 27,
+            "num1": 15
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), sub),num0)",
+        "Answer": 1134,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "시험답안에서 16을 더해야 하는건데 실수로 30을 나눴더니 5이 나왔다. 바르게 계산하면 얼마인가요?",
+        "QuestionConv": "시험답안에서 num0 을 더해야 하는건데 실수로 num1 을 나눴더니 num2 이 나왔다. 바르게 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 16,
+            "num1": 30,
+            "num2": 5
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 166,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있습니다. 82을 뺏더니 32가 되었습니다. 임의의 수에서 1를 빼면 얼마가 되는지 구하시오.",
+        "QuestionConv": "임의의 수가 있습니다. num0 을 뺏더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 얼마가 되는지 구하시오.",
+        "Numbers": {
+            "num0": 82,
+            "num1": 32,
+            "num2": 1
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), sub),num2)",
+        "Answer": 113,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 문제에서 49을 빼야 하는데 잘못하여 나눈 결과가 2이 돼버렸다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "QuestionConv": "어떤 문제에서 num0 을 빼야 하는데 잘못하여 나눈 결과가 num1 이 돼버렸다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 49,
+            "num1": 2
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), div),num0)",
+        "Answer": 49,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "석진이는 94을 더해야 했었다. 그러나 61을 나눴더니 2이 돼버렸다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 더해야 했었다. 그러나 num1 을 나눴더니 num2 이 돼버렸다. 원래대로 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 94,
+            "num1": 61,
+            "num2": 2
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 216,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수가 있는데, 85을 더했더니 131가 되었습니다. 어떤 수에서 53를 곱하면 몇인지 구하시오.",
+        "QuestionConv": "어떤 수가 있는데, num0 을 더했더니 num1 가 되었습니다. 어떤 수에서 num2 를 곱하면 몇인지 구하시오.",
+        "Numbers": {
+            "num0": 85,
+            "num1": 131,
+            "num2": 53
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), add),num2)",
+        "Answer": 2438,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "유나 이가 37을 나눠야 했었다. 그런데 더해서 결과가 333이 되었다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이가 num0 을 나눠야 했었다. 그런데 더해서 결과가 num1 이 되었다. 원래대로 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 37,
+            "num1": 333
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0, num1), add),num0)",
+        "Answer": 8,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "유나 이가 6을 곱해야 하는건데 실수로 85을 곱해버려서 4250이 되었다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "nae0 이가 num0 을 곱해야 하는건데 실수로 num1 을 곱해버려서 num2 이 되었다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 6,
+            "num1": 85,
+            "num2": 4250
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 300,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있는데, 4을 곱했더니 188가 되었습니다. 임의의 수에서 11를 곱하면 얼마인지 구하시오.",
+        "QuestionConv": "임의의 수가 있는데, num0 을 곱했더니 num1 가 되었습니다. 임의의 수에서 num2 를 곱하면 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 4,
+            "num1": 188,
+            "num2": 11
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), mul),num2)",
+        "Answer": 517,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어느날 정국이는 1을 더해야 했는데 잘못하여 나눈 결과가 6이 나왔다. 제대로 계산한 결과를 얼마인가요?",
+        "QuestionConv": "어느날 nae0 이는 num0 을 더해야 했는데 잘못하여 나눈 결과가 num1 이 나왔다. 제대로 계산한 결과를 얼마인가요?",
+        "Numbers": {
+            "num0": 1,
+            "num1": 6
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), div),num0)",
+        "Answer": 7,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "남준이는 36을 빼야 하는데 잘못하여 68을 더해서 결과가 151이 되었다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 빼야 하는데 잘못하여 num1 을 더해서 결과가 num2 이 되었다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 36,
+            "num1": 68,
+            "num2": 151
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), add),num0)",
+        "Answer": 47,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수가 있습니다. 49을 더했더니 96가 되었습니다. 어떤 수에서 4를 더하면 몇인가?",
+        "QuestionConv": "어떤 수가 있습니다. num0 을 더했더니 num1 가 되었습니다. 어떤 수에서 num2 를 더하면 몇인가?",
+        "Numbers": {
+            "num0": 49,
+            "num1": 96,
+            "num2": 4
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), add),num2)",
+        "Answer": 51,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "지민이는 56을 곱해야 했었다. 그런데 뺀 결과가 29이 돼버렸다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 곱해야 했었다. 그런데 뺀 결과가 num1 이 돼버렸다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 56,
+            "num1": 29
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), sub),num0)",
+        "Answer": 4760,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "지민이는 12을 곱해야 한다. 그런데 39을 나눠서 1이 돼버렸다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "nae0 이는 num0 을 곱해야 한다. 그런데 num1 을 나눠서 num2 이 돼버렸다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 12,
+            "num1": 39,
+            "num2": 1
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 468,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있다. 95을 뺏더니 87가 되었습니다. 임의의 수에서 77를 빼면 몇이 되는지 구하시오.",
+        "QuestionConv": "임의의 수가 있다. num0 을 뺏더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 몇이 되는지 구하시오.",
+        "Numbers": {
+            "num0": 95,
+            "num1": 87,
+            "num2": 77
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), sub),num2)",
+        "Answer": 105,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "석진이는 15을 나눠야 했는데 실수로 빼버려서 180이 되었다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 나눠야 했는데 실수로 빼버려서 num1 이 되었다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 15,
+            "num1": 180
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0, num1), sub),num0)",
+        "Answer": 13,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수가 있다. 37을 곱해야 하는건데 잘못하여 74을 뺀 결과가 27이 돼버렸다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "QuestionConv": "어떤 수가 있다. num0 을 곱해야 하는건데 잘못하여 num1 을 뺀 결과가 num2 이 돼버렸다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 37,
+            "num1": 74,
+            "num2": 27
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 3737,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수에서 12을 더했더니 86가 되었습니다. 임의의 수에서 44를 빼면 몇이 되는지 구하시오.",
+        "QuestionConv": "임의의 수에서 num0 을 더했더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 몇이 되는지 구하시오.",
+        "Numbers": {
+            "num0": 12,
+            "num1": 86,
+            "num2": 44
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), add),num2)",
+        "Answer": 30,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있는데, 34을 빼야 한다. 그런데 나눴더니 결과가 2이 나왔다. 제대로 계산한 결과를 얼마인가요?",
+        "QuestionConv": "임의의 수가 있는데, num0 을 빼야 한다. 그런데 나눴더니 결과가 num1 이 나왔다. 제대로 계산한 결과를 얼마인가요?",
+        "Numbers": {
+            "num0": 34,
+            "num1": 2
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), div),num0)",
+        "Answer": 34,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "태형이가 74을 빼야 했는데 실수로 40을 빼서 결과가 87이 나왔다. 바르게 계산하면 얼마인가요?",
+        "QuestionConv": "nae0 이가 num0 을 빼야 했는데 실수로 num1 을 빼서 결과가 num2 이 나왔다. 바르게 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 74,
+            "num1": 40,
+            "num2": 87
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 53,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수에서 49을 더했더니 149가 되었습니다. 어떤 수에서 100를 나누면 얼마인가?",
+        "QuestionConv": "어떤 수에서 num0 을 더했더니 num1 가 되었습니다. 어떤 수에서 num2 를 나누면 얼마인가?",
+        "Numbers": {
+            "num0": 49,
+            "num1": 149,
+            "num2": 100
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0, num1), add),num2)",
+        "Answer": 1,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "시험답안에서 42을 나눠야 하는데 실수로 곱해버려서 5292이 되었다. 원래대로 계산하면 얼마인가요?",
+        "QuestionConv": "시험답안에서 num0 을 나눠야 하는데 실수로 곱해버려서 num1 이 되었다. 원래대로 계산하면 얼마인가요?",
+        "Numbers": {
+            "num0": 42,
+            "num1": 5292
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0, num1), mul),num0)",
+        "Answer": 3,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "문제지에서 31을 나눠야 했다. 그런데 90을 나눈 결과가 1333이 돼버렸다. 원래 계산했어야 하는 결과를 구하시오.",
+        "QuestionConv": "문제지에서 num0 을 나눠야 했다. 그런데 num1 을 나눈 결과가 num2 이 돼버렸다. 원래 계산했어야 하는 결과를 구하시오.",
+        "Numbers": {
+            "num0": 31,
+            "num1": 90,
+            "num2": 1333
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), div),num0)",
+        "Answer": 3870,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수가 있는데, 38을 곱했더니 722가 되었습니다. 어떤 수에서 2를 곱하면 몇이 되는지 구하시오.",
+        "QuestionConv": "어떤 수가 있는데, num0 을 곱했더니 num1 가 되었습니다. 어떤 수에서 num2 를 곱하면 몇이 되는지 구하시오.",
+        "Numbers": {
+            "num0": 38,
+            "num1": 722,
+            "num2": 2
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), mul),num2)",
+        "Answer": 38,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "석진이는 20을 빼야 했는데 실수로 나눠서 결과가 3이 나왔다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "nae0 이는 num0 을 빼야 했는데 실수로 나눠서 결과가 num1 이 나왔다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 20,
+            "num1": 3
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), div),num0)",
+        "Answer": 40,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "유나 이가 84을 나눠야 하는데 실수로 66을 뺐더니 결과가 858이 나왔습니다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이가 num0 을 나눠야 하는데 실수로 num1 을 뺐더니 결과가 num2 이 나왔습니다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 84,
+            "num1": 66,
+            "num2": 858
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 11,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수가 있는데, 72을 나눴더니 1가 되었습니다. 어떤 수에서 15를 곱하면 몇인지 구하시오.",
+        "QuestionConv": "어떤 수가 있는데, num0 을 나눴더니 num1 가 되었습니다. 어떤 수에서 num2 를 곱하면 몇인지 구하시오.",
+        "Numbers": {
+            "num0": 72,
+            "num1": 1,
+            "num2": 15
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), div),num2)",
+        "Answer": 1080,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "유나 이가 65을 더해야 한다. 그런데 빼서 9이 나왔습니다. 바르게 계산하면 얼마인지 구하시오",
+        "QuestionConv": "nae0 이가 num0 을 더해야 한다. 그런데 빼서 num1 이 나왔습니다. 바르게 계산하면 얼마인지 구하시오",
+        "Numbers": {
+            "num0": 65,
+            "num1": 9
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0, num1), sub),num0)",
+        "Answer": 139,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "남준이는 70을 빼야 한다. 그런데 77을 뺀 결과가 78이 나왔습니다. 원래대로 계산한 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 빼야 한다. 그런데 num1 을 뺀 결과가 num2 이 나왔습니다. 원래대로 계산한 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 70,
+            "num1": 77,
+            "num2": 78
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1, num2), sub),num0)",
+        "Answer": 85,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있다. 91을 곱했더니 7917가 되었습니다. 임의의 수에서 62를 빼면 몇이 되는지 구하시오.",
+        "QuestionConv": "임의의 수가 있다. num0 을 곱했더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 몇이 되는지 구하시오.",
+        "Numbers": {
+            "num0": 91,
+            "num1": 7917,
+            "num2": 62
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), mul),num2)",
+        "Answer": 25,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "남준이는 74을 곱해야 했었다. 그런데 나눠서 2이 나왔습니다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "QuestionConv": "nae0 이는 num0 을 곱해야 했었다. 그런데 나눠서 num1 이 나왔습니다. 원래 계산했어야 하는 결과는 얼마인가요?",
+        "Numbers": {
+            "num0": 74,
+            "num1": 2
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0, num1), div),num0)",
+        "Answer": 10952,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수에서 9을 곱해야 하는데 실수로 96을 곱했더니 2016이 나왔다. 원래대로 계산한 결과를 구하시오.",
+        "QuestionConv": "임의의 수에서 num0 을 곱해야 하는데 실수로 num1 을 곱했더니 num2 이 나왔다. 원래대로 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 9,
+            "num1": 96,
+            "num2": 2016
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1, num2), mul),num0)",
+        "Answer": 189,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "임의의 수가 있습니다. 68을 곱했더니 4148가 되었습니다. 임의의 수에서 23를 빼면 몇인가?",
+        "QuestionConv": "임의의 수가 있습니다. num0 을 곱했더니 num1 가 되었습니다. 임의의 수에서 num2 를 빼면 몇인가?",
+        "Numbers": {
+            "num0": 68,
+            "num1": 4148,
+            "num2": 23
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0, num1), mul),num2)",
+        "Answer": 38,
+        "Type": "FindNumberRule 3"
+    },
+    {
+        "Question": "어떤 수에서 7을 뺐더니 2가 되었습니다. 어떤 수를 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 을 뺐더니 num1 가 되었습니다. 어떤 수를 구하시오.",
+        "Numbers": {
+            "num0": 7,
+            "num1": 2
+        },
+        "Equation": "func_inverseoperator(func_makelist(num0,num1), sub)",
+        "Answer": 9
+    },
+    {
+        "Question": "어떤 수에서 7을 뺐더니 2가 된다고 했을 때 어떤 수를 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 을 뺐더니 num1 가 되었습니다. 어떤 수를 구하시오.",
+        "Numbers": {
+            "num0": 7,
+            "num1": 2
+        },
+        "Equation": "func_inverseoperator(func_makelist(num0,num1), sub)",
+        "Answer": 9
+    },
+    {
+        "Question": "어떤 수에서 46을 빼야 하는데 잘못하여 59를 뺐더니 43이 되었습니다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 을 빼야 하는데 잘못하여 num1 를 뺐더니 num2 이 되었습니다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 46,
+            "num1": 59,
+            "num2": 43
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num1,num2), sub),num0)",
+        "Answer": 56
+    },
+    {
+        "Question": "두 자리 수끼리의 곱셈에서 곱하는 수의 십의 자리 숫자 2를 6으로 잘못 보고 계산한 값이 2432가 되었습니다. 바르게 계산한 값이 912일 때, 2개의 두 자리 수 중 더 작은 수를 쓰시오.",
+        "QuestionConv": "num0 자리 수끼리의 곱셈에서 곱하는 수의 num1 의 자리 숫자 num2 를 num3 으로 잘못 보고 계산한 값이 num4 가 되었습니다. 바르게 계산한 값이 num5 일 때, num6 개의 num7 자리 수 중 더 작은 수를 쓰시오.",
+        "Numbers": {
+            "num0": 2,
+            "num1": 10,
+            "num2": 2,
+            "num3": 6,
+            "num4": 2432,
+            "num5": 912,
+            "num6": 2,
+            "num7": 2
+        },
+        "Equation": "func_whichsmall(func_divide(num5, func_divide(func_minus(num4,num5), func_multiply(func_minus(num3,num2),num1))), func_divide(func_minus(num4,num5), func_multiply(func_minus(num3,num2),num1)))",
+        "Answer": 24
+    },
+    {
+        "Question": "어떤 수에 14를 더한 후 14를 곱하고, 24를 뺀 값을 24로 나누면 13이 됩니다. 어떤 수를 구하시오.",
+        "QuestionConv": "어떤 수에 num0 를 더한 후 num1 를 곱하고, num2 를 뺀 값을 num3 로 나누면 num4 이 됩니다. 어떤 수를 구하시오.",
+        "Numbers": {
+            "num0": 14,
+            "num1": 14,
+            "num2": 24,
+            "num3": 24,
+            "num4": 13
+        },
+        "Equation": "func_inverseoperator(func_makelist(num0,func_inverseoperator(func_makelist(num1,func_inverseoperator(func_makelist(func_inverseoperator(func_makelist(num3,num4), div),num2),sub)),mul)),add)",
+        "Answer": 10
+    },
+    {
+        "Question": "12에 어떤 수를 곱해야 하는데 잘못하여 어떤 수를 12로 나누었더니 8이 되었습니다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "num0 에 어떤 수를 곱해야 하는데 잘못하여 어떤 수를 num1 로 나누었더니 num2 이 되었습니다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 12,
+            "num1": 12,
+            "num2": 8
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1,num2), div),num0)",
+        "Answer": 1152
+    },
+    {
+        "Question": "어떤 수에서 9를 더하고 3으로 나누었더니 7이 되었습니다. 어떤 수를 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 를 더하고 num1 으로 나누었더니 num2 이 되었습니다. 어떤 수를 구하시오.",
+        "Numbers": {
+            "num0": 9,
+            "num1": 3,
+            "num2": 7
+        },
+        "Equation": "func_inverseoperator(func_makelist(num0,func_inverseoperator(func_makelist(num1,num2), div)),add)",
+        "Answer": 12
+    },
+    {
+        "Question": "어떤 수에서 34를 뺀 후 2로 나누어야 하는데 잘못하여 34를 더한 후 2로 나누었더니 50이 되었습니다. 바르게 계산한 값은 얼마인지 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 를 뺀 후 num1 로 나누어야 하는데 잘못하여 num2 를 더한 후 num3 로 나누었더니 num4 이 되었습니다. 바르게 계산한 값은 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 34,
+            "num1": 2,
+            "num2": 34,
+            "num3": 2,
+            "num4": 50
+        },
+        "Equation": "func_divide(func_minus(func_inverseoperator(func_makelist(num0,func_inverseoperator(func_makelist(num3,num4), div)),add),num0),num1)",
+        "Answer": 16
+    },
+    {
+        "Question": "12/5를 어떤 수로 나누어야 할 것을 잘못하여 곱하였더니 24/5가 되었습니다. 바르게 계산하면 값은 얼마인지 구하시오.",
+        "QuestionConv": "num0 를 어떤 수로 나누어야 할 것을 잘못하여 곱하였더니 num1 가 되었습니다. 바르게 계산하면 값은 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 2.4,
+            "num1": 4.8
+        },
+        "Equation": "func_divide(num0,func_inverseoperator(func_makelist(num0,num1), mul))",
+        "Answer": 1.2
+    },
+    {
+        "Question": "어떤 수에 6을 곱해야 할 것을 잘못하여 나누었더니 몫이 8이고 나머지가 3이 되었습니다. 바르게 계산하면 얼마입니까?",
+        "QuestionConv": "어떤 수에 num0 을 곱해야 할 것을 잘못하여 나누었더니 몫이 num1 이고 나머지가 num2 이 되었습니다. 바르게 계산하면 얼마입니까?",
+        "Numbers": {
+            "num0": 6,
+            "num1": 8,
+            "num2": 3
+        },
+        "Equation": "func_multiply(func_add(func_inverseoperator(func_makelist(num0,num1), div),num2),num0)",
+        "Answer": 306
+    },
+    {
+        "Question": "어떤 수에 1.7을 곱했더니 17이 되었습니다. 어떤 수를 구하시오.",
+        "QuestionConv": "어떤 수에 num0 을 곱했더니 num1 이 되었습니다. 어떤 수를 구하시오.",
+        "Numbers": {
+            "num0": 1.7,
+            "num1": 17
+        },
+        "Equation": "func_inverseoperator(func_makelist(num0,num1), mul)",
+        "Answer": 10
+    },
+    {
+        "Question": "어떤 수를 2.5로 나누어야 할 것을 잘못하여 곱했더니 125가 되었습니다. 바르게 계산한 값을 구하시오.",
+        "QuestionConv": "어떤 수를 num0 로 나누어야 할 것을 잘못하여 곱했더니 num1 가 되었습니다. 바르게 계산한 값을 구하시오.",
+        "Numbers": {
+            "num0": 2.5,
+            "num1": 125
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0,num1), mul),num0)",
+        "Answer": 20
+    },
+    {
+        "Question": "어떤 자연수를 7로 나누어야 할 것을 잘못하여 곱했더니 343이 되었습니다. 바르게 계산한 값을 구하시오.",
+        "QuestionConv": "어떤 자연수를 num0 로 나누어야 할 것을 잘못하여 곱했더니 num1 이 되었습니다. 바르게 계산한 값을 구하시오.",
+        "Numbers": {
+            "num0": 7,
+            "num1": 343
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0,num1), mul),num0)",
+        "Answer": 7
+    },
+    {
+        "Question": "어떤 수에 3/5을 곱해야 할 것을 잘못하여 나누었더니 25/9가 되었습니다. 바르게 계산한 값을 구하시오.",
+        "QuestionConv": "어떤 수에 num0 을 곱해야 할 것을 잘못하여 나누었더니 num1 가 되었습니다. 바르게 계산한 값을 구하시오.",
+        "Numbers": {
+            "num0": 0.6,
+            "num1": 2.7777777777777777
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0,num1), div),num0)",
+        "Answer": 1
+    },
+    {
+        "Question": "17에 어떤 수를 곱해야 할 것을 잘못하여 나누었더니 몫이 5이고 나머지가 2가 되었습니다. 바르게 계산하면 얼마입니까?",
+        "QuestionConv": "num0 에 어떤 수를 곱해야 할 것을 잘못하여 나누었더니 몫이 num1 이고 나머지가 num2 가 되었습니다. 바르게 계산하면 얼마입니까?",
+        "Numbers": {
+            "num0": 17,
+            "num1": 5,
+            "num2": 2
+        },
+        "Equation": "func_multiply(func_add(func_inverseoperator(func_makelist(num0,num1), div),num2),num0)",
+        "Answer": 1479
+    },
+    {
+        "Question": "재은이는 13살이고, 진수와 재은이의 나이의 차를 구하려 하는데 잘못하여 합을 구했더니 27이 되었습니다. 바르게 계산한 값은 얼마입니까?",
+        "QuestionConv": "재은이는 num0 살이고, 진수와 재은이의 나이의 차를 구하려 하는데 잘못하여 합을 구했더니 num1 이 되었습니다. 바르게 계산한 값은 얼마입니까?",
+        "Numbers": {
+            "num0": 13,
+            "num1": 27
+        },
+        "Equation": "func_difference(func_inverseoperator(func_makelist(num0,num1), add),num0)",
+        "Answer": 1
+    },
+    {
+        "Question": "어떤 정사각형의 넓이를 구해야 하는데 잘못하여 둘레를 구했더니 12cm가 되었습니다. 이 정사각형의 넓이는 얼마입니까?",
+        "QuestionConv": "어떤 정 num0 각형의 넓이를 구해야 하는데 잘못하여 둘레를 구했더니 num1 cm가 되었습니다. 이 정사각형의 넓이는 얼마입니까?",
+        "Numbers": {
+            "num0": 4,
+            "num1": 12
+        },
+        "Equation": "func_square(func_inverseoperator(func_makelist(num0,num1), mul),none)",
+        "Answer": 9
+    },
+    {
+        "Question": "진성이 분단의 수학 점수의 평균을 구하려 합니다. 잘못하여 진성이를 빼고 계산한 평균값이 50이었습니다. 진성이 분단의 학생 수가 6명이고 진성이의 수학 점수가 80점 일 때, 바르게 계산한 평균값을 구하시오.",
+        "QuestionConv": "진성이 분단의 수학 점수의 평균을 구하려 합니다. 잘못하여 진성이를 빼고 계산한 평균값이 num0 이었습니다. 진성이 분단의 학생 수가 num1 명이고 진성이의 수학 점수가 num2 점 일 때, 바르게 계산한 평균값을 구하시오.",
+        "Numbers": {
+            "num0": 50,
+            "num1": 6,
+            "num2": 80
+        },
+        "Equation": "func_divide(func_add(func_inverseoperator(func_makelist(num0,func_minus(num1,1)), div),num2),num1)",
+        "Answer": 55
+    },
+    {
+        "Question": "어떤 수를 10으로 나누어야 할 것을 곱하였더니 175가 되었습니다. 바르게 계산하면 얼마입니까?",
+        "QuestionConv": "어떤 수를 num0 으로 나누어야 할 것을 곱하였더니 num1 가 되었습니다. 바르게 계산하면 얼마입니까?",
+        "Numbers": {
+            "num0": 10,
+            "num1": 175
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0,num1), mul),num0)",
+        "Answer": 1.75
+    },
+    {
+        "Question": "어떤 분수를 7로 나누어야 할 것을 잘못하여 곱했더니 49/10가 되었습니다. 바르게 계산한 값을 분수로 나타내시오.",
+        "QuestionConv": "어떤 분수를 num0 로 나누어야 할 것을 잘못하여 곱했더니 num1 가 되었습니다. 바르게 계산한 값을 분수로 나타내시오.",
+        "Numbers": {
+            "num0": 7,
+            "num1": 4.9
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0,num1), mul),num0)",
+        "Answer": 0.1
+    },
+    {
+        "Question": "어떤 분수를 9로 나누어야 할 것을 잘못하여 곱했더니 27/15이 되었습니다. 바르게 계산한 값을 기약분수로 나타내면 얼마입니까?",
+        "QuestionConv": "어떤 분수를 num0 로 나누어야 할 것을 잘못하여 곱했더니 num1 이 되었습니다. 바르게 계산한 값을 기약분수로 나타내면 얼마입니까?",
+        "Numbers": {
+            "num0": 9,
+            "num1": 1.8
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0,num1), mul),num0)",
+        "Answer": 0.02
+    },
+    {
+        "Question": "어떤 소수에 15를 곱했더니 18.6이 되었습니다. 어떤 소수를 구하시오.",
+        "QuestionConv": "어떤 소수에 num0 를 곱했더니 num1 이 되었습니다. 어떤 소수를 구하시오.",
+        "Numbers": {
+            "num0": 15,
+            "num1": 18.6
+        },
+        "Equation": "func_inverseoperator(func_makelist(num0,num1), mul)",
+        "Answer": 1.24
+    },
+    {
+        "Question": "어떤 소수를 14로 나누어야 할 것을 잘못하여 곱했더니 595.84가 되었습니다. 바르게 계산한 값을 구하시오.",
+        "QuestionConv": "어떤 소수를 num0 로 나누어야 할 것을 잘못하여 곱했더니 num1 가 되었습니다. 바르게 계산한 값을 구하시오.",
+        "Numbers": {
+            "num0": 14,
+            "num1": 595.84
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0,num1), mul),num0)",
+        "Answer": 3.04
+    },
+    {
+        "Question": "어떤 수에서 18/5을 빼야 할 것을 잘못하여 더했더니 44/5가 되었습니다. 바르게 계산한 값을 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 을 빼야 할 것을 잘못하여 더했더니 num1 가 되었습니다. 바르게 계산한 값을 구하시오.",
+        "Numbers": {
+            "num0": 3.6,
+            "num1": 8.8
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0,num1), add),num0)",
+        "Answer": 1.6
+    },
+    {
+        "Question": "모든 변의 길이가 자연수인 어떤 직사각형의 넓이를 구해야 할 것을 잘못하여 둘레를 구하였더니 16이 되었습니다. 이 직사각형의 가로의 길이가 3일 때 바르게 계산한 값을 구하시오.",
+        "QuestionConv": "모든 변의 길이가 자연수인 어떤 직사각형의 넓이를 구해야 할 것을 잘못하여 둘레를 구하였더니 16이 되었습니다. 이 직사각형의 가로의 길이가 3일 때 바르게 계산한 값을 구하시오.",
+        "Numbers": {
+            "num0": 4,
+            "num1": 16,
+            "num2": 4,
+            "num3": 3
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num3,func_divide(num1,2)), add),num3)",
+        "Answer": 15
+    },
+    {
+        "Question": "유미가 책을 펼쳐 두 쪽수의 곱을 구해야 할 것을 잘못하여 합을 구하였더니 31이 되었습니다. 바르게 계산한 값을 구하시오.",
+        "QuestionConv": "유미가 책을 펼쳐 두 쪽수의 곱을 구해야 할 것을 잘못하여 합을 구하였더니 31이 되었습니다. 바르게 계산한 값을 구하시오.",
+        "Numbers": {
+            "num0": 2,
+            "num1": 31
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(func_raise(func_divide(num1,num0), none),num1), add),func_raise(func_divide(num1,num0), none))",
+        "Answer": 240
+    },
+    {
+        "Question": "어떤 수에서 7을 뺐더니 2가 된다고 했을 때 어떤 수는 무엇인가?",
+        "QuestionConv": "어떤 수에서 num0 을 뺐더니 num1 가 되었습니다. 어떤 수를 구하시오.",
+        "Numbers": {
+            "num0": 7,
+            "num1": 2
+        },
+        "Equation": "func_inverseoperator(func_makelist(num0,num1), sub)",
+        "Answer": 9
+    },
+    {
+        "Question": "어떤 수에서 7을 더했더니 15가 된다고 했을 때 어떤 수를 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 을 뺐더니 num1 가 되었습니다. 어떤 수를 구하시오.",
+        "Numbers": {
+            "num0": 7,
+            "num1": 15
+        },
+        "Equation": "func_inverseoperator(func_makelist(num0,num1), add)",
+        "Answer": 8
+    },
+    {
+        "Question": "어떤 수에서 46을 더해야 하는데 잘못하여 59를 뺐더니 43이 되었습니다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 을 빼야 하는데 잘못하여 num1 를 뺐더니 num2 이 되었습니다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 46,
+            "num1": 59,
+            "num2": 43
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num1,num2), sub),num0)",
+        "Answer": 148
+    },
+    {
+        "Question": "두 자리 수끼리의 곱셈에서 곱하는 수의 십의 자리 숫자 2를 6으로 잘못 보고 계산한 값이 2432가 되었습니다. 바르게 계산한 값이 912일 때, 2개의 두 자리 수 중 더 큰 수를 쓰시오.",
+        "QuestionConv": "num0 자리 수끼리의 곱셈에서 곱하는 수의 num1 의 자리 숫자 num2 를 num3 으로 잘못 보고 계산한 값이 num4 가 되었습니다. 바르게 계산한 값이 num5 일 때, num6 개의 num7 자리 수 중 더 작은 수를 쓰시오.",
+        "Numbers": {
+            "num0": 2,
+            "num1": 10,
+            "num2": 2,
+            "num3": 6,
+            "num4": 2432,
+            "num5": 912,
+            "num6": 2,
+            "num7": 2
+        },
+        "Equation": "func_whichbig(func_divide(num5, func_divide(func_minus(num4,num5), func_multiply(func_minus(num3,num2),num1))), func_divide(func_minus(num4,num5), func_multiply(func_minus(num3,num2),num1)))",
+        "Answer": 38
+    },
+    {
+        "Question": "어떤 소수에 14를 뺸 후 14로 나누고, 10를 더한 값에 10를 곱하면 30이 됩니다. 어떤 수를 구하시오.",
+        "QuestionConv": "어떤 수에 num0 를 더한 후 num1 를 곱하고, num2 를 뺀 값을 num3 로 나누면 num4 이 됩니다. 어떤 수를 구하시오.",
+        "Numbers": {
+            "num0": 14,
+            "num1": 14,
+            "num2": 10,
+            "num3": 10,
+            "num4": 15
+        },
+        "Equation": "func_inverseoperator(func_makelist(num0,func_inverseoperator(func_makelist(num1,func_inverseoperator(func_makelist(func_inverseoperator(func_makelist(num3,num4), mul),num2),add)),div)),sub)",
+        "Answer": 112
+    },
+    {
+        "Question": "어떤 수에 12를 곱해야 하는데 잘못하여 어떤 수에 12를 뺏더니 8이 되었습니다. 바르게 계산한 결과를 구하시오.",
+        "QuestionConv": "num0 에 어떤 수를 곱해야 하는데 잘못하여 어떤 수를 num1 로 나누었더니 num2 이 되었습니다. 바르게 계산한 결과를 구하시오.",
+        "Numbers": {
+            "num0": 12,
+            "num1": 12,
+            "num2": 8
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num1,num2),sub),num0)",
+        "Answer": 240
+    },
+    {
+    "Question": "어떤 수에서 9를 빼고 3을 곱했더니 6이 되었습니다. 어떤 수를 구하시오.",
+        "QuestionConv": "어떤 수에서 num0 를 더하고 num1 으로 나누었더니 num2 이 되었습니다. 어떤 수를 구하시오.",
+        "Numbers": {
+            "num0": 9,
+            "num1": 3,
+            "num2": 6
+        },
+        "Equation": "func_inverseoperator(func_makelist(num0,func_inverseoperator(func_makelist(num1,num2), mul)),sub)",
+        "Answer": 11
+    },
+    {
+        "Question": "어떤 수에 34를 더한 후 2로 나누어야 하는데 잘못하여 34를 뺀 후 2로 나누었더니 50이 되었습니다. 바르게 계산한 값은?",
+        "QuestionConv": "어떤 수에서 num0 를 뺀 후 num1 로 나누어야 하는데 잘못하여 num2 를 더한 후 num3 로 나누었더니 num4 이 되었습니다. 바르게 계산한 값은 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 34,
+            "num1": 2,
+            "num2": 34,
+            "num3": 2,
+            "num4": 50
+        },
+        "Equation": "func_divide(func_add(func_inverseoperator(func_makelist(func_inverseoperator(func_makelist(num3,num4), div),num2),sub),num0),num1)",
+        "Answer": 84
+    },
+    {
+        "Question": "12/5에 어떤 수를 더하려고 했는데 잘못하여 나누었더니 24/5가 되었습니다. 바르게 계산하면 값은 얼마인지 구하시오.",
+        "QuestionConv": "num0 를 어떤 수로 나누어야 할 것을 잘못하여 곱하였더니 num1 가 되었습니다. 바르게 계산하면 값은 얼마인지 구하시오.",
+        "Numbers": {
+            "num0": 2.4,
+            "num1": 4.8
+        },
+        "Equation": "func_add(num0,func_inverseoperator(func_makelist(num0,num1),div))",
+        "Answer": 13.92
+    },
+    {
+        "Question": "어떤 수에 6를 더해야 할 것을 잘못하여 나누었더니 몫이 8이고 나머지가 3이 되었습니다. 바르게 계산하면 얼마입니까?",
+        "QuestionConv": "어떤 수에 num0 을 곱해야 할 것을 잘못하여 나누었더니 몫이 num1 이고 나머지가 num2 이 되었습니다. 바르게 계산하면 얼마입니까?",
+        "Numbers": {
+            "num0": 6,
+            "num1": 8,
+            "num2": 3
+        },
+        "Equation": "func_add(func_add(func_inverseoperator(func_makelist(num0,num1),div),num2),num0)",
+        "Answer": 57
+    },
+    {
+        "Question": "어떤 수에 1.7을 더했더니 17이 되었습니다. 어떤 수를 구하시오.",
+        "QuestionConv": "어떤 수에 num0 을 곱했더니 num1 이 되었습니다. 어떤 수를 구하시오.",
+        "Numbers": {
+            "num0": 1.7,
+            "num1": 17
+        },
+        "Equation": "func_inverseoperator(func_makelist(num0,num1), add)",
+        "Answer": 15.3
+    },
+    {
+        "Question": "어떤 수에 2.5를 빼야 할 것을 잘못하여 곱했더니 125가 되었습니다. 바르게 계산한 값을 구하시오.",
+        "QuestionConv": "어떤 수를 num0 로 나누어야 할 것을 잘못하여 곱했더니 num1 가 되었습니다. 바르게 계산한 값을 구하시오.",
+        "Numbers": {
+            "num0": 2.5,
+            "num1": 125
+        },
+        "Equation": "func_minus(func_inverseoperator(func_makelist(num0,num1), mul),num0)",
+        "Answer": 47.5
+    },
+    {
+        "Question": "어떤 자연수를 7로 나누어야 할 것을 잘못하여 더했더니 343이 되었습니다. 바르게 계산한 값을 구하시오.",
+        "QuestionConv": "어떤 자연수를 num0 로 나누어야 할 것을 잘못하여 곱했더니 num1 이 되었습니다. 바르게 계산한 값을 구하시오.",
+        "Numbers": {
+            "num0": 7,
+            "num1": 343
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0,num1), add),num0)",
+        "Answer": 48
+    },
+    {
+        "Question": "어떤 수에 3/5을 더해야 할 것을 잘못하여 곱하였더니 9/25가 되었습니다. 바르게 계산한 값을 구하시오.",
+        "QuestionConv": "어떤 수에 num0 을 곱해야 할 것을 잘못하여 나누었더니 num1 가 되었습니다. 바르게 계산한 값을 구하시오.",
+        "Numbers": {
+            "num0": 0.6,
+            "num1": 0.36
+        },
+        "Equation": "func_add(func_inverseoperator(func_makelist(num0,num1), mul),num0)",
+        "Answer": 1.2
+    },
+    {
+        "Question": "17에 어떤 수를 빼야 할 것을 잘못하여 나누었더니 몫이 5이고 나머지가 2가 되었습니다. 바르게 계산하면 얼마입니까?",
+        "QuestionConv": "num0 에 어떤 수를 곱해야 할 것을 잘못하여 나누었더니 몫이 num1 이고 나머지가 num2 가 되었습니다. 바르게 계산하면 얼마입니까?",
+        "Numbers": {
+            "num0": 17,
+            "num1": 5,
+            "num2": 2
+        },
+        "Equation": "func_difference(func_add(func_inverseoperator(func_makelist(num0,num1), div),num2),num0)",
+        "Answer": 70
+    },
+    {
+        "Question": "재은이는 13살이고, 재은이와의 나이 차를 구하려 하는데 잘못하여 곱을 구했더니 65이 되었습니다. 바르게 계산한 값은 얼마입니까?",
+        "QuestionConv": "재은이는 num0 살이고, 진수와 재은이의 나이의 차를 구하려 하는데 잘못하여 합을 구했더니 num1 이 되었습니다. 바르게 계산한 값은 얼마입니까?",
+        "Numbers": {
+            "num0": 13,
+            "num1": 65
+        },
+        "Equation": "func_difference(func_inverseoperator(func_makelist(num0,num1), mul),num0)",
+        "Answer": 8
+    },
+    {
+        "Question": "어떤 정사각형의 넓이를 구해야 하는데 잘못하여 둘레를 구했더니 12cm가 되었습니다. 이 정사각형의 한 변의 길이는 얼마입니까?",
+        "QuestionConv": "어떤 정 num0 각형의 넓이를 구해야 하는데 잘못하여 둘레를 구했더니 num1 cm가 되었습니다. 이 정사각형의 넓이는 얼마입니까?",
+        "Numbers": {
+            "num0": 4,
+            "num1": 12,
+            "num2": 4,
+            "num3": 1
+        },
+        "Equation": "func_inverseoperator(func_makelist(num0,num1), mul)",
+        "Answer": 3
+    },
+    {
+        "Question": "진성이 반의 영어 점수의 평균을 구하려 하는데 잘못하여 진성이를 빼고 계산한 평균값이 50이었습니다. 진성이 분단의 학생 수가 6명이고 진성이의 영어 점수가 80점 일 때, 옳은 평균값은?",
+        "QuestionConv": "진성이 분단의 수학 점수의 평균을 구하려 합니다. 잘못하여 진성이를 빼고 계산한 평균값이 num0 이었습니다. 진성이 분단의 학생 수가 num1 명이고 진성이의 수학 점수가 num2 점 일 때, 바르게 계산한 평균값을 구하시오.",
+        "Numbers": {
+            "num0": 50,
+            "num1": 6,
+            "num2": 80
+        },
+        "Equation": "func_divide(func_add(func_inverseoperator(func_makelist(num0,func_minus(num1,1)), div),num2),num1)",
+        "Answer": 55
+    },
+    {
+        "Question": "어떤 수를 10으로 나누어야 할 것을 더했더니 175가 되었습니다. 바르게 계산하면 얼마입니까?",
+        "QuestionConv": "어떤 수를 num0 으로 나누어야 할 것을 곱하였더니 num1 가 되었습니다. 바르게 계산하면 얼마입니까?",
+        "Numbers": {
+            "num0": 10,
+            "num1": 175
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0,num1), add),num0)",
+        "Answer": 16.5
+    },
+    {
+        "Question": "연속하는 두 수의 곱을 구해야 할 것을 잘못하여 합을 구하였더니 31이 되었습니다. 바르게 계산한 값을 구하시오.",
+        "QuestionConv": "유미가 책을 펼쳐 두 쪽수의 곱을 구해야 할 것을 잘못하여 합을 구하였더니 31이 되었습니다. 바르게 계산한 값을 구하시오.",
+        "Numbers": {
+            "num0": 2,
+            "num1": 31
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(func_raise(func_divide(num1,num0), none),num1), add),func_raise(func_divide(num1,num0), none))",
+        "Answer": 240
+    },
+
+    {
+        "Question": "어떤 분수에 10을 곱해야 할 것을 잘못하여 나눴더니 49/10가 되었습니다. 바르게 계산한 값을 분수로 나타내시오.",
+        "QuestionConv": "어떤 분수를 num0 로 나누어야 할 것을 잘못하여 곱했더니 num1 가 되었습니다. 바르게 계산한 값을 분수로 나타내시오.",
+        "Numbers": {
+            "num0": 10,
+            "num1": 4.9
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num0,num1),div),num0)",
+        "Answer": 490
+    },
+    {
+        "Question": "어떤 분수를 9로 나누어야 할 것을 잘못하여 곱했더니 27/15이 되었습니다. 바르게 계산한 값을 소수로 나타내면 얼마입니까?",
+        "QuestionConv": "어떤 분수를 num0 로 나누어야 할 것을 잘못하여 곱했더니 num1 이 되었습니다. 바르게 계산한 값을 기약분수로 나타내면 얼마입니까?",
+        "Numbers": {
+            "num0": 9,
+            "num1": 1.8
+        },
+        "Equation": "func_divide(func_inverseoperator(func_makelist(num0,num1), mul),num0)",
+        "Answer": 0.02
+    },
+    {
+        "Question": "어떤 수에 14를 곱하고, 24를 곱한 값을 24로 나누면 196가 됩니다. 어떤 수를 구하시오.",
+        "QuestionConv": "어떤 소수에 num0 를 곱했더니 num1 이 되었습니다. 어떤 소수를 구하시오.",
+        "Numbers": {
+            "num0": 14,
+            "num1": 24,
+            "num2": 24,
+            "num3": 156
+        },
+        "Equation": "func_inverseoperator(func_makelist(num0,func_inverseoperator(func_makelist(num1,func_inverseoperator(func_makelist(num3,num2), div)),mul)),mul)",
+        "Answer": 14
+    },
+    {
+        "Question": "모든 변의 길이가 자연수인 어떤 직사각형의 넓이를 구해야 할 것을 잘못하여 둘레를 구하였더니 16이 되었습니다. 직사각형의 세로 길이가 3일 때 바르게 계산한 값을 구하시오.",
+        "QuestionConv": "모든 변의 길이가 자연수인 어떤 직사각형의 넓이를 구해야 할 것을 잘못하여 둘레를 구하였더니 16이 되었습니다. 이 직사각형의 가로의 길이가 3일 때 바르게 계산한 값을 구하시오.",
+        "Numbers": {
+            "num0": 4,
+            "num1": 16,
+            "num2": 4,
+            "num3": 3
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(num3,func_divide(num1,2)), add),num3)",
+        "Answer": 15
+    },
+    {
+        "Question": "연속하는 두 자연수의 곱을 구해야 할 것을 잘못하여 합을 구하였더니 19이 되었습니다. 원래 계산을 하면?",
+        "QuestionConv": "연속하는 두 자연수의 곱을 구해야 할 것을 잘못하여 합을 구하였더니 18이 되었습니다. 바르게 계산한 값을 구하시오.",
+        "Numbers": {
+            "num0": 2,
+            "num1": 19
+        },
+        "Equation": "func_multiply(func_inverseoperator(func_makelist(func_raise(func_divide(num1,num0), none),num1), add),func_raise(func_divide(num1,num0), none))",
+        "Answer": 90
+    },
+    {
+        "Question": "두 자리 수끼리의 곱셈에서 곱하는 수의 십의 자리 숫자 2를 6으로 잘못 보고 계산해서 2432가 되었다. 바르게 계산했을 때 정답이 912 라면 2개의 두 자리 수 중 더 큰 수를 쓰시오.",
+        "QuestionConv": "num0 자리 수끼리의 곱셈에서 곱하는 수의 num1 의 자리 숫자 num2 를 num3 으로 잘못 보고 계산한 값이 num4 가 되었습니다. 바르게 계산한 값이 num5 일 때, num6 개의 num7 자리 수 중 더 작은 수를 쓰시오.",
+        "Numbers": {
+            "num0": 2,
+            "num1": 10,
+            "num2": 2,
+            "num3": 6,
+            "num4": 2432,
+            "num5": 912,
+            "num6": 2,
+            "num7": 2
+        },
+        "Equation": "func_whichbig(func_divide(num5, func_divide(func_minus(num4,num5), func_multiply(func_minus(num3,num2),num1))), func_divide(func_minus(num4,num5), func_multiply(func_minus(num3,num2),num1)))",
+        "Answer": 38
+    },
+    {
+        "Question": "두 자리 수끼리 곱셈에서 곱하는 수의 십의 자리 숫자 2를 6으로 잘못 보고 계산해서 2432가 되었다. 바르게 계산했을 때 정답이 912 라면 2개의 두 자리 수 중 더 작은 수를 쓰시오.",
+        "QuestionConv": "num0 자리 수끼리의 곱셈에서 곱하는 수의 num1 의 자리 숫자 num2 를 num3 으로 잘못 보고 계산한 값이 num4 가 되었습니다. 바르게 계산한 값이 num5 일 때, num6 개의 num7 자리 수 중 더 작은 수를 쓰시오.",
+        "Numbers": {
+            "num0": 2,
+            "num1": 10,
+            "num2": 2,
+            "num3": 6,
+            "num4": 2432,
+            "num5": 912,
+            "num6": 2,
+            "num7": 2
+        },
+        "Equation": "func_whichsmall(func_divide(num5, func_divide(func_minus(num4,num5), func_multiply(func_minus(num3,num2),num1))), func_divide(func_minus(num4,num5), func_multiply(func_minus(num3,num2),num1)))",
+        "Answer": 24
+    },
+    {
+        "Question": "어떤 수에 24를 빼고 24를 빼면 13이 된다고 할 때 어떤 수를 구하시오.",
+        "QuestionConv": "num0 자리 수끼리의 곱셈에서 곱하는 수의 num1 의 자리 숫자 num2 를 num3 으로 잘못 보고 계산한 값이 num4 가 되었습니다. 바르게 계산한 값이 num5 일 때, num6 개의 num7 자리 수 중 더 작은 수를 쓰시오.",
+        "Numbers": {
+            "num0": 24,
+            "num1": 24,
+            "num2": 13
+        },
+        "Equation": "func_inverseoperator(func_makelist(func_inverseoperator(func_makelist(num1,num2), sub),num0),sub)",
+        "Answer": 61
+    }
+]

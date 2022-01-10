@@ -1,0 +1,1648 @@
+[
+  {
+    "Question": "네 수 A, B, C, D가 있습니다. A는 8입니다. B는 A의 2배인 수입니다. C는 B보다 6 작은 수입니다. D는 C보다 3 작은 수입니다. 가장 작은 수는 어느 것입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. A는 num1 입니다. B는 A의 num2 배인 수입니다. C는 B보다 num3 작은 수입니다. D는 C보다 num4 작은 수입니다. 가장 작은 수는 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num0":4,
+      "num1":8,
+      "num2":2,
+      "num3":6,
+      "num4":3
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_putseq(func_putseq(func_makelist(num1, func_multiply(num1,num2)), func_minus(func_multiply(num1,num2),num3)), func_minus(func_minus(func_multiply(num1,num2),num3),num4)),none))",
+    "Answer": "D"
+  },
+  {
+    "Question": "네 수 A, B, C, D가 있습니다. A는 B보다 10 작은 수입니다. B는 24입니다. C는 B의 1/2배인 수입니다. D는 C보다 3 큰 수입니다. 가장 작은 수는 어느 것입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. A는 B보다 num1 작은 수입니다. B는 num2 입니다. C는 B의 num3 배인 수입니다. D는 C보다 num4 큰 수입니다. 가장 작은 수는 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num0":4,
+      "num1":10,
+      "num2":24,
+      "num3":0.5,
+      "num4":3
+    },
+    "Equation": "func_list_index(seq0, func_findsmallestidx(func_putseq(func_putseq(func_makelist(func_minus(num2,num1), num2), func_multiply(num2,num3)), func_add(func_multiply(num2,num3),num4)),none))",
+    "Answer": "C"
+  },
+  {
+    "Question": "네 수 A, B, C, D가 있습니다. A는 B보다 3 큰 수입니다. B는 C보다 5 큰 수입니다. C는 20입니다. D는 C보다 7 큰 수입니다. 가장 큰 수는 어느 것입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. A는 B보다 num1 큰 수입니다. B는 C보다 num2 큰 수입니다. C는 num3 입니다. D는 C보다 num4 큰 수입니다. 가장 큰 수는 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num0":4,
+      "num1":3,
+      "num2":5,
+      "num3":20,
+      "num4":7
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_putseq(func_putseq(func_makelist(func_add(func_add(num3,num2),num1),func_add(num3,num2)), num3), func_add(num3,num4)),none))",
+    "Answer": "A"
+  },
+  {
+    "Question": "세 수 A, B, C가 있습니다. A와 B의 평균은 4, B와 C의 평균은 7, A와 C의 평균은 6입니다. A, B, C 중 가장 큰 수는 무엇입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. A와 B의 평균은 num1 , B와 C의 평균은 num2 , A와 C의 평균은 num3 입니다. A, B, C 중 가장 큰 수는 무엇입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C"
+      ],
+      "num0":3,
+      "num1":4,
+      "num2":7,
+      "num3":6
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_putseq(func_makelist(func_minus(func_add(func_add(num1,num2),num3),func_multiply(num2,2)), func_minus(func_add(func_add(num1,num2),num3),func_multiply(num3,2))), func_minus(func_add(func_add(num1,num2),num3),func_multiply(num1,2))),none))",
+    "Answer": "C"
+  },
+  {
+    "Question": "A 도로의 길이는 360m이고 소나무가 15m 간격으로 심겨 있습니다. B 도로의 길이는 400m이고 소나무가 20m 간격으로 심겨 있습니다. A, B 중 소나무가 더 많이 심겨 있는 도로는 어느 도로입니까?",
+    "QuestionConv": "A 도로의 길이는 num0 m이고 소나무가 num1 m 간격으로 심겨 있습니다. B 도로의 길이는 num2 m이고 소나무가 num3 m 간격으로 심겨 있습니다. seq0 중 소나무가 더 많이 심겨 있는 도로는 어느 도로입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":360,
+      "num1":15,
+      "num2":400,
+      "num3":20
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_makelist(func_divide(num0,num1), func_divide(num2,num3)),none))",
+    "Answer": "A"
+  },
+  {
+    "Question": "정민이는 탁구공, 배구공, 축구공을 합하여 30개의 공을 가지고 있습니다. 정민이가 가지고 있는 공들 중 30%는 탁구공이고, 배구공은 탁구공보다 5개 더 많습니다. 정민이는 어떤 공을 가장 많이 가지고 있습니까?",
+    "QuestionConv": "정민이는 seq0 을 합하여 num0 개의 공을 가지고 있습니다. 정민이가 가지고 있는 공들 중 num1 %는 탁구공이고, 배구공은 탁구공보다 num2 개 더 많습니다. 정민이는 어떤 공을 가장 많이 가지고 있습니까?",
+    "Numbers": {
+      "seq0": [
+        "탁구공",
+        "배구공",
+        "축구공"
+      ],
+      "num0":30,
+      "num1":30,
+      "num2":5
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_putseq(func_makelist(func_multiply(num0,func_divide(num1,100)), func_add(func_multiply(num0,func_divide(num1,100)),num2)), func_minus(num0,func_add(func_multiply(num0,func_divide(num1,100)),func_add(func_multiply(num0,func_divide(num1,100)),num2)))),none))",
+    "Answer": "배구공"
+  },
+  {
+    "Question": "네 수 A, B, C, D가 있습니다. A는 16입니다. B는 A보다 8 큰 수입니다. C는 B의 2배인 수입니다. D는 C보다 3 큰 수 입니다. 네 수 중에서 두번째로 큰 수는 어느 것입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. A는 num1 입니다. B는 A보다 num2 큰 수입니다. C는 B의 num3 배인 수입니다. D는 C보다 num4 큰 수 입니다. num5 수 중에서 num6 번째로 큰 수는 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num0":4,
+      "num1":16,
+      "num2":8,
+      "num3":2,
+      "num4":3,
+      "num5":4,
+      "num6":2
+    },
+    "Equation": "func_list_index(seq0, func_findlargeordidx(func_putseq(func_putseq(func_makelist(num1,func_add(num1,num2)),func_multiply(func_add(num1,num2),num3)),func_add(func_multiply(func_add(num1,num2),num3),num4)),num6))",
+    "Answer": "C"
+  },
+  {
+    "Question": "딸기 36개를 접시에 내놓았습니다. 아버지께서 36개의 1/6만큼을, 어머니께서 36개의 2/9만큼을, 다나는 36개의 1/4만큼을 먹고 나머지는 동생이 먹었습니다. 아버지, 어머니, 다나, 동생 중 누가 가장 많이 먹었습니까?",
+    "QuestionConv": "딸기 num0 개를 접시에 내놓았습니다. 아버지께서 num1 개의 num2 만큼을, 어머니께서 num3 개의 num4 만큼을, 다나는 num5 개의 num6 만큼을 먹고 나머지는 동생이 먹었습니다. 아버지, 어머니, 다나, 동생 중 누가 가장 많이 먹었습니까?",
+    "Numbers": {
+      "seq0": [
+        "아버지",
+        "어머니",
+        "다나",
+        "동생"
+      ],
+      "num0":36,
+      "num1":36,
+      "num2":0.166,
+      "num3":36,
+      "num4":0.222,
+      "num5":36,
+      "num6":0.25
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_putseq(func_putseq(func_makelist(func_multiply(num1,num2),func_multiply(num3,num4)),func_multiply(num5,num6)),func_minus(num0,func_add(func_multiply(num1,num2),func_add(func_multiply(num3,num4),func_multiply(num5,num6))))),none))",
+    "Answer": "동생"
+  },
+  {
+    "Question": "재영이는 연필 7자루를 가지고 있습니다. 영수는 연필을 재영이보다 4자루 더 많이 가지고 있고, 민호는 영수보다 5자루 더 적게 가지고 있습니다. 영수가 민호에게 3자루의 연필을 주었다면 재영, 영수, 민호 중 연필을 가장 적게 가지고 있는 사람은 누구입니까?",
+    "QuestionConv": "재영이는 연필 num0 자루를 가지고 있습니다. 영수는 연필을 재영이보다 num1 자루 더 많이 가지고 있고, 민호는 영수보다 num2 자루 더 적게 가지고 있습니다. 영수가 민호에게 num3 자루의 연필을 주었다면 seq0 중 연필을 가장 적게 가지고 있는 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "재영",
+        "영수",
+        "민호"
+      ],
+      "num0":7,
+      "num1":4,
+      "num2":5,
+      "num3":3
+    },
+    "Equation": "func_list_index(seq0, func_findsmallestidx(func_putseq(func_makelist(num0,func_minus(func_add(num0,num1),num3)),func_add(func_minus(func_add(num0,num1),num2),num3)),none))",
+    "Answer": "재영"
+  },
+  {
+    "Question": "네 수 A, B, C, D가 있습니다. C는 10입니다. A는 C의 1/2배인 수입니다. B는 A보다 3 작은 수입니다. D는 C보다 1 작은 수입니다. 네 수 중에서 두번째로 큰 수는 어느 것입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. C는 num1 입니다. C는 A의 num2 배인 수입니다. B는 A보다 num3 작은 수입니다. D는 C보다 num4 작은 수입니다. num5 수 중에서 num6 번째로 큰 수는 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num0":4,
+      "num1":10,
+      "num2":0.5,
+      "num3":3,
+      "num4":1,
+      "num5":4,
+      "num6":2
+    },
+    "Equation": "func_list_index(seq0, func_findlargeordidx(func_putseq(func_putseq(func_makelist(func_multiply(num1,num2),func_minus(func_multiply(num1,num2),num3)),num1),func_minus(num1,num4)),num6))",
+    "Answer": "D"
+  },
+  {
+    "Question": "현수는 음료수를 13/56 마셨습니다. 유진이는 현수보다 5/42 더 적게 마셨습니다. 주홍이는 9/28 마셨고, 진주는 유진이보다 0.11 더 많이 마셨습니다. 현수, 유진, 주홍, 진주 중 음료수를 가장 많이 마신 사람은 누구입니까?",
+    "QuestionConv": "현수는 음료수를 num0 마셨습니다. 유진이는 현수보다 num1 더 적게 마셨습니다. 주홍이는 num2 마셨고, 진주는 유진이보다 num3 더 많이 마셨습니다. seq0 중 음료수를 가장 많이 마신 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "현수",
+        "유진",
+        "주홍",
+        "진주"
+      ],
+      "num0":0.232,
+      "num1":0.119,
+      "num2":0.321,
+      "num3":0.11
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_putseq(func_putseq(func_makelist(num0,func_minus(num0,num1)),num2),func_add(func_minus(num0,num1),num3)),none))",
+    "Answer": "주홍"
+  },
+  {
+    "Question": "민수는 500원짜리 볼펜과 1000원짜리 지우개를 합하여 10개를 사고 8000원을 지불했습니다. 볼펜, 지우개 중 더 많이 산 것은 무엇입니까?",
+    "QuestionConv": "민수는 num0 원짜리 볼펜과 num1 원짜리 지우개를 합하여 num2 개를 사고 num3 원을 지불했습니다. seq0 중 더 많이 산 것은 무엇입니까?",
+    "Numbers": {
+      "seq0": [
+        "볼펜",
+        "지우개"
+      ],
+      "num0":500,
+      "num1":1000,
+      "num2":10,
+      "num3":8000
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(func_minus(num2,func_divide(func_minus(num3,func_multiply(num2,num0)),func_minus(num1,num0))),func_divide(func_minus(num3,func_multiply(num2,num0)),func_minus(num1,num0))),none))",
+    "Answer": "지우개"
+  },
+  {
+    "Question": "진수와 윤아가 피자를 먹었습니다. 진수는 피자의 1/4을 먹었고 윤아는 진수가 먹고 남은 것의 1/2 만큼 먹었습니다. 진수, 윤아 중 피자를 더 많이 먹은 사람은 누구입니까?",
+    "QuestionConv": "진수와 윤아가 피자를 먹었습니다. 진수는 피자의 num0 을 먹었고 윤아는 진수가 먹고 남은 것의 num1 만큼 먹었습니다. seq0 중 피자를 더 많이 먹은 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "진수",
+        "윤아"
+      ],
+      "num0":0.25,
+      "num1":0.5
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(num0,func_multiply(func_minus(1,num0),num1)),none))",
+    "Answer": "윤아"
+  },
+  {
+    "Question": "준수와 수진이의 수학 점수 평균은 93점 입니다. 준수의 수학 점수가 94일 때 준수, 수진 중 수학 점수가 더 높은 사람은 누구입니까?",
+    "QuestionConv": "준수와 수진이의 수학 점수 평균은 num0 점 입니다. 준수의 수학 점수가 num1 일 때 seq0 중 수학 점수가 더 높은 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "준수",
+        "수진"
+      ],
+      "num0":93,
+      "num1":94
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(num1, func_minus(func_multiply(num0,func_len(seq0,none)),num1)),none))",
+    "Answer": "준수"
+  },
+  {
+    "Question": "민지, 윤수, 주현이의 수학 점수 평균은 90점 입니다. 윤수의 수학 점수는 88점이고, 민지의 수학 점수는 윤수의 수학점수보다 4점 더 높습니다. 민지, 윤수, 주현 세 사람 중 가장 높은 점수를 받은 사람은 누구입니까?",
+    "QuestionConv": "seq0 의 수학 점수 평균은 num0 점 입니다. 윤수의 수학 점수는 num1 점이고, 민지의 수학 점수는 윤수의 수학점수보다 num2 점 더 높습니다. 민지, 윤수, 주현 num3 사람 중 가장 높은 점수를 받은 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "민지",
+        "윤수",
+        "주현"
+      ],
+      "num0":90,
+      "num1":88,
+      "num2":4
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_putseq(func_makelist(func_add(num1,num2),num1),func_minus(func_multiply(num0,func_len(seq0,none)),func_add(func_add(num1,num2),num1))),none))",
+    "Answer": "민지"
+  },
+  {
+    "Question": "진미와 영수는 매일 같은 거리를 걷습니다. 진미는 하루에 3.5km를 걷고 영수는 3200m를 걷습니다. 진미, 영수 중 더 적게 걷는 사람은 누구입니까?",
+    "QuestionConv": "진미와 영수는 매일 같은 거리를 걷습니다. 진미는 하루에 num0 km를 걷고 영수는 num1 m를 걷습니다. seq0 중 더 적게 걷는 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "진미",
+        "영수"
+      ],
+      "num0":3.5,
+      "num1":3200
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_makelist(func_km2m(num0,none), num1),none))",
+    "Answer": "영수"
+  },
+  {
+    "Question": "서윤이는 철사 4.5m를 가지고 있습니다. 민아에게 얼마를 주었더니 2.2m가 남았습니다. 민아, 서윤 중 더 긴 철사를 가지고 있는 사람은 누구입니까?",
+    "QuestionConv": "서윤이는 철사 num0 m를 가지고 있습니다. 민아에게 얼마를 주었더니 num1 m가 남았습니다. seq0 중 더 긴 철사를 가지고 있는 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "민아",
+        "서윤"
+      ],
+      "num0":4.5,
+      "num1":2.2
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(num1, func_minus(num0,num1)),none))",
+    "Answer": "서윤"
+  },
+  {
+    "Question": "야구팀 A와 B가 있습니다. A팀의 승률은 60% 이고 B팀은 4경기중 3경기를 이겼습니다. A, B 팀 중 승률이 더 높은 팀은 어떤 팀입니까?",
+    "QuestionConv": "야구팀 A와 B가 있습니다. A팀의 승률은 num0 % 이고 B팀은 num1 경기중 num2 경기를 이겼습니다. seq0 팀 중 승률이 더 높은 팀은 어떤 팀입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":60,
+      "num1":4,
+      "num2":3
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(func_divide(num0,100), func_divide(num2,num1)),none))",
+    "Answer": "B"
+  },
+  {
+    "Question": "민수의 가방의 무게는 5.7kg 입니다. 자영이의 가방의 무게는 4700g 입니다. 민수, 자영 중 가방의 무게가 더 무거운 가방을 가지고 있는 사람은 누구입니까?",
+    "QuestionConv": "민수의 가방의 무게는 num0 kg 입니다. 자영이의 가방의 무게는 num1 g 입니다. seq0 중 가방의 무게가 더 무거운 가방을 가지고 있는 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "민수",
+        "자영"
+      ],
+      "num0":5.7,
+      "num1":4700
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(func_kg2g(num0,none), num1),none))",
+    "Answer": "민수"
+  },
+  {
+    "Question": "어떤 직사각형의 가로의 길이는 4cm 이고, 둘레는 20cm 입니다. 이 직사각형의 가로, 세로 중 더 긴 것은 어느 것입니까?",
+    "QuestionConv": "어떤 직 num0 각형의 가로의 길이는 num1 cm 이고, 둘레는 num2 cm 입니다. 이 직 num3 각형의 seq0 길이 중 더 긴 것은 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "가로",
+        "세로"
+      ],
+      "num0":4,
+      "num1":4,
+      "num2":20,
+      "num3":4
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(num1, func_minus(func_divide(num2,2),num1)),none))",
+    "Answer": "세로"
+  },
+  {
+    "Question": "희찬, 흥민, 승우 세 사람은 5번의 축구 경기에 출전했습니다. 희찬이는 5번의 경기에서 3골을 넣었고 흥민이는 경기당 평균 1골을 넣었습니다. 승우가 한 경기에 골을 넣을 확률이 80%일 때, 세 사람중 골을 넣을 확률이 가장 높은 사람은 누구입니까?",
+    "QuestionConv": "seq0 num0 사람은 num1 번의 축구 경기에 출전했습니다. 희찬이는 num2 번의 경기에서 num3 골을 넣었고 흥민이는 경기당 평균 num4 골을 넣었습니다. 승우가 num5 경기에 골을 넣을 확률이 num6 %일 때, num7 사람중 골을 넣을 확률이 가장 높은 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "희찬",
+        "흥민",
+        "승우"
+      ],
+      "num0":3,
+      "num1":5,
+      "num2":5,
+      "num3":3,
+      "num4":1,
+      "num5":1,
+      "num6":80,
+      "num7":3
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_putseq(func_makelist(func_divide(num3,num2), num4), func_divide(func_divide(num6,100),num5)),none))",
+    "Answer": "흥민"
+  },
+  {
+    "Question": "네 수 A, B, C, D가 있습니다. B는 A의 1/2 이고, C는 A의 3/4 입니다.  D는 B와 C의 합일 때,  네 수 A,B,C,D 중 가장 큰 수는 무엇입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. B는 A의 num1 이고, C는 A의 num2 입니다.  D는 B와 C의 합일 때,  num3 수 A,B,C,D 중 가장 큰 수는 무엇입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num0":4,
+      "num1":0.5,
+      "num2":0.75,
+      "num3":4
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_putseq(func_putseq(func_makelist(1,func_multiply(1,num1)),func_multiply(1,num2)),func_add(func_multiply(1,num1),func_multiply(1,num2))),none))",
+    "Answer": "D"
+  },
+  {
+    "Question": "A학교의 올해 남학생의 수는 작년 남학생의 수보다 4% 늘었고, 올해 여학생의 수는 작년 여학생의 수보다 5% 늘었습니다. A학교의 작년 남학생의 수는 150명이고 여학생의 수는 140명 이였습니다. 올해 A 학교의 남학생, 여학생 중 어느 쪽이 더 많습니까?",
+    "QuestionConv": "A학교의 올해 남학생의 수는 작년 남학생의 수보다 num0 % 늘었고, 올해 여학생의 수는 작년 여학생의 수보다 num1 % 늘었습니다. A학교의 작년 남학생의 수는 num3 명이고 여학생의 수는 num4 명 이였습니다. 올해 A 학교의 seq0 중 어느 쪽이 더 많습니까?",
+    "Numbers": {
+      "seq0": [
+        "남학생",
+        "여학생"
+      ],
+      "num0":4,
+      "num1":5,
+      "num2":150,
+      "num3":140
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(func_add(num2, func_multiply(num2,func_divide(num0,100))),func_add(num3, func_multiply(num3,func_divide(num1,100)))),none))",
+    "Answer": "남학생"
+  },
+  {
+    "Question": "A반의 수학점수 평균은 92점이고 B반의 모든 학생들의 수학 점수 합은 558입니다. B반의 학생 수가 6명일 때 A, B 반 중 수학 평균 점수가 높은 반은 어느 반입니까?",
+    "QuestionConv": "A반의 수학점수 평균은 num0 점이고 B반의 모든 학생들의 수학 점수 합은 num1 입니다. B반의 학생 수가 num2 명일 때 seq0 반 중 수학 평균 점수가 높은 반은 어느 반입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":92,
+      "num1":558,
+      "num2":6
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(num0, func_divide(num1,num2)),none))",
+    "Answer": "B"
+  },
+  {
+    "Question": "정우네 반 전체 학생의 2/5는 남학생 입니다. 남학생 중에서 1/2은 수학을 좋아하고 여학생 중에서 1/4이 수학을 좋아합니다. 남학생, 여학생 중 수학을 좋아하는 학생이 많은 쪽은 어느 쪽입니까?",
+    "QuestionConv": "정우네 반 전체 학생의 num0 는 남학생 입니다. 남학생 중에서 num1 은 수학을 좋아하고 여학생 중에서 num2 이 수학을 좋아합니다. seq0 중 수학을 좋아하는 학생이 많은 쪽은 어느 쪽입니까?",
+    "Numbers": {
+      "seq0": [
+        "남학생",
+        "여학생"
+      ],
+      "num0":0.4,
+      "num1":0.5,
+      "num2":0.25
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(func_multiply(num0,num1), func_multiply(func_minus(1,num0),num2)),none))",
+    "Answer": "남학생"
+  },
+  {
+    "Question": "물총 놀이에서 연석이는 8/9l의 물을 사용 했고, 서진이는 연석이가 사용한 물의 1/3만큼 사용했습니다. 준수는 서진이가 사용한 물의 2배만큼 사용했을 때 연석, 서진, 준수 세 사람중 물을 가장 많이 사용한 사람은 누구입니까?",
+    "QuestionConv": "물총 놀이에서 연석이는 num0 l의 물을 사용 했고, 서진이는 연석이가 사용한 물의 num1 만큼 사용했습니다. 준수는 서진이가 사용한 물의 num2 배만큼 사용했을 때 seq0 num3 사람중 물을 가장 많이 사용한 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "연석",
+        "서진",
+        "준수"
+      ],
+      "num0":0.888,
+      "num1":0.333,
+      "num2":2,
+      "num3":3
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_putseq(func_makelist(num0,func_multiply(num0,num1)), func_multiply(func_multiply(num0,num1),num2)),none))",
+    "Answer": "연석"
+  },
+  {
+    "Question": "정사각형 A의 가로의 길이를 1/3만큼 줄이고, 세로를 2배로 늘여서 직사각형 B를 만들었습니다. A, B 중 넓이가 더 큰 사각형은 어떤 것입니까?",
+    "QuestionConv": "정 num0 각형 A의 가로의 길이를 num1 만큼 줄이고, 세로를 num2 배로 늘여서 직 num3 각형 B를 만들었습니다. seq0 중 넓이가 더 큰 num4 각형은 어떤 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":4,
+      "num1":0.333,
+      "num2":2,
+      "num3":4,
+      "num4":4
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_makelist(1, func_multiply(func_multiply(1,num1), func_multiply(1,num2))),none))",
+    "Answer": "A"
+  },
+  {
+    "Question": "영주는 3.1m의 털실을 가지고 있습니다. 영주가 가지고 있는 털실에서 120cm를 잘라 민수에게 주었습니다. 영주, 민수 중 누구의 털실이 더 깁니까?",
+    "QuestionConv": "영주는 num0 m의 털실을 가지고 있습니다. 영주가 가지고 있는 털실에서 num1 cm를 잘라 민수에게 주었습니다. seq0 중 누구의 털실이 더 깁니까?",
+    "Numbers": {
+      "seq0": [
+        "영주",
+        "민수"
+      ],
+      "num0":3.1,
+      "num1":120
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(func_minus(func_m2cm(num0,none),num1), num1),none))",
+    "Answer": "영주"
+  },
+  {
+    "Question": "무게가 1.29kg인 그릇에 조개를 담아 무게를 재어보니 3.1kg이었습니다. 조개, 그릇 중 더 무거운 것은 어떤 것입니까?",
+    "QuestionConv": "무게가 num0 kg인 그릇에 조개를 담아 무게를 재어보니 num1 kg이었습니다. seq0 중 더 무거운 것은 어떤 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "조개",
+        "그릇"
+      ],
+      "num0":1.29,
+      "num1":3.1
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(func_minus(num1,num0), num0),none))",
+    "Answer": "조개"
+  },
+  {
+    "Question": "지민이는 4와 4를 모았습니다. 정국이는 3과 6을 모았습니다. 지민, 정국 중 모은 수의 합은 누가 더 큽니까?",
+    "QuestionConv": "지민이는 num0 와 num1 를 모았습니다. 정국이는 num2 과 num3 을 모았습니다. seq0 중 모은 수의 합은 누가 더 큽니까?",
+    "Numbers": {
+      "seq0": [
+        "지민",
+        "정국"
+      ],
+      "num0":4,
+      "num1":4,
+      "num2":3,
+      "num3":6
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_makelist(func_add(num0,num1), func_add(num2,num3)),none))",
+    "Answer": "정국"
+  },
+  {
+    "Question": "지민이는 4와 4를 모았습니다. 정국이는 3과 6을 모았습니다. 지민, 정국 중 모은 수의 합은 누가 더 작습니까?",
+    "QuestionConv": "지민이는 num0 와 num1 를 모았습니다. 정국이는 num2 과 num3 을 모았습니다. seq0 중 모은 수의 합은 누가 더 작습니까?",
+    "Numbers": {
+      "seq0": [
+        "지민",
+        "정국"
+      ],
+      "num0":4,
+      "num1":4,
+      "num2":3,
+      "num3":6
+    },
+    "Equation": "func_list_index(seq0, func_findsmallestidx(func_makelist(func_add(num0,num1), func_add(num2,num3)),none))",
+    "Answer": "지민"
+  },
+  {
+    "Question": "민영, 정국, 태형이가 계단을 올라가고 있습니다. 같은 곳에서 출발하여 민영이는 5칸, 정국이는 2칸, 태형이는 7칸을 올라갔습니다. 가장 높이 올라간 사람은 누구일까요?",
+    "QuestionConv": "seq0 가 계단을 올라가고 있습니다. 같은 곳에서 출발하여 민영이는 num0 칸, 정국이는 num1 칸, 태형이는 num2 칸을 올라갔습니다. 가장 높이 올라간 사람은 누구일까요?",
+    "Numbers": {
+      "seq0": [
+        "민영",
+        "정국",
+        "태형"
+      ],
+      "num0":5,
+      "num1":2,
+      "num2":7
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_putseq(func_makelist(num0,num1),num2),none))",
+    "Answer": "태형"
+  },
+  {
+    "Question": "민영, 정국, 태형이가 계단을 올라가고 있습니다. 같은 곳에서 출발하여 민영이는 5칸, 정국이는 2칸, 태형이는 7칸을 올라갔습니다. 가장 낮게 올라간 사람은 누구일까요?",
+    "QuestionConv": "seq0 가 계단을 올라가고 있습니다. 같은 곳에서 출발하여 민영이는 num0 칸, 정국이는 num1 칸, 태형이는 num2 칸을 올라갔습니다. 가장 낮게 올라간 사람은 누구일까요?",
+    "Numbers": {
+      "seq0": [
+        "민영",
+        "정국",
+        "태형"
+      ],
+      "num0":5,
+      "num1":2,
+      "num2":7
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_putseq(func_makelist(num0,num1),num2),none))",
+    "Answer": "정국"
+  },
+  {
+    "Question": "정국이는 6과 5를 모았고, 은지는 7과 3을 모았습니다. 정국, 은지 중 모은 수의 합이 더 작은 어린이는 누구일까요?",
+    "QuestionConv": "정국이는 num0 과 num1 를 모았고, 은지는 num2 과 num3 을 모았습니다. seq0 중 모은 수의 합이 더 작은 어린이는 누구일까요?",
+    "Numbers": {
+      "seq0": [
+        "정국",
+        "은지"
+      ],
+      "num0":6,
+      "num1":5,
+      "num2":7,
+      "num3":3
+    },
+    "Equation": "func_list_index(seq0, func_findsmallestidx(func_makelist(func_add(num0,num1), func_add(num2,num3)),none))",
+    "Answer": "은지"
+  },
+  {
+    "Question": "정국이는 6과 5를 모았고, 은지는 7과 3을 모았습니다. 정국, 은지 중 모은 수의 합이 더 큰 어린이는 누구일까요?",
+    "QuestionConv": "정국이는 num0 과 num1 를 모았고, 은지는 num2 과 num3 을 모았습니다. seq0 중 모은 수의 합이 더 큰 어린이는 누구일까요?",
+    "Numbers": {
+      "seq0": [
+        "정국",
+        "은지"
+      ],
+      "num0":6,
+      "num1":5,
+      "num2":7,
+      "num3":3
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_makelist(func_add(num0,num1), func_add(num2,num3)),none))",
+    "Answer": "정국"
+  },
+  {
+    "Question": "5층에 병원, 3층에 사무실, 1층에 학원이 있는 건물이 있습니다. 병원, 사무실, 학원 중 가장 높은 곳에 있는 것은 어느 것일까요?",
+    "QuestionConv": "num0 층에 병원, num1 층에 사무실, num2 층에 학원이 있는 건물이 있습니다. seq0 중 가장 높은 곳에 있는 것은 어느 것일까요?",
+    "Numbers": {
+      "seq0": [
+        "병원",
+        "사무실",
+        "학원"
+      ],
+      "num0":5,
+      "num1":3,
+      "num2":1
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_putseq(func_makelist(num0,num1),num2),none))",
+    "Answer": "병원"
+  },
+  {
+    "Question": "5층에 병원, 3층에 사무실, 1층에 학원이 있는 건물이 있습니다. 병원, 사무실, 학원 중 가장 낮은 곳에 있는 것은 어느 것일까요?",
+    "QuestionConv": "num0 층에 병원, num1 층에 사무실, num2 층에 학원이 있는 건물이 있습니다. seq0 중 가장 낮은 곳에 있는 것은 어느 것일까요?",
+    "Numbers": {
+      "seq0": [
+        "병원",
+        "사무실",
+        "학원"
+      ],
+      "num0":5,
+      "num1":3,
+      "num2":1
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_putseq(func_makelist(num0,num1),num2),none))",
+    "Answer": "학원"
+  },
+  {
+    "Question": "정국이는 지우개를 6개 가지고 있습니다. 지민이는 지우개를 정국이보다 4개 더 많이 가지고 있고 석진이는 지민이보다 3개 더 적게 가지고 있습니다. 정국, 지민, 석진 중 지우개를 가장 적게 가지고 있는 사람은 누구입니까?",
+    "QuestionConv": "정국이는 지우개를 num0 개 가지고 있습니다. 지민이는 지우개를 정국이보다 num1 개 더 많이 가지고 있고 석진이는 지민이보다 num2 개 더 적게 가지고 있습니다. seq0 중 지우개를 가장 적게 가지고 있는 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "정국",
+        "지민",
+        "석진"
+      ],
+      "num0":6,
+      "num1":4,
+      "num2":3
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_putseq(func_makelist(num0,func_add(num0,num1)),func_minus(func_add(num0,num1),num2)),none))",
+    "Answer": "정국"
+  },
+  {
+    "Question": "정국이는 지우개를 6개 가지고 있습니다. 지민이는 지우개를 정국이보다 4개 더 많이 가지고 있고 석진이는 지민이보다 3개 더 적게 가지고 있습니다. 정국, 지민, 석진 중 지우개를 가장 많이 가지고 있는 사람은 누구입니까?",
+    "QuestionConv": "정국이는 지우개를 num0 개 가지고 있습니다. 지민이는 지우개를 정국이보다 num1 개 더 많이 가지고 있고 석진이는 지민이보다 num2 개 더 적게 가지고 있습니다. seq0 중 지우개를 가장 많이 가지고 있는 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "정국",
+        "지민",
+        "석진"
+      ],
+      "num0":6,
+      "num1":4,
+      "num2":3
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_putseq(func_makelist(num0,func_add(num0,num1)),func_minus(func_add(num0,num1),num2)),none))",
+    "Answer": "지민"
+  },
+  {
+    "Question": "네 수 A, B, C, D가 있습니다. A는 27입니다. B는 A보다 7 큰 수입니다. C는 B보다 9 작은 수입니다. D는 C의 2배인 수입니다. 가장 큰 수는 어느 것입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. A는 num1 입니다. B는 A보다 num2 큰 수입니다. C는 B보다 num3 작은 수입니다. D는 C의 num4 배인 수입니다. 가장 큰 수는 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num0":4,
+      "num1":27,
+      "num2":7,
+      "num3":9,
+      "num4":2
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_putseq(func_putseq(func_makelist(num1,func_add(num1,num2)),func_minus(func_add(num1,num2),num3)),func_multiply(func_minus(func_add(num1,num2),num3),num4)),none))",
+    "Answer": "D"
+  },
+  {
+    "Question": "네 수 A, B, C, D가 있습니다. A는 27입니다. B는 A보다 7 큰 수입니다. C는 B보다 9 작은 수입니다. D는 C의 2배인 수입니다. 가장 작은 수는 어느 것입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. A는 num1 입니다. B는 A보다 num2 큰 수입니다. C는 B보다 num3 작은 수입니다. D는 C의 num4 배인 수입니다. 가장 작은 수는 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num0":4,
+      "num1":27,
+      "num2":7,
+      "num3":9,
+      "num4":2
+    },
+    "Equation": "func_list_index(seq0, func_findsmallestidx(func_putseq(func_putseq(func_makelist(num1,func_add(num1,num2)),func_minus(func_add(num1,num2),num3)),func_multiply(func_minus(func_add(num1,num2),num3),num4)),none))",
+    "Answer": "C"
+  },
+  {
+    "Question": "지민이는 주스를 0.7l 마셨습니다. 은지는 지민이보다 1/10l 더 적게 마셨습니다. 윤기는 4/5l 마셨고, 유나는 지민이보다 0.2l 더 많이 마셨습니다. 지민, 은지, 윤기, 유나 중 주스를 가장 많이 마신 사람은 누구입니까?",
+    "QuestionConv": "지민이는 주스를 num0 l 마셨습니다. 은지는 지민이보다 num1 l 더 적게 마셨습니다. 윤기는 num2 l 마셨고, 유나는 지민이보다 num3 l 더 많이 마셨습니다. seq0 중 주스를 가장 많이 마신 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "지민",
+        "은지",
+        "윤기",
+        "유나"
+      ],
+      "num0":0.7,
+      "num1":0.1,
+      "num2":0.8,
+      "num3":0.2
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_putseq(func_putseq(func_makelist(num0,func_minus(num0,num1)),num2),func_add(num0,num3)),none))",
+    "Answer": "유나"
+  },
+  {
+    "Question": "지민이는 주스를 0.7l 마셨습니다. 은지는 지민이보다 1/10l 더 적게 마셨습니다. 윤기는 4/5l 마셨고, 유나는 지민이보다 0.2l 더 많이 마셨습니다. 지민, 은지, 윤기, 유나 중 주스를 가장 적게 마신 사람은 누구입니까?",
+    "QuestionConv": "지민이는 주스를 num0 l 마셨습니다. 은지는 지민이보다 num1 l 더 적게 마셨습니다. 윤기는 num2 l 마셨고, 유나는 지민이보다 num3 l 더 많이 마셨습니다. seq0 중 주스를 가장 적게 마신 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "지민",
+        "은지",
+        "윤기",
+        "유나"
+      ],
+      "num0":0.7,
+      "num1":0.1,
+      "num2":0.8,
+      "num3":0.2
+    },
+    "Equation": "func_list_index(seq0, func_findsmallestidx(func_putseq(func_putseq(func_makelist(num0,func_minus(num0,num1)),num2),func_add(num0,num3)),none))",
+    "Answer": "은지"
+  },
+  {
+    "Question": "지민이는 주스를 0.7l 마셨습니다. 은지는 지민이보다 1/10l 더 적게 마셨습니다. 윤기는 4/5l 마셨고, 유나는 지민이보다 0.2l 더 많이 마셨습니다. 지민, 은지, 윤기, 유나 중 주스를 두번째로 많이 마신 사람은 누구입니까?",
+    "QuestionConv": "지민이는 주스를 num0 l 마셨습니다. 은지는 지민이보다 num1 l 더 적게 마셨습니다. 윤기는 num2 l 마셨고, 유나는 지민이보다 num3 l 더 많이 마셨습니다. seq0 중 주스를 num4 번째로 많이 마신 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "지민",
+        "은지",
+        "윤기",
+        "유나"
+      ],
+      "num0":0.7,
+      "num1":0.1,
+      "num2":0.8,
+      "num3":0.2,
+      "num4":2
+    },
+    "Equation": "func_list_index(seq0, func_findlargeordidx(func_putseq(func_putseq(func_makelist(num0,func_minus(num0,num1)),num2),func_add(num0,num3)),num4))",
+    "Answer": "윤기"
+  },
+  {
+    "Question": "지민이는 주스를 0.7l 마셨습니다. 은지는 지민이보다 1/10l 더 적게 마셨습니다. 윤기는 4/5l 마셨고, 유나는 지민이보다 0.2l 더 많이 마셨습니다. 지민, 은지, 윤기, 유나 중 주스를 세 번째로 많이 마신 사람은 누구입니까?",
+    "QuestionConv": "지민이는 주스를 num0 l 마셨습니다. 은지는 지민이보다 num1 l 더 적게 마셨습니다. 윤기는 num2 l 마셨고, 유나는 지민이보다 num3 l 더 많이 마셨습니다. seq0 중 주스를 num4 번째로 많이 마신 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "지민",
+        "은지",
+        "윤기",
+        "유나"
+      ],
+      "num0":0.7,
+      "num1":0.1,
+      "num2":0.8,
+      "num3":0.2,
+      "num4":3
+    },
+    "Equation": "func_list_index(seq0, func_findlargeordidx(func_putseq(func_putseq(func_makelist(num0,func_minus(num0,num1)),num2),func_add(num0,num3)),num4))",
+    "Answer": "지민"
+  },
+  {
+    "Question": "시우는 9와 3카드를 모았습니다. 지유는 9와 1카드를 모았습니다. 누가 모은 카드의 합이 더 작을까요?(크기가 같은 경우 '같음'으로 답하시오.)",
+    "QuestionConv": "nae0 는 num0 와 num1 카드를 모았습니다. nae1 는 num2 와 num3 카드를 모았습니다. 누가 모은 카드의 합이 더 작을까요?(크기가 같은 경우 '같음'으로 답하시오.)",
+    "Numbers": {
+      "nae0": "시우",
+      "nae1": "지유",
+      "num0":9,
+      "num1":3,
+      "num2":9,
+      "num3":1
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1), func_findsmallestidx(func_makelist(func_add(num0,num1), func_add(num2,num3)),none))",
+    "Answer": "지유"
+  },
+  {
+    "Question": "시우는 9와 3카드를 모았습니다. 지유는 9와 1카드를 모았습니다. 누가 모은 카드의 합이 더 클까요?(크기가 같은 경우 '같음'으로 답하시오.)",
+    "QuestionConv": "nae0 는 num0 와 num1 카드를 모았습니다. nae1 는 num2 와 num3 카드를 모았습니다. 누가 모은 카드의 합이 더 클까요?(크기가 같은 경우 '같음'으로 답하시오.)",
+    "Numbers": {
+      "nae0": "시우",
+      "nae1": "지유",
+      "num0":9,
+      "num1":3,
+      "num2":9,
+      "num3":1
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1), func_findlargestidx(func_makelist(func_add(num0,num1), func_add(num2,num3)),none))",
+    "Answer": "시우"
+  },
+  {
+    "Question": "네 개의 그릇 (가), (나), (다), (라)이 있습니다. 똑같은 크기의 컵으로 물을 부어 가득 채웠을 때 (가)에는 3컵이 들어가고, (가) 와 (나)에는 합쳐서 5컵, (나)과 (다)에는 합쳐서 6컵, (다)와 (라)에는 합쳐서 5컵이 들어갔습니다. 물이 가장 많이 들어가는 그릇을 구하시오.",
+    "QuestionConv": "num0 개의 그릇 seq0 이 있습니다. 똑같은 크기의 컵으로 물을 부어 가득 채웠을 때 (가)에는 num1 컵이 들어가고, (가) 와 (나)에는 합쳐서 num2 컵, (나)과 (다)에는 합쳐서 num3 컵, (다)와 (라)에는 합쳐서 num4 컵이 들어갔습니다. 물이 가장 많이 들어가는 그릇을 구하시오.",
+    "Numbers": {
+      "seq0": [
+        "(가)",
+        "(나)",
+        "(다)",
+        "(라)"
+      ],
+      "num0":4,
+      "num1":3,
+      "num2":5,
+      "num3":6,
+      "num4":5
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_putseq(func_putseq(func_makelist(num1, func_minus(num2,num1)), func_minus(num3,func_minus(num2,num1))), func_minus(num4,func_minus(num3,func_minus(num2,num1)))),none))",
+    "Answer": "(다)"
+  },
+  {
+    "Question": "네 개의 그릇 (가), (나), (다), (라)이 있습니다. 똑같은 크기의 컵으로 물을 부어 가득 채웠을 때 (가)에는 3컵이 들어가고, (가) 와 (나)에는 합쳐서 5컵, (나)과 (다)에는 합쳐서 6컵, (다)와 (라)에는 합쳐서 5컵이 들어갔습니다. 물이 가장 적게 들어가는 그릇을 구하시오.",
+    "QuestionConv": "num0 개의 그릇 seq0 이 있습니다. 똑같은 크기의 컵으로 물을 부어 가득 채웠을 때 (가)에는 num1 컵이 들어가고, (가) 와 (나)에는 합쳐서 num2 컵, (나)과 (다)에는 합쳐서 num3 컵, (다)와 (라)에는 합쳐서 num4 컵이 들어갔습니다. 물이 가장 적게 들어가는 그릇을 구하시오.",
+    "Numbers": {
+      "seq0": [
+        "(가)",
+        "(나)",
+        "(다)",
+        "(라)"
+      ],
+      "num0":4,
+      "num1":3,
+      "num2":5,
+      "num3":6,
+      "num4":5
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_putseq(func_putseq(func_makelist(num1, func_minus(num2,num1)), func_minus(num3,func_minus(num2,num1))), func_minus(num4,func_minus(num3,func_minus(num2,num1)))),none))",
+    "Answer": "(라)"
+  },
+  {
+    "Question": "민준이는 7과 8카드를 모았습니다. 윤서는 4와 2카드를 모았습니다. 모은 카드의 차가 더 작은 사람이 초콜릿을 얻어먹기로 했다. 누가 초콜릿을 사는가? ",
+    "QuestionConv": "nae0 이는 num0 과 num1 카드를 모았습니다. nae1 는 num2 와 num3 카드를 모았습니다. 모은 카드의 차가 더 작은 사람이 초콜릿을 얻어먹기로 했다. 누가 초콜릿을 사는가? ",
+    "Numbers": {
+      "nae0": "민준",
+      "nae1": "윤서",
+      "num0":7,
+      "num1":8,
+      "num2":4,
+      "num3":2
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findlargestidx(func_makelist(func_difference(num0,num1),func_difference(num2,num3)),none))",
+    "Answer": "윤서"
+  },
+  {
+    "Question": "민준이는 7과 8카드를 모았습니다. 윤서는 4와 2카드를 모았습니다. 모은 카드의 차가 더 큰 사람이 초콜릿을 얻어먹기로 했다. 누가 초콜릿을 사는가?",
+    "QuestionConv": "nae0 이는 num0 과 num1 카드를 모았습니다. nae1 는 num2 와 num3 카드를 모았습니다. 모은 카드의 차가 더 큰 사람이 초콜릿을 얻어먹기로 했다. 누가 초콜릿을 사는가? ",
+    "Numbers": {
+      "nae0": "민준",
+      "nae1": "윤서",
+      "num0":7,
+      "num1":8,
+      "num2":4,
+      "num3":2
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findsmallestidx(func_makelist(func_difference(num0,num1),func_difference(num2,num3)),none))",
+    "Answer": "민준"
+  },
+  {
+    "Question": "네 수 A, B, C, D가 있습니다. A는 15입니다. B는 A보다 6 큰 수입니다. C는 B보다 1 작은 수입니다. D는 C의 3배인 수입니다. 가장 큰 수는 어느 것입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. A는 num1 입니다. B는 A보다 num2 큰 수입니다. C는 B보다 num3 작은 수입니다. D는 C의 num4 배인 수입니다. 가장 큰 수는 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num0":4,
+      "num1":15,
+      "num2":6,
+      "num3":1,
+      "num4":3
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_putseq(func_putseq(func_makelist(num1,func_add(num1,num2)),func_minus(func_add(num1,num2),num3)),func_multiply(func_minus(func_add(num1,num2),num3),num4)),none))",
+    "Answer": "D"
+  },
+  {
+    "Question": "네 수 A, B, C, D가 있습니다. A는 15입니다. B는 A보다 6 큰 수입니다. C는 B보다 1 작은 수입니다. D는 C의 3배인 수입니다. 가장 작은 수는 어느 것입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. A는 num1 입니다. B는 A보다 num2 큰 수입니다. C는 B보다 num3 작은 수입니다. D는 C의 num4 배인 수입니다. 가장 작은 수는 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num0":4,
+      "num1":15,
+      "num2":6,
+      "num3":1,
+      "num4":3
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_putseq(func_putseq(func_makelist(num1,func_add(num1,num2)),func_minus(func_add(num1,num2),num3)),func_multiply(func_minus(func_add(num1,num2),num3),num4)),none))",
+    "Answer": "A"
+  },
+  {
+    "Question": "석진, 호석, 남준, 지민 4명이 있습니다. 석진은 28살입니다. 호석은 석진보다 6살 많습니다. 남준은 호석보다 5살 적습니다. 지민은 호석이의 나이에 2배입니다. 가장 나이가 많은 사람은 누구입니까?",
+    "QuestionConv": "seq0 num0 명이 있습니다. 석진은 num1 살입니다. 호석은 석진보다 num2 살 많습니다. 남준은 호석보다 num3 살 적습니다. 지민은 호석이의 나이에 num4 배입니다. 가장 나이가 많은 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "석진",
+        "호석",
+        "남준",
+        "지민"
+      ],
+      "num0":4,
+      "num1":28,
+      "num2":6,
+      "num3":5,
+      "num4":2
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_putseq(func_putseq(func_makelist(num1,func_add(num1,num2)),func_minus(func_add(num1,num2),num3)),func_multiply(func_add(num1,num2),num4)),none))",
+    "Answer": "지민"
+  },
+  {
+    "Question": "석진, 호석, 남준, 지민 4명이 있습니다. 석진은 28살입니다. 호석은 석진보다 6살 많습니다. 남준은 호석보다 5살 적습니다. 지민은 호석이의 나이에 2배입니다. 가장 나이가 적은 사람은 누구입니까?",
+    "QuestionConv": "seq0 num0 명이 있습니다. 석진은 num1 살입니다. 호석은 석진보다 num2 살 많습니다. 남준은 호석보다 num3 살 적습니다. 지민은 호석이의 나이에 num4 배입니다. 가장 나이가 적은 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "석진",
+        "호석",
+        "남준",
+        "지민"
+      ],
+      "num0":4,
+      "num1":28,
+      "num2":6,
+      "num3":5,
+      "num4":2
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_putseq(func_putseq(func_makelist(num1,func_add(num1,num2)),func_minus(func_add(num1,num2),num3)),func_multiply(func_add(num1,num2),num4)),none))",
+    "Answer": "석진"
+  },
+  {
+    "Question": "영남, 호진, 경수, 지연 4명이 있습니다. 영남은 키가 172cm 입니다. 호진은 영남보다 키가 2cm 큽니다. 경수은 영남보다 3cm 작습니다. 지연은 호진이보다 6cm 작습니다. 가장 키가 작은 사람은 누구입니까?",
+    "QuestionConv": "seq0 num0 명이 있습니다. 영남은 키가 num1 cm 입니다. 호진은 영남보다 키가 num2 cm 큽니다. 경수은 영남보다 num3 cm 작습니다. 지연은 호진이보다 num4 cm 작습니다. 가장 키가 작은 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "영남",
+        "호진",
+        "경수",
+        "지연"
+      ],
+      "num0":4,
+      "num1":172,
+      "num2":2,
+      "num3":3,
+      "num4":6
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_putseq(func_putseq(func_makelist(num1,func_add(num1,num2)),func_minus(num1,num3)),func_minus(func_add(num1,num2),num4)),none))",
+    "Answer": "지연"
+  },
+  {
+    "Question": "영남, 호진, 경수, 지연 4명이 있습니다. 영남은 키가 172cm 입니다. 호진은 영남보다 키가 2cm 큽니다. 경수은 영남보다 3cm 작습니다. 지연은 호진이보다 5cm 작습니다. 가장 키가 큰 사람은 누구입니까?",
+    "QuestionConv": "seq0 num0 명이 있습니다. 영남은 키가 num1 cm 입니다. 호진은 영남보다 키가 num2 cm 큽니다. 경수은 영남보다 num3 cm 작습니다. 지연은 호진이보다 num4 cm 작습니다. 가장 키가 큰 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "영남",
+        "호진",
+        "경수",
+        "지연"
+      ],
+      "num0":4,
+      "num1":172,
+      "num2":2,
+      "num3":3,
+      "num4":6
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_putseq(func_putseq(func_makelist(num1,func_add(num1,num2)),func_minus(num1,num3)),func_minus(func_add(num1,num2),num4)),none))",
+    "Answer": "호진"
+  },
+  {
+    "Question": "A 마트의 사과 6개는 1.5kg입니다. B 마트의 사과 8개는 1.92kg입니다. A, B 중 어느 마트의 사과 한 개가 더 무겁습니까? (단, A 마트의 사과 무게는 모두 같고 B 마트의 사과 무게도 모두 같습니다.)",
+    "QuestionConv": "A 마트의 사과 num0 개는 num1 kg입니다. B 마트의 사과 num2 개는 num3 kg입니다. seq0 중 어느 마트의 사과 num4 개가 더 무겁습니까? (단, A 마트의 사과 무게는 모두 같고 B 마트의 사과 무게도 모두 같습니다.)",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":6,
+      "num1":1.5,
+      "num2":8,
+      "num3":1.92,
+      "num4":1
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(func_divide(num1,num0),func_divide(num3,num2)),none))",
+    "Answer": "A"
+  },
+  {
+    "Question": "A 마트의 사과 6개는 1.5kg입니다. B 마트의 사과 8개는 1.92kg입니다. A, B 중 어느 마트의 사과 한 개가 더 가볍습니까? (단, A 마트의 사과 무게는 모두 같고 B 마트의 사과 무게도 모두 같습니다.)",
+    "QuestionConv": "A 마트의 사과 num0 개는 num1 kg입니다. B 마트의 사과 num2 개는 num3 kg입니다. seq0 중 어느 마트의 사과 num4 개가 더 가볍습니까? (단, A 마트의 사과 무게는 모두 같고 B 마트의 사과 무게도 모두 같습니다.)",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":6,
+      "num1":1.5,
+      "num2":8,
+      "num3":1.92,
+      "num4":1
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_makelist(func_divide(num1,num0),func_divide(num3,num2)),none))",
+    "Answer": "B"
+  },
+  {
+    "Question": "수진이네 집에서 할머니 댁까지 버스로 가면 39/8시간이 걸리고, 자가용으로 가면 5.25시간이 걸립니다. 버스, 자가용 중에서 어느 것으로 가는 것이 빠릅니까?",
+    "QuestionConv": "수진이네 집에서 할머니 댁까지 버스로 가면 num0 시간이 걸리고, 자가용으로 가면 num1 시간이 걸립니다. seq0 중에서 어느 것으로 가는 것이 빠릅니까?",
+    "Numbers": {
+      "seq0": [
+        "버스",
+        "자가용"
+      ],
+      "num0":4.875,
+      "num1":5.25
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_makelist(num0,num1),none))",
+    "Answer": "버스"
+  },
+  {
+    "Question": "수진이네 집에서 할머니 댁까지 버스로 가면 39/8시간이 걸리고, 자가용으로 가면 5.25시간이 걸립니다. 버스, 자가용 중에서 어느 것으로 가는 것이 느립니까?",
+     "QuestionConv": "수진이네 집에서 할머니 댁까지 버스로 가면 num0 시간이 걸리고, 자가용으로 가면 num1 시간이 걸립니다. seq0 중에서 어느 것으로 가는 것이 느립니까?",
+    "Numbers": {
+      "seq0": [
+        "버스",
+        "자가용"
+      ],
+      "num0":4.875,
+      "num1":5.25
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(num0,num1),none))",
+    "Answer": "자가용"
+  },
+  {
+    "Question": "유진이는 20 km를 자전거로 가는 데 2시간이 걸렸고 민선이는 36 km를 자전거로 가는데 3시간이 걸렸습니다. 유진이와 민선이 중 더 빠른 사람은 누구입니까?",
+    "QuestionConv": "nae0 이는 num0 km를 자전거로 가는 데 num1 시간이 걸렸고 nae1 이는 num2 km를 자전거로 가는데 num3 시간이 걸렸습니다. 유진이와 민선이 중 더 빠른 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "유진",
+      "nae1": "민선",
+      "num0":20,
+      "num1":2,
+      "num2":36,
+      "num3":3
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findlargestidx(func_makelist(func_divide(num0,num1),func_divide(num2,num3)), none) )",
+    "Answer": "민선"
+  },
+  {
+    "Question": "유진이는 20 km를 자전거로 가는 데 2시간이 걸렸고 민선이는 36 km를 자전거로 가는데 3시간이 걸렸습니다. 유진이와 민선이 중 더 느린 사람은 누구입니까?",
+    "QuestionConv": "nae0 이는 num0 km를 자전거로 가는 데 num1 시간이 걸렸고 nae1 이는 num2 km를 자전거로 가는데 num3 시간이 걸렸습니다. 유진이와 민선이 중 더 느린 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "유진",
+      "nae1": "민선",
+      "num0":20,
+      "num1":2,
+      "num2":36,
+      "num3":3
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findsmallestidx(func_makelist(func_divide(num0,num1),func_divide(num2,num3)), none) )",
+    "Answer": "유진"
+  },
+  {
+    "Question": "석원이는 100원짜리 동전 4개와 50원짜리 동전 5개를 가지고 있습니다. 유나는 500원짜리 동전 1개와 10원짜리 동전 5개를 가지고 있습니다. 석원이와 유나 중 돈을 더 많이 가지고 있는 사람은 누구입니까?",
+    "QuestionConv": "nae0 이는 num0 원짜리 동전 num1 개와 num2 원짜리 동전 num3 개를 가지고 있습니다. nae1 는 num4 원짜리 동전 num5 개와 num6 원짜리 동전 num7 개를 가지고 있습니다. 석원이와 유나 중 돈을 더 많이 가지고 있는 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "석원",
+      "nae1": "유나",
+      "num0":100,
+      "num1":4,
+      "num2":50,
+      "num3":5,
+      "num4":500,
+      "num5":1,
+      "num6":10,
+      "num7":5
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findlargestidx(func_makelist(func_add(func_multiply(num0,num1),func_multiply(num2,num3)),func_add(func_multiply(num4,num5),func_multiply(num6,num7))),none) )",
+    "Answer": "석원"
+  },
+  {
+    "Question": "석원이는 100원짜리 동전 4개와 50원짜리 동전 5개를 가지고 있습니다. 유나는 500원짜리 동전 1개와 10원짜리 동전 5개를 가지고 있습니다. 석원이와 유나 중 돈을 더 적게 가지고 있는 사람은 누구입니까?",
+    "QuestionConv": "nae0 이는 num0 원짜리 동전 num1 개와 num2 원짜리 동전 num3 개를 가지고 있습니다. nae1 는 num4 원짜리 동전 num5 개와 num6 원짜리 동전 num7 개를 가지고 있습니다. 석원이와 유나 중 돈을 더 적게 가지고 있는 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "석원",
+      "nae1": "유나",
+      "num0":100,
+      "num1":4,
+      "num2":50,
+      "num3":5,
+      "num4":500,
+      "num5":1,
+      "num6":10,
+      "num7":5
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findsmallestidx(func_makelist(func_add(func_multiply(num0,num1),func_multiply(num2,num3)),func_add(func_multiply(num4,num5),func_multiply(num6,num7))),none) )",
+    "Answer": "유나"
+  },
+  {
+    "Question": "5분 동안 물이 20l 나오는 A 수도와 3분 동안 물이 15l 나오는 B 수도가 있습니다. 두 수도 모두 물이 일정하게 나올 때 A, B 중 1분 동안 물이 더 많이 나오는 수도는 어느 수도입니까?",
+    "QuestionConv": "num0 분 동안 물이 num1 l 나오는 A 수도와 num2 분 동안 물이 num3 l 나오는 B 수도가 있습니다. 두 수도 모두 물이 일정하게 나올 때 seq0 중 num4 분 동안 물이 더 많이 나오는 수도는 어느 수도입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":5,
+      "num1":20,
+      "num2":3,
+      "num3":15,
+      "num4":1
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(func_divide(num1,num0),func_divide(num3,num2)),none) )",
+    "Answer": "B"
+  },
+  {
+    "Question": "5분 동안 물이 20l 나오는 A 수도와 3분 동안 물이 15l 나오는 B 수도가 있습니다. 두 수도 모두 물이 일정하게 나올 때 A, B 중 1분 동안 물이 더 적게 나오는 수도는 어느 수도입니까?",
+    "QuestionConv": "num0 분 동안 물이 num1 l 나오는 A 수도와 num2 분 동안 물이 num3 l 나오는 B 수도가 있습니다. 두 수도 모두 물이 일정하게 나올 때 seq0 중 num4 분 동안 물이 더 적게 나오는 수도는 어느 수도입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":5,
+      "num1":20,
+      "num2":3,
+      "num3":15,
+      "num4":1
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_makelist(func_divide(num1,num0),func_divide(num3,num2)),none) )",
+    "Answer": "A"
+  },
+  {
+    "Question": "세 수 A, B, C가 있습니다. A와 B의 평균은 8, B와 C의 평균은 9, A와 C의 평균은 10입니다. A, B, C 중 가장 큰 수는 무엇입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. A와 B의 평균은 num1 , B와 C의 평균은 num2 , A와 C의 평균은 num3 입니다. A, B, C 중 가장 큰 수는 무엇입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C"
+      ],
+      "num0":3,
+      "num1":8,
+      "num2":9,
+      "num3":10
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_putseq(func_makelist(func_minus(func_add(func_add(num1,num2),num3),func_multiply(num2,2)), func_minus(func_add(func_add(num1,num2),num3),func_multiply(num3,2))), func_minus(func_add(func_add(num1,num2),num3),func_multiply(num1,2))),none))",
+    "Answer": "C"
+  },
+  {
+    "Question": "세 수 A, B, C가 있습니다. A와 B의 평균은 8, B와 C의 평균은 9, A와 C의 평균은 10입니다. A, B, C 중 가장 작은 수는 무엇입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. A와 B의 평균은 num1 , B와 C의 평균은 num2 , A와 C의 평균은 num3 입니다. A, B, C 중 가장 작은 수는 무엇입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C"
+      ],
+      "num0":3,
+      "num1":8,
+      "num2":9,
+      "num3":10
+    },
+    "Equation": "func_list_index(seq0, func_findsmallestidx(func_putseq(func_makelist(func_minus(func_add(func_add(num1,num2),num3),func_multiply(num2,2)), func_minus(func_add(func_add(num1,num2),num3),func_multiply(num3,2))), func_minus(func_add(func_add(num1,num2),num3),func_multiply(num1,2))),none))",
+    "Answer": "B"
+  },
+  {
+    "Question": "A 도로의 길이는 300m이고 소나무가 30m 간격으로 심겨 있습니다. B 도로의 길이는 400m이고 소나무가 20m 간격으로 심겨 있습니다. A, B 중 소나무가 더 많이 심겨 있는 도로는 어느 도로입니까?",
+    "QuestionConv": "A 도로의 길이는 num0 m이고 소나무가 num1 m 간격으로 심겨 있습니다. B 도로의 길이는 num2 m이고 소나무가 num3 m 간격으로 심겨 있습니다. seq0 중 소나무가 더 많이 심겨 있는 도로는 어느 도로입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":300,
+      "num1":30,
+      "num2":400,
+      "num3":20
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(func_divide(num0,num1) ,func_divide(num2,num3)),none) )",
+    "Answer": "B"
+  },
+  {
+    "Question": "A 도로의 길이는 300m이고 소나무가 30m 간격으로 심겨 있습니다. B 도로의 길이는 400m이고 소나무가 20m 간격으로 심겨 있습니다. A, B 중 소나무가 더 적게 심겨 있는 도로는 어느 도로입니까?",
+    "QuestionConv": "A 도로의 길이는 num0 m이고 소나무가 num1 m 간격으로 심겨 있습니다. B 도로의 길이는 num2 m이고 소나무가 num3 m 간격으로 심겨 있습니다. seq0 중 소나무가 더 적게 심겨 있는 도로는 어느 도로입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":300,
+      "num1":30,
+      "num2":400,
+      "num3":20
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_makelist(func_divide(num0,num1) ,func_divide(num2,num3)),none) )",
+    "Answer": "A"
+  },
+  {
+    "Question": "정민이는 탁구공, 배구공, 축구공을 합하여 50개의 공을 가지고 있습니다. 정민이가 가지고 있는 공들 중 10%는 탁구공이고, 배구공은 탁구공보다 10개 더 많습니다. 정민이는 어떤 공을 가장 많이 가지고 있습니까?",
+    "QuestionConv": "정민이는 seq0 을 합하여 num0 개의 공을 가지고 있습니다. 정민이가 가지고 있는 공들 중 num1 %는 탁구공이고, 배구공은 탁구공보다 num2 개 더 많습니다. 정민이는 어떤 공을 가장 많이 가지고 있습니까?",
+    "Numbers": {
+      "seq0": [
+        "탁구공",
+        "배구공",
+        "축구공"
+      ],
+      "num0":50,
+      "num1":10,
+      "num2":10
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_putseq(func_makelist(func_multiply(num0,func_divide(num1,100)), func_add(func_multiply(num0,func_divide(num1,100)),num2)), func_minus(num0,func_add(func_multiply(num0,func_divide(num1,100)),func_add(func_multiply(num0,func_divide(num1,100)),num2)))),none))",
+    "Answer": "축구공"
+  },
+   {
+    "Question": "정민이는 탁구공, 배구공, 축구공을 합하여 50개의 공을 가지고 있습니다. 정민이가 가지고 있는 공들 중 10%는 탁구공이고, 배구공은 탁구공보다 10개 더 많습니다. 정민이는 어떤 공을 가장 적게 가지고 있습니까?",
+    "QuestionConv": "정민이는 seq0 을 합하여 num0 개의 공을 가지고 있습니다. 정민이가 가지고 있는 공들 중 num1 %는 탁구공이고, 배구공은 탁구공보다 num2 개 더 많습니다. 정민이는 어떤 공을 가장 적게 가지고 있습니까?",
+    "Numbers": {
+      "seq0": [
+        "탁구공",
+        "배구공",
+        "축구공"
+      ],
+      "num0":50,
+      "num1":10,
+      "num2":10
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_putseq(func_makelist(func_multiply(num0,func_divide(num1,100)), func_add(func_multiply(num0,func_divide(num1,100)),num2)), func_minus(num0,func_add(func_multiply(num0,func_divide(num1,100)),func_add(func_multiply(num0,func_divide(num1,100)),num2)))),none))",
+    "Answer": "탁구공"
+  },
+   {
+    "Question": "네 수 A, B, C, D가 있습니다. A는 25입니다. B는 A보다 5 큰 수입니다. C는 B의 4배인 수입니다. D는 C보다 20 작은 수 입니다. 네 수 중에서 두번째로 큰 수는 어느 것입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. A는 num1 입니다. B는 A보다 num2 큰 수입니다. C는 B의 num3 배인 수입니다. D는 C보다 num4 작은 수 입니다. num5 수 중에서 num6 번째로 큰 수는 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num0":4,
+      "num1":25,
+      "num2":5,
+      "num3":4,
+      "num4":20,
+      "num5":4,
+      "num6":2
+    },
+    "Equation": "func_list_index(seq0,func_findlargeordidx(func_putseq(func_putseq(func_makelist(num1,func_add(num1,num2)),func_multiply(func_add(num1,num2),num3)), func_minus(func_multiply(func_add(num1,num2),num3),num4)),num6) )",
+    "Answer": "D"
+  },
+  {
+    "Question": "네 수 A, B, C, D가 있습니다. A는 25입니다. B는 A보다 5 큰 수입니다. C는 B의 4배인 수입니다. D는 C보다 20 작은 수 입니다. 네 수 중에서 첫번째로 큰 수는 어느 것입니까?",
+    "QuestionConv": "num0 수 seq0 가 있습니다. A는 num1 입니다. B는 A보다 num2 큰 수입니다. C는 B의 num3 배인 수입니다. D는 C보다 num4 작은 수 입니다. num5 수 중에서 num6 번째로 큰 수는 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "num0":4,
+      "num1":25,
+      "num2":5,
+      "num3":4,
+      "num4":20,
+      "num5":4,
+      "num6":1
+    },
+    "Equation": "func_list_index(seq0,func_findlargeordidx(func_putseq(func_putseq(func_makelist(num1,func_add(num1,num2)),func_multiply(func_add(num1,num2),num3)), func_minus(func_multiply(func_add(num1,num2),num3),num4)),num6) )",
+    "Answer": "C"
+  },
+  {
+    "Question": "배 24개를 접시에 내놓았습니다. 아버지께서 24개의 1/4만큼을, 어머니께서 24개의 1/6만큼을, 다나는 24개의 1/3만큼을 먹고 나머지는 동생이 먹었습니다. 아버지, 어머니, 다나, 동생 중 누가 가장 많이 먹었습니까?",
+    "QuestionConv": "배 num0 개를 접시에 내놓았습니다. 아버지께서 num1 개의 num2 만큼을, 어머니께서 num3 개의 num4 만큼을, 다나는 num5 개의 num6 만큼을 먹고 나머지는 동생이 먹었습니다. seq0 중 누가 가장 많이 먹었습니까?",
+    "Numbers": {
+      "seq0": [
+        "아버지",
+        "어머니",
+        "다나",
+        "동생"
+      ],
+      "num0":24,
+      "num1":24,
+      "num2":0.25,
+      "num3":24,
+      "num4":0.166,
+      "num5":24,
+      "num6":0.333
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_putseq(func_putseq(func_makelist(func_multiply(num1,num2),func_multiply(num3,num4)),func_multiply(num5,num6)),func_minus(num0,func_add(func_multiply(num1,num2),func_add(func_multiply(num3,num4),func_multiply(num5,num6))))),none))",
+    "Answer": "다나"
+  },
+  {
+    "Question": "배 24개를 접시에 내놓았습니다. 아버지께서 24개의 1/4만큼을, 어머니께서 24개의 1/6만큼을, 다나는 24개의 1/3만큼을 먹고 나머지는 동생이 먹었습니다. 아버지, 어머니, 다나, 동생 중 누가 가장 적게 먹었습니까?",
+    "QuestionConv": "배 num0 개를 접시에 내놓았습니다. 아버지께서 num1 개의 num2 만큼을, 어머니께서 num3 개의 num4 만큼을, 다나는 num5 개의 num6 만큼을 먹고 나머지는 동생이 먹었습니다. seq0 중 누가 가장 적게 먹었습니까?",
+    "Numbers": {
+      "seq0": [
+        "아버지",
+        "어머니",
+        "다나",
+        "동생"
+      ],
+      "num0":24,
+      "num1":24,
+      "num2":0.25,
+      "num3":24,
+      "num4":0.166,
+      "num5":24,
+      "num6":0.333
+    },
+    "Equation": "func_list_index(seq0, func_findsmallestidx(func_putseq(func_putseq(func_makelist(func_multiply(num1,num2),func_multiply(num3,num4)),func_multiply(num5,num6)),func_minus(num0,func_add(func_multiply(num1,num2),func_add(func_multiply(num3,num4),func_multiply(num5,num6))))),none))",
+    "Answer": "어머니"
+  },
+  {
+    "Question": "현수는 음료수를 17/58 마셨습니다. 유진이는 현수보다 5/42 더 적게 마셨습니다. 주홍이는 7/29 마셨고, 진주는 유진이보다 0.21 더 많이 마셨습니다. 음료수를 가장 많이 마신 사람은 누구입니까?",
+    "QuestionConv": "nae0 는 음료수를 num0 마셨습니다. nae1 이는 현수보다 num1 더 적게 마셨습니다. nae2 이는 num2 마셨고, nae3 는 유진이보다 num3 더 많이 마셨습니다. 음료수를 가장 많이 마신 사람은 누구입니까?",
+    "Numbers": {
+      "nae0":"현수",
+      "nae1":"유진",
+      "nae2":"주홍",
+      "nae3":"진주",
+      "num0":0.2931,
+      "num1":0.1190,
+      "num2":0.2413,
+      "num3":0.21
+    },
+    "Equation": "func_list_index(func_putseq(func_putseq(func_makelist(nae0,nae1),nae2),nae3),func_findlargestidx(func_putseq(func_putseq(func_makelist(num0,func_minus(num0,num1)),num2),func_add(func_minus(num0,num1),num3)),none) )",
+    "Answer": "진주"
+  },
+  {
+    "Question": "현수는 음료수를 17/58 마셨습니다. 유진이는 현수보다 5/42 더 적게 마셨습니다. 주홍이는 7/29 마셨고, 진주는 유진이보다 0.21 더 많이 마셨습니다. 음료수를 가장 적게 마신 사람은 누구입니까?",
+    "QuestionConv": "nae0 는 음료수를 num0 마셨습니다. nae1 이는 현수보다 num1 더 적게 마셨습니다. nae2 이는 num2 마셨고, nae3 는 유진이보다 num3 더 많이 마셨습니다. 음료수를 가장 적게 마신 사람은 누구입니까?",
+    "Numbers": {
+      "nae0":"현수",
+      "nae1":"유진",
+      "nae2":"주홍",
+      "nae3":"진주",
+      "num0":0.2931,
+      "num1":0.1190,
+      "num2":0.2413,
+      "num3":0.21
+    },
+    "Equation": "func_list_index(func_putseq(func_putseq(func_makelist(nae0,nae1),nae2),nae3),func_findsmallestidx(func_putseq(func_putseq(func_makelist(num0,func_minus(num0,num1)),num2),func_add(func_minus(num0,num1),num3)),none) )",
+    "Answer": "유진"
+  },
+  {
+    "Question": "진우와 지혜가 피자를 먹었습니다. 진우는 피자의 1/5을 먹었고 지혜는 진우가 먹고 남은 것의 1/3 만큼 먹었습니다. 진우와 지혜 중 피자를 더 많이 먹은 사람은 누구입니까?",
+    "QuestionConv": "nae0 와 nae1 가 피자를 먹었습니다. 진우는 피자의 num0 을 먹었고 지혜는 진우가 먹고 남은 것의 num1 만큼 먹었습니다. 진우와 지혜 중 피자를 더 많이 먹은 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "진우",
+      "nae1": "지혜",
+      "num0":0.2,
+      "num1":0.3333
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findlargestidx(func_makelist(num0,func_multiply(func_minus(1,num0),num1)),none) )",
+    "Answer": "지혜"
+  },
+  {
+    "Question": "진우와 지혜가 피자를 먹었습니다. 진우는 피자의 1/5을 먹었고 지혜는 진우가 먹고 남은 것의 1/3 만큼 먹었습니다. 진우와 지혜 중 피자를 더 적게 먹은 사람은 누구입니까?",
+    "QuestionConv": "nae0 와 nae1 가 피자를 먹었습니다. 진우는 피자의 num0 을 먹었고 지혜는 진우가 먹고 남은 것의 num1 만큼 먹었습니다. 진우와 지혜 중 피자를 더 적게 먹은 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "진우",
+      "nae1": "지혜",
+      "num0":0.2,
+      "num1":0.3333
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findsmallestidx(func_makelist(num0,func_multiply(func_minus(1,num0),num1)),none) )",
+    "Answer": "진우"
+  },
+  {
+    "Question": "민수와 지수의 수학 점수 평균은 88점 입니다. 민수의 수학 점수가 97일 때, 민수와 지수이 중 수학 점수가 더 높은 사람은 누구입니까?",
+    "QuestionConv": "nae0 와 nae1 의 수학 점수 평균은 num0 점 입니다. 민수의 수학 점수가 num1 일 때, 민수와 지수이 중 수학 점수가 더 높은 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "민수",
+      "nae1": "지수",
+      "num0":88,
+      "num1":97
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findlargestidx(func_makelist(num1,func_minus(func_multiply(num0,2),num1)),none) )",
+    "Answer": "민수"
+  },
+  {
+    "Question": "민수와 지수의 수학 점수 평균은 88점 입니다. 민수의 수학 점수가 97일 때, 민수와 지수이 중 수학 점수가 더 낮은 사람은 누구입니까?",
+    "QuestionConv": "nae0 와 nae1 의 수학 점수 평균은 num0 점 입니다. 민수의 수학 점수가 num1 일 때, 민수와 지수이 중 수학 점수가 더 낮은 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "민수",
+      "nae1": "지수",
+      "num0":88,
+      "num1":97
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findsmallestidx(func_makelist(num1,func_minus(func_multiply(num0,2),num1)),none) )",
+    "Answer": "지수"
+  },
+  {
+    "Question": "서현, 유나, 유라의 수학 점수 평균은 88점 입니다. 서현의 수학 점수는 80점이고, 유나의 수학 점수는 서현의 수학점수보다 2점 더 높습니다. 서현, 유나, 유라 세 사람 중 가장 높은 점수를 받은 사람은 누구입니까?",
+    "QuestionConv": "seq0 의 수학 점수 평균은 num0 점 입니다. 서현의 수학 점수는 num1 점이고, 유나의 수학 점수는 서현의 수학점수보다 num2 점 더 높습니다. 서현, 유나, 유라 num3 사람 중 가장 높은 점수를 받은 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "서현",
+        "유나",
+        "유라"
+      ],
+      "num0":88,
+      "num1":80,
+      "num2":2,
+      "num3":3
+    },
+    "Equation": "func_list_index(seq0, func_findlargestidx(func_putseq(func_makelist(num1,func_add(num1,num2)),func_minus(func_multiply(num0,func_len(seq0,none)),func_add(func_add(num1,num2),num1))),none))",
+    "Answer": "유라"
+  },
+  {
+    "Question": "서현, 유나, 유라의 수학 점수 평균은 88점 입니다. 서현의 수학 점수는 80점이고, 유나의 수학 점수는 서현의 수학점수보다 2점 더 높습니다. 서현, 유나, 유라 세 사람 중 가장 낮은 점수를 받은 사람은 누구입니까?",
+    "QuestionConv": "seq0 의 수학 점수 평균은 num0 점 입니다. 서현의 수학 점수는 num1 점이고, 유나의 수학 점수는 서현의 수학점수보다 num2 점 더 높습니다. 서현, 유나, 유라 num3 사람 중 가장 낮은 점수를 받은 사람은 누구입니까?",
+    "Numbers": {
+      "seq0": [
+        "서현",
+        "유나",
+        "유라"
+      ],
+      "num0":88,
+      "num1":80,
+      "num2":2,
+      "num3":3
+    },
+    "Equation": "func_list_index(seq0, func_findsmallestidx(func_putseq(func_makelist(num1,func_add(num1,num2)),func_minus(func_multiply(num0,func_len(seq0,none)),func_add(func_add(num1,num2),num1))),none))",
+    "Answer": "서현"
+  },
+  {
+    "Question": "진성이와 영환이는 매일 같은 거리를 걷습니다. 진성이는 하루에 3.8km를 걷고 영환이는 3500m를 걷습니다. 진성와 영환 중 더 적게 걷는 사람은 누구입니까?",
+    "QuestionConv": "nae0 이와 nae1 이는 매일 같은 거리를 걷습니다. 진성이는 하루에 num0 km를 걷고 영환이는 num1 m를 걷습니다. 진성와 영환 중 더 적게 걷는 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "진성",
+      "nae1": "영환",
+      "num0":3.8,
+      "num1":3500
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findsmallestidx(func_makelist(func_km2m(num0,none),num1),none) )",
+    "Answer": "영환"
+  },
+  {
+    "Question": "진성이와 영환이는 매일 같은 거리를 걷습니다. 진성이는 하루에 3.8km를 걷고 영환이는 3500m를 걷습니다. 진성와 영환 중 더 많이 걷는 사람은 누구입니까?",
+    "QuestionConv": "nae0 이와 nae1 이는 매일 같은 거리를 걷습니다. 진성이는 하루에 num0 km를 걷고 영환이는 num1 m를 걷습니다. 진성와 영환 중 더 많이 걷는 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "진성",
+      "nae1": "영환",
+      "num0":3.8,
+      "num1":3500
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findlargestidx(func_makelist(func_km2m(num0,none),num1),none) )",
+    "Answer": "진성"
+  },
+  {
+    "Question": "서현이는 철사 4.8m를 가지고 있습니다. 민성에게 얼마를 주었더니 2.2m가 남았습니다. 서현와 민성이 중 더 긴 철사를 가지고 있는 사람은 누구입니까?",
+    "QuestionConv": "nae0 이는 철사 num0 m를 가지고 있습니다. nae1 에게 얼마를 주었더니 num1 m가 남았습니다. 서현와 민성이 중 더 긴 철사를 가지고 있는 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "서현",
+      "nae1": "민성",
+      "num0":4.8,
+      "num1":2.2
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findlargestidx(func_makelist(func_minus(num0,num1),num1),none) )",
+    "Answer": "서현"
+  },
+   {
+    "Question": "서현이는 철사 4.8m를 가지고 있습니다. 민성에게 얼마를 주었더니 2.2m가 남았습니다. 서현와 민성이 중 더 짧은 철사를 가지고 있는 사람은 누구입니까?",
+    "QuestionConv": "nae0 이는 철사 num0 m를 가지고 있습니다. nae1 에게 얼마를 주었더니 num1 m가 남았습니다. 서현와 민성이 중 짧은 긴 철사를 가지고 있는 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "서현",
+      "nae1": "민성",
+      "num0":4.8,
+      "num1":2.2
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findsmallestidx(func_makelist(func_minus(num0,num1),num1),none) )",
+    "Answer": "민성"
+  },
+   {
+    "Question": "야구팀 A와 B가 있습니다. A팀의 승률은 55% 이고 B팀은 5경기중 3경기를 이겼습니다. A, B 팀 중 승률이 더 높은 팀은 어떤 팀입니까?",
+    "QuestionConv": "야구팀 A와 B가 있습니다. A팀의 승률은 num0 % 이고 B팀은 num1 경기중 num2 경기를 이겼습니다. seq0 팀 중 승률이 더 높은 팀은 어떤 팀입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":55,
+      "num1":5,
+      "num2":3
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(func_divide(num0,100),func_divide(num2,num1)),none) )",
+    "Answer": "B"
+  },
+   {
+    "Question": "야구팀 A와 B가 있습니다. A팀의 승률은 55% 이고 B팀은 5경기중 3경기를 이겼습니다. A, B 팀 중 승률이 더 낮은 팀은 어떤 팀입니까?",
+    "QuestionConv": "야구팀 A와 B가 있습니다. A팀의 승률은 num0 % 이고 B팀은 num1 경기중 num2 경기를 이겼습니다. seq0 팀 중 승률이 더 낮은 팀은 어떤 팀입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":55,
+      "num1":5,
+      "num2":3
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_makelist(func_divide(num0,100),func_divide(num2,num1)),none) )",
+    "Answer": "A"
+  },
+   {
+    "Question": "민지의 가방의 무게는 4.6kg 입니다. 정수의 가방의 무게는 4700g 입니다. 민지와 정수 중 가방의 무게가 더 무거운 가방을 가지고 있는 사람은 누구입니까?",
+    "QuestionConv": "nae0 의 가방의 무게는 num0 kg 입니다. nae1 의 가방의 무게는 num1 g 입니다. 민지와 정수 중 가방의 무게가 더 무거운 가방을 가지고 있는 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "민지",
+      "nae1": "정수",
+      "num0":4.6,
+      "num1":4700
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findlargestidx(func_makelist(func_kg2g(num0,none),num1),none) )",
+    "Answer": "정수"
+  },
+  {
+    "Question": "민지의 가방의 무게는 4.6kg 입니다. 정수의 가방의 무게는 4700g 입니다. 민지와 정수 중 가방의 무게가 더 가벼운 가방을 가지고 있는 사람은 누구입니까?",
+    "QuestionConv": "nae0 의 가방의 무게는 num0 kg 입니다. nae1 의 가방의 무게는 num1 g 입니다. 민지와 정수 중 가방의 무게가 더 가벼운 가방을 가지고 있는 사람은 누구입니까?",
+    "Numbers": {
+      "nae0": "민지",
+      "nae1": "정수",
+      "num0":4.6,
+      "num1":4700
+    },
+    "Equation": "func_list_index(func_makelist(nae0,nae1),func_findsmallestidx(func_makelist(func_kg2g(num0,none),num1),none) )",
+    "Answer": "민지"
+  },
+  {
+    "Question": "어떤 직사각형의 가로의 길이는 5cm 이고, 둘레는 30cm 입니다. 이 직사각형의 가로, 세로 중 길이가 더 긴 것은 어느 것입니까?",
+    "QuestionConv": "어떤 직 num0 각형의 가로의 길이는 num1 cm 이고, 둘레는 num2 cm 입니다. 이 직 num3 각형의 seq0 중 길이가 더 긴 것은 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "가로",
+        "세로"
+      ],
+      "num0":4,
+      "num1":5,
+      "num2":30,
+      "num3":4
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(num1,func_minus(func_divide(num2,2),num1)),none) )",
+    "Answer": "세로"
+  },
+  {
+    "Question": "어떤 직사각형의 가로의 길이는 5cm 이고, 둘레는 30cm 입니다. 이 직사각형의 가로, 세로 중 길이가 더 짧은 것은 어느 것입니까?",
+    "QuestionConv": "어떤 직 num0 각형의 가로의 길이는 num1 cm 이고, 둘레는 num2 cm 입니다. 이 직 num3 각형의 seq0 중 길이가 더 짧은 것은 어느 것입니까?",
+    "Numbers": {
+      "seq0": [
+        "가로",
+        "세로"
+      ],
+      "num0":4,
+      "num1":5,
+      "num2":30,
+      "num3":4
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_makelist(num1,func_minus(func_divide(num2,2),num1)),none) )",
+    "Answer": "가로"
+  },
+  {
+    "Question": "A학교의 올해 남학생의 수는 작년 남학생의 수보다 5% 늘었고, 올해 여학생의 수는 작년 여학생의 수보다 4% 늘었습니다. A학교의 작년 남학생의 수는 140명이고 여학생의 수는 150명 이였습니다. 올해 A 학교의 남학생, 여학생 중 어느 쪽이 더 많습니까?",
+    "QuestionConv": "A학교의 올해 남학생의 수는 작년 남학생의 수보다 5% 늘었고, 올해 여학생의 수는 작년 여학생의 수보다 4% 늘었습니다. A학교의 작년 남학생의 수는 140명이고 여학생의 수는 150명 이였습니다. 올해 A 학교의 남학생, 여학생 중 어느 쪽이 더 많습니까?",
+    "Numbers": {
+      "seq0": [
+        "남학생",
+        "여학생"
+      ],
+      "num0":5,
+      "num1":4,
+      "num2":140,
+      "num3":150
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(func_add(num2, func_multiply(num2,func_divide(num0,100))),func_add(num3, func_multiply(num3,func_divide(num1,100)))),none))",
+    "Answer": "여학생"
+  },
+  {
+    "Question": "A학교의 올해 남학생의 수는 작년 남학생의 수보다 5% 늘었고, 올해 여학생의 수는 작년 여학생의 수보다 4% 늘었습니다. A학교의 작년 남학생의 수는 140명이고 여학생의 수는 150명 이였습니다. 올해 A 학교의 남학생, 여학생 중 어느 쪽이 더 적습니까?",
+    "QuestionConv": "A학교의 올해 남학생의 수는 작년 남학생의 수보다 5% 늘었고, 올해 여학생의 수는 작년 여학생의 수보다 4% 늘었습니다. A학교의 작년 남학생의 수는 140명이고 여학생의 수는 150명 이였습니다. 올해 A 학교의 남학생, 여학생 중 어느 쪽이 더 적습니까?",
+    "Numbers": {
+      "seq0": [
+        "남학생",
+        "여학생"
+      ],
+      "num0":5,
+      "num1":4,
+      "num2":140,
+      "num3":150
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_makelist(func_add(num2, func_multiply(num2,func_divide(num0,100))),func_add(num3, func_multiply(num3,func_divide(num1,100)))),none))",
+    "Answer": "남학생"
+  },
+  {
+    "Question": "A반의 수학점수 평균은 94점이고 B반의 모든 학생들의 수학 점수 합은 576입니다. B반의 학생 수가 6명일 때, A, B 반 중 수학 평균 점수가 높은 반은 어느 반입니까?",
+    "QuestionConv": "A반의 수학점수 평균은 num0 점이고 B반의 모든 학생들의 수학 점수 합은 num1 입니다. B반의 학생 수가 num2 명일 때, seq0 반 중 수학 평균 점수가 높은 반은 어느 반입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":94,
+      "num1":576,
+      "num2":6
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(num0, func_divide(num1,num2)),none))",
+    "Answer": "B"
+  },
+  {
+    "Question": "A반의 수학점수 평균은 94점이고 B반의 모든 학생들의 수학 점수 합은 576입니다. B반의 학생 수가 6명일 때, A, B 반 중 수학 평균 점수가 낮은 반은 어느 반입니까?",
+    "QuestionConv": "A반의 수학점수 평균은 num0 점이고 B반의 모든 학생들의 수학 점수 합은 num1 입니다. B반의 학생 수가 num2 명일 때, seq0 반 중 수학 평균 점수가 낮은 반은 어느 반입니까?",
+    "Numbers": {
+      "seq0": [
+        "A",
+        "B"
+      ],
+      "num0":94,
+      "num1":576,
+      "num2":6
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_makelist(num0, func_divide(num1,num2)),none))",
+    "Answer": "A"
+  },
+  {
+    "Question": "정우네 반 전체 학생의 4/7는 남학생 입니다. 남학생 중에서 2/3은 수학을 좋아하고 여학생 중에서 3/4이 수학을 좋아합니다. 남학생, 여학생 중 수학을 좋아하는 학생이 많은 쪽은 어느 쪽입니까?",
+    "QuestionConv": "정우네 반 전체 학생의 4/7는 남학생 입니다. 남학생 중에서 2/3은 수학을 좋아하고 여학생 중에서 3/4이 수학을 좋아합니다. seq0 중 수학을 좋아하는 학생이 많은 쪽은 어느 쪽입니까?",
+    "Numbers": {
+      "seq0": [
+        "남학생",
+        "여학생"
+      ],
+      "num0":0.5714,
+      "num1":0.6666,
+      "num2":0.75
+    },
+    "Equation": "func_list_index(seq0,func_findlargestidx(func_makelist(func_multiply(num0,num1), func_multiply(func_minus(1,num0),num2)),none))",
+    "Answer": "남학생"
+  },
+  {
+    "Question": "정우네 반 전체 학생의 4/7는 남학생 입니다. 남학생 중에서 2/3은 수학을 좋아하고 여학생 중에서 3/4이 수학을 좋아합니다. 남학생, 여학생 중 수학을 좋아하는 학생이 적은 쪽은 어느 쪽입니까?",
+    "QuestionConv": "정우네 반 전체 학생의 4/7는 남학생 입니다. 남학생 중에서 2/3은 수학을 좋아하고 여학생 중에서 3/4이 수학을 좋아합니다. seq0 중 수학을 좋아하는 학생이 적은 쪽은 어느 쪽입니까?",
+    "Numbers": {
+      "seq0": [
+        "남학생",
+        "여학생"
+      ],
+      "num0":0.5714,
+      "num1":0.6666,
+      "num2":0.75
+    },
+    "Equation": "func_list_index(seq0,func_findsmallestidx(func_makelist(func_multiply(num0,num1), func_multiply(func_minus(1,num0),num2)),none))",
+    "Answer": "여학생"
+  }
+]

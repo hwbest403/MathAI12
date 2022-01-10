@@ -1,0 +1,1905 @@
+[
+    {
+        "Question": "사과, 복숭아, 배, 참외 중에서 2가지의 과일을 골라서 사는 경우는 모두 몇 가지입니까?",
+        "QuestionConv": "foo0 ,foo1 ,foo2 ,foo3 중에서 num0 가지의 과일을 골라서 사는 경우는 모두 몇 가지입니까?",
+        "Numbers": {
+            "foo": [
+                "사과",
+                "복숭아",
+                "배",
+                "참외"
+            ],
+            "num0": 2
+        },
+        "Equation": "func_combination(foo,num0)",
+        "Answer": 6,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "사과, 복숭아, 오렌지 중에서 2가지의 과일을 골라서 사는 경우는 모두 몇 가지입니까?",
+        "QuestionConv": "foo0 ,foo1 ,foo2 중에서 num0 가지의 과일을 골라서 사는 경우는 모두 몇 가지입니까?",
+        "Numbers": {
+            "foo": [
+                "사과",
+                "복숭아",
+                "오렌지"
+            ],
+            "num0": 2
+        },
+        "Equation": "func_combination(foo,num0)",
+        "Answer": 3,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "사과 7개를 서로 다른 두 마리의 원숭이에게 나누어 주려고 합니다. 원숭이는 적어도 사과 1개는 받습니다. 사과를 나누어 주는 방법은 모두 몇 가지입니까?",
+        "QuestionConv": "foo0 num0 개를 서로 다른 num1 마리의 원숭이에게 나누어 주려고 합니다. 원숭이는 적어도 foo0 num2 개는 받습니다. foo0 를 나누어 주는 방법은 모두 몇 가지입니까?",
+        "Numbers": {
+            "num0": 7,
+            "num1": 2,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 6,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "바나나 5개를 서로 다른 두 마리의 원숭이에게 나누어 주려고 합니다. 원숭이는 적어도 바나나 1개는 받습니다. 바나나를 나누어 주는 방법은 모두 몇 가지입니까?",
+        "QuestionConv": "foo0 num0 개를 서로 다른 num1 마리의 원숭이에게 나누어 주려고 합니다. 원숭이는 적어도 foo0 num2 개는 받습니다. foo0 를 나누어 주는 방법은 모두 몇 가지입니까?",
+        "Numbers": {
+            "num0": 5,
+            "num1": 2,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 4,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "4개의 숫자 7,2,5,9를 한 번씩만 사용하여 4 자리 수를 만들려고 합니다. 만들 수 있는 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "num0 개의 숫자 seq0 를 num1 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. 만들 수 있는 dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                7,
+                2,
+                5,
+                9
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 24,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "4개의 숫자 1, 2, 3, 4 를 한 번씩만 사용하여 3 자리 수를 만들려고 합니다. 만들 수 있는 3 자리 수는 모두 몇 개 인가요?",
+        "QuestionConv": "num0 개의 숫자 seq0 를 num1 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. 만들 수 있는 dig1 자리 수는 모두 몇 개 인가요?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 24,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "3, 5, 2, 9가 적힌 4장의 숫자 중 2장을 사용하여 2 자리 수를 만들려고 합니다. 만들 수 있는 2 자리 수는 모두 몇 개 인가요?",
+        "QuestionConv": "seq0 가 적힌 num0 장의 숫자 중 num1 장을 사용하여 dig0 자리 수를 만들려고 합니다. 만들 수 있는 dig1 자리 수는 모두 몇 개 인가요?",
+        "Numbers": {
+            "seq0": [
+                3,
+                5,
+                2,
+                9
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 12,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "1, 2, 3, 4가 적힌 4장의 숫자카드가 있습니다. 서로 다른 2장을 골라 만들 수 있는 수 중에서 10보다 크고 20보다 작은 수는 몇 개 인가요?",
+        "QuestionConv": "seq0 가 적힌 num0 장의 숫자카드가 있습니다 서로 다른 num1 장을 골라 만들 수 있는 수 중에서 num2 보다 크고 num3 보다 작은 수는 몇 개 인가요?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "num1": 2,
+            "num2": 10,
+            "num3": 20
+        },
+        "Equation": "func_find_range(func_permutation_list(seq0,num1),func_makelist(num2,num3))",
+        "Answer": 3,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "1, 2, 5, 8가 적힌 4장의 숫자카드가 있습니다. 서로 다른 3장을 골라 만들 수 있는 수 중에서 100보다 크고 200보다 작은 수는 몇 개 인가요?",
+        "QuestionConv": "seq0 가 적힌 num0 장의 숫자카드가 있습니다. 서로 다른 num1 장을 골라 만들 수 있는 수 중에서 num2 보다 크고 num3 보다 작은 수는 몇 개 인가요?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                5,
+                8
+            ],
+            "num2": 100,
+            "num3": 200,
+            "num1": 3
+        },
+        "Equation": "func_find_range(func_permutation_list(seq0,num1),func_makelist(num2,num3))",
+        "Answer": 6,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "1, 2, 3 숫자를 한 번씩만 사용하여 만들 수 있는 2 자리 수 중 2 번째로 작은 수는 무엇입니까?",
+        "QuestionConv": "seq0 숫자를 num0 번씩만 사용하여 만들 수 있는 dig0 자리 수 중 ord0 번째로 작은 수는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3
+            ],
+            "dig0": 2,
+            "ord0": 2
+        },
+        "Equation": "func_find_smallorder(func_permutation_list(seq0,dig0),ord0)",
+        "Answer": 13,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "2,5,6,9 숫자를 한 번씩만 사용하여 만들 수 있는 2 자리 수 중 1 번째로 큰 수는 무엇입니까??",
+        "QuestionConv": "seq0 숫자를 num0 번씩만 사용하여 만들 수 있는 dig0 자리 수 중 ord0 번째로 큰 수는 무엇입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                5,
+                6,
+                9
+            ],
+            "dig0": 2,
+            "ord0": 1
+        },
+        "Equation": "func_find_bigorder(func_permutation_list(seq0,dig0),ord0)",
+        "Answer": 96,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "빨간색 공, 노란색 공, 파란색 공, 검은색 공, 흰 공, 초록색 공 중 중복해서 3가지를 뽑을 때, 나올 수 있는 경우의 수는?",
+        "QuestionConv": "col0 공, col1 공, col2 공, col3 공, col4 공, col5 공 중 중복해서 num0 가지를 뽑을 때, 나올 수 있는 경우의 수는?",
+        "Numbers": {
+            "num0": 3,
+            "col": [
+                "빨간색",
+                "노란색",
+                "파란색",
+                "검은색",
+                "흰",
+                "초록색"
+            ]
+        },
+        "Equation": "func_combinations_with_replacement(col,num0)",
+        "Answer": 56,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "만년필 11개를 서로 다른 3사람에게 나누어 주려고 한다. 적어도 1개를 분배해야 합니다. 경우의 수를 구하시오.",
+        "QuestionConv": "sta0 num0 개를 서로 다른 num1 사람에게 나누어 주려고 한다. 적어도 num2 개를 분배해야 합니다. 경우의 수를 구하시오.",
+        "Numbers": {
+            "num0": 11,
+            "num1": 3,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 45,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "0,2,5,7 중 중복을 허용하여 4 자리 수를 만들려고 합니다. 4 자리 짝수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 짝수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                2,
+                5,
+                7
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_find_even(func_product_list(seq0,dig0),none)",
+        "Answer": 96,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "1,2,5,7 중 중복을 허용하여 4 자리 수를 만들려고 합니다. 4 자리 짝수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 짝수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                5,
+                7
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_find_even(func_product_list(seq0,dig0),none)",
+        "Answer": 64,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "0,1,4,6,7 를 중복하지 않고 2 자리 수를 만들려고 합니다. 2 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 중복하지 않고 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "dig0": 2,
+            "seq0": [
+                0,
+                1,
+                4,
+                6,
+                7
+            ]
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 16,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "1,4,6,7,8 를 중복하지 않고 2 자리 수를 만들려고 합니다. 2 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 중복하지 않고 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "dig0": 2,
+            "seq0": [
+                1,
+                4,
+                6,
+                7,
+                8
+            ]
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 20,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "빨간 공, 노란 공, 파란 공, 검은 공, 흰 공 ,초록 공 중 중복을 허용하지 않고 3 가지를 뽑을 때, 나올 수 있는 경우의 수는?",
+        "QuestionConv": "col0 공, col1 공, col2 공, col3 공, col4 공, col5 공 중 중복을 허용하지 않고 num0 가지를 뽑을 때, 나올 수 있는 경우의 수는?",
+        "Numbers": {
+            "col": [
+                "빨간",
+                "노란",
+                "파란",
+                "검은",
+                "흰",
+                "초록"
+            ],
+            "num0": 3
+        },
+        "Equation": "func_combination(col,num0)",
+        "Answer": 20,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "연필 14개를 지민,태형 정국 3명에게 나누어 주려고 한다. 적어도 1개를 분배해야 합니다. 나눌 수 있는 방법의 경우의 수는?",
+        "QuestionConv": "sta0 num0 개를 nae0 ,nae1, nae2 num1 명에게 나누어 주려고 한다. 적어도 num2 개를 분배해야 합니다. 나눌 수 있는 방법의 경우의 수는?",
+        "Numbers": {
+            "num0": 14,
+            "num1": 3,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 78,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "2,4,6,7,9 를 중복을 허용하여 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                4,
+                6,
+                7,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 125,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "0,4,6,7,9 를 중복을 허용하여 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                4,
+                6,
+                7,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 100,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "0,1,2,6,7 를 중복을 허용하여 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                1,
+                2,
+                6,
+                7
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 500,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "1,2,6,7,8 를 중복을 허용하여 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                6,
+                7,
+                8
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 625,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "순서를 고려하여 1,2,3,4,5,6,7,8,9 를 중복을 허용하지 않고 2개를 고르는 경우의 수는 모두 몇가지 입니까?",
+        "QuestionConv": "순서를 고려하여 seq0 를 중복을 허용하지 않고 num0 개를 고르는 경우의 수는 모두 몇가지 입니까?",
+        "Numbers": {
+            "num0": 2,
+            "seq0": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        },
+        "Equation": "func_len(func_permutation_list(seq0,num0),none)",
+        "Answer": 72,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "테이프 11개를 서로 다른 3개의 건물에 나누어 놓으려고 한다. 적어도 1개는 나누어 놓아야 한다 . 경우의 수를 구하시오.",
+        "QuestionConv": "sta0 num0 개를 서로 다른 num1 개의 건물에 나누어 놓으려고 한다. 적어도 num2 개는 나누어 놓아야 한다. 경우의 수를 구하시오.",
+        "Numbers": {
+            "num0": 11,
+            "num1": 3,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 45,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "1,2,4,5,6,7 중에서 중복을 허용하여 2 자리 수를 만들려고 합니다. 2 자리 짝수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 짝수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                4,
+                5,
+                6,
+                7
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_find_even(func_product_list(seq0,dig0),none)",
+        "Answer": 18,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "0,2,5,7,8 중에서 중복을 허용하여 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                2,
+                5,
+                7,
+                8
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 100,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "2,5,7,8,9 중에서 중복을 허용하여 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                5,
+                7,
+                8,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 125,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "순서를 고려하여 빨간 공, 노란 공, 파란 공, 검은 공, 흰 공 ,초록 공 중 2개를 선택하는 방법은?",
+        "QuestionConv": "순서를 고려하여 col0 공, col1 공, col2 공, col3 공, col4 공, col5 공 중 num0 개를 선택하는 방법은?",
+        "Numbers": {
+            "num0": 2,
+            "col": [
+                "빨간",
+                "노란",
+                "파란",
+                "검은",
+                "흰",
+                "초록"
+            ]
+        },
+        "Equation": "func_permutation(col,num0)",
+        "Answer": 30,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "운동화 11켤레를 서로 다른 3공간에 나누어 놓으려고 한다. 적어도 1켤레는 나누어 놓아야 한다. 나누는 방법은 모두 몇 가지입니까?",
+        "QuestionConv": "spt0 num0 켤레를 서로 다른 num1 공간에 나누어 놓으려고 한다. 적어도 num2 켤레는 나누어 놓아야 한다. 나누는 방법은 모두 몇 가지입니까?",
+        "Numbers": {
+            "num0": 11,
+            "num1": 3,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 45,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "0,2,4,8 중에서 중복을 허용하여 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                2,
+                4,
+                8
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 192,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "2,4,8,9 중 중복을 허용하여 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                4,
+                8,
+                9
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 256,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "1,2,4,8,9 중 중복을 허용하여 2 자리 수를 만들려고 합니다. 2 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                4,
+                8,
+                9
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 25,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "1,2,4,8,0 중 중복을 허용하여 2 자리 수를 만들려고 합니다. 2 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                4,
+                8,
+                0
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 20,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "1,2,3,4,5,6,7,8,9 가 있는데, 3가지를 뽑는 경우의 수를 고르시오.",
+        "QuestionConv": "seq0 가 있는데, num0 가지를 뽑는 경우의 수를 고르시오.",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ],
+            "num0": 3
+        },
+        "Equation": "func_combination(seq0,num0)",
+        "Answer": 84,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "풀 16개를 서로 다른 3사람에게 나누어 주려고 한다. 적어도 1개를 나누어 줘야합니다. 나눌 수 있는 방법의 경우의 수는?",
+        "QuestionConv": "sta0 num0 개를 서로 다른 num1 사람에게 나누어 주려고 한다. 적어도 num2 개를 나누어 줘야합니다. 나눌 수 있는 방법의 경우의 수는?",
+        "Numbers": {
+            "num0": 16,
+            "num1": 3,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 105,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "0,1,2,5,8,9 중에서 중복을 허용하여 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                1,
+                2,
+                5,
+                8,
+                9
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 1080,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "1,2,3,5,8,9 중에서 중복을 허용하여 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                5,
+                8,
+                9
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 1296,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "6,7,8,9 를 한 번씩만 사용하여 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                6,
+                7,
+                8,
+                9
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 24,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "0,7,8,9를 한 번씩만 사용하여 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                7,
+                8,
+                9
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 18,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "다음의 질문에 답하시오. 사과, 바나나, 딸기, 배, 감귤, 포도, 수박, 멜론 중 3가지를 뽑는 경우의 수를 고르시오.",
+        "QuestionConv": "다음의 질문에 답하시오. foo0 ,foo1 ,foo2 ,foo3, foo4, foo5, foo6, foo7 중 num0 가지를 뽑는 경우의 수를 고르시오.",
+        "Numbers": {
+            "foo": [
+                "사과",
+                "바나나",
+                "딸기",
+                "배",
+                "감귤",
+                "포도",
+                "수박",
+                "멜론"
+            ],
+            "num0": 3
+        },
+        "Equation": "func_combination(foo,num0)",
+        "Answer": 56,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "운동화 14켤레를 서로 다른 4공간에 나누어 놓으려고 한다. 적어도 2켤레를 분배해야 합니다. 경우의 수를 구하시오.",
+        "QuestionConv": "spt0 num0 켤레를 서로 다른 num1 공간에 나누어 놓으려고 한다. 적어도 num2 켤레를 분배해야 합니다. 경우의 수를 구하시오.",
+        "Numbers": {
+            "num0": 14,
+            "num1": 4,
+            "num2": 2
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 84,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "2,3,4,6를 한 번씩만 사용하여 2 자리 수를 만들려고 합니다.  2자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                3,
+                4,
+                6
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 12,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "3,4,5,6,8,9 중에서 한 번씩만 사용하여 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                3,
+                4,
+                5,
+                6,
+                8,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 120,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "버스,자동차,오토바이,트럭,기차 가 있는데, 3가지를 고르는 방법은 모두 몇 가지 입니까?",
+        "QuestionConv": "trn0, trn1, trn2, trn3, trn4 가 있는데, num0 가지를 고르는 방법은 모두 몇 가지 입니까?",
+        "Numbers": {
+            "trn": [
+                "버스",
+                "자동차",
+                "오토바이",
+                "트럭",
+                "기차"
+            ],
+            "num0": 3
+        },
+        "Equation": "func_combination(trn,num0)",
+        "Answer": 10,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "토마토 9개를 서로 다른 2공간에 나누어 놓으려고 한다. 적어도 1개는 나누어 놓아야 한다. 나누는 방법은 모두 몇 가지입니까?",
+        "QuestionConv": "foo0 num0 개를 서로 다른 num1 공간에 나누어 놓으려고 한다. 적어도 num2 개는 나누어 놓아야 한다. 나누는 방법은 모두 몇 가지입니까?",
+        "Numbers": {
+            "num0": 9,
+            "num1": 2,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 8,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "1,3,4,5,8 중에서 한 번씩만 사용하여 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                3,
+                4,
+                5,
+                8
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 120,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "0,3,4,5,8 중에서 한 번씩만 사용하여 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                3,
+                4,
+                5,
+                8
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 96,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "1,2,3,9 를 한 번씩만 사용하여 2자리 수를 만들려고 합니다. 2 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                9
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 12,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "1,2,3,4,5,6,7,8,9 를 중복해서 골라서 만들 수 있는 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 중복해서 골라서 만들 수 있는 dig0 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 729,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "수박 7개를 서로 다른 3개 방에 나누어 놓으려고 한다. 최소 1개를 분배해야 합니다. 나누는 방법은 모두 몇 가지 인지 구하시오.",
+        "QuestionConv": "foo0 num0 개를 서로 다른 num1 개 방에 나누어 놓으려고 한다. 최소 num2 개를 분배해야 합니다. 나누는 방법은 모두 몇 가지 인지 구하시오.",
+        "Numbers": {
+            "num0": 7,
+            "num1": 3,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 15,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "1,2,4,6 중 중복을 허용하여 4 자리 수를 만들려고 합니다. 4 자리 짝수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 짝수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                4,
+                6
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_find_even(func_product_list(seq0,dig0),none)",
+        "Answer": 192,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "0,1,4,6 중 중복을 허용하여 4 자리 수를 만들려고 합니다. 4 자리 짝수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 짝수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                1,
+                4,
+                6
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_find_even(func_product_list(seq0,dig0),none)",
+        "Answer": 144,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "2,4,6,7,9 중에서 한 번씩만 사용하여 2자리 수를 만들려고 합니다. 2 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                4,
+                6,
+                7,
+                9
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 20,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "사탕, 김밥, 빵, 라면, 과자, 음료수, 주스, 우유, 달걀 중 3개를 뽑는 경우의 수를 고르시오.",
+        "QuestionConv": "foo0, foo1, foo2, foo3, foo4, foo5, foo6, foo7, foo8 중 num0 개를 뽑는 경우의 수를 고르시오.",
+        "Numbers": {
+            "foo": [
+                "사탕",
+                "김밥",
+                "빵",
+                "라면",
+                "과자",
+                "음료수",
+                "주스",
+                "우유",
+                "달걀"
+            ],
+            "num0": 3
+        },
+        "Equation": "func_combination(foo,num0)",
+        "Answer": 84,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "딸기 15개를 서로 다른 3개 공간에 나누어 놓으려고 한다. 한 공간에 최소 3개를 분배해야 합니다. 나누는 방법은 모두 몇 가지입니까?",
+        "QuestionConv": "foo0 num0 개를 서로 다른 num1 개 공간에 나누어 놓으려고 한다. num2 공간에 최소 num3 개를 분배해야 합니다. 나누는 방법은 모두 몇 가지입니까?",
+        "Numbers": {
+            "num0": 15,
+            "num1": 3,
+            "num3": 3
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num3)))",
+        "Answer": 28,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "4,5,6,7 를 한 번씩만 사용하여 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                4,
+                5,
+                6,
+                7
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 24,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "4,5,6,0 를 한 번씩만 사용하여 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                4,
+                5,
+                6,
+                0
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 18,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "1,2,3,4,6,9 중 중복을 허용하여 2 자리 수를 만들려고 합니다. 2 자리 짝수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 짝수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                4,
+                6,
+                9
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_find_even(func_product_list(seq0,dig0),none)",
+        "Answer": 18,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "0,2,3,4,6,9 중 중복을 허용하여 2 자리 수를 만들려고 합니다. 2 자리 짝수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 짝수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                2,
+                3,
+                4,
+                6,
+                9
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_find_even(func_product_list(seq0,dig0),none)",
+        "Answer": 20,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "볼펜,샤프,연필,만년필,색연필,싸인펜,삼색볼펜,형광펜 가 있는데, 3가지를 고르는 방법은 모두 몇 가지 입니까? 단, 중복해서 고를 수 있습니다.",
+        "QuestionConv": "sta0, sta1, sta2, sta3, sta4, sta5, sta6, sta7 가 있는데, num0 가지를 고르는 방법은 모두 몇 가지 입니까? 단, 중복해서 고를 수 있습니다.",
+        "Numbers": {
+            "sta": [
+                "볼펜",
+                "샤프",
+                "연필",
+                "만년필",
+                "색연필",
+                "싸인펜",
+                "삼색볼펜",
+                "형광펜"
+            ],
+            "num0": 3
+        },
+        "Equation": "func_combinations_with_replacement(sta,num0)",
+        "Answer": 120,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "운동화 10켤레를 서로 다른 2공간에 나누어 놓으려고 한다. 적어도 1켤레는 분배해야 합니다. 경우의 수를 구하시오.",
+        "QuestionConv": "spt0 num0 켤레를 서로 다른 num1 공간에 나누어 놓으려고 한다. 적어도 num2 켤레는 분배해야 합니다. 경우의 수를 구하시오.",
+        "Numbers": {
+            "num0": 10,
+            "num1": 2,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 9,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "1,4,5,6,7 중 중복을 허용하여 3 자리 수를 만들려고 합니다. 3 자리 홀수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 홀수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                4,
+                5,
+                6,
+                7
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_find_odd(func_product_list(seq0,dig0),none)",
+        "Answer": 75,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "0,4,5,6,7 중 중복을 허용하여 3 자리 수를 만들려고 합니다. 3 자리 홀수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 홀수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                4,
+                5,
+                6,
+                7
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_find_odd(func_product_list(seq0,dig0),none)",
+        "Answer": 40,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "1,7,8,9 를 한 번씩만 사용하여 3 자리 수를 만들려고 합니다. 3 자리 홀수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 홀수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                7,
+                8,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_find_odd(func_permutation_list(seq0,dig0),none)",
+        "Answer": 18,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "순서를 고려하여 운동화, 런닝화, 축구화, 풋살화, 농구화 를 2가지를 골라서 조합하는 방법은 모두 몇가지 입니까? ",
+        "QuestionConv": "순서를 고려하여 spt0, spt1, spt2, spt3, spt4 를 num0 가지를 골라서 조합하는 방법은 모두 몇가지 입니까?",
+        "Numbers": {
+            "num0": 2,
+            "spt": [
+                "운동화",
+                "런닝화",
+                "축구화",
+                "풋살화",
+                "농구화"
+            ]
+        },
+        "Equation": "func_permutation(spt,num0)",
+        "Answer": 20,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "초록 공 7개를 서로 다른 2명의 사람에게 나누어 주려고 한다. 적어도 1개를 분배해야 합니다. 나누는 방법은 모두 몇 가지 인지 구하시오.",
+        "QuestionConv": "col0 공 num0 개를 서로 다른 num1 명의 사람에게 나누어 주려고 한다. 적어도 num2 개를 분배해야 합니다. 나누는 방법은 모두 몇 가지 인지 구하시오.",
+        "Numbers": {
+            "num0": 7,
+            "num1": 2,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 6,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "1,2,3,5,7,9 중에서 중복을 허용하여 2 자리 수를 만들려고 합니다. 2 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                5,
+                7,
+                9
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 36,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "2,3,6,7,8 중에서 중복해서 골라 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 중복해서 골라 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                3,
+                6,
+                7,
+                8
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 125,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "2,3,6,0,8 중에서 중복해서 골라 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 중복해서 골라 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                3,
+                6,
+                0,
+                8
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 100,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "순서를 고려하여 버스,승용차,오토바이,트럭,캠핑카 중에서 중복없이 2개를 뽑는 경우의 수를 고르시오.",
+        "QuestionConv": "순서를 고려하여 trn0, trn1, trn2, trn3, trn4 중에서 중복없이 num0 개를 뽑는 경우의 수를 고르시오.",
+        "Numbers": {
+            "num0": 2,
+            "trn": [
+                "버스",
+                "승용차",
+                "오토바이",
+                "트럭",
+                "캠핑카"
+            ]
+        },
+        "Equation": "func_permutation(trn,num0)",
+        "Answer": 20,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "캠핑카 15대를 서로 다른 4사람에게 나누어 주려고 한다. 최소 1대를 분배해야 합니다. 경우의 수를 구하시오.",
+        "QuestionConv": "trn0 num0 대를 서로 다른 num1 사람에게 나누어 주려고 한다. 최소 num2 대를 분배해야 합니다. 경우의 수를 구하시오.",
+        "Numbers": {
+            "num0": 15,
+            "num1": 4,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 364,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "4,2,3,9 를 한 번씩만 사용하여 3 자리 수를 만들려고 합니다. 3 자리 짝수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 짝수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                4,
+                2,
+                3,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_find_even(func_permutation_list(seq0,dig0),none)",
+        "Answer": 12,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "4,0,3,9 를 한 번씩만 사용하여 3 자리 수를 만들려고 합니다. 3 자리 짝수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 짝수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                4,
+                0,
+                3,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_find_even(func_permutation_list(seq0,dig0),none)",
+        "Answer": 10,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "1,3,5,6,7,8 중에서 중복해서 골라 2 자리 수를 만들려고 합니다. 2 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 중복해서 골라 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                3,
+                5,
+                6,
+                7,
+                8
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 36,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "순서 없이 버스,승용차,오토바이,트럭,캠핑카 가 있는데, 2가지를 뽑을 때, 나올 수 있는 경우의 수는?",
+        "QuestionConv": "순서 없이 trn0, trn1, trn2, trn3, trn4 가 있는데, num0 가지를 뽑을 때, 나올 수 있는 경우의 수는?",
+        "Numbers": {
+            "trn": [
+                "버스",
+                "승용차",
+                "오토바이",
+                "트럭",
+                "캠핑카"
+            ],
+            "num0": 2
+        },
+        "Equation": "func_combination(trn,num0)",
+        "Answer": 10,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "장미 12 송이를 서로 다른 3사람에게 나누어 주려고 하는데 최소 1송이는 나누어 주려고 합니다. 나누는 경우의 수를 구하시오.",
+        "QuestionConv": "장미 num0 송이를 서로 다른 num1 사람에게 나누어 주려고 하는데 최소 num2 송이는 나누어 주려고 합니다. 나누는 경우의 수를 구하시오.",
+        "Numbers": {
+            "num0": 12,
+            "num1": 3,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 55,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "0,2,3,6,9 중에서 중복해서 골라 3 자리 수를 만들려고 합니다. 3 자리 홀수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 중복해서 골라 dig0 자리 수를 만들려고 합니다. dig1 자리 홀수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                2,
+                3,
+                6,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_find_odd(func_product_list(seq0,dig0),none)",
+        "Answer": 40,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "0,4,6,7,9 중에서 중복하지 않고 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 중복하지 않고 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                4,
+                6,
+                7,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 48,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "1,2,3,4,5,6,7,8,9 가 있는데, 숫자 2개를 고르는 방법은 모두 몇가지 입니까?",
+        "QuestionConv": "seq0 가 있는데, 숫자 num0 개를 고르는 방법은 모두 몇가지 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ],
+            "num0": 2
+        },
+        "Equation": "func_combination(seq0,num0)",
+        "Answer": 36,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "빨간 공 13개를 서로 다른 2사람에게 나누어 주려고 한다. 최소 1개는 나누어 주려고 합니다. 나누는 방법을 구하시오.",
+        "QuestionConv": "col0 공 num0 개를 서로 다른 num1 사람에게 나누어 주려고 한다. 최소 num2 개는 나누어 주려고 합니다. 나누는 방법을 구하시오.",
+        "Numbers": {
+            "num0": 13,
+            "num1": 2,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 12,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "3,5,7,8,9 를 중복을 허용하여 3 자리 수를 만들려고 합니다. 3 자리 3의 배수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 num0 의 배수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                3,
+                5,
+                7,
+                8,
+                9
+            ],
+            "dig0": 3,
+            "num0": 3
+        },
+        "Equation": "func_find_mul(func_product_list(seq0,dig0),num0)",
+        "Answer": 41,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "0,2,3,6,8 중 중복을 허용하여 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                2,
+                3,
+                6,
+                8
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 500,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "펜, 샤프펜슬, 연필, 만년필, 색연필, 싸인펜, 삼색볼펜, 형광펜 중에서 2가지를 고르는 방법은 모두 몇가지 입니까?",
+        "QuestionConv": "sta0, sta1, sta2, sta3, sta4, sta5, sta6, sta7 중에서 num0 가지를 고르는 방법은 모두 몇가지 입니까?",
+        "Numbers": {
+            "sta": [
+                "펜",
+                "샤프펜슬",
+                "연필",
+                "만년필",
+                "색연필",
+                "싸인펜",
+                "삼색볼펜",
+                "형광펜"
+            ],
+            "num0": 2
+        },
+        "Equation": "func_combination(sta,num0)",
+        "Answer": 28,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "지우개 11개를 서로 다른 3사람에게 나누어 주려고 한다. 최소 1개를 분배해야 합니다. 경우의 수를 구하시오.",
+        "QuestionConv": "sta0 num0 개를 서로 다른 num1 사람에게 나누어 주려고 한다. 최소 num2 개를 분배해야 합니다. 경우의 수를 구하시오.",
+        "Numbers": {
+            "num0": 11,
+            "num1": 3,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 45,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "1,2,3,6,8,9 중 중복하지 않고 3 자리 수를 만들려고 합니다. 3 자리 홀수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복하지 않고 dig0 자리 수를 만들려고 합니다. dig1 자리 홀수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                6,
+                8,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_find_odd(func_permutation_list(seq0,dig0),none)",
+        "Answer": 60,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "2,5,6,7 중 중복하지 않고 4 자리 수를 만들려고 합니다. 4 자리 홀수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복하지 않고 dig0 자리 수를 만들려고 합니다. dig1 자리 홀수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                5,
+                6,
+                7
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_find_odd(func_permutation_list(seq0,dig0),none)",
+        "Answer": 12,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "사과,바나나,딸기,배,용과,수박,포도,오렌지 가 있는데, 중복하지 않고 2가지를 선택하는 방법은?",
+        "QuestionConv": "foo0 ,foo1 ,foo2 ,foo3 ,foo4 ,foo5 ,foo6 ,foo7 가 있는데, 중복하지 않고 num0 가지를 선택하는 방법은?",
+        "Numbers": {
+            "foo": [
+                "사과",
+                "바나나",
+                "딸기",
+                "배",
+                "용과",
+                "두리안",
+                "리치",
+                "캔탈롭"
+            ],
+            "num0": 2
+        },
+        "Equation": "func_combination(foo,num0)",
+        "Answer": 28,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "싸인펜 6개를 서로 다른 2공간에 나누어 놓으려고 한다. 적어도 1개를 분배해야 합니다. 나누는 방법은 모두 몇 가지 인지 구하시오.",
+        "QuestionConv": "sta0 num0 개를 서로 다른 num1 공간에 나누어 놓으려고 한다. 적어도 num2 개를 분배해야 합니다. 나누는 방법은 모두 몇 가지 인지 구하시오.",
+        "Numbers": {
+            "num0": 6,
+            "num1": 2,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 5,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "2,4,5,6,7,8 중 중복을 허용하여 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                4,
+                5,
+                6,
+                7,
+                8
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 216,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "0,4,5,6,7,8 중 중복을 허용하여 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                4,
+                5,
+                6,
+                7,
+                8
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 180,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "1,2,3,5,9 중 중복하지 않고 3 자리 수를 만들려고 합니다. 3 자리 홀수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복하지 않고 dig0 자리 수를 만들려고 합니다. dig1 자리 홀수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                2,
+                3,
+                5,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_find_odd(func_permutation_list(seq0,dig0),none)",
+        "Answer": 48,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "운동화, 런닝화, 축구화, 농구화, 풋살화 를 이용하여 3가지를 고르는 방법은 모두 몇 가지 입니까?",
+        "QuestionConv": "spt0, spt1, spt2, spt3, spt4 를 이용하여 num0 가지를 고르는 방법은 모두 몇 가지 입니까?",
+        "Numbers": {
+            "spt": [
+                "운동화",
+                "런닝화",
+                "축구화",
+                "농구화",
+                "풋살화"
+            ],
+            "num0": 3
+        },
+        "Equation": "func_combination(spt,num0)",
+        "Answer": 10,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "강아지 14마리를 서로 다른 3공간에 나누어 놓으려고 한다. 적어도 1마리를 분배해야 합니다. 나누는 방법은 모두 몇 가지 인지 구하시오.",
+        "QuestionConv": "ani0 num0 마리를 서로 다른 num1 공간에 나누어 놓으려고 한다. 적어도 num2 마리를 분배해야 합니다. 나누는 방법은 모두 몇 가지 인지 구하시오.",
+        "Numbers": {
+            "num0": 14,
+            "num1": 3,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 78,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "2,6,7,8 중 중복을 허용하여 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                6,
+                7,
+                8
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 64,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "2,4,7,8 를 중복을 허용하여 3 자리 수를 만들려고 합니다. 3 자리 홀수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 홀수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                2,
+                4,
+                7,
+                8
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_find_odd(func_product_list(seq0,dig0),none)",
+        "Answer": 16,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "빨간 공, 노란 공, 파란 공, 검은 공, 흰 공,초록 공이 있는데 2개를 선택하는 방법은?",
+        "QuestionConv": "col0 공, col1 공, col2 공, col3 공, col4 공, col5 공이 있는데 num0 개를 선택하는 방법은?",
+        "Numbers": {
+            "col": [
+                "빨간",
+                "노란",
+                "파란",
+                "검은",
+                "흰",
+                "초록"
+            ],
+            "num0": 2
+        },
+        "Equation": "func_combination(col,num0)",
+        "Answer": 15,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "딸기 8개를 서로 다른 2명의 학생에게 나누어 주려고 한다. 학생은 적어도 1개를 받아야 합니다. 나눌 수 있는 방법의 경우의 수는?",
+        "QuestionConv": "foo0 num0 개를 서로 다른 num1 명의 학생에게 나누어 주려고 한다. 학생은 적어도 num2 개를 받아야 합니다. 나눌 수 있는 방법의 경우의 수는?",
+        "Numbers": {
+            "num0": 8,
+            "num1": 2,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 7,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "1,5,6,7 를 한 번씩만 사용하여 2 자리 수를 만들려고 합니다. 2 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                5,
+                6,
+                7
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 12,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "0,4,6,7,8 중 중복하지 않고 2 자리 수를 만들려고 합니다. 2 자리 짝수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복하지 않고 dig0 자리 수를 만들려고 합니다. dig1 자리 짝수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                4,
+                6,
+                7,
+                8
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_find_even(func_permutation_list(seq0,dig0),none)",
+        "Answer": 13,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "국어, 영어, 수학, 사회, 과학, 음악, 미술, 체육, 가정 중에서 3개를 고를 때, 나올 수 있는 경우의 수는?",
+        "QuestionConv": "sbj0, sbj1, sbj2, sbj3, sbj4, sbj5, sbj6, sbj7, sbj8 중에서 num0 개를 고를 때, 나올 수 있는 경우의 수는?",
+        "Numbers": {
+            "sbj": [
+                "국어",
+                "영어",
+                "수학",
+                "사회",
+                "과학",
+                "음악",
+                "미술",
+                "체육",
+                "가정"
+            ],
+            "num0": 3
+        },
+        "Equation": "func_combination(sbj,num0)",
+        "Answer": 84,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "오토바이 15대를 서로 다른 2공간에 나누어 놓으려고 한다. 적어도 1대를 분배해야 합니다. 경우의 수를 구하시오.",
+        "QuestionConv": "trn0 num0 대를 서로 다른 num1 공간에 나누어 놓으려고 한다. 적어도 num2 대를 분배해야 합니다. 경우의 수를 구하시오.",
+        "Numbers": {
+            "num0": 15,
+            "num1": 2,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 14,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "0,3,4,6,7,9 를 중복을 허용하여 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                3,
+                4,
+                6,
+                7,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_product_list(seq0,dig0),none)",
+        "Answer": 180,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "0,2,5,6,7 중 중복하지 않고 2 자리 수를 만들려고 합니다. 2 자리 홀수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 중복하지 않고 dig0 자리 수를 만들려고 합니다. dig1 자리 홀수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                2,
+                5,
+                6,
+                7
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_find_odd(func_permutation_list(seq0,dig0),none)",
+        "Answer": 6,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "서점, 마트, 문구점, 집, 학교, 수영장 중 2가지를 고르는 경우의 수는 모두 몇 가지 입니까?",
+        "QuestionConv": "plc0, plc1, plc2, plc3, plc4, plc5 중 num0 가지를 고르는 경우의 수는 모두 몇 가지 입니까?",
+        "Numbers": {
+            "plc": [
+                "서점",
+                "마트",
+                "문구점",
+                "집",
+                "학교",
+                "수영장"
+            ],
+            "num0": 2
+        },
+        "Equation": "func_combination(plc,num0)",
+        "Answer": 15,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "병아리 12마리를 서로 다른 3명의 사람에게 나누어 주려고 한다. 적어도 1마리는 받게 하는 경우의 수를 구하시오.",
+        "QuestionConv": "ani0 num0 마리를 서로 다른 num1 명의 사람에게 나누어 주려고 한다. 적어도 num2 마리는 받게 하는 경우의 수를 구하시오.",
+        "Numbers": {
+            "num0": 12,
+            "num1": 3,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 55,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "3,5,6,7,8 를 한 번씩만 사용하여 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                3,
+                5,
+                6,
+                7,
+                8
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 120,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "0,2,3,5,8,9 중에서 중복하지 않고 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중에서 중복하지 않고 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                2,
+                3,
+                5,
+                8,
+                9
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 300,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "페인트, 벽, 천장, 문, 울타리 중 2가지를 고르는 경우의 수는 모두 몇 가지 입니까?",
+        "QuestionConv": "bld0, bld1, bld2, bld3, bld4 중 num0 가지를 고르는 경우의 수는 모두 몇 가지 입니까?",
+        "Numbers": {
+            "bld": [
+                "페인트",
+                "벽",
+                "천장",
+                "문",
+                "울타리"
+            ],
+            "num0": 2
+        },
+        "Equation": "func_combination(bld,num0)",
+        "Answer": 10,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "오토바이 7대를 서로 다른 2개의 공간에 나누어 놓으려고 한다. 적어도 1대는 있게 하는 방법은 모두 몇 가지 인지 구하시오.",
+        "QuestionConv": "trn0 num0 대를 서로 다른 num1 개의 공간에 나누어 놓으려고 한다. 적어도 num2 대는 있게 하는 방법은 모두 몇 가지 인지 구하시오.",
+        "Numbers": {
+            "num0": 7,
+            "num1": 2,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 6,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "0,1,2,4,7,8 를 한 번씩만 사용하여 4 자리 수를 만들려고 합니다. 4 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                1,
+                2,
+                4,
+                7,
+                8
+            ],
+            "dig0": 4
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 300,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "1,5,6,7,9 를 중복을 허용하여 2 자리 수를 만들려고 합니다. 2 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                1,
+                5,
+                6,
+                7,
+                9
+            ],
+            "dig0": 2
+        },
+        "Equation": "func_find_odd(func_product_list(seq0,dig0),none)",
+        "Answer": 20,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "배구공, 농구공, 축구공, 탁구공, 야구공 가 있는데, 2가지를 고르는 경우의 수는 모두 몇 가지 입니까?",
+        "QuestionConv": "spt0, spt1, spt2, spt3, spt4 가 있는데, num0 가지를 고르는 경우의 수는 모두 몇 가지 입니까?",
+        "Numbers": {
+            "spt": [
+                "배구공",
+                "농구공",
+                "축구공",
+                "탁구공",
+                "야구공"
+            ],
+            "num0": 3
+        },
+        "Equation": "func_combination(spt,num0)",
+        "Answer": 10,
+        "Type": "Combination1"
+    },
+    {
+        "Question": "꽃병 10개를 서로 다른 3개의 방에 나누어 놓으려고 한다. 방에 적어도 1개는 놓습니다. 나누는 방법은 모두 몇 가지입니까?",
+        "QuestionConv": "꽃병 num0 개를 서로 다른 num1 개의 방에 나누어 놓으려고 한다. 방에 적어도 num2 개는 놓습니다. 나누는 방법은 모두 몇 가지입니까?",
+        "Numbers": {
+            "num0": 10,
+            "num1": 3,
+            "num2": 1
+        },
+        "Equation": "func_combinations_with_replacement(func_range_list(num1,none),func_minus(num0,func_multiply(num1,num2)))",
+        "Answer": 36,
+        "Type": "Combination3"
+    },
+    {
+        "Question": "0,3,7,8 를 중복을 허용하여 3 자리 수를 만들려고 합니다. 3 자리 5의 배수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 를 중복을 허용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 num0 의 배수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                3,
+                7,
+                8
+            ],
+            "dig0": 3,
+            "num0": 5
+        },
+        "Equation": "func_find_mul(func_product_list(seq0,dig0),num0)",
+        "Answer": 12,
+        "Type": "Combination4"
+    },
+    {
+        "Question": "0,5,6,8,9 중 한 번씩만 사용하여 3 자리 수를 만들려고 합니다. 3 자리 수는 모두 몇 개 입니까?",
+        "QuestionConv": "seq0 중 num0 번씩만 사용하여 dig0 자리 수를 만들려고 합니다. dig1 자리 수는 모두 몇 개 입니까?",
+        "Numbers": {
+            "seq0": [
+                0,
+                5,
+                6,
+                8,
+                9
+            ],
+            "dig0": 3
+        },
+        "Equation": "func_len(func_permutation_list(seq0,dig0),none)",
+        "Answer": 48,
+        "Type": "Combination2"
+    },
+    {
+        "Question": "사과,바나나,토마토, 당근, 무,오이, 배추 가 있는데, 2가지를 고르는 경우의 수는 모두 몇가지 입니까?",
+        "QuestionConv": "foo0, foo1, foo2, foo3, foo4, foo5, foo6 가 있는데, num0 가지를 고르는 경우의 수는 모두 몇가지 입니까?",
+        "Numbers": {
+            "foo": [
+                "사과",
+                "바나나",
+                "토마토",
+                "당근",
+                "무",
+                "오이",
+                "배추"
+            ],
+            "num0": 2
+        },
+        "Equation": "func_combination(foo,num0)",
+        "Answer": 21,
+        "Type": "Combination1"
+    }
+]

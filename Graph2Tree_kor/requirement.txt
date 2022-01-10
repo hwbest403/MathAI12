@@ -1,0 +1,11 @@
+gensim             
+jieba              
+nltk               
+numpy              
+scikit-learn       
+scipy              
+sklearn            
+torch            
+torchvision        
+tqdm              
+transformers==3.0.2
